@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/OperaHouse/Maps/Demonstration",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 75.0,
+   "y": -564.0,
+   "z": 1887.0144037390185
+  },
+  {
+   "name": "route_1",
+   "x": 3020.382215072619,
+   "y": 176.38194159615824,
+   "z": 1510.0
+  },
+  {
+   "name": "route_2",
+   "x": -822.3556322134328,
+   "y": 266.64802571115524,
+   "z": 1856.080465323592
+  },
+  {
+   "name": "route_3",
+   "x": 3679.85903117249,
+   "y": -872.902183985195,
+   "z": 1510.0
+  },
+  {
+   "name": "route_4",
+   "x": -1111.627140176645,
+   "y": -526.6523193173906,
+   "z": 1851.5977897801713
+  }
+ ],
+ "source": "validated route Game_OperaHouse_Maps_Demonstration__coverage_walk__seed160952__routech"
+}

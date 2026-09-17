@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -5381.0,
+   "y": -2980.0,
+   "z": 10.26751375000103
+  },
+  {
+   "name": "route_1",
+   "x": -4785.467112093904,
+   "y": -2115.0175441843962,
+   "z": 20.908548266336595
+  },
+  {
+   "name": "route_2",
+   "x": -4239.463583354986,
+   "y": -1906.4849461013482,
+   "z": 50.7651505915814
+  },
+  {
+   "name": "route_3",
+   "x": -8456.0,
+   "y": -1500.145638966887,
+   "z": 78.9492343580718
+  },
+  {
+   "name": "route_4",
+   "x": -4437.639478909709,
+   "y": 1168.43687758739,
+   "z": 45.23864889405749
+  }
+ ],
+ "source": "validated route Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__coverage_walk"
+}

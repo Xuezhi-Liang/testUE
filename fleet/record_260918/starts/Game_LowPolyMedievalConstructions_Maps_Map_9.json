@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/LowPolyMedievalConstructions/Maps/Map_9",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 692.0,
+   "y": 582.0,
+   "z": 20.0
+  },
+  {
+   "name": "route_1",
+   "x": 791.9999999999999,
+   "y": 1170.5625792373658,
+   "z": 20.0
+  },
+  {
+   "name": "route_2",
+   "x": 789.2222351054404,
+   "y": 1093.826454583963,
+   "z": 20.0
+  },
+  {
+   "name": "route_3",
+   "x": 631.8144833859885,
+   "y": 581.7550017829972,
+   "z": 20.0
+  },
+  {
+   "name": "route_4",
+   "x": 206.07224629653817,
+   "y": 557.7653161681184,
+   "z": 20.0
+  }
+ ],
+ "source": "validated route Game_LowPolyMedievalConstructions_Maps_Map_9__coverage_walk__seed16093"
+}

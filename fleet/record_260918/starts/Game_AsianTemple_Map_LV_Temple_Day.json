@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/AsianTemple/Map/LV_Temple_Day",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 27937.0,
+   "y": -10891.0,
+   "z": -5200.0
+  },
+  {
+   "name": "route_1",
+   "x": 29439.785420145734,
+   "y": -13552.490745934652,
+   "z": -5200.0
+  },
+  {
+   "name": "route_2",
+   "x": 26077.1043981026,
+   "y": -9685.6050665731,
+   "z": -5200.0
+  },
+  {
+   "name": "route_3",
+   "x": 26811.964221812155,
+   "y": -6978.37164688439,
+   "z": -5200.0
+  },
+  {
+   "name": "route_4",
+   "x": 25847.519788972942,
+   "y": -3327.887937549072,
+   "z": -5200.0
+  }
+ ],
+ "source": "validated route Game_AsianTemple_Map_LV_Temple_Day__coverage_walk__seed160902__routech"
+}

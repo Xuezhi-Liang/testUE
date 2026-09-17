@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/StonePineForest/Maps/Mountains_Map_LevelDesign",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 67937.0,
+   "y": 31100.0,
+   "z": 660.9109248117036
+  },
+  {
+   "name": "route_1",
+   "x": 57899.37954665194,
+   "y": 38021.46407789227,
+   "z": 1647.6839425503379
+  },
+  {
+   "name": "route_2",
+   "x": 66056.40245173623,
+   "y": 33792.18445422855,
+   "z": 944.6652087372277
+  },
+  {
+   "name": "route_3",
+   "x": 64558.40369389527,
+   "y": 34390.659156744136,
+   "z": 1283.500212619661
+  },
+  {
+   "name": "route_4",
+   "x": 59599.53379495237,
+   "y": 31161.664864754868,
+   "z": 1775.7683183036936
+  }
+ ],
+ "source": "validated route Game_StonePineForest_Maps_Mountains_Map_LevelDesign__coverage_walk__se"
+}

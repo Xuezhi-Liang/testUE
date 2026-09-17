@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/UrbanDistrict/Demo/Maps/Main/UADistrict_01_P",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 898.0,
+   "y": -2513.0,
+   "z": 252.42914979757086
+  },
+  {
+   "name": "route_1",
+   "x": -1733.8670366675628,
+   "y": 2278.475037527924,
+   "z": 124.60669452454863
+  },
+  {
+   "name": "route_2",
+   "x": -1608.9528628436797,
+   "y": 3139.667150654466,
+   "z": 134.66430951502025
+  },
+  {
+   "name": "route_3",
+   "x": -6067.086598578283,
+   "y": 2975.4887167193383,
+   "z": 120.0
+  },
+  {
+   "name": "route_4",
+   "x": -2663.7488153860127,
+   "y": -5455.592902850313,
+   "z": 275.9540544471409
+  }
+ ],
+ "source": "validated route Game_UrbanDistrict_Demo_Maps_Main_UADistrict_01_P__coverage_walk__seed"
+}

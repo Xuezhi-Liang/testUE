@@ -73,7 +73,8 @@ while True:
         for stale in [L / f'stop_uploads_{sid}']: stale.unlink(missing_ok=True)
         wall_s = max(4.5 * 3600, float(claimed.get('est_s') or 0) * 1.5 + 2 * 3600)   # LPT estimate x1.5 + 2 h for freeze/tuning/upload
         env = dict(os.environ, CTR_PID=os.environ['CTR_PID'], SHARD_ID=sid, SLUG=slug, MAP_ID=claimed['map_id'], DEADLINE_EPOCH=str(int(time.time() + wall_s)),
-                   LV_DST=DST, LV_STATUS=f'{DST}/_status', PORT='9208')
+                   LV_DST=DST, LV_STATUS=f'{DST}/_status', PORT='9208',
+                   SILENCE_S=str(14400 if float(claimed.get('est_s') or 0) > 4 * 3600 else 5400))   # watchdog: big maps tune silently for hours
         upl_log = open(P / 'logs' / f'lv_{sid}_uploader_stdout.log', 'a')
         upl = subprocess.Popen(['bash', str(L / 'uploader.sh')], env=env, stdout=upl_log, stderr=subprocess.STDOUT)
         claim['phase'] = 'recording'; put(f'claims/{sid}.json', dict(claim, heartbeat_epoch=time.time()))

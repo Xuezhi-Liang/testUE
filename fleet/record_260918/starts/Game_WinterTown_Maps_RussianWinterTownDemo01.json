@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -4168.0,
+   "y": 5908.0,
+   "z": 111.00317656250382
+  },
+  {
+   "name": "route_1",
+   "x": -2752.7783009010964,
+   "y": 6917.154843900008,
+   "z": 113.4311019603764
+  },
+  {
+   "name": "route_2",
+   "x": -5145.109416958884,
+   "y": 4026.6813612383476,
+   "z": 130.0
+  },
+  {
+   "name": "route_3",
+   "x": -3002.6112099612337,
+   "y": 2333.0,
+   "z": 127.22672064777328
+  },
+  {
+   "name": "route_4",
+   "x": -3596.0820696729297,
+   "y": 5610.877233225611,
+   "z": 124.65764629079013
+  }
+ ],
+ "source": "validated route Game_WinterTown_Maps_RussianWinterTownDemo01__coverage_walk__seed16098"
+}

@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -3841.0,
+   "y": -11214.0,
+   "z": 20.0
+  },
+  {
+   "name": "route_1",
+   "x": -2690.1885813935382,
+   "y": -9164.0,
+   "z": 20.0
+  },
+  {
+   "name": "route_2",
+   "x": -716.0,
+   "y": -7442.017403230425,
+   "z": 20.0
+  },
+  {
+   "name": "route_3",
+   "x": -1617.7483262162539,
+   "y": -11994.065348987206,
+   "z": 20.0
+  },
+  {
+   "name": "route_4",
+   "x": -2816.435646062959,
+   "y": -9639.936162150707,
+   "z": 20.0
+  }
+ ],
+ "source": "validated route Game_ContainerYard_Maps_Demonstration_Day__coverage_walk__seed160913__"
+}

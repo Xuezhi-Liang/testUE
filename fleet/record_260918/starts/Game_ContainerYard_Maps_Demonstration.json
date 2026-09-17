@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ContainerYard/Maps/Demonstration",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -3816.0,
+   "y": -8316.0,
+   "z": 20.0
+  },
+  {
+   "name": "route_1",
+   "x": -783.0462982269137,
+   "y": -3596.328135301002,
+   "z": 20.0
+  },
+  {
+   "name": "route_2",
+   "x": -3044.8935500047965,
+   "y": -3075.5885874781256,
+   "z": 20.0
+  },
+  {
+   "name": "route_3",
+   "x": -3350.9733049765914,
+   "y": 2483.9999999999995,
+   "z": 20.0
+  },
+  {
+   "name": "route_4",
+   "x": -1378.1378313407756,
+   "y": -953.1378313407756,
+   "z": 20.0
+  }
+ ],
+ "source": "validated route Game_ContainerYard_Maps_Demonstration__coverage_walk__seed160912__rout"
+}

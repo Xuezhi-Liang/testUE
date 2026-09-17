@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/IndustrialArea/Maps/IndustrialArea",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -1031.0,
+   "y": -212.0,
+   "z": 20.0
+  },
+  {
+   "name": "route_1",
+   "x": 2066.0771671140465,
+   "y": 356.7959621765312,
+   "z": 20.0
+  },
+  {
+   "name": "route_2",
+   "x": 1994.0,
+   "y": -2834.34843856248,
+   "z": 37.416267942583744
+  },
+  {
+   "name": "route_3",
+   "x": -1209.684297737071,
+   "y": 306.47307432778723,
+   "z": 20.0
+  },
+  {
+   "name": "route_4",
+   "x": -1379.233271566733,
+   "y": 1554.0795733535924,
+   "z": 20.0
+  }
+ ],
+ "source": "validated route Game_IndustrialArea_Maps_IndustrialArea__coverage_walk__seed160922__ro"
+}

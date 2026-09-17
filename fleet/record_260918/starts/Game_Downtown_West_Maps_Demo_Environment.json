@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Downtown_West/Maps/Demo_Environment",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 349.0,
+   "y": 3621.0,
+   "z": 7.064777327935218
+  },
+  {
+   "name": "route_1",
+   "x": 3224.9787942108665,
+   "y": -1103.9999999999998,
+   "z": 20.0
+  },
+  {
+   "name": "route_2",
+   "x": -626.0,
+   "y": -1213.6457399197259,
+   "z": 20.0
+  },
+  {
+   "name": "route_3",
+   "x": -7881.917464818318,
+   "y": 230.1156719074708,
+   "z": 20.788442610478114
+  },
+  {
+   "name": "route_4",
+   "x": -3342.674016853118,
+   "y": -4679.0,
+   "z": 20.0
+  }
+ ],
+ "source": "validated route Game_Downtown_West_Maps_Demo_Environment__coverage_walk__seed160914__r"
+}

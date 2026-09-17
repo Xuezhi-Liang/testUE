@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/TokyoStylizedEnvironment/Maps/Tokyo",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 329.0,
+   "y": 35.0,
+   "z": 40.897666012014184
+  },
+  {
+   "name": "route_1",
+   "x": 1029.0,
+   "y": 400.1507357606827,
+   "z": 63.08270676691728
+  },
+  {
+   "name": "route_2",
+   "x": -1354.1058069005833,
+   "y": 84.99999999999999,
+   "z": 45.26315789473685
+  },
+  {
+   "name": "route_3",
+   "x": -1737.7607796996847,
+   "y": 135.42901979611725,
+   "z": 48.35913312693498
+  },
+  {
+   "name": "route_4",
+   "x": 618.5691730021038,
+   "y": 2004.7757132611112,
+   "z": 43.652988955299634
+  }
+ ],
+ "source": "validated route Game_TokyoStylizedEnvironment_Maps_Tokyo__coverage_walk__seed160975__r"
+}

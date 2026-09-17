@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Venice_fast_building/Maps/Overview",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -2504.0,
+   "y": -2634.0,
+   "z": 30.0
+  },
+  {
+   "name": "route_1",
+   "x": -2673.2807247932406,
+   "y": 1065.9999999999998,
+   "z": 30.0
+  },
+  {
+   "name": "route_2",
+   "x": 393.2413190600865,
+   "y": 5286.832495312695,
+   "z": 30.0
+  },
+  {
+   "name": "route_3",
+   "x": -54.0,
+   "y": 1469.8954276927955,
+   "z": 30.0
+  },
+  {
+   "name": "route_4",
+   "x": 2350.51457542739,
+   "y": -3575.8967877094624,
+   "z": 30.0
+  }
+ ],
+ "source": "validated route Game_Venice_fast_building_Maps_Overview__coverage_walk__seed160979__ro"
+}

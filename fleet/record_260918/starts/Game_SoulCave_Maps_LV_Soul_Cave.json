@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/SoulCave/Maps/LV_Soul_Cave",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -20850.0,
+   "y": -17789.0,
+   "z": -2040.0
+  },
+  {
+   "name": "route_1",
+   "x": -16592.18783228409,
+   "y": -18932.3503932691,
+   "z": -2040.0
+  },
+  {
+   "name": "route_2",
+   "x": -17529.905672710833,
+   "y": -18397.29925271137,
+   "z": -2040.0
+  },
+  {
+   "name": "route_3",
+   "x": -21061.23772424221,
+   "y": -18045.557306667575,
+   "z": -2040.0
+  },
+  {
+   "name": "route_4",
+   "x": -22165.77363485883,
+   "y": -16674.080674052115,
+   "z": -2040.0
+  }
+ ],
+ "source": "validated route Game_SoulCave_Maps_LV_Soul_Cave__coverage_walk__seed160961__routecheck"
+}

@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -25.0,
+   "y": 10720.0,
+   "z": 10.0
+  },
+  {
+   "name": "route_1",
+   "x": -1480.2643291078057,
+   "y": 8264.735670892194,
+   "z": 18.22535461579855
+  },
+  {
+   "name": "route_2",
+   "x": -1552.7319645737914,
+   "y": 13420.0,
+   "z": 20.0
+  },
+  {
+   "name": "route_3",
+   "x": 2038.7294286861202,
+   "y": 7629.1806476934935,
+   "z": 27.634602912256724
+  },
+  {
+   "name": "route_4",
+   "x": 2629.2252810700834,
+   "y": 12886.120749927022,
+   "z": 16.632849706143503
+  }
+ ],
+ "source": "validated route Game_HwaseongHaenggung_Maps_Demo__coverage_walk__seed160921__routechec"
+}

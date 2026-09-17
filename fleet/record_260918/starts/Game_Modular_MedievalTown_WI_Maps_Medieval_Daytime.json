@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Daytime",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 4716.0,
+   "y": -384.0,
+   "z": 170.0
+  },
+  {
+   "name": "route_1",
+   "x": 3848.008070365939,
+   "y": -2055.7883736046942,
+   "z": 161.5240465862821
+  },
+  {
+   "name": "route_2",
+   "x": -1941.957932489555,
+   "y": 1989.2044937709884,
+   "z": 90.95453327046818
+  },
+  {
+   "name": "route_3",
+   "x": -1866.2892758065038,
+   "y": -2101.710724193496,
+   "z": 190.0
+  },
+  {
+   "name": "route_4",
+   "x": 925.7071773185664,
+   "y": 1815.9999999999995,
+   "z": 132.74576366498383
+  }
+ ],
+ "source": "validated route Game_Modular_MedievalTown_WI_Maps_Medieval_Daytime__coverage_walk__see"
+}

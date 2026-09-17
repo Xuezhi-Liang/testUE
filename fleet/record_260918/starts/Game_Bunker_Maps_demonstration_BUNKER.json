@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Bunker/Maps/demonstration_BUNKER",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 4349.0,
+   "y": 4508.0,
+   "z": 647.0891374459617
+  },
+  {
+   "name": "route_1",
+   "x": 4974.029549811059,
+   "y": 3822.6682403963864,
+   "z": 630.0
+  },
+  {
+   "name": "route_2",
+   "x": 8980.834614998295,
+   "y": 3369.143875597267,
+   "z": 630.0
+  },
+  {
+   "name": "route_3",
+   "x": 7224.764229188655,
+   "y": 4133.0,
+   "z": 630.0
+  },
+  {
+   "name": "route_4",
+   "x": 4664.4297781274945,
+   "y": 4658.0,
+   "z": 656.2199520793664
+  }
+ ],
+ "source": "validated route Game_Bunker_Maps_demonstration_BUNKER__coverage_walk__seed160905__rout"
+}

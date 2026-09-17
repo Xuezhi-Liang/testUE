@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -11980.0,
+   "y": 10647.0,
+   "z": 9103.562753036436
+  },
+  {
+   "name": "route_1",
+   "x": -13515.87018873216,
+   "y": 13892.184569708657,
+   "z": 9448.374905704935
+  },
+  {
+   "name": "route_2",
+   "x": -14379.939007892095,
+   "y": 17338.481746783447,
+   "z": 9418.716224457734
+  },
+  {
+   "name": "route_3",
+   "x": -12622.103828697067,
+   "y": 11921.477908341814,
+   "z": 9487.91583657302
+  },
+  {
+   "name": "route_4",
+   "x": -10487.265985897768,
+   "y": 19372.388768243512,
+   "z": 9592.740335165656
+  }
+ ],
+ "source": "validated route Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__"
+}

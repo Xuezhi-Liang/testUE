@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/TrainStation/Maps/Demonstration",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 1956.0,
+   "y": -2738.0,
+   "z": 60.0
+  },
+  {
+   "name": "route_1",
+   "x": 2473.570528685642,
+   "y": -2838.0,
+   "z": 60.0
+  },
+  {
+   "name": "route_2",
+   "x": 1165.138988198121,
+   "y": 963.6792396853897,
+   "z": 60.0
+  },
+  {
+   "name": "route_3",
+   "x": 1046.061876055763,
+   "y": 1074.1170486102842,
+   "z": 60.0
+  },
+  {
+   "name": "route_4",
+   "x": 2420.7442725808464,
+   "y": -1902.1004049456524,
+   "z": 60.0
+  }
+ ],
+ "source": "validated route Game_TrainStation_Maps_Demonstration__coverage_walk__seed160976__route"
+}

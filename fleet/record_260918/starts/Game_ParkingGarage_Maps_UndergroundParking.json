@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ParkingGarage/Maps/UndergroundParking",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -2974.0,
+   "y": 2363.0,
+   "z": -290.0
+  },
+  {
+   "name": "route_1",
+   "x": -1669.6500470054161,
+   "y": 1728.3822971202508,
+   "z": -289.99883025176393
+  },
+  {
+   "name": "route_2",
+   "x": -1646.581661380983,
+   "y": 2365.4024726814223,
+   "z": -290.0
+  },
+  {
+   "name": "route_3",
+   "x": -73.47228601470755,
+   "y": 1793.4490261722995,
+   "z": -286.7811155738721
+  },
+  {
+   "name": "route_4",
+   "x": -1838.9364292543298,
+   "y": 1233.4954955167207,
+   "z": -290.0
+  }
+ ],
+ "source": "validated route Game_ParkingGarage_Maps_UndergroundParking__coverage_walk__seed160954_"
+}

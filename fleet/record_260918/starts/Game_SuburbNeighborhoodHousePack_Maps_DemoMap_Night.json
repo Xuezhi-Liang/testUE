@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Night",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -8675.0,
+   "y": -1880.0,
+   "z": 64.92433926590633
+  },
+  {
+   "name": "route_1",
+   "x": -4596.480359320369,
+   "y": -2291.662659534235,
+   "z": 29.61451601241083
+  },
+  {
+   "name": "route_2",
+   "x": -4931.755354328177,
+   "y": -230.0,
+   "z": 10.0
+  },
+  {
+   "name": "route_3",
+   "x": -7940.71404644753,
+   "y": -2511.996914254956,
+   "z": 38.26134675040106
+  },
+  {
+   "name": "route_4",
+   "x": -5346.576608192221,
+   "y": -483.5635696142378,
+   "z": 18.703972772673353
+  }
+ ],
+ "source": "validated route Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night__coverage_walk__se"
+}

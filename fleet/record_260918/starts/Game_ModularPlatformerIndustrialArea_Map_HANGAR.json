@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ModularPlatformerIndustrialArea/Map/HANGAR",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 301.0,
+   "y": -1763.0,
+   "z": 1925.4629388731146
+  },
+  {
+   "name": "route_1",
+   "x": 2838.434278497948,
+   "y": 261.93203974095564,
+   "z": 1920.0
+  },
+  {
+   "name": "route_2",
+   "x": 1176.0,
+   "y": 683.1810433946225,
+   "z": 1920.0
+  },
+  {
+   "name": "route_3",
+   "x": 3415.817535263334,
+   "y": 925.8563643162801,
+   "z": 1920.0
+  },
+  {
+   "name": "route_4",
+   "x": 3426.0,
+   "y": -1957.2479241519118,
+   "z": 1920.0
+  }
+ ],
+ "source": "validated route Game_ModularPlatformerIndustrialArea_Map_HANGAR__coverage_walk__seed16"
+}

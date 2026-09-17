@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Pyramids/Levels/L_pyramids",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -14237.0,
+   "y": -45987.0,
+   "z": -1760.0
+  },
+  {
+   "name": "route_1",
+   "x": -11802.70696656851,
+   "y": -51415.5309663235,
+   "z": -1760.0
+  },
+  {
+   "name": "route_2",
+   "x": -6118.530170916249,
+   "y": -48468.530170916245,
+   "z": -1760.0
+  },
+  {
+   "name": "route_3",
+   "x": -13813.581621388366,
+   "y": -46163.58162138837,
+   "z": -1760.0
+  },
+  {
+   "name": "route_4",
+   "x": -6637.594409582852,
+   "y": -47138.751710373785,
+   "z": -1760.0
+  }
+ ],
+ "source": "validated route Game_Pyramids_Levels_L_pyramids__coverage_walk__seed160955__routecheck"
+}

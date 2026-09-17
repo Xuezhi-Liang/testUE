@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/QA_ModularParking/Maps/Map_demonstration",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -3313.0,
+   "y": 2728.0,
+   "z": -310.0
+  },
+  {
+   "name": "route_1",
+   "x": -806.5676398832358,
+   "y": 4128.0,
+   "z": 20.0
+  },
+  {
+   "name": "route_2",
+   "x": -313.0,
+   "y": 1744.8820204896526,
+   "z": 20.0
+  },
+  {
+   "name": "route_3",
+   "x": 2537.0,
+   "y": 2587.8288202502986,
+   "z": 350.0
+  },
+  {
+   "name": "route_4",
+   "x": -1095.4872153076924,
+   "y": 3210.336663698305,
+   "z": 20.0
+  }
+ ],
+ "source": "validated route Game_QA_ModularParking_Maps_Map_demonstration__coverage_walk__seed1609"
+}

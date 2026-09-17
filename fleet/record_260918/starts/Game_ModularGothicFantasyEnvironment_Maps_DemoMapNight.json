@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ModularGothicFantasyEnvironment/Maps/DemoMapNight",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -1277.0,
+   "y": 3956.0,
+   "z": 70.0
+  },
+  {
+   "name": "route_1",
+   "x": -1407.4893575664305,
+   "y": 4186.691283447077,
+   "z": 70.0
+  },
+  {
+   "name": "route_2",
+   "x": -2760.7810533333895,
+   "y": 3453.4099434526834,
+   "z": 70.0
+  },
+  {
+   "name": "route_3",
+   "x": -884.0215826025895,
+   "y": 4373.716383177241,
+   "z": 70.0
+  },
+  {
+   "name": "route_4",
+   "x": 887.8936082789904,
+   "y": 3286.4757026465327,
+   "z": 70.0
+  }
+ ],
+ "source": "validated route Game_ModularGothicFantasyEnvironment_Maps_DemoMapNight__coverage_walk_"
+}

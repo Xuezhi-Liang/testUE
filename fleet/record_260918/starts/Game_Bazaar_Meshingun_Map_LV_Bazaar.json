@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Bazaar_Meshingun/Map/LV_Bazaar",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 3494.0,
+   "y": 3606.0,
+   "z": 1770.0
+  },
+  {
+   "name": "route_1",
+   "x": 3813.392468847448,
+   "y": 3321.530220242523,
+   "z": 1770.0
+  },
+  {
+   "name": "route_2",
+   "x": 3403.96322170768,
+   "y": 3658.049068436953,
+   "z": 1770.0
+  },
+  {
+   "name": "route_3",
+   "x": 3401.224226049677,
+   "y": 3667.565693994129,
+   "z": 1770.0
+  },
+  {
+   "name": "route_4",
+   "x": 3371.9346070891215,
+   "y": 1812.0044469239185,
+   "z": 1770.0
+  }
+ ],
+ "source": "validated route Game_Bazaar_Meshingun_Map_LV_Bazaar__coverage_walk__seed160903__routec"
+}

@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ChineseWaterTown/Ver1/Map/DemoMap",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -4589.0,
+   "y": 7960.0,
+   "z": 120.0
+  },
+  {
+   "name": "route_1",
+   "x": 3645.236694766171,
+   "y": 7813.60331719751,
+   "z": 120.0
+  },
+  {
+   "name": "route_2",
+   "x": -4589.0,
+   "y": 9432.017165345605,
+   "z": 120.0
+  },
+  {
+   "name": "route_3",
+   "x": -564.0,
+   "y": 11806.036381888,
+   "z": 120.0
+  },
+  {
+   "name": "route_4",
+   "x": -2554.817391080818,
+   "y": 6020.697970542277,
+   "z": 120.0
+  }
+ ],
+ "source": "validated route Game_ChineseWaterTown_Ver1_Map_DemoMap__coverage_walk__seed160910__rou"
+}

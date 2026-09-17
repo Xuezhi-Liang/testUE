@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ModularNeighborhood/Maps/Demo_Map",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -16514.0,
+   "y": -5623.0,
+   "z": 120.0
+  },
+  {
+   "name": "route_1",
+   "x": -13461.679612215472,
+   "y": -6920.679612215473,
+   "z": 133.56285088440137
+  },
+  {
+   "name": "route_2",
+   "x": -14457.619338904133,
+   "y": -2594.014229200236,
+   "z": 120.0
+  },
+  {
+   "name": "route_3",
+   "x": -14699.197648490039,
+   "y": -1951.968211736322,
+   "z": 120.0
+  },
+  {
+   "name": "route_4",
+   "x": -12921.17853963021,
+   "y": -2055.906921493627,
+   "z": 122.65655995236142
+  }
+ ],
+ "source": "validated route Game_ModularNeighborhood_Maps_Demo_Map__coverage_walk__seed160942__rou"
+}

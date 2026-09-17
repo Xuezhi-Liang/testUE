@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/StorageHouse/Maps/Demonstration",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -440.0,
+   "y": -3592.0,
+   "z": 20.0
+  },
+  {
+   "name": "route_1",
+   "x": -650.8646704151503,
+   "y": -6111.414003948827,
+   "z": 17.926361283988427
+  },
+  {
+   "name": "route_2",
+   "x": -683.9665720378849,
+   "y": -6043.307683888873,
+   "z": 15.893912605727479
+  },
+  {
+   "name": "route_3",
+   "x": 337.4708060318457,
+   "y": -3658.3906130539654,
+   "z": 16.65036484734196
+  },
+  {
+   "name": "route_4",
+   "x": -701.8743588661687,
+   "y": -3684.249998968469,
+   "z": 20.0
+  }
+ ],
+ "source": "validated route Game_StorageHouse_Maps_Demonstration__coverage_walk__seed160967__route"
+}

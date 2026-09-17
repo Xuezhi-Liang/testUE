@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Nimikko_CommandCenter/Scenes/CommandCenter",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 790.0,
+   "y": 471.0,
+   "z": 20.0
+  },
+  {
+   "name": "route_1",
+   "x": 853.0178028107051,
+   "y": 636.934984576171,
+   "z": 20.0
+  },
+  {
+   "name": "route_2",
+   "x": 786.4103365715549,
+   "y": 463.3405867609988,
+   "z": 20.0
+  },
+  {
+   "name": "route_3",
+   "x": 320.9464661266314,
+   "y": 518.229406109125,
+   "z": 20.0
+  },
+  {
+   "name": "route_4",
+   "x": 321.21333408685314,
+   "y": 593.1855177175954,
+   "z": 20.0
+  }
+ ],
+ "source": "validated route Game_Nimikko_CommandCenter_Scenes_CommandCenter__coverage_walk__seed16"
+}

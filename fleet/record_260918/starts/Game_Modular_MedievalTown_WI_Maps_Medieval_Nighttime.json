@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Nighttime",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 4416.0,
+   "y": -84.0,
+   "z": 169.6230640832713
+  },
+  {
+   "name": "route_1",
+   "x": 4666.0,
+   "y": 835.9576858964713,
+   "z": 180.0
+  },
+  {
+   "name": "route_2",
+   "x": -1819.4247230886185,
+   "y": -734.0,
+   "z": 150.0
+  },
+  {
+   "name": "route_3",
+   "x": -1558.2773941063524,
+   "y": -2624.01033696376,
+   "z": 190.0
+  },
+  {
+   "name": "route_4",
+   "x": 4290.090495947551,
+   "y": -2484.9095040524494,
+   "z": 189.43321391124664
+  }
+ ],
+ "source": "validated route Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__coverage_walk__s"
+}

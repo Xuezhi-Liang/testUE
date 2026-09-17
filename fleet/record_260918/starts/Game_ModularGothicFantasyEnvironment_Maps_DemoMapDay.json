@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ModularGothicFantasyEnvironment/Maps/DemoMapDay",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 3551.0,
+   "y": 6487.0,
+   "z": 60.0
+  },
+  {
+   "name": "route_1",
+   "x": 1751.0,
+   "y": 6843.896040609202,
+   "z": 60.0
+  },
+  {
+   "name": "route_2",
+   "x": 6896.053368145764,
+   "y": 6987.940170494972,
+   "z": 62.37063986912668
+  },
+  {
+   "name": "route_3",
+   "x": 5404.282374152389,
+   "y": 2090.282374152389,
+   "z": 69.545508371101
+  },
+  {
+   "name": "route_4",
+   "x": 4348.370898940366,
+   "y": 354.84736822706907,
+   "z": 70.0
+  }
+ ],
+ "source": "validated route Game_ModularGothicFantasyEnvironment_Maps_DemoMapDay__coverage_walk__s"
+}

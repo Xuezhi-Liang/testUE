@@ -114,8 +114,17 @@ def pick_spawn(req, map_id, verbose=True, content=None):
              if all(isinstance(p.get(k), (int, float)) for k in ("x", "y", "z"))]
     if not cands:
         raise RuntimeError(f"{sp_file} has no usable positions")
+    # Fallback candidates, tried after the file's own: the level's PlayerStart actors. The 17 Sep
+    # recording batch lost RainMap and NorthenIsle because none of five catalogue points projected;
+    # the validation job had a recover-start step, this path did not.
+    try:
+        ps = engine.query(req, 'RESULT["ps"] = [[a.get_actor_location().x, a.get_actor_location().y, a.get_actor_location().z, a.get_name()] '
+                                'for a in unreal.GameplayStatics.get_all_actors_of_class(w, unreal.PlayerStart)]', timeout=120).get("ps") or []
+        cands = cands + [{"name": f"PlayerStart:{p[3]}", "x": p[0], "y": p[1], "z": p[2]} for p in ps[:6]]
+    except Exception as e:
+        print(f"[freeze-cov] PlayerStart lookup failed: {e}", flush=True)
     notes = []
-    for cand in cands[:12]:
+    for cand in cands[:18]:
         cx, cy, cz = float(cand["x"]), float(cand["y"]), float(cand["z"])
         traced = engine.ground_z(req, [(cx, cy)], cz + 400.0)[0]
         z0 = traced if traced is not None else cz
