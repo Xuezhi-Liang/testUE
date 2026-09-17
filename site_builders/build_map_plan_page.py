@@ -27,6 +27,17 @@ tot = dict(ep=sum(x['episode_h'] for x in A), mh=sum(x['machine_h'] for x in A),
 rec = sum(1 for x in A if x['recorded']); big = sum(1 for x in A if x['tier'] == '大'); mid = sum(1 for x in A if x['tier'] == '中'); small = len(A) - big - mid
 lowcore = sum(1 for x in A if (x['core'] or 0) < 50)
 now = time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())
+# ---- per resource pack (reference only; every headline number is per level) ----
+RANK = {c: i for i, c in enumerate(ORDER)}
+packs = {}
+for x in LV:
+    P = packs.setdefault(x['fid'], dict(fid=x['fid'], title=x['title'], levels=0, a=0, ep=0.0, mh=0.0, cls=None))
+    P['levels'] += 1
+    if x['cls'].startswith('A'): P['a'] += 1; P['ep'] += x['episode_h']; P['mh'] += x['machine_h']
+    if P['cls'] is None or RANK[x['cls']] < RANK[P['cls']]: P['cls'] = x['cls']
+PK = sorted(packs.values(), key=lambda P: (RANK[P['cls']], -P['ep']))
+pk_cnt = {c: sum(1 for P in PK if P['cls'] == c) for c in ORDER}
+pk_a = [P for P in PK if P['cls'].startswith('A')]
 RULE = ("每集规则（09-17 定）：**每张地图一集，走两遍，不封顶，不切分片。** 第一遍是覆盖遍（stroll / survey / inspect 每 45 m 轮换，按预算 97% 配速，落后时先保覆盖），"
         "第二遍是填充遍（从第一遍终点重抽一次覆盖走法，整遍 study 风格，动作密度加倍，路程相同，约 2× 第一遍）。成片按一遍估计的 **3×** 算，一遍估计取自路线验证的完整覆盖走法帧数；机器上另有 2× 的失控保护上限。")
 PHASES = ["**阶段 0，补验证（20 台，跑着）**：C 类 41 张、E 类 6 张、D 类 5 张在 09-17 队列里；B 类 4 张人工看俯视图。通过的进 A 类。",
@@ -52,6 +63,10 @@ for c in ORDER[1:6]:
     if not rows: continue
     md += ["", f"## {c}（{len(rows)} 张）", "", EXPL[c], "", "| 资源包 | 关卡 | 最近状态 | 核心 m² |", "|---|---|---|---:|"]
     for x in rows: md.append(f"| {x['fid']} {x['title'][:34]} | `{x['level'].split('/')[-1]}` | {x['state'] or '未跑'} | {n(x['core'])} |")
+md += ["", "## 附录：按资源包的统计（仅供参考）", "", "主统计按关卡。这里把同一资源包的关卡合并，只用来对照采购单位；一个包的分类取其关卡里最好的一档。", "",
+       "| 分类 | 资源包数 |", "|---|---:|"] + [f"| {c} | {pk_cnt[c]} |" for c in ORDER if pk_cnt[c]] + ["",
+       f"有可录关卡的资源包 {len(pk_a)} 个，合计可录关卡 {sum(P['a'] for P in pk_a)} 张、成片 {sum(P['ep'] for P in pk_a):.0f} h、机时 {sum(P['mh'] for P in pk_a):.0f} h。若每包只录一张代表关卡，则为 {len(pk_a)} 集。", "",
+       "| 资源包 | 关卡数 | 可录关卡 | 成片 h | 机时 | 分类 |", "|---|---:|---:|---:|---:|---|"] + [f"| {P['fid']} {P['title'][:40]} | {P['levels']} | {P['a']} | {P['ep']:.1f} | {P['mh']:.0f} | {P['cls']} |" for P in PK if P['cls'] != 'H 未挑选' or P['a']]
 md += ["", "## 单独立项，不在上表", "", "- **Dubai Downtown**：64 GB，需 Cesium；悬浮模式录过 30 s 演示，地面无碰撞，要录先解决碰撞。", "- **Lyra**：射击示例，非环境。",
        "- **Factory Environment Collection 的 Demonstration**：资产全在通用目录（Maps、Meshes、Materials…），合不进 gym_citynav，要单独立工程。",
        "- **AdditionalSamples**：CitySample 82 GB / 439 张关卡是完整城市，值得单独评估；另两个不是环境。", "",
@@ -82,6 +97,9 @@ for c in ORDER[1:6]:
     for x in rows: h.append(f"<tr><td>{html.escape(x['title'])}<div class=mut>{x['fid']}</div></td><td><code>{html.escape(x['level'])}</code></td><td>{x['state'] or '未跑'}</td><td class=r>{n(x['core'])}</td></tr>")
     h.append("</table>")
 h.append("<h2>单独立项</h2><ul><li><b>Dubai Downtown</b>：64 GB，需 Cesium；悬浮模式录过 30 s 演示，地面无碰撞，要录先解决碰撞。</li><li><b>Lyra</b>：射击示例，非环境。</li><li><b>Factory Environment Collection / Demonstration</b>：资产全在通用目录，合不进 gym_citynav，要单独立工程。</li><li><b>AdditionalSamples</b>：CitySample 82 GB / 439 张关卡是完整城市，值得单独评估；另两个不是环境。</li></ul>")
+h.append("<h2>附录：按资源包的统计（仅供参考）</h2><p>主统计按关卡。这里把同一资源包的关卡合并，只用来对照采购单位；一个包的分类取其关卡里最好的一档。</p><table><tr><th>分类</th><th>资源包数</th></tr>" + ''.join(f"<tr><td><span class='tag {c[0]}'>{c}</span></td><td class=r>{pk_cnt[c]}</td></tr>" for c in ORDER if pk_cnt[c]) + "</table>"
+         f"<p>有可录关卡的资源包 {len(pk_a)} 个，合计可录关卡 {sum(P['a'] for P in pk_a)} 张、成片 {sum(P['ep'] for P in pk_a):.0f} h、机时 {sum(P['mh'] for P in pk_a):.0f} h。若每包只录一张代表关卡，则为 {len(pk_a)} 集。</p>"
+         "<table><tr><th>资源包</th><th>关卡数</th><th>可录关卡</th><th>成片 h</th><th>机时</th><th>分类</th></tr>" + ''.join(f"<tr><td>{html.escape(P['title'])}<div class=mut>{P['fid']}</div></td><td class=r>{P['levels']}</td><td class=r>{P['a']}</td><td class=r>{P['ep']:.1f}</td><td class=r>{P['mh']:.0f}</td><td><span class='tag {P['cls'][0]}'>{P['cls']}</span></td></tr>" for P in PK if P['cls'] != 'H 未挑选' or P['a']) + "</table>")
 h.append("<p class=mut>机器可读版：<code>revisit_pipeline/results/map_plan_2026-09-17/levels.json</code>；文档：<code>revisit_pipeline/MAP_PLAN_2026-09-17.md</code>。</p>")
 (SITE / 'index.html').write_text('\n'.join(h))
 print('written', len(A), 'recordable levels;', round(tot['ep']), 'h episodes,', round(tot['mh']), 'machine-h,', tot['gb'], 'GB')
