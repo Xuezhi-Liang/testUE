@@ -19,20 +19,22 @@ for slug in s3ls(S3 + '/'):
 cards = []
 for slug, ep in eps:
     src = f'{S3}/{slug}/{ep}'; local = SITE / 'episodes' / ep.replace('_rejected/', 'rejected__'); local.mkdir(parents=True, exist_ok=True)
-    subprocess.run(['aws', 's3', 'sync', src, str(local), '--exclude', '*', '--include', '*.json', '--include', '*.png', '--include', 'rgb.mp4', '--include', 'frames.csv', '--only-show-errors', '--exclude', 'rgb/*', '--exclude', 'depth/*'])
+    subprocess.run(['aws', 's3', 'sync', src, str(local), '--exclude', '*', '--include', '*.json', '--include', '*.png', '--include', '*.mp4', '--include', 'frames.csv', '--only-show-errors', '--exclude', 'rgb/*', '--exclude', 'depth/*'])
     def J(name):
         p = local / name
         try: return json.load(open(p))
         except Exception: return {}
-    acc = J('acceptance.json'); cs = J('capture_summary.json'); tj = J('trajectory_summary.json') or J('summary.json')
-    gates = acc.get('gates') or acc.get('checks') or {}
-    failed = [k for k, v in gates.items() if isinstance(v, dict) and v.get('ok') is False] if isinstance(gates, dict) else []
+    acc = J('acceptance.json'); cs = J('capture_summary.json'); tj = J('trajectory.json')
+    gates = acc.get('gates') or []
+    failed = [g.get('gate') for g in gates if isinstance(g, dict) and g.get('result') not in ('pass', 'skipped', 'skip')] if isinstance(gates, list) else [k for k, v in gates.items() if isinstance(v, dict) and v.get('ok') is False]
     frames = cs.get('frames') or tj.get('frames') or acc.get('frames'); fps = cs.get('fps') or tj.get('fps') or 24
     mix = (tj.get('action_mix') or {}).get('fraction') or cs.get('action_mix') or {}
-    mp4 = 'rgb.mp4' if (local / 'rgb.mp4').exists() else None
+    mp4 = next((n for n in ('rgb.mp4', 'review.mp4', 'preview.mp4', 'rgb_proxy.mp4') if (local / n).exists()), None)
+    rv0 = cs.get('review_video') or ''; rv = (rv0.get('path') or rv0.get('file') or '' if isinstance(rv0, dict) else str(rv0)).split('/')[-1]
+    if not mp4 and rv and (local / rv).exists(): mp4 = rv
     pngs = sorted(p.name for p in local.glob('*.png'))
     cards.append(dict(slug=slug, ep=ep, local=local.name, accepted=acc.get('accepted'), failed=failed, frames=frames, minutes=round(frames / fps / 60, 1) if frames else None,
-                      passes=tj.get('passes_summary') or cs.get('passes'), mix={k: round(v, 3) for k, v in mix.items()} if mix else None, mp4=mp4, pngs=pngs, spec=cs.get('spec_version') or (tj.get('task') or {}).get('spec_version'), retrace=(tj.get('retrace') or {}).get('events')))
+                      passes=(lambda ps: f"{ps.get('complete_passes')}/{ps.get('passes_requested')} 遍完成，各遍帧数 {ps.get('frames_per_pass_measured', [])[:2]}" if ps else None)(tj.get('passes_summary')), mix={k: round(v, 3) for k, v in mix.items()} if mix else None, mp4=mp4, pngs=pngs, spec=(tj.get('task') or {}).get('spec_version') or cs.get('spec_version'), retrace=(tj.get('retrace') or {}).get('events'), gb=None))
 now = time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())
 css = "body{font-family:system-ui,sans-serif;margin:24px;max-width:1500px;color:#222}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(460px,1fr));gap:16px}.card{border:1px solid #e3e3e3;border-radius:8px;padding:12px;background:#fff}video{width:100%;border-radius:6px;background:#000}.mut{color:#777;font-size:12px}.ok{color:#1a7f37}.bad{color:#b42318}table{font-size:12px;border-collapse:collapse}td{padding:1px 6px}img{width:100%;border-radius:4px}"
 h = [f"<!doctype html><meta charset=utf-8><title>录制结果 · 260917</title><style>{css}</style><h1>录制结果 · 260917 批次（规格 v1，每图 ≤30 分钟）</h1><p class=mut>数据：<code>s3://pan-simworld/long-video-data-260917/&lt;slug&gt;/&lt;episode&gt;/</code>（rgb/ 每帧 JPEG、depth/ 每帧 EXR、frames.csv、位姿、acceptance.json、capture_summary.json）。这里只拉了 mp4 预览和元数据。生成于 {now}。<a href='../spec/'>规格 v1</a> · <a href='../map-plan/'>规划页</a></p>", "<div class=grid>"]

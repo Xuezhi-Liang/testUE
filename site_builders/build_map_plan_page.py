@@ -61,7 +61,7 @@ PHASES = ["**阶段 0，补验证（20 台，跑着）**：C 类 41 张、E 类 
 md = ["# 全部交付地图的录制规划（按关卡）", "", f"2026-09-17。口径：**一张关卡 = 一个地图 = 一集**；所有数字以可直接录的关卡数为基数。参数按 09-17 定的：TAA 2×、步速 1 m/s、转速 45°/s、离地间隙按图分 6 / 45 cm、折返 5 分钟一次。", "",
       "## 预算（可直接录的 %d 张）" % len(A), "",
       "| | 值 |", "|---|---:|", f"| 可直接录 | {len(A)} 张（其中 {rec} 张已录过旧设置版本） |", f"| 成片总时长 | {tot['ep']:.0f} h |", f"| 集数 | {len(A)} |",
-      f"| 机时（实时 2.5 倍） | {tot['mh']:.0f} h |", f"| 10 台 | {tot['mh']/240:.1f} 天 |", f"| 20 台 | {tot['mh']/480:.1f} 天 |", f"| 存储（1.5 GB/成片小时） | {tot['gb']:,} GB |",
+      f"| 机时（实时 2.5 倍） | {tot['mh']:.0f} h |", f"| 10 台 | {tot['mh']/240:.1f} 天 |", f"| 20 台 | {tot['mh']/480:.1f} 天 |", f"| 存储（33.5 GB/成片小时，StorageHouse 实测） | {tot['gb']:,} GB |",
       f"| 大 / 中 / 小（成片 ≥8 h / ≥2 h / <2 h） | {big} / {mid} / {small} |", f"| 核心 <50 m²（开阔地形或单间，内容价值低） | {lowcore} |", "", RULE, "",
       "**路网列的含义**：路网 m = 选定区域中心线总长，覆盖走法要把它每条路走一遍（实际约重走 1.6 倍）；路数 = 中心线被路口切成的段数；保留率 = 头部净空剪枝后剩下的中心线比例，剪掉的路不在覆盖范围内。录制时长跟路网走，不跟核心走。", "", "## 执行顺序", ""] + [f"{i}. {p}" for i, p in enumerate(PHASES, 1)] + ["",
       "## 442 张交付关卡的去向", "", "| 分类 | 张数 | 说明 |", "|---|---:|---|"]
@@ -95,7 +95,7 @@ h = [f"<!doctype html><meta charset=utf-8><title>地图录制规划 · 按关卡
      f"<h1>全部交付地图的录制规划（按关卡）</h1><p class=mut>2026-09-17 · 一张关卡 = 一个地图 = 一集；所有数字以可直接录的关卡数为基数 · 生成于 {now} · <a href='../flicker-fix/recording-config.html'>录制配置</a> · <a href='../route-queue-20260917/'>重新验证队列（实时）</a> · <a href='../inventory/'>资源总表</a></p>",
      f"<h2>预算（可直接录的 {len(A)} 张）</h2><table class=kv>",
      f"<tr><td>可直接录</td><td class=r>{len(A)} 张（其中 {rec} 张已录过旧设置版本）</td></tr><tr><td>成片总时长</td><td class=r>{tot['ep']:.0f} h</td></tr><tr><td>集数</td><td class=r>{len(A)}</td></tr>",
-     f"<tr><td>机时（实时 2.5 倍）</td><td class=r>{tot['mh']:.0f} h</td></tr><tr><td>10 台 / 20 台</td><td class=r>{tot['mh']/240:.1f} 天 / {tot['mh']/480:.1f} 天</td></tr><tr><td>存储（1.5 GB/成片小时）</td><td class=r>{tot['gb']:,} GB</td></tr>",
+     f"<tr><td>机时（实时 2.5 倍）</td><td class=r>{tot['mh']:.0f} h</td></tr><tr><td>10 台 / 20 台</td><td class=r>{tot['mh']/240:.1f} 天 / {tot['mh']/480:.1f} 天</td></tr><tr><td>存储（33.5 GB/成片小时，StorageHouse 实测）</td><td class=r>{tot['gb']:,} GB</td></tr>",
      f"<tr><td>大 / 中 / 小（成片 ≥8 h / ≥2 h / &lt;2 h）</td><td class=r>{big} / {mid} / {small}</td></tr><tr><td>核心 &lt;50 m²（开阔地形或单间）</td><td class=r>{lowcore}</td></tr></table>",
      "<p>" + RULE.replace('**', '') + "</p>", "<p><b>路网列的含义</b>：路网 m = 选定区域中心线总长，覆盖走法要把它每条路走一遍（实际约重走 1.6 倍）；路数 = 中心线被路口切成的段数；保留率 = 头部净空剪枝后剩下的中心线比例，剪掉的路不在覆盖范围内。录制时长跟路网走，不跟核心走。</p>", "<h2>执行顺序</h2><ol>" + ''.join(f"<li>{p.replace('**','')}</li>" for p in PHASES) + "</ol>",
      "<h2>442 张交付关卡的去向</h2><table><tr><th>分类</th><th>张数</th><th>说明</th></tr>"]

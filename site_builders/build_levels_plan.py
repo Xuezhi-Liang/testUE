@@ -11,7 +11,7 @@ NM = Path('/home/ubuntu/new_map'); SITE = Path('/home/ubuntu/WM-Unreal-data-coll
 RESULT_DIRS = ['/home/ubuntu/ue_route_validation_20260916/maps', '/home/ubuntu/ue_newmap_validation_20260916/maps', '/home/ubuntu/ue_newroute_fleet_20260916/maps', '/home/ubuntu/ue_newroute_fleet_20260917/maps']
 DROP = {'Game_HotelCorridor_Maps_Hotel_Corridor', 'Game_OperatingRoom_Levels_Operating_Room', 'Game_QA_HoldingCells_Maps_QA_Holding_Cells_A', 'Game_QA_HoldingCells_Maps_QA_Holding_Cells_B', 'Game_Wild_West_Maps_WildWest', 'Game_Chinese_Landscape_Maps_Chinese_Landscape_Demo', 'Game_Dungeon_Maps_Dungeon_Demo_00', 'Game_AnchientRuins_Maps_AncientRuins', 'Game_Real_Landscape_Maps_Real_Landscape', 'Game_StonePineForest_Maps_Traditional_Map', 'Game_Hangar_Maps_Hangar', 'Game_Factory_Maps_Factory', 'Game_SwimmingPool_Maps_Demonstration_Master'}
 BLOCKED = {'Game_Maps_Demonstration': 'Factory Collection 资产全在通用目录，合不进 gym_citynav，需单独立工程'}
-RATIO, GB_PER_H, PASS2 = 2.5, 166 / 108, 2.0
+RATIO, GB_PER_H, PASS2 = 2.5, 33.5, 2.0   # 33.5 GB per footage hour measured on StorageHouse 17 Sep (JPEG q92 + EXR f16 per frame)
 rows = list(csv.DictReader(open(NM / '验收清单.csv', encoding='utf-8-sig')))
 idx = (NM / '地图索引.md').read_text(encoding='utf-8')
 proj_of = {m.group(1): (m.group(2).strip(), m.group(3)) for m in re.finditer(r'## (Fab_\d+) · (.*?)\n.*?项目入口：\[Projects/([^/\]]+)/', idx, re.S)}

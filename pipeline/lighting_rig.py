@@ -157,7 +157,7 @@ RESULT.update({"ok": True, "factor": F, "level_skylights_hidden": level, "base_i
 
 
 def apply_fill(req, factor=2.0):
-    r = engine.query(req, FILL_SCRIPT % {"factor": float(factor)}, timeout=300)
+    r = engine.query(req, FILL_SCRIPT % {"factor": float(factor)}, timeout=1200)   # 17 Sep: SICKA Interior2 took >5 min to capture the fill sky light
     if not r.get("ok"):
         return {"applied": False, "error": r.get("error"), "factor": factor}
     if r.get("no_skylight"):
