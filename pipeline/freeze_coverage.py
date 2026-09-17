@@ -515,9 +515,15 @@ def freeze(task, ucv=None, out_dir=FROZEN, skip_probe=False):
                   flush=True)
         min_clear_cm = (float(os.environ.get("MIN_CLEAR_CM", 0))
                         or task["body"].get("corridor_clear_cm") or None)
+        # `content_buffer_m` (17 Sep): keep only roads within this distance of built content.
+        content_buffer_cm = (float(task.get("content_buffer_m")) * 100.0
+                             if task.get("content_buffer_m") else None)
         G0, rep0, region = C.build_network(nav, core_only=core_only, min_clear_cm=min_clear_cm,
-                                           veto_xy=veto_xy, veto_radius_cm=VETO_RADIUS_CM)
-        print(f"[freeze-cov] road network{' (core only)' if core_only else ''}: {rep0['roads']} "
+                                           veto_xy=veto_xy, veto_radius_cm=VETO_RADIUS_CM,
+                                           content_buffer_cm=content_buffer_cm,
+                                           content_mode=task.get("content_mode", "dense"))
+        print(f"[freeze-cov] road network{' (core only)' if core_only else ''}"
+              f"{f' (within {content_buffer_cm/100:.0f} m of content)' if content_buffer_cm else ''}: {rep0['roads']} "
               f"roads, {rep0['centreline_m']:.0f} m of centreline over "
               f"{rep0['region_area_m2']:.0f} m2", flush=True)
         # MEASURED, NOT USED. Placing the capsule and the camera on the traced surface was tried and
@@ -687,6 +693,8 @@ def freeze(task, ucv=None, out_dir=FROZEN, skip_probe=False):
         "speed_tier": task["speed_tier"],
         "speed_m_per_s": plan["speed_m_per_s"],
         "speed_pinned": plan.get("speed_pinned", False),
+        "content_buffer_m": task.get("content_buffer_m") or 0,
+        "content_mode": task.get("content_mode", "dense") if task.get("content_buffer_m") else None,
         "speed_profile": plan.get("speed_profile", "trapezoid"),
         "yaw_tier": task["yaw_tier"],
         "yaw_deg_per_s": plan["yaw_deg_per_s"],

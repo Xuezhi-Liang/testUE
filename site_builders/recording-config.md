@@ -149,7 +149,8 @@ r.Tonemapper.Sharpen 0
 | seed / spawn_id | 2000 / auto |
 | target_passes | **2（09-17 改）**：每张地图走两遍就是一集；路线预检单独使用 1 遍 |
 | duration_s / max_duration_s | 0 / 0（09-17 改）：不封顶，两遍走完为止；分片表另写一个 3× 估计的失控保护上限 |
-| confine_to_core | false；预检可能有单图区域选择，需以该图冻结轨迹为准 |
+| confine_to_core | false（硬性只走核心内部，已放弃） |
+| content_buffer_m / content_mode | **10 / dense（09-17 新增）**：只保留离"有东西的地方"10 m 以内的路，其余荒地上的路剪掉。dense = 密度核心（12 m 内障碍物占比 ≥6%）加任何 ≥20 m² 的footprint；buildings = 仅 ≥20 m² 的footprint。实测 10 m：Forest Gas Station 路网 1638→585 m，松林 Mountains 4619→1282 m，Tokyo 1144→1003 m（本来就全是街道，几乎不剪） |
 | size_headroom | 1.25 |
 | 行为风格 | stroll、survey、inspect；补充 study、stroll |
 | 胶囊半径 / 半高 | 40 / 88 厘米 |
@@ -183,6 +184,7 @@ r.Tonemapper.Sharpen 0
 ### 8.2 覆盖走法
 
 - 路网取导航网里中心线最长的区域，按 20 cm 等距重采样，7 点滑动平均去掉网格锯齿，**再重算弧长轴**（09-17 修正）。
+- **只录有东西的地方（09-17 新增）**：细化之前先把离"内容"超过 `content_buffer_m`（10 m）的可走面去掉，荒地上的路不进路网；区域仍按剪完后的中心线长度选，空旷的大区域自然输给有街道的区域。"内容"按 `content_mode` 定：dense 是密度核心加 ≥20 m² 的footprint，buildings 只算 ≥20 m² 的footprint。
 - `coverage_walk`：在路口随机选一条没走过的路；四周都走过时走最短路去最近的还有未走路的路口；直到每条路至少走一次。不是最优巡检，是刻意随机。一次覆盖走法约重走 1.6 倍中心线。
 - 路线每 45 m 一段，风格在 stroll / survey / inspect 之间轮换，所以一次覆盖沿途被用几种走法走过。第一遍按预算的 97% 配速，落后时暂时不做可选动作（看、扫、退）保证覆盖完成。每遍从上一遍结束处接着走，不跳。
 - 每集两遍覆盖，不封顶（09-17 改，原为 8 遍或 20 小时封顶）。两遍的走法不同，见 8.2a。

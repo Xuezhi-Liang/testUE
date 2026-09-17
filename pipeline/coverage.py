@@ -136,7 +136,8 @@ def surface_z(nav, region, xy):
 
 def build_centrelines(nav, region, cell_cm=CELL_CM, min_clear_cm=MIN_CLEAR_CM,
                       core_mask=None, grid_origin=None, grid_shape=None,
-                      veto_xy=None, veto_radius_cm=150.0):
+                      veto_xy=None, veto_radius_cm=150.0, content_buffer_cm=None,
+                      content_mode="dense"):
     """Walkable region -> a graph of road centrelines in world centimetres.
 
     Nodes are junctions and dead ends; each edge carries the polyline of the corridor between
@@ -197,6 +198,44 @@ def build_centrelines(nav, region, cell_cm=CELL_CM, min_clear_cm=MIN_CLEAR_CM,
                 continue
             safe[r0:r1, c0:c1] &= ~disc[rr - (r - r0):rr + (r1 - r), rr - (c - c0):rr + (c1 - c)]
 
+    # `content_buffer_cm`: keep only walkable ground within this distance of BUILT CONTENT -
+    # the enclosed obstacle footprints survey_core calls obstacles (buildings, walls, props of
+    # 2 m2 or more), found on this same raster. Everything farther is open ground: it is walkable
+    # and it is empty, and a purchased level ships a lot of it. Asked for on 17 Sep: "only record
+    # where there is something". Softer than `core_mask`, which keeps the built-up INTERIOR only
+    # and needed a 60 cm clearance and a 120 cm corridor to pass its gates - this keeps the
+    # streets that run along the content, on both sides of it, and drops the fields.
+    content_m2 = safe_before_buffer_m2 = None
+    if content_buffer_cm:
+        # "Content" here is where there is DENSITY of stuff, not any stuff: survey_core's density
+        # core (walkable ground with >= 6% obstacle within 12 m - a street between buildings, a
+        # grove, a yard full of props) plus any single footprint of 20 m2 or more (a building on
+        # its own). A lone tree on a hillside is an obstacle but not content; taking every
+        # obstacle kept 74% of a 4.6 km forest honeycomb on Mountains_Map, the density rule is
+        # what removes the sparse outer terrain.
+        _, _, obst, dcore = SC.core_of(grid)
+        big = np.zeros_like(obst)
+        if obst.any():
+            lab, n = ndimage.label(obst)
+            sz = ndimage.sum(obst, lab, range(1, n + 1)) * cell_cm ** 2 / 1e4
+            k = np.zeros(n + 1, bool); k[1:] = sz >= 20.0
+            big = k[lab]
+        # content_mode "dense": density core OR any 20 m2 footprint (groves, yards, rock fields
+        # count). "buildings": only footprints of 20 m2 or more - a forest or a rock field is
+        # then empty ground and only the built structures keep their surroundings.
+        if content_mode not in ("dense", "buildings"):
+            raise RuntimeError(f"content_mode must be 'dense' or 'buildings', got {content_mode!r}")
+        content = (dcore | big) if content_mode == "dense" else big
+        content_m2 = round(float(content.sum()) * cell_cm ** 2 / 1e4, 1)
+        safe_before_buffer_m2 = round(float(safe.sum()) * cell_cm ** 2 / 1e4, 1)
+        if not content.any():
+            raise RuntimeError("content buffer: this region has no dense content and no footprint "
+                               "of 20 m2 or more - nothing to record here")
+        near = ndimage.distance_transform_edt(~content) * cell_cm <= float(content_buffer_cm)
+        safe = (safe.astype(bool) & near).astype(np.uint8)
+        if safe.sum() == 0:
+            raise RuntimeError(f"content buffer: no walkable ground within {content_buffer_cm/100:.0f} m "
+                               f"of any built content that is also {min_clear_cm:.0f} cm from a boundary")
     if core_mask is not None:
         if np.shape(core_mask) != (H, W):
             raise RuntimeError(f"core mask is {np.shape(core_mask)} for a {(H, W)} grid; it was "
@@ -305,6 +344,10 @@ def build_centrelines(nav, region, cell_cm=CELL_CM, min_clear_cm=MIN_CLEAR_CM,
         "dropped_unreachable_m": round(dropped_m, 1),
         "min_road_clearance_cm": round(min(d["clearance_cm"] for _, _, d in
                                            kept.edges(data=True)), 1),
+        "content_buffer_cm": content_buffer_cm,
+        "content_mode": content_mode if content_buffer_cm else None,
+        "content_m2": content_m2,
+        "corridor_before_content_buffer_m2": safe_before_buffer_m2,
     }
     return kept, report
 
@@ -1090,7 +1133,7 @@ def mix_report(labels):
 # ------------------------------------------------------------------------------- planning
 
 def build_network(nav, core_only=False, min_clear_cm=None, veto_xy=None,
-                  veto_radius_cm=150.0):
+                  veto_radius_cm=150.0, content_buffer_cm=None, content_mode="dense"):
     """Pick the region the agent can use and reduce it to a road graph. Done once - thinning is
     the expensive step and it does not depend on anything the action tuner moves.
 
@@ -1128,10 +1171,14 @@ def build_network(nav, core_only=False, min_clear_cm=None, veto_xy=None,
         if float(nav.tri_areas(region).sum()) / 1e4 < 20.0:
             continue
         try:
+            # With a content buffer the region is still chosen by its centreline, but the
+            # centreline is measured AFTER the buffer: an empty apron loses its length and the
+            # region with the streets wins on its own terms.
             G, rep = build_centrelines(nav, region,
                                        min_clear_cm=(MIN_CLEAR_CM if min_clear_cm is None
                                                      else float(min_clear_cm)),
-                                       veto_xy=veto_xy, veto_radius_cm=veto_radius_cm)
+                                       veto_xy=veto_xy, veto_radius_cm=veto_radius_cm,
+                                       content_buffer_cm=content_buffer_cm, content_mode=content_mode)
         except Exception as e:
             # One unusable region must not decide the map. Only RuntimeError used to be skipped,
             # so a degenerate region raising anything else took the whole build down with it.
