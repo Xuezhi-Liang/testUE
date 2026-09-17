@@ -1811,3 +1811,15 @@ UnrealCV 颜色表补丁（32→64、越界取模）每台开机重打并重编�
 对照实验：关掉折返后动作配比同样出带（抬头 0.2%），所以配比问题是这张图 1208 m 路网塞进 30 分钟
 的性质，不是这个动作引入的。折返每次约给路线增加两倍回走距离（默认约 2×15 m），按 5 分钟一次算，
 对覆盖预算的影响在 5% 量级。
+
+
+## 2026-09-17：抗锯齿全局切到 TAA 2×，用户拍板
+
+用户在看过取舍后选了 TAA（"用TAA呀"）：闪动更少，锐度代理低约 23–36%。这是对 16 Sep 测量的
+取舍决定，不是新测量。做法是把 `stability_detail_candidate.json` 的 render 块原样搬进
+`tasks/longvideo_template.json`——所有入口（`gen_task.py`、`preflight_one.py`、`probe_matrix.py`、
+两个 dryrun、`new_default_record.py`）都写死读这一份，所以不需要加模板选择，改一处即全局生效。
+旧的 TSR 2× 原样留在 `tasks/tsr_2x_previous_default.json`，回退要写进批次清单。
+`render.taa` 字段仍然只是标签，决定抗锯齿的是 `render.cvars`。`capture_summary.json` 里记录的是
+实际执行过的 cvars，判断某集用的是哪种抗锯齿以它为准，不以录制日期为准。
+已同步到部署目录和 testUE 镜像。

@@ -25,9 +25,9 @@
 Lumen ScreenProbeGather DownsampleFactor=8、各向异性过滤 16、MipMapLODBias=0、Sharpen=0。
 深度保持原生 1280×720，线性米，EXR R 通道，无效值 -1。
 
-必须先调整任务生成入口：当前 `longvideo/gen_task.py` 和 `preflight_one.py` 硬编码读取 TSR 的 `longvideo_template.json`，不会自动采用候选配置。
+（17 Sep 已完成）`longvideo_template.json` 本身已改成 TAA 2× 的 render 块，`gen_task.py` 和 `preflight_one.py` 读的就是它，不再需要模板选择。旧 TSR 2× 在 `tasks/tsr_2x_previous_default.json`。
 增加显式的模板/每图 profile 选择，实际生成的任务写明方案，并验证运行时 cvars、TemporalAA 开关、分辨率及预热状态。
-保留现有 TSR 2× 模板作为逐图比较和回退选项；回退需写入 manifest，不能悄悄切换。
+TSR 2× 模板保留为逐图比较和回退选项；回退需写入 manifest，不能悄悄切换。
 
 曝光沿用最新 `auto_instant` 与局部曝光设置；保留作者日夜风格，每图校准补光，并记录最终因子、曝光和质量标记。
 长视频冻结可控的日夜驱动，避免录制过程中太阳持续移动。校准结果不能证明最终画面达标，仍需对成片检查。

@@ -340,7 +340,7 @@ Completed 4 maps × 4 settings × 600 frames = 9,600 native RGB/depth/pose recor
 All matching route prefixes include still, translation and turn phases. Native capture mode
 4, 32 rendered warmups, 1280x720/24 fps, native unfiltered depth and authored assets are common.
 
-**Decision: do not replace the global TSR 2x default.** No tested setting establishes the
+**Decision (superseded 17 Sep, see the last section): do not replace the global TSR 2x default.** No tested setting establishes the
 requested all-map zero-flicker guarantee while preserving all fine building detail. Higher
 internal resolution and history resolution are not uniformly better. Keep these reproducible
 options, explicitly marked experimental, in source and deployed tasks:
@@ -457,3 +457,28 @@ including Dubai first person and top views, remain intact. Raw recordings and
 scripts: `/home/ubuntu/ue_general_more_20260916/`. Compact audit:
 `results/general_more_2026-09-16/`. Diagnostic captures are not accepted training
 episodes or route/collision validation.
+
+
+## 2026-09-17 — Decision revised: TAA 2x is the global default
+
+The user chose TAA over TSR after seeing the trade-off ("用TAA呀"): fewer motion flashes at the
+price of a softer image. This is a judgement call on the measurements above, not a new
+measurement. What changed:
+
+- `tasks/longvideo_template.json` now carries the former `stability_detail_candidate` render
+  block: `r.AntiAliasingMethod 2`, 200% TAA history resolution, quality 2, current-frame weight
+  0.04, 8 jitter samples, Lumen screen-probe downsample 8, fog grid 8/128, anisotropy 16, mip
+  bias 0, sharpen 0. Supersample stays 2x (2560x1440 -> 1280x720), history_mode 4, 32 rendered
+  warmups, native unfiltered depth. Nothing else in the template moved.
+- Every entry point (`longvideo/gen_task.py`, `longvideo/preflight_one.py`,
+  `longvideo/probe_matrix.py`, the dry-run scripts, `new_default_record.py`) reads that one file,
+  so the switch needs no per-script change and no template selector.
+- The previous default is kept verbatim as `tasks/tsr_2x_previous_default.json`. A batch that
+  falls back to it must say so in its manifest.
+- `tasks/stability_detail_candidate.json` is now identical to the template and exists only so
+  older links resolve. `tasks/detail_first_candidate.json` (TAA 3x) stays experimental.
+
+Expected numbers from the 16 Sep runs, relative to TSR 2x on the same routes: flash proxy
+roughly halved, Laplacian sharpness proxy down 23–36% depending on the map, static difference
+unchanged. Episodes recorded before 17 Sep 10:00 UTC are TSR 2x unless their task says
+otherwise; `capture_summary.json` records the cvars actually applied, which is the authority.

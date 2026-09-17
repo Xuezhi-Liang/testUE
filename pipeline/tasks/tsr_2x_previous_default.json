@@ -77,7 +77,7 @@
     "motion_blur": false,
     "depth_of_field": false,
     "lumen": "project_default",
-    "taa": "taa",
+    "taa": "tsr",
     "hud": false,
     "exposure_bias_ev": null,
     "lighting": "fill",
@@ -90,24 +90,14 @@
     },
     "supersample": 2,
     "cvars": [
-      "r.AntiAliasingMethod 2",
-      "r.TemporalAA.HistoryScreenPercentage 200",
-      "r.TemporalAA.Quality 2",
-      "r.TemporalAACurrentFrameWeight 0.04",
-      "r.TemporalAASamples 8",
-      "r.Lumen.ScreenProbeGather.DownsampleFactor 8",
-      "r.VolumetricFog.GridPixelSize 8",
-      "r.VolumetricFog.GridSizeZ 128",
-      "r.MaxAnisotropy 16",
-      "r.MipMapLODBias 0",
-      "r.Tonemapper.Sharpen 0"
+      "r.AntiAliasingMethod 4"
     ]
   },
   "reroute_note": "MAX_REROUTE_ATTEMPTS defaults to 4 and is left on: it costs nothing when a route is already clean, and it is what turns a blocked place into a different road rather than a refused map.",
   "yaw_deg_per_s": 45.0,
   "turn_profile": "constant",
   "yaw_note": "yaw_deg_per_s pins the rotation rate (no per-episode draw from yaw_tier; the tier is kept for the 1.5x gate and metadata). turn_profile constant: every turning frame rotates exactly 45/24 deg, no ramp.",
-  "render_note": "Promoted to the global default on 17 Sep; this file is identical to tasks/longvideo_template.json and kept only so older links resolve. 17 Sep: TAA 2x is the global default by the user's decision (fewer motion flashes, ~23% lower sharpness proxy than TSR 2x; measurements in RENDER_QUALITY.md 2026-09-16 and 2026-09-17 sections). r.AntiAliasingMethod 2 selects TAA; the history resolution, quality, frame weight, jitter samples, denser Lumen probes, fog grid, anisotropy, mip bias and sharpen cvars are the former stability_detail_candidate set. history_mode 4 (unchanged since 16 Sep) explicitly enables the capture TemporalAA show flag, keeps its view state and renders 32 warmup frames at pose 0 - a cvar alone falls back to FXAA because SceneCapture defaults TemporalAA=false. RGB is rendered 2x (2560x1440 -> 1280x720); depth stays native, no temporal AA or filtering. The previous TSR 2x default is kept verbatim in tasks/tsr_2x_previous_default.json for per-map comparison; a fallback to it must be written into the batch manifest, never switched silently. The render.taa field is a label only: nothing reads it, the cvars decide. Rebuild the native module before using mode 4; capture_engine logs every cvar it applied and the actor logs the TemporalAA show flag and warmup count.",
+  "render_note": "16 Sep motion-shimmer fix: history_mode 4 explicitly enables the capture TemporalAA show flag, keeps its view state and renders 32 warmup frames at pose 0. r.AntiAliasingMethod 4 selects TSR; a cvar alone previously fell back to FXAA because SceneCapture defaults TemporalAA=false. RGB remains 2x (2560x1440 -> 1280x720); depth remains native resolution without temporal AA or filtering. auto_instant keeps level metering with fast adaptation now that history persists; fill and local exposure are retained. On aligned 876-frame diagnostic routes, motion sparkle fell 60.5% Hwaseong / 61.4% ChemicalPlant; static diff changed 0.195 -> 0.802 / 1.458 -> 1.197 respectively. This reduces motion shimmer, not a claim of zero flicker or history-independent identical pixels. See RENDER_QUALITY.md and /longvideo/flicker-fix/. Modes 0..3 and old recordings remain available for reproducibility. Rebuild the native module before using mode 4; capture_engine verifies runtime flag and warmup.",
   "retrace": {
     "median_interval_s": 300.0,
     "interval_jitter": 0.25,
