@@ -1,0 +1,38 @@
+{
+  "slug": "Game_LowPolyMedievalConstructions_Maps_Map_7_Top-Down",
+  "map_id": "/Game/LowPolyMedievalConstructions/Maps/Map_7_Top-Down",
+  "state": "route_failed",
+  "started_at": "2026-09-17T12:51:15Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "error": "RuntimeError: no region above the area floor"
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789649379.2387881,
+  "phase": "核心大小",
+  "elapsed_s": 8.4,
+  "world_ready": {
+    "world_name": "Map_7_Top-Down",
+    "world_path": "/Game/LowPolyMedievalConstructions/Maps/UEDPIE_0_Map_7_Top-Down.Map_7_Top-Down"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "start_recovered": true,
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core_error": "RuntimeError: no region above the area floor",
+  "total_elapsed_s": 108.9,
+  "finished_epoch": 1789649488.1120033
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "Game_Maps_Demonstration",
+  "map_id": "/Game/Maps/Demonstration",
+  "state": "failed",
+  "started_at": "2026-09-17T11:14:51Z",
+  "attempts": [],
+  "retry_history": [],
+  "started_epoch": 1789643262.1402693,
+  "phase": "导航网导出（路线未完成，仍测核心）",
+  "elapsed_s": 0.0,
+  "world_ready": {
+    "world_name": "Untitled",
+    "world_path": "/Temp/UEDPIE_0_Untitled_0.Untitled"
+  },
+  "error": "RuntimeError: Unexpected active world: {'world_name': 'Untitled', 'world_path': '/Temp/UEDPIE_0_Untitled_0.Untitled'}",
+  "failure_kind": "worker_error",
+  "core_error": "no navmesh export from this run",
+  "total_elapsed_s": 435.2,
+  "finished_epoch": 1789643697.3112202
+}

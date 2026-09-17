@@ -1,0 +1,51 @@
+{
+  "slug": "Game_GrassMaterialPremium_Map_Demonstration_Demonstration",
+  "map_id": "/Game/GrassMaterialPremium/Map/Demonstration/Demonstration",
+  "state": "route_failed",
+  "started_at": "2026-09-17T12:42:43Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "error": "RuntimeError: no region on this map has a usable road network; 1 region(s) were skipped: ['RuntimeError: thinning produced no corridors']"
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789648476.138572,
+  "phase": "核心大小",
+  "elapsed_s": 11.3,
+  "world_ready": {
+    "world_name": "Demonstration",
+    "world_path": "/Game/GrassMaterialPremium/Map/Demonstration/UEDPIE_0_Demonstration.Demonstration"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "start_recovered": true,
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core": {
+    "core_m2": 0.0,
+    "core_strict_m2": 0.0,
+    "region_walkable_m2": 15477.1,
+    "region_safe_m2": 15067.6,
+    "core_frac_of_region_safe": 0.0,
+    "core_clearance_median_m": 0.0,
+    "core_margin_to_export_bounds_m": -1.0,
+    "export_extent_m": [
+      125.2,
+      125.2
+    ],
+    "nav_regions": 1
+  },
+  "total_elapsed_s": 503.3,
+  "finished_epoch": 1789648979.4721024
+}

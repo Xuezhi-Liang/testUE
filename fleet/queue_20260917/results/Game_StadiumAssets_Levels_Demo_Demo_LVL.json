@@ -1,0 +1,313 @@
+{
+  "slug": "Game_StadiumAssets_Levels_Demo_Demo_LVL",
+  "map_id": "/Game/StadiumAssets/Levels/Demo/Demo_LVL",
+  "state": "geometry_pass",
+  "started_at": "2026-09-17T12:43:32Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "seed": 302357,
+      "frozen": "/home/ubuntu/ue_newroute_fleet_20260917/maps/Game_StadiumAssets_Levels_Demo_Demo_LVL/frozen/Game_StadiumAssets_Levels_Demo_Demo_LVL__coverage_walk__seed302357__routecheck_20260917_Game_StadiumAssets_Levels_Demo_Demo_LVL_0.json",
+      "frames": 85927,
+      "duration_s": 3580.2916666666665,
+      "failed_gates": [],
+      "pre_gates": {
+        "frame_translation_bounded": true,
+        "frame_rotation_bounded": true,
+        "attitude_within_limits": true,
+        "collision_free": true,
+        "depth_probe_clear": true,
+        "coverage_complete": true,
+        "action_mix_in_band": true,
+        "retrace_cadence_ok": true
+      },
+      "kept_fraction": 0.9877,
+      "road_network": {
+        "cell_cm": 25.0,
+        "min_clearance_cm": 90.0,
+        "centreline_off_surface_sampled": 82,
+        "centreline_off_surface_count": 0,
+        "grid": [
+          502,
+          502
+        ],
+        "region_area_m2": 14960.6,
+        "corridor_area_m2": 14357.1,
+        "centreline_m": 1303.4,
+        "junctions": 1439,
+        "roads": 2829,
+        "components_found": 1,
+        "dropped_unreachable_m": 0.0,
+        "min_road_clearance_cm": 100.0,
+        "region_policy": "content_region_unclipped",
+        "core_m2": 408.7,
+        "selected_region_z_cm": 0.0,
+        "min_clear_cm": 90.0,
+        "veto_radius_cm": 150.0
+      },
+      "pruning": {
+        "method": "capsule r=40 half-h=88 cm, centred 45 cm above the walkable surface, swept along each road at 40 cm steps. A road is dropped if any sweep along it is blocked; sweeps straddling two roads are discarded by index.",
+        "why": "a navmesh is built for the navmesh agent's radius and height, so walkable surface can run under pipes, awnings and gantries that this camera does not clear",
+        "roads_before": 2838,
+        "roads_blocked": 9,
+        "roads_after_pruning": 2829,
+        "roads_kept_connected": 2829,
+        "centreline_before_m": 1319.6,
+        "centreline_kept_m": 1303.4,
+        "kept_fraction": 0.9877,
+        "dropped_disconnected": 0,
+        "components_after_pruning": 1,
+        "sample_cm": 40.0,
+        "swept_points": 6829,
+        "took_s": 1.1,
+        "worst_blocked": [
+          {
+            "road": [
+              [
+                191,
+                456
+              ],
+              [
+                211,
+                491
+              ],
+              0
+            ],
+            "length_m": 13.8,
+            "blocked_by": "StaticMeshActor_75",
+            "at_cm": 9.2
+          },
+          {
+            "road": [
+              [
+                213,
+                489
+              ],
+              [
+                212,
+                490
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "StaticMeshActor_75",
+            "at_cm": 9.6
+          },
+          {
+            "road": [
+              [
+                213,
+                490
+              ],
+              [
+                212,
+                491
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "StaticMeshActor_75",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                213,
+                490
+              ],
+              [
+                214,
+                489
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "StaticMeshActor_75",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                212,
+                490
+              ],
+              [
+                211,
+                491
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "StaticMeshActor_75",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                213,
+                489
+              ],
+              [
+                213,
+                490
+              ],
+              0
+            ],
+            "length_m": 0.2,
+            "blocked_by": "StaticMeshActor_75",
+            "at_cm": 7.1
+          },
+          {
+            "road": [
+              [
+                213,
+                490
+              ],
+              [
+                212,
+                490
+              ],
+              0
+            ],
+            "length_m": 0.2,
+            "blocked_by": "StaticMeshActor_75",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                212,
+                490
+              ],
+              [
+                212,
+                491
+              ],
+              0
+            ],
+            "length_m": 0.2,
+            "blocked_by": "StaticMeshActor_75",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                211,
+                491
+              ],
+              [
+                212,
+                491
+              ],
+              0
+            ],
+            "length_m": 0.2,
+            "blocked_by": "StaticMeshActor_75",
+            "at_cm": 0.0
+          }
+        ]
+      },
+      "collision": {
+        "collision_count": 0,
+        "penetration_count": 0,
+        "minimum_clearance_cm": 271.4294128417969,
+        "clearance_ray_range_cm": 1500.0,
+        "clearance_note": "3521 of 85927 frames had an obstacle within 1500 cm",
+        "maximum_frame_translation_cm": 4.1666666666746055,
+        "maximum_frame_rotation_deg": 1.875,
+        "maximum_frame_yaw_rate_deg_s": 45.0,
+        "collision_free": true,
+        "first_collision_frames": [],
+        "first_penetration_frames": [],
+        "method": "capsule r=40 half-h=88 cm swept between consecutive frames, centred 45 cm above the surface; near plane traced at its four corners",
+        "validated_in_s": 12.1
+      },
+      "depth_probe": {
+        "ok": true,
+        "probed_frames": 500,
+        "every": 343,
+        "minimum_depth_cm": 84.0,
+        "threshold_cm": 60.0,
+        "frames_too_close": [],
+        "too_close_count": 0,
+        "clear": true,
+        "clip_cm": 12.0,
+        "frames_clamped": [],
+        "clamped_frames": [],
+        "clamped_count": 0,
+        "all_sky_probes": 0,
+        "all_sky_examples": [],
+        "thin_depth_probes": 0,
+        "thin_depth_examples": [],
+        "min_valid_fraction_required": 0.01,
+        "extremes_probed": 250,
+        "all_sky_note": "an all-sky probe is a VETO: the capture actor refuses to write a depth channel containing no depth and ends the run. `thin` frames are the same failure approaching - under 1% of the probe had valid depth.",
+        "method": "scene depth rendered at every 343th frame's exact pose, 320x180, max range 200 m; this is the only check that sees geometry whose collision is disabled"
+      },
+      "coverage": {
+        "method": "every point of a road within 160 cm of some frame's camera position, sampled every 40 cm; measured from the delivered poses, not from the plan",
+        "radius_cm": 160.0,
+        "roads_total": 2829,
+        "roads_walked": 2829,
+        "roads_missed": 0,
+        "fraction": 1.0,
+        "centreline_m": 1303.4,
+        "centreline_walked_m": 1303.4,
+        "length_fraction": 1.0,
+        "worst_misses": []
+      },
+      "reroutes": {
+        "attempts": 0,
+        "vetoed_places": 0,
+        "veto_radius_cm": 150.0,
+        "max_attempts": 4,
+        "detail": [],
+        "note": "places a previous attempt's body capsule hit, near plane entered, or depth probe found geometry inside; cut out of the corridor so the walk turns and takes another road. Counted, not hidden - the coverage fraction is still measured from the poses."
+      },
+      "policy": "content_region",
+      "ground_clearance_cm": 45,
+      "pitch_limit_up_deg": 15.0,
+      "region_z_cm": null
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789648482.9806437,
+  "phase": "核心大小",
+  "elapsed_s": 833.6,
+  "world_ready": {
+    "world_name": "Demo_LVL",
+    "world_path": "/Game/StadiumAssets/Levels/Demo/UEDPIE_0_Demo_LVL.Demo_LVL"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "start_recovered": true,
+  "chosen_attempt": 0,
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core": {
+    "core_m2": 408.7,
+    "core_strict_m2": 320.8,
+    "region_walkable_m2": 14960.6,
+    "region_safe_m2": 14357.1,
+    "core_frac_of_region_safe": 0.028,
+    "core_clearance_median_m": 2.5,
+    "core_margin_to_export_bounds_m": 24.25,
+    "export_extent_m": [
+      125.5,
+      125.5
+    ],
+    "nav_regions": 34
+  },
+  "total_elapsed_s": 1367.3,
+  "finished_epoch": 1789649850.2779043
+}

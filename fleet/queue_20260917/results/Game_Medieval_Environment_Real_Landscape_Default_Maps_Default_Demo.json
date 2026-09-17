@@ -1,0 +1,1529 @@
+{
+  "slug": "Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo",
+  "map_id": "/Game/Medieval_Environment/Real_Landscape/Default/Maps/Default_Demo",
+  "state": "route_failed",
+  "started_at": "2026-09-17T11:16:11Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "seed": 160943,
+      "frozen": "/home/ubuntu/ue_newroute_fleet_20260917/maps/Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo/frozen/Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo__coverage_walk__seed160943__routecheck_20260917_Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo_0.json",
+      "frames": 21020,
+      "duration_s": 875.8333333333334,
+      "failed_gates": [
+        "collision_free"
+      ],
+      "pre_gates": {
+        "frame_translation_bounded": true,
+        "frame_rotation_bounded": true,
+        "attitude_within_limits": true,
+        "collision_free": false,
+        "depth_probe_clear": true,
+        "coverage_complete": true,
+        "action_mix_in_band": true,
+        "retrace_cadence_ok": true
+      },
+      "kept_fraction": 0.0801,
+      "road_network": {
+        "cell_cm": 25.0,
+        "min_clearance_cm": 90.0,
+        "centreline_off_surface_sampled": 85,
+        "centreline_off_surface_count": 0,
+        "grid": [
+          501,
+          501
+        ],
+        "region_area_m2": 13608.5,
+        "corridor_area_m2": 10098.9,
+        "centreline_m": 275.8,
+        "junctions": 333,
+        "roads": 585,
+        "components_found": 1,
+        "dropped_unreachable_m": 0.0,
+        "min_road_clearance_cm": 90.1
+      },
+      "pruning": {
+        "method": "capsule r=40 half-h=88 cm, centred 6 cm above the walkable surface, swept along each road at 40 cm steps. A road is dropped if any sweep along it is blocked; sweeps straddling two roads are discarded by index.",
+        "why": "a navmesh is built for the navmesh agent's radius and height, so walkable surface can run under pipes, awnings and gantries that this camera does not clear",
+        "roads_before": 6364,
+        "roads_blocked": 1102,
+        "roads_after_pruning": 5262,
+        "roads_kept_connected": 585,
+        "centreline_before_m": 3442.7,
+        "centreline_kept_m": 275.8,
+        "kept_fraction": 0.0801,
+        "dropped_disconnected": 4677,
+        "components_after_pruning": 61,
+        "sample_cm": 40.0,
+        "swept_points": 16471,
+        "took_s": 3.4,
+        "worst_blocked": [
+          {
+            "road": [
+              [
+                13,
+                203
+              ],
+              [
+                22,
+                281
+              ],
+              0
+            ],
+            "length_m": 20.8,
+            "blocked_by": "Landscape_1",
+            "at_cm": 10.9
+          },
+          {
+            "road": [
+              [
+                171,
+                36
+              ],
+              [
+                99,
+                35
+              ],
+              0
+            ],
+            "length_m": 18.5,
+            "blocked_by": "Landscape_1",
+            "at_cm": 2.6
+          },
+          {
+            "road": [
+              [
+                88,
+                176
+              ],
+              [
+                144,
+                217
+              ],
+              0
+            ],
+            "length_m": 18.2,
+            "blocked_by": "Landscape_1",
+            "at_cm": 3.7
+          },
+          {
+            "road": [
+              [
+                173,
+                398
+              ],
+              [
+                224,
+                430
+              ],
+              0
+            ],
+            "length_m": 16.1,
+            "blocked_by": "Landscape_1",
+            "at_cm": 43.0
+          },
+          {
+            "road": [
+              [
+                209,
+                392
+              ],
+              [
+                164,
+                351
+              ],
+              0
+            ],
+            "length_m": 15.5,
+            "blocked_by": "Landscape_1",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                15,
+                359
+              ],
+              [
+                15,
+                418
+              ],
+              0
+            ],
+            "length_m": 15.2,
+            "blocked_by": "Landscape_1",
+            "at_cm": 1.0
+          },
+          {
+            "road": [
+              [
+                251,
+                328
+              ],
+              [
+                294,
+                363
+              ],
+              0
+            ],
+            "length_m": 15.0,
+            "blocked_by": "Landscape_1",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                228,
+                465
+              ],
+              [
+                175,
+                448
+              ],
+              0
+            ],
+            "length_m": 15.0,
+            "blocked_by": "Landscape_1",
+            "at_cm": 10.4
+          },
+          {
+            "road": [
+              [
+                204,
+                171
+              ],
+              [
+                190,
+                117
+              ],
+              0
+            ],
+            "length_m": 14.9,
+            "blocked_by": "Landscape_1",
+            "at_cm": 5.3
+          },
+          {
+            "road": [
+              [
+                101,
+                229
+              ],
+              [
+                87,
+                177
+              ],
+              0
+            ],
+            "length_m": 14.4,
+            "blocked_by": "Landscape_1",
+            "at_cm": 3.4
+          }
+        ]
+      },
+      "collision": {
+        "collision_count": 41,
+        "penetration_count": 0,
+        "minimum_clearance_cm": 140.78021240234375,
+        "clearance_ray_range_cm": 1500.0,
+        "clearance_note": "17214 of 21020 frames had an obstacle within 1500 cm",
+        "maximum_frame_translation_cm": 4.859126579050903,
+        "maximum_frame_rotation_deg": 1.875,
+        "maximum_frame_yaw_rate_deg_s": 45.0,
+        "collision_free": false,
+        "first_collision_frames": [
+          7590,
+          7591,
+          11566,
+          11567,
+          11568,
+          11569,
+          11570,
+          11571,
+          11580,
+          11581,
+          11582,
+          11583
+        ],
+        "first_penetration_frames": [],
+        "method": "capsule r=40 half-h=88 cm swept between consecutive frames, centred 6 cm above the surface; near plane traced at its four corners",
+        "validated_in_s": 4.1
+      },
+      "depth_probe": {
+        "ok": true,
+        "probed_frames": 497,
+        "every": 84,
+        "minimum_depth_cm": 68.8,
+        "threshold_cm": 60.0,
+        "frames_too_close": [],
+        "too_close_count": 0,
+        "clear": true,
+        "clip_cm": 12.0,
+        "frames_clamped": [],
+        "clamped_frames": [],
+        "clamped_count": 0,
+        "all_sky_probes": 0,
+        "all_sky_examples": [],
+        "thin_depth_probes": 0,
+        "thin_depth_examples": [],
+        "min_valid_fraction_required": 0.01,
+        "extremes_probed": 250,
+        "all_sky_note": "an all-sky probe is a VETO: the capture actor refuses to write a depth channel containing no depth and ends the run. `thin` frames are the same failure approaching - under 1% of the probe had valid depth.",
+        "method": "scene depth rendered at every 84th frame's exact pose, 320x180, max range 200 m; this is the only check that sees geometry whose collision is disabled"
+      },
+      "coverage": {
+        "method": "every point of a road within 160 cm of some frame's camera position, sampled every 40 cm; measured from the delivered poses, not from the plan",
+        "radius_cm": 160.0,
+        "roads_total": 585,
+        "roads_walked": 585,
+        "roads_missed": 0,
+        "fraction": 1.0,
+        "centreline_m": 275.8,
+        "centreline_walked_m": 275.8,
+        "length_fraction": 1.0,
+        "worst_misses": []
+      },
+      "reroutes": {
+        "attempts": 4,
+        "vetoed_places": 98,
+        "veto_radius_cm": 150.0,
+        "max_attempts": 4,
+        "detail": [
+          {
+            "attempt": 1,
+            "blocked_frames": 3721,
+            "new_vetoes": 56,
+            "places": [
+              {
+                "xy_cm": [
+                  20234.7,
+                  -77239.5
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23518.0,
+                  -78765.7
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23645.4,
+                  -77753.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23795.0,
+                  -77789.2
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23919.9,
+                  -77876.6
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24042.6,
+                  -77965.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24320.5,
+                  -78200.7
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24473.3,
+                  -78184.5
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24636.6,
+                  -78028.3
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24776.6,
+                  -77967.7
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23946.5,
+                  -78583.5
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24054.9,
+                  -78690.6
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23906.7,
+                  -78955.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23957.7,
+                  -79101.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24046.6,
+                  -79226.2
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24155.4,
+                  -79345.6
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24285.0,
+                  -76197.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24439.0,
+                  -76195.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24571.8,
+                  -76660.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24673.5,
+                  -76773.8
+                ],
+                "why": "collision"
+              }
+            ]
+          },
+          {
+            "attempt": 2,
+            "blocked_frames": 1019,
+            "new_vetoes": 18,
+            "places": [
+              {
+                "xy_cm": [
+                  20450.4,
+                  -76995.7
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22768.0,
+                  -77771.1
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22161.3,
+                  -79066.6
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22196.1,
+                  -79216.4
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22337.5,
+                  -79270.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21666.8,
+                  -79311.2
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21700.1,
+                  -79457.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21727.6,
+                  -79607.1
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23565.9,
+                  -77297.1
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23888.4,
+                  -77200.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23079.9,
+                  -74583.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21923.0,
+                  -75347.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21971.1,
+                  -75203.2
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  19884.1,
+                  -78880.6
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22991.3,
+                  -75094.7
+                ],
+                "why": "depth_probe"
+              },
+              {
+                "xy_cm": [
+                  23245.1,
+                  -75425.5
+                ],
+                "why": "depth_probe"
+              },
+              {
+                "xy_cm": [
+                  23158.7,
+                  -75136.1
+                ],
+                "why": "depth_probe"
+              },
+              {
+                "xy_cm": [
+                  23391.2,
+                  -75558.8
+                ],
+                "why": "depth_probe"
+              }
+            ]
+          },
+          {
+            "attempt": 3,
+            "blocked_frames": 918,
+            "new_vetoes": 15,
+            "places": [
+              {
+                "xy_cm": [
+                  18258.0,
+                  -86051.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  19662.6,
+                  -86254.4
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  20810.9,
+                  -85987.4
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  20964.4,
+                  -85995.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21214.4,
+                  -85995.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21368.6,
+                  -85995.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21522.7,
+                  -85995.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21676.9,
+                  -85995.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22160.9,
+                  -85060.5
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22262.9,
+                  -85175.3
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22347.3,
+                  -85438.4
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23007.4,
+                  -84136.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23133.3,
+                  -84221.2
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21821.4,
+                  -85859.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  19104.5,
+                  -86419.2
+                ],
+                "why": "depth_probe"
+              }
+            ]
+          },
+          {
+            "attempt": 4,
+            "blocked_frames": 719,
+            "new_vetoes": 9,
+            "places": [
+              {
+                "xy_cm": [
+                  22767.9,
+                  -75144.2
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22847.0,
+                  -75014.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23800.9,
+                  -76689.1
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23888.7,
+                  -76810.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22482.0,
+                  -79107.6
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22516.0,
+                  -79255.4
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22570.4,
+                  -78753.3
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23208.7,
+                  -74712.6
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22524.7,
+                  -75920.7
+                ],
+                "why": "depth_probe"
+              }
+            ]
+          }
+        ],
+        "note": "places a previous attempt's body capsule hit, near plane entered, or depth probe found geometry inside; cut out of the corridor so the walk turns and takes another road. Counted, not hidden - the coverage fraction is still measured from the poses."
+      },
+      "policy": "longest",
+      "ground_clearance_cm": 6,
+      "pitch_limit_up_deg": 15.0,
+      "region_z_cm": null
+    },
+    {
+      "attempt": 1,
+      "seed": 161943,
+      "frozen": "/home/ubuntu/ue_newroute_fleet_20260917/maps/Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo/frozen/Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo__coverage_walk__seed161943__routecheck_20260917_Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo_1.json",
+      "frames": 20187,
+      "duration_s": 841.125,
+      "failed_gates": [
+        "collision_free",
+        "action_mix_in_band"
+      ],
+      "pre_gates": {
+        "frame_translation_bounded": true,
+        "frame_rotation_bounded": true,
+        "attitude_within_limits": true,
+        "collision_free": false,
+        "depth_probe_clear": true,
+        "coverage_complete": true,
+        "action_mix_in_band": false,
+        "retrace_cadence_ok": true
+      },
+      "kept_fraction": 0.0902,
+      "road_network": {
+        "cell_cm": 25.0,
+        "min_clearance_cm": 90.0,
+        "centreline_off_surface_sampled": 94,
+        "centreline_off_surface_count": 0,
+        "grid": [
+          501,
+          501
+        ],
+        "region_area_m2": 13608.5,
+        "corridor_area_m2": 10114.9,
+        "centreline_m": 309.9,
+        "junctions": 392,
+        "roads": 736,
+        "components_found": 1,
+        "dropped_unreachable_m": 0.0,
+        "min_road_clearance_cm": 90.1
+      },
+      "pruning": {
+        "method": "capsule r=40 half-h=88 cm, centred 6 cm above the walkable surface, swept along each road at 40 cm steps. A road is dropped if any sweep along it is blocked; sweeps straddling two roads are discarded by index.",
+        "why": "a navmesh is built for the navmesh agent's radius and height, so walkable surface can run under pipes, awnings and gantries that this camera does not clear",
+        "roads_before": 6380,
+        "roads_blocked": 1127,
+        "roads_after_pruning": 5253,
+        "roads_kept_connected": 736,
+        "centreline_before_m": 3435.3,
+        "centreline_kept_m": 309.9,
+        "kept_fraction": 0.0902,
+        "dropped_disconnected": 4517,
+        "components_after_pruning": 56,
+        "sample_cm": 40.0,
+        "swept_points": 16470,
+        "took_s": 3.4,
+        "worst_blocked": [
+          {
+            "road": [
+              [
+                171,
+                36
+              ],
+              [
+                99,
+                35
+              ],
+              0
+            ],
+            "length_m": 18.5,
+            "blocked_by": "Landscape_1",
+            "at_cm": 2.6
+          },
+          {
+            "road": [
+              [
+                88,
+                176
+              ],
+              [
+                144,
+                217
+              ],
+              0
+            ],
+            "length_m": 18.2,
+            "blocked_by": "Landscape_1",
+            "at_cm": 3.7
+          },
+          {
+            "road": [
+              [
+                173,
+                398
+              ],
+              [
+                224,
+                430
+              ],
+              0
+            ],
+            "length_m": 16.1,
+            "blocked_by": "Landscape_1",
+            "at_cm": 43.0
+          },
+          {
+            "road": [
+              [
+                209,
+                392
+              ],
+              [
+                164,
+                351
+              ],
+              0
+            ],
+            "length_m": 15.5,
+            "blocked_by": "Landscape_1",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                15,
+                359
+              ],
+              [
+                15,
+                418
+              ],
+              0
+            ],
+            "length_m": 15.2,
+            "blocked_by": "Landscape_1",
+            "at_cm": 1.0
+          },
+          {
+            "road": [
+              [
+                228,
+                465
+              ],
+              [
+                175,
+                448
+              ],
+              0
+            ],
+            "length_m": 15.0,
+            "blocked_by": "Landscape_1",
+            "at_cm": 10.4
+          },
+          {
+            "road": [
+              [
+                204,
+                171
+              ],
+              [
+                190,
+                117
+              ],
+              0
+            ],
+            "length_m": 14.9,
+            "blocked_by": "Landscape_1",
+            "at_cm": 5.3
+          },
+          {
+            "road": [
+              [
+                101,
+                229
+              ],
+              [
+                87,
+                177
+              ],
+              0
+            ],
+            "length_m": 14.4,
+            "blocked_by": "Landscape_1",
+            "at_cm": 3.4
+          },
+          {
+            "road": [
+              [
+                130,
+                403
+              ],
+              [
+                89,
+                378
+              ],
+              0
+            ],
+            "length_m": 13.3,
+            "blocked_by": "Landscape_1",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                152,
+                196
+              ],
+              [
+                121,
+                156
+              ],
+              0
+            ],
+            "length_m": 13.2,
+            "blocked_by": "Landscape_1",
+            "at_cm": 29.9
+          }
+        ]
+      },
+      "collision": {
+        "collision_count": 796,
+        "penetration_count": 0,
+        "minimum_clearance_cm": 110.68402862548828,
+        "clearance_ray_range_cm": 1500.0,
+        "clearance_note": "14742 of 20187 frames had an obstacle within 1500 cm",
+        "maximum_frame_translation_cm": 4.859126579046647,
+        "maximum_frame_rotation_deg": 1.875,
+        "maximum_frame_yaw_rate_deg_s": 45.0,
+        "collision_free": false,
+        "first_collision_frames": [
+          268,
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          279,
+          280,
+          281,
+          282,
+          283
+        ],
+        "first_penetration_frames": [],
+        "method": "capsule r=40 half-h=88 cm swept between consecutive frames, centred 6 cm above the surface; near plane traced at its four corners",
+        "validated_in_s": 4.0
+      },
+      "depth_probe": {
+        "ok": true,
+        "probed_frames": 500,
+        "every": 80,
+        "minimum_depth_cm": 33.2,
+        "threshold_cm": 60.0,
+        "frames_too_close": [
+          {
+            "frame": 9200,
+            "min_cm": 33.2,
+            "phase": "forward"
+          }
+        ],
+        "too_close_count": 1,
+        "clear": true,
+        "clip_cm": 12.0,
+        "frames_clamped": [],
+        "clamped_frames": [],
+        "clamped_count": 0,
+        "all_sky_probes": 0,
+        "all_sky_examples": [],
+        "thin_depth_probes": 0,
+        "thin_depth_examples": [],
+        "min_valid_fraction_required": 0.01,
+        "extremes_probed": 250,
+        "all_sky_note": "an all-sky probe is a VETO: the capture actor refuses to write a depth channel containing no depth and ends the run. `thin` frames are the same failure approaching - under 1% of the probe had valid depth.",
+        "method": "scene depth rendered at every 80th frame's exact pose, 320x180, max range 200 m; this is the only check that sees geometry whose collision is disabled"
+      },
+      "coverage": {
+        "method": "every point of a road within 160 cm of some frame's camera position, sampled every 40 cm; measured from the delivered poses, not from the plan",
+        "radius_cm": 160.0,
+        "roads_total": 736,
+        "roads_walked": 736,
+        "roads_missed": 0,
+        "fraction": 1.0,
+        "centreline_m": 309.9,
+        "centreline_walked_m": 309.9,
+        "length_fraction": 1.0,
+        "worst_misses": []
+      },
+      "reroutes": {
+        "attempts": 4,
+        "vetoed_places": 96,
+        "veto_radius_cm": 150.0,
+        "max_attempts": 4,
+        "detail": [
+          {
+            "attempt": 1,
+            "blocked_frames": 3131,
+            "new_vetoes": 59,
+            "places": [
+              {
+                "xy_cm": [
+                  20232.6,
+                  -77238.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23051.2,
+                  -77396.7
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23372.0,
+                  -77913.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23376.6,
+                  -78066.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23670.5,
+                  -78214.4
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23801.6,
+                  -78287.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23894.0,
+                  -78409.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23903.0,
+                  -78958.3
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23957.6,
+                  -79100.4
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24112.1,
+                  -79300.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22278.0,
+                  -75346.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22268.3,
+                  -76102.1
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22375.5,
+                  -76211.3
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23571.5,
+                  -75033.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23066.5,
+                  -75031.7
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22888.0,
+                  -74488.4
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22801.9,
+                  -74364.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  19796.1,
+                  -75470.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  19687.8,
+                  -75580.5
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  17544.0,
+                  -75478.4
+                ],
+                "why": "collision"
+              }
+            ]
+          },
+          {
+            "attempt": 2,
+            "blocked_frames": 1463,
+            "new_vetoes": 20,
+            "places": [
+              {
+                "xy_cm": [
+                  19081.2,
+                  -78019.7
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  20132.2,
+                  -77588.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  20008.7,
+                  -77502.7
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22815.2,
+                  -77713.3
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22478.2,
+                  -79114.2
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21664.6,
+                  -79311.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21700.8,
+                  -79461.5
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21728.0,
+                  -79613.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23516.8,
+                  -78765.7
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24056.8,
+                  -78828.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  24209.9,
+                  -78820.6
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23566.1,
+                  -77297.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23886.3,
+                  -77200.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21922.9,
+                  -75348.6
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  21969.0,
+                  -75203.3
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  20682.3,
+                  -77651.4
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23248.1,
+                  -75079.6
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23079.3,
+                  -74581.2
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23809.9,
+                  -78062.2
+                ],
+                "why": "near_plane"
+              },
+              {
+                "xy_cm": [
+                  23544.2,
+                  -78048.6
+                ],
+                "why": "depth_clamp"
+              }
+            ]
+          },
+          {
+            "attempt": 3,
+            "blocked_frames": 933,
+            "new_vetoes": 14,
+            "places": [
+              {
+                "xy_cm": [
+                  23815.6,
+                  -76704.4
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23906.1,
+                  -76828.2
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22860.9,
+                  -75102.9
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22896.7,
+                  -74953.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23205.0,
+                  -74704.8
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22566.3,
+                  -78716.3
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22453.3,
+                  -77538.7
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22747.0,
+                  -77404.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22859.0,
+                  -77507.3
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23024.4,
+                  -77610.6
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  23036.7,
+                  -75195.4
+                ],
+                "why": "depth_probe"
+              },
+              {
+                "xy_cm": [
+                  22592.9,
+                  -75711.3
+                ],
+                "why": "depth_probe"
+              },
+              {
+                "xy_cm": [
+                  23272.7,
+                  -75450.0
+                ],
+                "why": "depth_probe"
+              },
+              {
+                "xy_cm": [
+                  23178.4,
+                  -75262.6
+                ],
+                "why": "depth_probe"
+              }
+            ]
+          },
+          {
+            "attempt": 4,
+            "blocked_frames": 274,
+            "new_vetoes": 3,
+            "places": [
+              {
+                "xy_cm": [
+                  22701.7,
+                  -75181.2
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22649.5,
+                  -78498.0
+                ],
+                "why": "collision"
+              },
+              {
+                "xy_cm": [
+                  22752.5,
+                  -78611.1
+                ],
+                "why": "collision"
+              }
+            ]
+          }
+        ],
+        "note": "places a previous attempt's body capsule hit, near plane entered, or depth probe found geometry inside; cut out of the corridor so the walk turns and takes another road. Counted, not hidden - the coverage fraction is still measured from the poses."
+      },
+      "policy": "longest",
+      "ground_clearance_cm": 6,
+      "pitch_limit_up_deg": 15.0,
+      "region_z_cm": null,
+      "advisory_failed": [
+        "action_mix_in_band"
+      ]
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789643263.1000824,
+  "phase": "核心大小",
+  "elapsed_s": 2186.8,
+  "world_ready": {
+    "world_name": "Default_Demo",
+    "world_path": "/Game/Medieval_Environment/Real_Landscape/Default/Maps/UEDPIE_0_Default_Demo.Default_Demo"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core": {
+    "core_m2": 1142.9,
+    "core_strict_m2": 821.4,
+    "region_walkable_m2": 13608.5,
+    "region_safe_m2": 10945.4,
+    "core_frac_of_region_safe": 0.104,
+    "core_clearance_median_m": 2.0,
+    "core_margin_to_export_bounds_m": 1.25,
+    "export_extent_m": [
+      125.2,
+      125.2
+    ],
+    "nav_regions": 45
+  },
+  "total_elapsed_s": 2702.0,
+  "finished_epoch": 1789645965.054674
+}

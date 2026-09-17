@@ -1,0 +1,51 @@
+{
+  "slug": "Game_Valley_Maps_PCG_Valley",
+  "map_id": "/Game/Valley/Maps/PCG_Valley",
+  "state": "route_failed",
+  "started_at": "2026-09-17T12:45:39Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "error": "RuntimeError: no region on this map has a usable road network; 1 region(s) were skipped: ['RuntimeError: thinning produced no corridors']"
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789648986.4986734,
+  "phase": "核心大小",
+  "elapsed_s": 9.6,
+  "world_ready": {
+    "world_name": "PCG_Valley",
+    "world_path": "/Game/Valley/Maps/UEDPIE_0_PCG_Valley.PCG_Valley"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "start_recovered": true,
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core": {
+    "core_m2": 0.0,
+    "core_strict_m2": 0.0,
+    "region_walkable_m2": 15440.5,
+    "region_safe_m2": 15129.0,
+    "core_frac_of_region_safe": 0.0,
+    "core_clearance_median_m": 0.0,
+    "core_margin_to_export_bounds_m": -1.0,
+    "export_extent_m": [
+      125.5,
+      125.5
+    ],
+    "nav_regions": 1
+  },
+  "total_elapsed_s": 168.0,
+  "finished_epoch": 1789649154.4985702
+}

@@ -1,0 +1,694 @@
+{
+  "slug": "Game_Chinese_Landscape_Levels_Chinese_Landscape_Demo",
+  "map_id": "/Game/Chinese_Landscape/Levels/Chinese_Landscape_Demo",
+  "state": "route_failed",
+  "started_at": "2026-09-17T11:26:55Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "seed": 160918,
+      "frozen": "/home/ubuntu/ue_newroute_fleet_20260917/maps/Game_Chinese_Landscape_Levels_Chinese_Landscape_Demo/frozen/Game_Chinese_Landscape_Levels_Chinese_Landscape_Demo__coverage_walk__seed160918__routecheck_20260917_Game_Chinese_Landscape_Levels_Chinese_Landscape_Demo_0.json",
+      "frames": 443,
+      "duration_s": 18.458333333333332,
+      "failed_gates": [
+        "action_mix_in_band"
+      ],
+      "pre_gates": {
+        "frame_translation_bounded": true,
+        "frame_rotation_bounded": true,
+        "attitude_within_limits": true,
+        "collision_free": true,
+        "depth_probe_clear": true,
+        "coverage_complete": true,
+        "action_mix_in_band": false,
+        "retrace_cadence_ok": true
+      },
+      "kept_fraction": 0.1297,
+      "road_network": {
+        "cell_cm": 25.0,
+        "min_clearance_cm": 90.0,
+        "centreline_off_surface_sampled": 108,
+        "centreline_off_surface_count": 0,
+        "grid": [
+          122,
+          103
+        ],
+        "region_area_m2": 233.1,
+        "corridor_area_m2": 65.8,
+        "centreline_m": 5.0,
+        "junctions": 9,
+        "roads": 12,
+        "components_found": 1,
+        "dropped_unreachable_m": 0.0,
+        "min_road_clearance_cm": 103.1,
+        "region_policy": "content_region_unclipped",
+        "core_m2": 80.4,
+        "selected_region_z_cm": 4830.0,
+        "min_clear_cm": 90.0,
+        "veto_radius_cm": 150.0
+      },
+      "pruning": {
+        "method": "capsule r=40 half-h=88 cm, centred 6 cm above the walkable surface, swept along each road at 40 cm steps. A road is dropped if any sweep along it is blocked; sweeps straddling two roads are discarded by index.",
+        "why": "a navmesh is built for the navmesh agent's radius and height, so walkable surface can run under pipes, awnings and gantries that this camera does not clear",
+        "roads_before": 39,
+        "roads_blocked": 21,
+        "roads_after_pruning": 18,
+        "roads_kept_connected": 12,
+        "centreline_before_m": 38.4,
+        "centreline_kept_m": 5.0,
+        "kept_fraction": 0.1297,
+        "dropped_disconnected": 6,
+        "components_after_pruning": 5,
+        "sample_cm": 40.0,
+        "swept_points": 141,
+        "took_s": 0.0,
+        "worst_blocked": [
+          {
+            "road": [
+              [
+                21,
+                34
+              ],
+              [
+                23,
+                14
+              ],
+              0
+            ],
+            "length_m": 5.2,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                37,
+                32
+              ],
+              [
+                39,
+                16
+              ],
+              0
+            ],
+            "length_m": 4.2,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 22.6
+          },
+          {
+            "road": [
+              [
+                39,
+                14
+              ],
+              [
+                24,
+                13
+              ],
+              0
+            ],
+            "length_m": 4.1,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                22,
+                35
+              ],
+              [
+                36,
+                33
+              ],
+              0
+            ],
+            "length_m": 3.7,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                51,
+                16
+              ],
+              [
+                40,
+                15
+              ],
+              0
+            ],
+            "length_m": 2.9,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                19,
+                46
+              ],
+              [
+                19,
+                36
+              ],
+              0
+            ],
+            "length_m": 2.5,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 5.0
+          },
+          {
+            "road": [
+              [
+                18,
+                35
+              ],
+              [
+                10,
+                31
+              ],
+              0
+            ],
+            "length_m": 2.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                53,
+                26
+              ],
+              [
+                52,
+                17
+              ],
+              0
+            ],
+            "length_m": 2.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 16.5
+          },
+          {
+            "road": [
+              [
+                18,
+                35
+              ],
+              [
+                19,
+                36
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                20,
+                35
+              ],
+              [
+                21,
+                34
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          }
+        ]
+      },
+      "collision": {
+        "collision_count": 0,
+        "penetration_count": 0,
+        "minimum_clearance_cm": 155.1125946044922,
+        "clearance_ray_range_cm": 1500.0,
+        "clearance_note": "379 of 443 frames had an obstacle within 1500 cm",
+        "maximum_frame_translation_cm": 4.859126579037024,
+        "maximum_frame_rotation_deg": 1.875,
+        "maximum_frame_yaw_rate_deg_s": 45.0,
+        "collision_free": true,
+        "first_collision_frames": [],
+        "first_penetration_frames": [],
+        "method": "capsule r=40 half-h=88 cm swept between consecutive frames, centred 6 cm above the surface; near plane traced at its four corners",
+        "validated_in_s": 0.1
+      },
+      "depth_probe": {
+        "ok": true,
+        "probed_frames": 253,
+        "every": 60,
+        "minimum_depth_cm": 61.7,
+        "threshold_cm": 60.0,
+        "frames_too_close": [],
+        "too_close_count": 0,
+        "clear": true,
+        "clip_cm": 12.0,
+        "frames_clamped": [],
+        "clamped_frames": [],
+        "clamped_count": 0,
+        "all_sky_probes": 0,
+        "all_sky_examples": [],
+        "thin_depth_probes": 0,
+        "thin_depth_examples": [],
+        "min_valid_fraction_required": 0.01,
+        "extremes_probed": 250,
+        "all_sky_note": "an all-sky probe is a VETO: the capture actor refuses to write a depth channel containing no depth and ends the run. `thin` frames are the same failure approaching - under 1% of the probe had valid depth.",
+        "method": "scene depth rendered at every 60th frame's exact pose, 320x180, max range 200 m; this is the only check that sees geometry whose collision is disabled"
+      },
+      "coverage": {
+        "method": "every point of a road within 160 cm of some frame's camera position, sampled every 40 cm; measured from the delivered poses, not from the plan",
+        "radius_cm": 160.0,
+        "roads_total": 12,
+        "roads_walked": 12,
+        "roads_missed": 0,
+        "fraction": 1.0,
+        "centreline_m": 5.0,
+        "centreline_walked_m": 5.0,
+        "length_fraction": 1.0,
+        "worst_misses": []
+      },
+      "reroutes": {
+        "attempts": 4,
+        "vetoed_places": 7,
+        "veto_radius_cm": 150.0,
+        "max_attempts": 4,
+        "detail": [
+          {
+            "attempt": 1,
+            "blocked_frames": 23,
+            "new_vetoes": 1,
+            "places": [
+              {
+                "xy_cm": [
+                  8865.1,
+                  6293.7
+                ],
+                "why": "collision"
+              }
+            ]
+          },
+          {
+            "attempt": 2,
+            "blocked_frames": 8,
+            "new_vetoes": 1,
+            "places": [
+              {
+                "xy_cm": [
+                  8890.9,
+                  6685.0
+                ],
+                "why": "depth_probe"
+              }
+            ]
+          },
+          {
+            "attempt": 3,
+            "blocked_frames": 36,
+            "new_vetoes": 2,
+            "places": [
+              {
+                "xy_cm": [
+                  8881.3,
+                  7033.5
+                ],
+                "why": "depth_probe"
+              },
+              {
+                "xy_cm": [
+                  9085.1,
+                  6840.7
+                ],
+                "why": "depth_clamp"
+              }
+            ]
+          },
+          {
+            "attempt": 4,
+            "blocked_frames": 145,
+            "new_vetoes": 3,
+            "places": [
+              {
+                "xy_cm": [
+                  9003.0,
+                  7236.0
+                ],
+                "why": "depth_probe"
+              },
+              {
+                "xy_cm": [
+                  8853.2,
+                  7221.2
+                ],
+                "why": "depth_clamp"
+              },
+              {
+                "xy_cm": [
+                  8677.5,
+                  7048.8
+                ],
+                "why": "depth_clamp"
+              }
+            ]
+          }
+        ],
+        "note": "places a previous attempt's body capsule hit, near plane entered, or depth probe found geometry inside; cut out of the corridor so the walk turns and takes another road. Counted, not hidden - the coverage fraction is still measured from the poses."
+      },
+      "policy": "content_region",
+      "ground_clearance_cm": 6,
+      "pitch_limit_up_deg": 15.0,
+      "region_z_cm": null
+    },
+    {
+      "attempt": 1,
+      "seed": 161918,
+      "frozen": "/home/ubuntu/ue_newroute_fleet_20260917/maps/Game_Chinese_Landscape_Levels_Chinese_Landscape_Demo/frozen/Game_Chinese_Landscape_Levels_Chinese_Landscape_Demo__coverage_walk__seed161918__routecheck_20260917_Game_Chinese_Landscape_Levels_Chinese_Landscape_Demo_1.json",
+      "frames": 124,
+      "duration_s": 5.166666666666667,
+      "failed_gates": [
+        "action_mix_in_band",
+        "network_too_short"
+      ],
+      "pre_gates": {
+        "frame_translation_bounded": true,
+        "frame_rotation_bounded": true,
+        "attitude_within_limits": true,
+        "collision_free": true,
+        "depth_probe_clear": true,
+        "coverage_complete": true,
+        "action_mix_in_band": false,
+        "retrace_cadence_ok": true
+      },
+      "kept_fraction": 0.1207,
+      "road_network": {
+        "cell_cm": 25.0,
+        "min_clearance_cm": 90.0,
+        "centreline_off_surface_sampled": 81,
+        "centreline_off_surface_count": 0,
+        "grid": [
+          122,
+          103
+        ],
+        "region_area_m2": 233.1,
+        "corridor_area_m2": 102.6,
+        "centreline_m": 3.3,
+        "junctions": 7,
+        "roads": 11,
+        "components_found": 1,
+        "dropped_unreachable_m": 0.0,
+        "min_road_clearance_cm": 125.0,
+        "region_policy": "content_region_unclipped",
+        "core_m2": 80.4,
+        "selected_region_z_cm": 4830.0,
+        "min_clear_cm": 90.0,
+        "veto_radius_cm": 150.0
+      },
+      "pruning": {
+        "method": "capsule r=40 half-h=88 cm, centred 6 cm above the walkable surface, swept along each road at 40 cm steps. A road is dropped if any sweep along it is blocked; sweeps straddling two roads are discarded by index.",
+        "why": "a navmesh is built for the navmesh agent's radius and height, so walkable surface can run under pipes, awnings and gantries that this camera does not clear",
+        "roads_before": 34,
+        "roads_blocked": 18,
+        "roads_after_pruning": 16,
+        "roads_kept_connected": 11,
+        "centreline_before_m": 27.1,
+        "centreline_kept_m": 3.3,
+        "kept_fraction": 0.1207,
+        "dropped_disconnected": 5,
+        "components_after_pruning": 3,
+        "sample_cm": 40.0,
+        "swept_points": 109,
+        "took_s": 0.0,
+        "worst_blocked": [
+          {
+            "road": [
+              [
+                70,
+                32
+              ],
+              [
+                32,
+                23
+              ],
+              0
+            ],
+            "length_m": 10.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                20,
+                35
+              ],
+              [
+                27,
+                28
+              ],
+              0
+            ],
+            "length_m": 2.8,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                19,
+                46
+              ],
+              [
+                19,
+                36
+              ],
+              0
+            ],
+            "length_m": 2.5,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 5.0
+          },
+          {
+            "road": [
+              [
+                18,
+                35
+              ],
+              [
+                10,
+                31
+              ],
+              0
+            ],
+            "length_m": 2.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                71,
+                32
+              ],
+              [
+                72,
+                33
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                29,
+                26
+              ],
+              [
+                28,
+                27
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 5.7
+          },
+          {
+            "road": [
+              [
+                18,
+                35
+              ],
+              [
+                19,
+                36
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                72,
+                33
+              ],
+              [
+                73,
+                34
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          },
+          {
+            "road": [
+              [
+                29,
+                25
+              ],
+              [
+                28,
+                26
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 34.1
+          },
+          {
+            "road": [
+              [
+                70,
+                32
+              ],
+              [
+                71,
+                33
+              ],
+              0
+            ],
+            "length_m": 0.4,
+            "blocked_by": "SM_Zhangjiajie_Landscape_1310",
+            "at_cm": 0.0
+          }
+        ]
+      },
+      "collision": {
+        "collision_count": 0,
+        "penetration_count": 0,
+        "minimum_clearance_cm": 531.2181396484375,
+        "clearance_ray_range_cm": 1500.0,
+        "clearance_note": "67 of 124 frames had an obstacle within 1500 cm",
+        "maximum_frame_translation_cm": 4.83496614750467,
+        "maximum_frame_rotation_deg": 1.875,
+        "maximum_frame_yaw_rate_deg_s": 45.0,
+        "collision_free": true,
+        "first_collision_frames": [],
+        "first_penetration_frames": [],
+        "method": "capsule r=40 half-h=88 cm swept between consecutive frames, centred 6 cm above the surface; near plane traced at its four corners",
+        "validated_in_s": 0.0
+      },
+      "depth_probe": {
+        "ok": true,
+        "probed_frames": 124,
+        "every": 60,
+        "minimum_depth_cm": 98.1,
+        "threshold_cm": 60.0,
+        "frames_too_close": [],
+        "too_close_count": 0,
+        "clear": true,
+        "clip_cm": 12.0,
+        "frames_clamped": [],
+        "clamped_frames": [],
+        "clamped_count": 0,
+        "all_sky_probes": 0,
+        "all_sky_examples": [],
+        "thin_depth_probes": 0,
+        "thin_depth_examples": [],
+        "min_valid_fraction_required": 0.01,
+        "extremes_probed": 250,
+        "all_sky_note": "an all-sky probe is a VETO: the capture actor refuses to write a depth channel containing no depth and ends the run. `thin` frames are the same failure approaching - under 1% of the probe had valid depth.",
+        "method": "scene depth rendered at every 60th frame's exact pose, 320x180, max range 200 m; this is the only check that sees geometry whose collision is disabled"
+      },
+      "coverage": {
+        "method": "every point of a road within 160 cm of some frame's camera position, sampled every 40 cm; measured from the delivered poses, not from the plan",
+        "radius_cm": 160.0,
+        "roads_total": 11,
+        "roads_walked": 11,
+        "roads_missed": 0,
+        "fraction": 1.0,
+        "centreline_m": 3.3,
+        "centreline_walked_m": 3.3,
+        "length_fraction": 1.0,
+        "worst_misses": []
+      },
+      "reroutes": {
+        "attempts": 0,
+        "vetoed_places": 0,
+        "veto_radius_cm": 150.0,
+        "max_attempts": 4,
+        "detail": [],
+        "note": "places a previous attempt's body capsule hit, near plane entered, or depth probe found geometry inside; cut out of the corridor so the walk turns and takes another road. Counted, not hidden - the coverage fraction is still measured from the poses."
+      },
+      "policy": "content_region",
+      "ground_clearance_cm": 6,
+      "pitch_limit_up_deg": 15.0,
+      "region_z_cm": null,
+      "advisory_failed": [
+        "action_mix_in_band"
+      ]
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789644247.1281414,
+  "phase": "核心大小",
+  "elapsed_s": 143.0,
+  "world_ready": {
+    "world_name": "Chinese_Landscape_Demo",
+    "world_path": "/Game/Chinese_Landscape/Levels/UEDPIE_0_Chinese_Landscape_Demo.Chinese_Landscape_Demo"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core": {
+    "core_m2": 80.4,
+    "core_strict_m2": 46.4,
+    "region_walkable_m2": 233.1,
+    "region_safe_m2": 150.4,
+    "core_frac_of_region_safe": 0.535,
+    "core_clearance_median_m": 2.25,
+    "core_margin_to_export_bounds_m": 28.0,
+    "export_extent_m": [
+      111.8,
+      125.5
+    ],
+    "nav_regions": 185
+  },
+  "total_elapsed_s": 317.2,
+  "finished_epoch": 1789644564.3345973
+}

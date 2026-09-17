@@ -1,0 +1,51 @@
+{
+  "slug": "Game_ProceduralBuildingGenerator_Maps_Demo_GhostCity",
+  "map_id": "/Game/ProceduralBuildingGenerator/Maps/Demo_GhostCity",
+  "state": "route_failed",
+  "started_at": "2026-09-17T11:16:01Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "error": "RuntimeError: no region on this map has a usable road network; 1 region(s) were skipped: ['RuntimeError: thinning produced no corridors']"
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789643275.9976647,
+  "phase": "核心大小",
+  "elapsed_s": 10.7,
+  "world_ready": {
+    "world_name": "Demo_GhostCity",
+    "world_path": "/Game/ProceduralBuildingGenerator/Maps/UEDPIE_0_Demo_GhostCity.Demo_GhostCity"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "start_recovered": true,
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core": {
+    "core_m2": 0.0,
+    "core_strict_m2": 0.0,
+    "region_walkable_m2": 15393.4,
+    "region_safe_m2": 15067.6,
+    "core_frac_of_region_safe": 0.0,
+    "core_clearance_median_m": 0.0,
+    "core_margin_to_export_bounds_m": -1.0,
+    "export_extent_m": [
+      125.2,
+      125.2
+    ],
+    "nav_regions": 1
+  },
+  "total_elapsed_s": 500.4,
+  "finished_epoch": 1789643776.3622484
+}

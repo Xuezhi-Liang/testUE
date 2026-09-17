@@ -1,0 +1,317 @@
+{
+  "slug": "Game_SwimmingPool_Maps_ChangingRoom_Male",
+  "map_id": "/Game/SwimmingPool/Maps/ChangingRoom_Male",
+  "state": "route_failed",
+  "started_at": "2026-09-17T12:45:00Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "seed": 162971,
+      "frozen": "/home/ubuntu/ue_newroute_fleet_20260917/maps/Game_SwimmingPool_Maps_ChangingRoom_Male/frozen/Game_SwimmingPool_Maps_ChangingRoom_Male__coverage_walk__seed162971__routecheck_20260917_Game_SwimmingPool_Maps_ChangingRoom_Male_0.json",
+      "frames": 3237,
+      "duration_s": 134.875,
+      "failed_gates": [
+        "depth_probe_clear",
+        "action_mix_in_band",
+        "retrace_cadence_ok",
+        "network_too_short"
+      ],
+      "pre_gates": {
+        "frame_translation_bounded": true,
+        "frame_rotation_bounded": true,
+        "attitude_within_limits": true,
+        "collision_free": true,
+        "depth_probe_clear": false,
+        "coverage_complete": true,
+        "action_mix_in_band": false,
+        "retrace_cadence_ok": false
+      },
+      "kept_fraction": 1.0,
+      "road_network": {
+        "cell_cm": 25.0,
+        "min_clearance_cm": 90.0,
+        "centreline_off_surface_sampled": 104,
+        "centreline_off_surface_count": 0,
+        "grid": [
+          85,
+          64
+        ],
+        "region_area_m2": 149.9,
+        "corridor_area_m2": 42.5,
+        "centreline_m": 42.6,
+        "junctions": 27,
+        "roads": 38,
+        "components_found": 1,
+        "dropped_unreachable_m": 0.0,
+        "min_road_clearance_cm": 100.0
+      },
+      "pruning": {
+        "method": "capsule r=40 half-h=88 cm, centred 6 cm above the walkable surface, swept along each road at 40 cm steps. A road is dropped if any sweep along it is blocked; sweeps straddling two roads are discarded by index.",
+        "why": "a navmesh is built for the navmesh agent's radius and height, so walkable surface can run under pipes, awnings and gantries that this camera does not clear",
+        "roads_before": 38,
+        "roads_blocked": 0,
+        "roads_after_pruning": 38,
+        "roads_kept_connected": 38,
+        "centreline_before_m": 42.6,
+        "centreline_kept_m": 42.6,
+        "kept_fraction": 1.0,
+        "dropped_disconnected": 0,
+        "components_after_pruning": 1,
+        "sample_cm": 40.0,
+        "swept_points": 151,
+        "took_s": 0.0,
+        "worst_blocked": []
+      },
+      "collision": {
+        "collision_count": 0,
+        "penetration_count": 0,
+        "minimum_clearance_cm": null,
+        "clearance_ray_range_cm": 1500.0,
+        "clearance_note": "every frame's forward ray reached the full 1500 cm without a hit",
+        "maximum_frame_translation_cm": 4.166666666667457,
+        "maximum_frame_rotation_deg": 1.875,
+        "maximum_frame_yaw_rate_deg_s": 45.0,
+        "collision_free": true,
+        "first_collision_frames": [],
+        "first_penetration_frames": [],
+        "method": "capsule r=40 half-h=88 cm swept between consecutive frames, centred 6 cm above the surface; near plane traced at its four corners",
+        "validated_in_s": 0.5
+      },
+      "depth_probe": {
+        "ok": true,
+        "probed_frames": 301,
+        "every": 60,
+        "minimum_depth_cm": 204.6,
+        "threshold_cm": 60.0,
+        "frames_too_close": [],
+        "too_close_count": 0,
+        "clear": false,
+        "clip_cm": 12.0,
+        "frames_clamped": [],
+        "clamped_frames": [],
+        "clamped_count": 0,
+        "all_sky_probes": 1,
+        "all_sky_examples": [
+          {
+            "frame": 660,
+            "phase": "turn_left",
+            "pitch_deg": 0.0
+          }
+        ],
+        "thin_depth_probes": 2,
+        "thin_depth_examples": [
+          {
+            "frame": 120,
+            "phase": "turn_right",
+            "pitch_deg": 0.0,
+            "valid_fraction": 5e-05
+          },
+          {
+            "frame": 3180,
+            "phase": "turn_right",
+            "pitch_deg": 0.0,
+            "valid_fraction": 0.00342
+          }
+        ],
+        "min_valid_fraction_required": 0.01,
+        "extremes_probed": 250,
+        "all_sky_note": "an all-sky probe is a VETO: the capture actor refuses to write a depth channel containing no depth and ends the run. `thin` frames are the same failure approaching - under 1% of the probe had valid depth.",
+        "method": "scene depth rendered at every 60th frame's exact pose, 320x180, max range 200 m; this is the only check that sees geometry whose collision is disabled"
+      },
+      "coverage": {
+        "method": "every point of a road within 160 cm of some frame's camera position, sampled every 40 cm; measured from the delivered poses, not from the plan",
+        "radius_cm": 160.0,
+        "roads_total": 38,
+        "roads_walked": 38,
+        "roads_missed": 0,
+        "fraction": 1.0,
+        "centreline_m": 42.6,
+        "centreline_walked_m": 42.6,
+        "length_fraction": 1.0,
+        "worst_misses": []
+      },
+      "reroutes": {
+        "attempts": 4,
+        "vetoed_places": 14,
+        "veto_radius_cm": 150.0,
+        "max_attempts": 4,
+        "detail": [
+          {
+            "attempt": 1,
+            "blocked_frames": 9,
+            "new_vetoes": 2,
+            "places": [
+              {
+                "xy_cm": [
+                  -2872.3,
+                  -1574.8
+                ],
+                "why": "depth_sky"
+              },
+              {
+                "xy_cm": [
+                  -3088.0,
+                  -1128.1
+                ],
+                "why": "depth_sky"
+              }
+            ]
+          },
+          {
+            "attempt": 2,
+            "blocked_frames": 14,
+            "new_vetoes": 5,
+            "places": [
+              {
+                "xy_cm": [
+                  -2626.0,
+                  -1643.6
+                ],
+                "why": "depth_sky"
+              },
+              {
+                "xy_cm": [
+                  -3226.1,
+                  -923.0
+                ],
+                "why": "depth_sky"
+              },
+              {
+                "xy_cm": [
+                  -3044.4,
+                  -1675.0
+                ],
+                "why": "depth_sky"
+              },
+              {
+                "xy_cm": [
+                  -3113.0,
+                  -670.1
+                ],
+                "why": "depth_sky"
+              },
+              {
+                "xy_cm": [
+                  -2463.0,
+                  -1983.0
+                ],
+                "why": "depth_sky"
+              }
+            ]
+          },
+          {
+            "attempt": 3,
+            "blocked_frames": 13,
+            "new_vetoes": 6,
+            "places": [
+              {
+                "xy_cm": [
+                  -3288.0,
+                  -711.0
+                ],
+                "why": "depth_sky"
+              },
+              {
+                "xy_cm": [
+                  -3155.8,
+                  -475.0
+                ],
+                "why": "depth_sky"
+              },
+              {
+                "xy_cm": [
+                  -3174.6,
+                  -1358.2
+                ],
+                "why": "depth_sky"
+              },
+              {
+                "xy_cm": [
+                  -3213.0,
+                  -1631.1
+                ],
+                "why": "depth_sky"
+              },
+              {
+                "xy_cm": [
+                  -2198.4,
+                  -1637.7
+                ],
+                "why": "depth_sky"
+              },
+              {
+                "xy_cm": [
+                  -2939.3,
+                  -602.8
+                ],
+                "why": "depth_sky"
+              }
+            ]
+          },
+          {
+            "attempt": 4,
+            "blocked_frames": 8,
+            "new_vetoes": 1,
+            "places": [
+              {
+                "xy_cm": [
+                  -2264.9,
+                  -1994.3
+                ],
+                "why": "depth_sky"
+              }
+            ]
+          }
+        ],
+        "note": "places a previous attempt's body capsule hit, near plane entered, or depth probe found geometry inside; cut out of the corridor so the walk turns and takes another road. Counted, not hidden - the coverage fraction is still measured from the poses."
+      },
+      "policy": "longest",
+      "ground_clearance_cm": 6,
+      "pitch_limit_up_deg": 15.0,
+      "region_z_cm": null,
+      "advisory_failed": [
+        "action_mix_in_band",
+        "retrace_cadence_ok"
+      ]
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789648984.0441897,
+  "phase": "核心大小",
+  "elapsed_s": 118.2,
+  "world_ready": {
+    "world_name": "ChangingRoom_Male",
+    "world_path": "/Game/SwimmingPool/Maps/UEDPIE_0_ChangingRoom_Male.ChangingRoom_Male"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "start_recovered": true,
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core": {
+    "core_m2": 75.4,
+    "core_strict_m2": 45.6,
+    "region_walkable_m2": 149.9,
+    "region_safe_m2": 110.9,
+    "core_frac_of_region_safe": 0.68,
+    "core_clearance_median_m": 1.8,
+    "core_margin_to_export_bounds_m": 1.25,
+    "export_extent_m": [
+      16.0,
+      21.2
+    ],
+    "nav_regions": 7
+  },
+  "total_elapsed_s": 244.3,
+  "finished_epoch": 1789649228.3578591
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "Game_Hangar_Hangar",
+  "map_id": "/Game/Hangar/Hangar",
+  "state": "route_failed",
+  "started_at": "2026-09-17T12:52:50Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "error": "RuntimeError: no region on this map has a usable road network; 1 region(s) were skipped: ['RuntimeError: thinning produced no corridors']"
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789649494.2365868,
+  "phase": "核心大小",
+  "elapsed_s": 8.4,
+  "world_ready": {
+    "world_name": "Hangar",
+    "world_path": "/Game/Hangar/UEDPIE_0_Hangar.Hangar"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "start_recovered": true,
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core": {
+    "core_m2": 0.0,
+    "core_strict_m2": 0.0,
+    "region_walkable_m2": 83.2,
+    "region_safe_m2": 60.1,
+    "core_frac_of_region_safe": 0.0,
+    "core_clearance_median_m": 0.0,
+    "core_margin_to_export_bounds_m": -1.0,
+    "export_extent_m": [
+      10.2,
+      10.2
+    ],
+    "nav_regions": 1
+  },
+  "total_elapsed_s": 88.9,
+  "finished_epoch": 1789649583.095566
+}

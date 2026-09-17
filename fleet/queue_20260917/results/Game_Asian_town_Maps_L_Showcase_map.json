@@ -1,0 +1,51 @@
+{
+  "slug": "Game_Asian_town_Maps_L_Showcase_map",
+  "map_id": "/Game/Asian_town/Maps/L_Showcase_map",
+  "state": "route_failed",
+  "started_at": "2026-09-17T12:05:53Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "error": "RuntimeError: every road on this map is blocked at the agent's head height"
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789646518.2209373,
+  "phase": "核心大小",
+  "elapsed_s": 41.0,
+  "world_ready": {
+    "world_name": "L_Showcase_map",
+    "world_path": "/Game/Asian_town/Maps/UEDPIE_0_L_Showcase_map.L_Showcase_map"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "start_recovered": true,
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core": {
+    "core_m2": 295.4,
+    "core_strict_m2": 203.6,
+    "region_walkable_m2": 11199.6,
+    "region_safe_m2": 10841.8,
+    "core_frac_of_region_safe": 0.027,
+    "core_clearance_median_m": 3.25,
+    "core_margin_to_export_bounds_m": 7.25,
+    "export_extent_m": [
+      125.5,
+      123.0
+    ],
+    "nav_regions": 391
+  },
+  "total_elapsed_s": 281.1,
+  "finished_epoch": 1789646799.3116121
+}

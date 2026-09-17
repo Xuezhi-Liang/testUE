@@ -1,0 +1,208 @@
+{
+  "slug": "Game_SwimmingPool_Maps_Demonstration_Outdoor",
+  "map_id": "/Game/SwimmingPool/Maps/Demonstration_Outdoor",
+  "state": "route_failed",
+  "started_at": "2026-09-17T11:15:22Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "seed": 302408,
+      "frozen": "/home/ubuntu/ue_newroute_fleet_20260917/maps/Game_SwimmingPool_Maps_Demonstration_Outdoor/frozen/Game_SwimmingPool_Maps_Demonstration_Outdoor__coverage_walk__seed302408__routecheck_20260917_Game_SwimmingPool_Maps_Demonstration_Outdoor_0.json",
+      "frames": 423,
+      "duration_s": 17.625,
+      "failed_gates": [
+        "action_mix_in_band",
+        "retrace_cadence_ok",
+        "network_too_short"
+      ],
+      "pre_gates": {
+        "frame_translation_bounded": true,
+        "frame_rotation_bounded": true,
+        "attitude_within_limits": true,
+        "collision_free": true,
+        "depth_probe_clear": true,
+        "coverage_complete": true,
+        "action_mix_in_band": false,
+        "retrace_cadence_ok": false
+      },
+      "kept_fraction": 0.1653,
+      "road_network": {
+        "cell_cm": 25.0,
+        "min_clearance_cm": 90.0,
+        "centreline_off_surface_sampled": 24,
+        "centreline_off_surface_count": 0,
+        "grid": [
+          107,
+          107
+        ],
+        "region_area_m2": 368.5,
+        "corridor_area_m2": 312.0,
+        "centreline_m": 5.1,
+        "junctions": 5,
+        "roads": 6,
+        "components_found": 1,
+        "dropped_unreachable_m": 0.0,
+        "min_road_clearance_cm": 250.0,
+        "region_policy": "content_region_unclipped",
+        "core_m2": 79.8,
+        "selected_region_z_cm": -230.0,
+        "min_clear_cm": 90.0,
+        "veto_radius_cm": 150.0
+      },
+      "pruning": {
+        "method": "capsule r=40 half-h=88 cm, centred 45 cm above the walkable surface, swept along each road at 40 cm steps. A road is dropped if any sweep along it is blocked; sweeps straddling two roads are discarded by index.",
+        "why": "a navmesh is built for the navmesh agent's radius and height, so walkable surface can run under pipes, awnings and gantries that this camera does not clear",
+        "roads_before": 8,
+        "roads_blocked": 2,
+        "roads_after_pruning": 6,
+        "roads_kept_connected": 6,
+        "centreline_before_m": 30.6,
+        "centreline_kept_m": 5.1,
+        "kept_fraction": 0.1653,
+        "dropped_disconnected": 0,
+        "components_after_pruning": 1,
+        "sample_cm": 40.0,
+        "swept_points": 86,
+        "took_s": 0.0,
+        "worst_blocked": [
+          {
+            "road": [
+              [
+                25,
+                47
+              ],
+              [
+                94,
+                59
+              ],
+              0
+            ],
+            "length_m": 18.7,
+            "blocked_by": "SM_LaneRope_Red296_67",
+            "at_cm": 5.9
+          },
+          {
+            "road": [
+              [
+                24,
+                48
+              ],
+              [
+                23,
+                75
+              ],
+              0
+            ],
+            "length_m": 6.9,
+            "blocked_by": "SM_Flamingo_3",
+            "at_cm": 19.7
+          }
+        ]
+      },
+      "collision": {
+        "collision_count": 0,
+        "penetration_count": 0,
+        "minimum_clearance_cm": 835.9229736328125,
+        "clearance_ray_range_cm": 1500.0,
+        "clearance_note": "234 of 423 frames had an obstacle within 1500 cm",
+        "maximum_frame_translation_cm": 4.166666666666714,
+        "maximum_frame_rotation_deg": 1.875,
+        "maximum_frame_yaw_rate_deg_s": 45.0,
+        "collision_free": true,
+        "first_collision_frames": [],
+        "first_penetration_frames": [],
+        "method": "capsule r=40 half-h=88 cm swept between consecutive frames, centred 45 cm above the surface; near plane traced at its four corners",
+        "validated_in_s": 0.1
+      },
+      "depth_probe": {
+        "ok": true,
+        "probed_frames": 254,
+        "every": 60,
+        "minimum_depth_cm": 123.7,
+        "threshold_cm": 60.0,
+        "frames_too_close": [],
+        "too_close_count": 0,
+        "clear": true,
+        "clip_cm": 12.0,
+        "frames_clamped": [],
+        "clamped_frames": [],
+        "clamped_count": 0,
+        "all_sky_probes": 0,
+        "all_sky_examples": [],
+        "thin_depth_probes": 0,
+        "thin_depth_examples": [],
+        "min_valid_fraction_required": 0.01,
+        "extremes_probed": 250,
+        "all_sky_note": "an all-sky probe is a VETO: the capture actor refuses to write a depth channel containing no depth and ends the run. `thin` frames are the same failure approaching - under 1% of the probe had valid depth.",
+        "method": "scene depth rendered at every 60th frame's exact pose, 320x180, max range 200 m; this is the only check that sees geometry whose collision is disabled"
+      },
+      "coverage": {
+        "method": "every point of a road within 160 cm of some frame's camera position, sampled every 40 cm; measured from the delivered poses, not from the plan",
+        "radius_cm": 160.0,
+        "roads_total": 6,
+        "roads_walked": 6,
+        "roads_missed": 0,
+        "fraction": 1.0,
+        "centreline_m": 5.1,
+        "centreline_walked_m": 5.1,
+        "length_fraction": 1.0,
+        "worst_misses": []
+      },
+      "reroutes": {
+        "attempts": 0,
+        "vetoed_places": 0,
+        "veto_radius_cm": 150.0,
+        "max_attempts": 4,
+        "detail": [],
+        "note": "places a previous attempt's body capsule hit, near plane entered, or depth probe found geometry inside; cut out of the corridor so the walk turns and takes another road. Counted, not hidden - the coverage fraction is still measured from the poses."
+      },
+      "policy": "content_region",
+      "ground_clearance_cm": 45,
+      "pitch_limit_up_deg": 15.0,
+      "region_z_cm": null,
+      "advisory_failed": [
+        "action_mix_in_band",
+        "retrace_cadence_ok"
+      ]
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789643262.5021598,
+  "phase": "核心大小",
+  "elapsed_s": 18.2,
+  "world_ready": {
+    "world_name": "Demonstration_Outdoor",
+    "world_path": "/Game/SwimmingPool/Maps/UEDPIE_0_Demonstration_Outdoor.Demonstration_Outdoor"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "start_recovered": true,
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core": {
+    "core_m2": 79.8,
+    "core_strict_m2": 58.1,
+    "region_walkable_m2": 368.5,
+    "region_safe_m2": 309.3,
+    "core_frac_of_region_safe": 0.258,
+    "core_clearance_median_m": 2.06,
+    "core_margin_to_export_bounds_m": 10.25,
+    "export_extent_m": [
+      83.2,
+      83.5
+    ],
+    "nav_regions": 8
+  },
+  "total_elapsed_s": 484.4,
+  "finished_epoch": 1789643746.9084756
+}

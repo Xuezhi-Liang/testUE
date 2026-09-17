@@ -1,0 +1,51 @@
+{
+  "slug": "Game_Sicka_EnvPack2_Sicka_Ancient_Kit_Maps_Map_scene1",
+  "map_id": "/Game/Sicka_EnvPack2/Sicka_Ancient_Kit/Maps/Map_scene1",
+  "state": "route_failed",
+  "started_at": "2026-09-17T12:48:48Z",
+  "attempts": [
+    {
+      "attempt": 0,
+      "error": "RuntimeError: every road on this map is blocked at the agent's head height"
+    }
+  ],
+  "retry_history": [],
+  "started_epoch": 1789649230.1820247,
+  "phase": "核心大小",
+  "elapsed_s": 43.7,
+  "world_ready": {
+    "world_name": "Map_scene1",
+    "world_path": "/Game/Sicka_EnvPack2/Sicka_Ancient_Kit/Maps/UEDPIE_0_Map_scene1.Map_scene1"
+  },
+  "actual_cvars": {
+    "r.AntiAliasingMethod": 2.0,
+    "r.TemporalAA.HistoryScreenPercentage": 200.0,
+    "r.TemporalAA.Quality": 2.0,
+    "r.TemporalAACurrentFrameWeight": 0.03999999910593033,
+    "r.TemporalAASamples": 8.0,
+    "r.Lumen.ScreenProbeGather.DownsampleFactor": 8.0,
+    "r.VolumetricFog.GridPixelSize": 8.0,
+    "r.VolumetricFog.GridSizeZ": 128.0,
+    "r.MaxAnisotropy": 16.0,
+    "r.MipMapLODBias": 0.0,
+    "r.Tonemapper.Sharpen": 0.0
+  },
+  "start_recovered": true,
+  "note": "Geometry preflight only. Frame path and sampled depth gates are checked; map-wide/visual coverage and TAA image detail still need preview review. No long video recorded.",
+  "core": {
+    "core_m2": 152.8,
+    "core_strict_m2": 138.4,
+    "region_walkable_m2": 277.7,
+    "region_safe_m2": 227.8,
+    "core_frac_of_region_safe": 0.671,
+    "core_clearance_median_m": 3.0,
+    "core_margin_to_export_bounds_m": 53.0,
+    "export_extent_m": [
+      125.2,
+      125.5
+    ],
+    "nav_regions": 202
+  },
+  "total_elapsed_s": 147.2,
+  "finished_epoch": 1789649377.3536878
+}
