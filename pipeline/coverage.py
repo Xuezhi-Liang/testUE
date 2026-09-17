@@ -580,10 +580,17 @@ def retrace_report(passes, n_frames, fps, cfg):
         "total_back_m": round(sum(r["back_m"] for r in evs), 1),
         "short_events": len(short),
         "median_gap_s": round(float(np.median(gaps)), 1) if gaps else None,
+        # A route shorter than the cap owes no event at all: judging it "no retrace" failed every
+        # one-pass validation of a small map (a 15 s route cannot contain a 300 s cadence). And
+        # the median band is only meaningful with a few gaps to take a median of; with fewer than
+        # four it is one draw's jitter, so only the cap and the minimum walk-back are judged.
         "cadence_ok": bool(
-            evs and not short
-            and max(gaps) <= cfg["max_interval_s"] + 1.0
-            and 0.8 * cfg["median_interval_s"] <= float(np.median(gaps)) <= 1.25 * cfg["median_interval_s"]),
+            (not evs and n_frames / fps <= cfg["max_interval_s"])
+            or (evs and not short
+                and max(gaps) <= cfg["max_interval_s"] + 1.0
+                and (len(gaps) < 4
+                     or 0.8 * cfg["median_interval_s"] <= float(np.median(gaps)) <= 1.25 * cfg["median_interval_s"]))),
+        "median_judged": len(gaps) >= 4,
         "events_detail": evs[:40],
         "note": "each event is: about-turn, walk the covered route facing that way, about-turn "
                 "back. Both legs are labelled `forward` - the camera faces the way it moves; "
