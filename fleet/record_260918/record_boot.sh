@@ -44,6 +44,7 @@ SO=$(find "$CTRROOT" -name 'libUnrealEditor-UnrealCV.so' -newermt "@$PATCH_EPOCH
 echo "UnrealCV rebuilt: $SO"; upload_logs
 echo "==== $(date -u +%H:%M:%S) joining the recording queue ===="
 sudo systemd-run --unit=preview --collect --setenv=HOME=/home/ubuntu --uid=ubuntu --gid=ubuntu -p WorkingDirectory=/home/ubuntu /bin/bash "$F/bundle/preview_uploader.sh"   # 5-min preview clips only, to the ops prefix
+sudo systemd-run --unit=tablesync --collect --setenv=HOME=/home/ubuntu --uid=ubuntu --gid=ubuntu /bin/bash "$F/bundle/table_sync.sh"
 python3 -u "$F/bundle/record_loop.py" "$W" >> "$F/record_loop.log" 2>&1; rc=$?
 aws s3 cp "$F/record_loop.log" "$S3/record_loop.log" --only-show-errors || true; upload_logs
 echo "record_loop exited rc=$rc"; sudo shutdown -h +1 "recording queue drained"

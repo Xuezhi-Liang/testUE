@@ -674,12 +674,26 @@ def acceptance(ep, rows, traj, summary, rv):
     # frames by construction, so the median and the p95 are judged, not the minimum.
     if traj.get("speed_pinned") and traj.get("speed_m_per_s"):
         pin = float(traj["speed_m_per_s"])
-        walking = [float(r["speed_m_s"]) for r in rows
-                   if r.get("phase") in ("forward", "backward")] or speeds
+        # PLANAR speed: the pace is pinned in the XY plane, and `speed_m_s` in frames.csv is the 3D
+        # step. On a slope the 3D speed is 1/cos(slope) x the planar one, and the 60 cm/s vertical
+        # slew alone makes it sqrt(1 + 0.36) = 1.166 m/s - exactly the p95 that rejected CastleRiver
+        # and SnowMap (17 Sep) with a planar median of 1.000. Measured between consecutive rows.
+        import math as _m
+        wk = [r for r in rows if r.get("phase") in ("forward", "backward")]
+        walking = []
+        for a, b in zip(wk, wk[1:]):
+            try:
+                if int(b["frame_id"]) != int(a["frame_id"]) + 1:
+                    continue
+                dx = float(b["actual_x_cm"]) - float(a["actual_x_cm"]); dy = float(b["actual_y_cm"]) - float(a["actual_y_cm"])
+                walking.append(_m.hypot(dx, dy) / 100.0 * fps)
+            except (KeyError, ValueError):
+                continue
+        walking = walking or [float(r["speed_m_s"]) for r in wk] or speeds
         med, w95 = float(np.median(walking)), float(np.percentile(walking, 95))
         gate("speed_pinned_held", abs(med - pin) <= 0.02 * pin and w95 <= pin * 1.02,
-             f"walking-frame median {med:.3f} m/s, p95 {w95:.3f} m/s against the pinned "
-             f"{pin:.2f} m/s (2% tolerance, {len(walking)} frames)")
+             f"walking-frame PLANAR median {med:.3f} m/s, p95 {w95:.3f} m/s against the pinned "
+             f"{pin:.2f} m/s (2% tolerance, {len(walking)} frame steps)")
 
     pitches = [abs(float(r["actual_pitch_deg"])) for r in rows]
     rolls = [abs(float(r["actual_roll_deg"])) for r in rows]
