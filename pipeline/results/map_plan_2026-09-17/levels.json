@@ -9,7 +9,11 @@
   "core": 241.2,
   "mb": 156.0,
   "one_pass_min": 16.3,
-  "recorded": false
+  "recorded": false,
+  "cl": 219.1,
+  "roads": 386,
+  "kept": 0.4264,
+  "region_m2": null
  },
  {
   "fid": "Fab_002",
@@ -38,7 +42,11 @@
   "shards": 1,
   "machine_h": 21.3,
   "gb": 13,
-  "tier": "大"
+  "tier": "大",
+  "cl": 1821.1,
+  "roads": 3568,
+  "kept": 0.9278,
+  "region_m2": null
  },
  {
   "fid": "Fab_002",
@@ -55,7 +63,11 @@
   "shards": 1,
   "machine_h": 5.7,
   "gb": 3,
-  "tier": "中"
+  "tier": "中",
+  "cl": 531.8,
+  "roads": 595,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_002",
@@ -84,7 +96,11 @@
   "shards": 1,
   "machine_h": 2.8,
   "gb": 2,
-  "tier": "小"
+  "tier": "小",
+  "cl": 256.5,
+  "roads": 421,
+  "kept": 0.0899,
+  "region_m2": null
  },
  {
   "fid": "Fab_003",
@@ -101,7 +117,11 @@
   "shards": 1,
   "machine_h": 17.4,
   "gb": 11,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1539.5,
+  "roads": 2833,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_003",
@@ -130,7 +150,11 @@
   "shards": 1,
   "machine_h": 5.4,
   "gb": 3,
-  "tier": "中"
+  "tier": "中",
+  "cl": 455.5,
+  "roads": 717,
+  "kept": 0.8017,
+  "region_m2": null
  },
  {
   "fid": "Fab_004",
@@ -219,7 +243,11 @@
   "shards": 1,
   "machine_h": 2.7,
   "gb": 2,
-  "tier": "小"
+  "tier": "小",
+  "cl": 195.9,
+  "roads": 316,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_006",
@@ -236,7 +264,11 @@
   "shards": 1,
   "machine_h": 41.1,
   "gb": 25,
-  "tier": "大"
+  "tier": "大",
+  "cl": 3512.1,
+  "roads": 6576,
+  "kept": 0.971,
+  "region_m2": null
  },
  {
   "fid": "Fab_006",
@@ -277,7 +309,11 @@
   "shards": 1,
   "machine_h": 2.0,
   "gb": 1,
-  "tier": "小"
+  "tier": "小",
+  "cl": 193.6,
+  "roads": 248,
+  "kept": 0.9726,
+  "region_m2": null
  },
  {
   "fid": "Fab_008",
@@ -294,7 +330,11 @@
   "shards": 1,
   "machine_h": 14.2,
   "gb": 9,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1330.8,
+  "roads": 2277,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_008",
@@ -311,7 +351,11 @@
   "shards": 1,
   "machine_h": 27.3,
   "gb": 17,
-  "tier": "大"
+  "tier": "大",
+  "cl": 2825.0,
+  "roads": 3858,
+  "kept": 0.9969,
+  "region_m2": null
  },
  {
   "fid": "Fab_008",
@@ -347,7 +391,11 @@
   "core": 80.4,
   "mb": 21.0,
   "one_pass_min": 0.4,
-  "recorded": false
+  "recorded": false,
+  "cl": 3.3,
+  "roads": 11,
+  "kept": 0.1207,
+  "region_m2": null
  },
  {
   "fid": "Fab_009",
@@ -376,7 +424,11 @@
   "shards": 1,
   "machine_h": 5.1,
   "gb": 3,
-  "tier": "中"
+  "tier": "中",
+  "cl": 675.0,
+  "roads": 758,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_010",
@@ -405,7 +457,11 @@
   "shards": 1,
   "machine_h": 1.0,
   "gb": 1,
-  "tier": "小"
+  "tier": "小",
+  "cl": 174.0,
+  "roads": 16,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_011",
@@ -434,7 +490,11 @@
   "shards": 1,
   "machine_h": 8.2,
   "gb": 5,
-  "tier": "中"
+  "tier": "中",
+  "cl": 721.9,
+  "roads": 960,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_012",
@@ -451,7 +511,11 @@
   "shards": 1,
   "machine_h": 9.1,
   "gb": 6,
-  "tier": "中"
+  "tier": "中",
+  "cl": 739.3,
+  "roads": 1004,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_012",
@@ -468,7 +532,11 @@
   "shards": 1,
   "machine_h": 5.0,
   "gb": 3,
-  "tier": "中"
+  "tier": "中",
+  "cl": 527.8,
+  "roads": 606,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_012",
@@ -485,7 +553,11 @@
   "shards": 1,
   "machine_h": 22.9,
   "gb": 14,
-  "tier": "大"
+  "tier": "大",
+  "cl": 2155.8,
+  "roads": 3838,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_012",
@@ -538,7 +610,11 @@
   "shards": 1,
   "machine_h": 12.6,
   "gb": 8,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1076.2,
+  "roads": 1593,
+  "kept": 0.9612,
+  "region_m2": null
  },
  {
   "fid": "Fab_014",
@@ -555,7 +631,11 @@
   "shards": 1,
   "machine_h": 12.8,
   "gb": 8,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1180.1,
+  "roads": 1743,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_014",
@@ -584,7 +664,11 @@
   "shards": 1,
   "machine_h": 3.0,
   "gb": 2,
-  "tier": "小"
+  "tier": "小",
+  "cl": 288.2,
+  "roads": 293,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_016",
@@ -608,7 +692,11 @@
   "core": null,
   "mb": 2.4,
   "one_pass_min": null,
-  "recorded": false
+  "recorded": false,
+  "cl": 6.5,
+  "roads": 9,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_017",
@@ -637,7 +725,11 @@
   "shards": 1,
   "machine_h": 20.9,
   "gb": 13,
-  "tier": "大"
+  "tier": "大",
+  "cl": 1899.2,
+  "roads": 2845,
+  "kept": 0.9651,
+  "region_m2": null
  },
  {
   "fid": "Fab_017",
@@ -1429,7 +1521,11 @@
   "core": 0.0,
   "mb": 1.9,
   "one_pass_min": 2.1,
-  "recorded": false
+  "recorded": false,
+  "cl": 30.2,
+  "roads": 95,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_019",
@@ -1470,7 +1566,11 @@
   "shards": 1,
   "machine_h": 27.4,
   "gb": 17,
-  "tier": "大"
+  "tier": "大",
+  "cl": 2219.0,
+  "roads": 3847,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_021",
@@ -1499,7 +1599,11 @@
   "shards": 1,
   "machine_h": 14.4,
   "gb": 9,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1350.1,
+  "roads": 2177,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_022",
@@ -1528,7 +1632,11 @@
   "shards": 1,
   "machine_h": 3.2,
   "gb": 2,
-  "tier": "小"
+  "tier": "小",
+  "cl": 322.9,
+  "roads": 437,
+  "kept": 0.7722,
+  "region_m2": null
  },
  {
   "fid": "Fab_023",
@@ -1581,7 +1689,11 @@
   "shards": 1,
   "machine_h": 0.8,
   "gb": 0,
-  "tier": "小"
+  "tier": "小",
+  "cl": 74.0,
+  "roads": 48,
+  "kept": 0.8412,
+  "region_m2": null
  },
  {
   "fid": "Fab_024",
@@ -1610,7 +1722,11 @@
   "shards": 1,
   "machine_h": 18.4,
   "gb": 11,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1627.3,
+  "roads": 2997,
+  "kept": 0.9763,
+  "region_m2": null
  },
  {
   "fid": "Fab_025",
@@ -1639,7 +1755,11 @@
   "shards": 1,
   "machine_h": 16.6,
   "gb": 10,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1476.2,
+  "roads": 2683,
+  "kept": 0.9021,
+  "region_m2": null
  },
  {
   "fid": "Fab_026",
@@ -1716,7 +1836,11 @@
   "shards": 1,
   "machine_h": 1.3,
   "gb": 1,
-  "tier": "小"
+  "tier": "小",
+  "cl": 125.4,
+  "roads": 210,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_029",
@@ -1728,7 +1852,11 @@
   "core": 151.8,
   "mb": 1.6,
   "one_pass_min": 4.3,
-  "recorded": false
+  "recorded": false,
+  "cl": 67.7,
+  "roads": 96,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_029",
@@ -1793,7 +1921,11 @@
   "shards": 1,
   "machine_h": 24.8,
   "gb": 15,
-  "tier": "大"
+  "tier": "大",
+  "cl": 2180.7,
+  "roads": 4526,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_031",
@@ -1822,7 +1954,11 @@
   "shards": 1,
   "machine_h": 24.2,
   "gb": 15,
-  "tier": "大"
+  "tier": "大",
+  "cl": 2061.3,
+  "roads": 3372,
+  "kept": 0.9814,
+  "region_m2": null
  },
  {
   "fid": "Fab_031",
@@ -1858,7 +1994,11 @@
   "core": 269.4,
   "mb": 5.5,
   "one_pass_min": 25.7,
-  "recorded": false
+  "recorded": false,
+  "cl": 289.1,
+  "roads": 625,
+  "kept": 0.2243,
+  "region_m2": null
  },
  {
   "fid": "Fab_032",
@@ -1870,7 +2010,11 @@
   "core": null,
   "mb": 16.1,
   "one_pass_min": null,
-  "recorded": false
+  "recorded": false,
+  "cl": 417.4,
+  "roads": 506,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_032",
@@ -1899,7 +2043,11 @@
   "shards": 1,
   "machine_h": 13.7,
   "gb": 8,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1108.4,
+  "roads": 1669,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_032",
@@ -1916,7 +2064,11 @@
   "shards": 1,
   "machine_h": 13.4,
   "gb": 8,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1086.6,
+  "roads": 1653,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_032",
@@ -1933,7 +2085,11 @@
   "shards": 1,
   "machine_h": 7.5,
   "gb": 5,
-  "tier": "中"
+  "tier": "中",
+  "cl": 587.5,
+  "roads": 778,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_033",
@@ -1950,7 +2106,11 @@
   "shards": 1,
   "machine_h": 5.8,
   "gb": 4,
-  "tier": "中"
+  "tier": "中",
+  "cl": 524.3,
+  "roads": 886,
+  "kept": 0.815,
+  "region_m2": null
  },
  {
   "fid": "Fab_033",
@@ -1979,7 +2139,11 @@
   "shards": 1,
   "machine_h": 6.2,
   "gb": 4,
-  "tier": "中"
+  "tier": "中",
+  "cl": 527.1,
+  "roads": 1612,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_034",
@@ -2159,7 +2323,11 @@
   "core": 25.9,
   "mb": 776.5,
   "one_pass_min": 143.3,
-  "recorded": false
+  "recorded": false,
+  "cl": 1674.2,
+  "roads": 3023,
+  "kept": 0.9739,
+  "region_m2": null
  },
  {
   "fid": "Fab_034",
@@ -2236,7 +2404,11 @@
   "shards": 1,
   "machine_h": 14.6,
   "gb": 9,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1145.0,
+  "roads": 2128,
+  "kept": 0.9813,
+  "region_m2": null
  },
  {
   "fid": "Fab_035",
@@ -2289,7 +2461,11 @@
   "shards": 1,
   "machine_h": 0.4,
   "gb": 0,
-  "tier": "小"
+  "tier": "小",
+  "cl": 33.4,
+  "roads": 41,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_037",
@@ -2301,7 +2477,11 @@
   "core": 8.4,
   "mb": 0.5,
   "one_pass_min": 0.3,
-  "recorded": false
+  "recorded": false,
+  "cl": 6.6,
+  "roads": 1,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_037",
@@ -2313,7 +2493,11 @@
   "core": 62.4,
   "mb": 0.6,
   "one_pass_min": 3.1,
-  "recorded": false
+  "recorded": false,
+  "cl": 36.2,
+  "roads": 54,
+  "kept": 0.5911,
+  "region_m2": null
  },
  {
   "fid": "Fab_037",
@@ -2342,7 +2526,11 @@
   "shards": 1,
   "machine_h": 0.1,
   "gb": 0,
-  "tier": "小"
+  "tier": "小",
+  "cl": 10.2,
+  "roads": 10,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_037",
@@ -2359,7 +2547,11 @@
   "shards": 1,
   "machine_h": 0.4,
   "gb": 0,
-  "tier": "小"
+  "tier": "小",
+  "cl": 32.7,
+  "roads": 52,
+  "kept": 0.8064,
+  "region_m2": null
  },
  {
   "fid": "Fab_037",
@@ -2388,7 +2580,11 @@
   "shards": 1,
   "machine_h": 0.3,
   "gb": 0,
-  "tier": "小"
+  "tier": "小",
+  "cl": 27.7,
+  "roads": 18,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_037",
@@ -2405,7 +2601,11 @@
   "shards": 1,
   "machine_h": 0.3,
   "gb": 0,
-  "tier": "小"
+  "tier": "小",
+  "cl": 20.6,
+  "roads": 6,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_037",
@@ -2722,7 +2922,11 @@
   "shards": 1,
   "machine_h": 19.6,
   "gb": 12,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1579.8,
+  "roads": 3052,
+  "kept": 0.9546,
+  "region_m2": null
  },
  {
   "fid": "Fab_039",
@@ -2890,7 +3094,11 @@
   "core": 1142.9,
   "mb": 245.9,
   "one_pass_min": 21.7,
-  "recorded": false
+  "recorded": false,
+  "cl": 295.3,
+  "roads": 568,
+  "kept": 0.0861,
+  "region_m2": null
  },
  {
   "fid": "Fab_039",
@@ -2931,7 +3139,11 @@
   "shards": 1,
   "machine_h": 5.8,
   "gb": 4,
-  "tier": "中"
+  "tier": "中",
+  "cl": 532.2,
+  "roads": 930,
+  "kept": 0.4252,
+  "region_m2": null
  },
  {
   "fid": "Fab_040",
@@ -3027,7 +3239,11 @@
   "core": 16.2,
   "mb": 3.9,
   "one_pass_min": null,
-  "recorded": false
+  "recorded": false,
+  "cl": 162.1,
+  "roads": 187,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_043",
@@ -3039,7 +3255,11 @@
   "core": 183.1,
   "mb": 2.1,
   "one_pass_min": null,
-  "recorded": false
+  "recorded": false,
+  "cl": 172.6,
+  "roads": 186,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_043",
@@ -3104,7 +3324,11 @@
   "shards": 1,
   "machine_h": 7.9,
   "gb": 5,
-  "tier": "中"
+  "tier": "中",
+  "cl": 727.4,
+  "roads": 1311,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_044",
@@ -3121,7 +3345,11 @@
   "shards": 1,
   "machine_h": 2.3,
   "gb": 1,
-  "tier": "小"
+  "tier": "小",
+  "cl": 244.8,
+  "roads": 374,
+  "kept": 0.9799,
+  "region_m2": null
  },
  {
   "fid": "Fab_044",
@@ -3145,7 +3373,11 @@
   "core": 6.8,
   "mb": 1.1,
   "one_pass_min": 0.4,
-  "recorded": false
+  "recorded": false,
+  "cl": 7.5,
+  "roads": 1,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_045",
@@ -3186,7 +3418,11 @@
   "shards": 1,
   "machine_h": 1.8,
   "gb": 1,
-  "tier": "小"
+  "tier": "小",
+  "cl": 187.7,
+  "roads": 215,
+  "kept": 0.7587,
+  "region_m2": null
  },
  {
   "fid": "Fab_046",
@@ -3227,7 +3463,11 @@
   "shards": 1,
   "machine_h": 2.5,
   "gb": 2,
-  "tier": "小"
+  "tier": "小",
+  "cl": 231.0,
+  "roads": 364,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_047",
@@ -3244,7 +3484,11 @@
   "shards": 1,
   "machine_h": 20.7,
   "gb": 13,
-  "tier": "大"
+  "tier": "大",
+  "cl": 1876.6,
+  "roads": 3189,
+  "kept": 0.9757,
+  "region_m2": null
  },
  {
   "fid": "Fab_047",
@@ -3285,7 +3529,11 @@
   "shards": 1,
   "machine_h": 10.7,
   "gb": 7,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1077.3,
+  "roads": 1951,
+  "kept": 0.9268,
+  "region_m2": null
  },
  {
   "fid": "Fab_048",
@@ -3355,7 +3603,11 @@
   "shards": 1,
   "machine_h": 10.2,
   "gb": 6,
-  "tier": "中"
+  "tier": "中",
+  "cl": 963.5,
+  "roads": 1760,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_049",
@@ -3403,7 +3655,11 @@
   "core": 314.6,
   "mb": 15.8,
   "one_pass_min": 50.1,
-  "recorded": false
+  "recorded": false,
+  "cl": 580.2,
+  "roads": 868,
+  "kept": 0.9344,
+  "region_m2": null
  },
  {
   "fid": "Fab_050",
@@ -3432,7 +3688,11 @@
   "shards": 1,
   "machine_h": 19.2,
   "gb": 12,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1736.7,
+  "roads": 3379,
+  "kept": 0.8581,
+  "region_m2": null
  },
  {
   "fid": "Fab_051",
@@ -3461,7 +3721,11 @@
   "shards": 1,
   "machine_h": 12.7,
   "gb": 8,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1113.5,
+  "roads": 2230,
+  "kept": 0.9309,
+  "region_m2": null
  },
  {
   "fid": "Fab_052",
@@ -3473,7 +3737,11 @@
   "core": 1618.1,
   "mb": 0.7,
   "one_pass_min": 92.9,
-  "recorded": false
+  "recorded": false,
+  "cl": 1020.8,
+  "roads": 1784,
+  "kept": 0.9608,
+  "region_m2": null
  },
  {
   "fid": "Fab_052",
@@ -3490,7 +3758,11 @@
   "shards": 1,
   "machine_h": 8.5,
   "gb": 5,
-  "tier": "中"
+  "tier": "中",
+  "cl": 856.2,
+  "roads": 945,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_053",
@@ -3514,7 +3786,11 @@
   "core": 75.4,
   "mb": 0.5,
   "one_pass_min": 2.5,
-  "recorded": false
+  "recorded": false,
+  "cl": 27.1,
+  "roads": 27,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_053",
@@ -3531,7 +3807,11 @@
   "shards": 1,
   "machine_h": 0.6,
   "gb": 0,
-  "tier": "小"
+  "tier": "小",
+  "cl": 67.2,
+  "roads": 41,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_053",
@@ -3543,7 +3823,11 @@
   "core": 275.1,
   "mb": 2.5,
   "one_pass_min": 15.3,
-  "recorded": false
+  "recorded": false,
+  "cl": 198.6,
+  "roads": 265,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_053",
@@ -3555,7 +3839,11 @@
   "core": 79.8,
   "mb": 0.7,
   "one_pass_min": 0.6,
-  "recorded": false
+  "recorded": false,
+  "cl": 5.1,
+  "roads": 6,
+  "kept": 0.1653,
+  "region_m2": null
  },
  {
   "fid": "Fab_053",
@@ -3596,7 +3884,11 @@
   "shards": 1,
   "machine_h": 6.6,
   "gb": 4,
-  "tier": "中"
+  "tier": "中",
+  "cl": 483.4,
+  "roads": 784,
+  "kept": 0.9889,
+  "region_m2": null
  },
  {
   "fid": "Fab_055",
@@ -3649,7 +3941,11 @@
   "shards": 1,
   "machine_h": 13.6,
   "gb": 8,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1115.1,
+  "roads": 1347,
+  "kept": 0.8961,
+  "region_m2": null
  },
  {
   "fid": "Fab_055",
@@ -3678,7 +3974,11 @@
   "shards": 1,
   "machine_h": 17.4,
   "gb": 11,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1541.4,
+  "roads": 2518,
+  "kept": 0.9897,
+  "region_m2": null
  },
  {
   "fid": "Fab_056",
@@ -4163,7 +4463,11 @@
   "shards": 1,
   "machine_h": 4.2,
   "gb": 3,
-  "tier": "小"
+  "tier": "小",
+  "cl": 367.4,
+  "roads": 192,
+  "kept": 0.9593,
+  "region_m2": null
  },
  {
   "fid": "Fab_056",
@@ -4240,7 +4544,11 @@
   "shards": 1,
   "machine_h": 7.3,
   "gb": 4,
-  "tier": "中"
+  "tier": "中",
+  "cl": 744.3,
+  "roads": 617,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_057",
@@ -4269,7 +4577,11 @@
   "shards": 1,
   "machine_h": 5.8,
   "gb": 4,
-  "tier": "中"
+  "tier": "中",
+  "cl": 501.0,
+  "roads": 782,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_058",
@@ -4305,7 +4617,11 @@
   "core": 0.0,
   "mb": 0.9,
   "one_pass_min": 0.1,
-  "recorded": false
+  "recorded": false,
+  "cl": 0.2,
+  "roads": 1,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_060",
@@ -4329,7 +4645,11 @@
   "core": 495.5,
   "mb": 9.9,
   "one_pass_min": 24.8,
-  "recorded": false
+  "recorded": false,
+  "cl": 252.7,
+  "roads": 375,
+  "kept": 0.8784,
+  "region_m2": null
  },
  {
   "fid": "Fab_060",
@@ -4346,7 +4666,11 @@
   "shards": 1,
   "machine_h": 2.1,
   "gb": 1,
-  "tier": "小"
+  "tier": "小",
+  "cl": 215.6,
+  "roads": 259,
+  "kept": 0.8752,
+  "region_m2": null
  },
  {
   "fid": "Fab_060",
@@ -4382,7 +4706,11 @@
   "core": 0.0,
   "mb": 1.0,
   "one_pass_min": 1.2,
-  "recorded": false
+  "recorded": false,
+  "cl": 13.9,
+  "roads": 1,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_061",
@@ -4394,7 +4722,11 @@
   "core": 0.0,
   "mb": 1.1,
   "one_pass_min": 2.4,
-  "recorded": false
+  "recorded": false,
+  "cl": 29.0,
+  "roads": 46,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_062",
@@ -4411,7 +4743,11 @@
   "shards": 1,
   "machine_h": 2.8,
   "gb": 2,
-  "tier": "小"
+  "tier": "小",
+  "cl": 296.9,
+  "roads": 220,
+  "kept": 0.8725,
+  "region_m2": null
  },
  {
   "fid": "Fab_062",
@@ -4452,7 +4788,11 @@
   "shards": 1,
   "machine_h": 0.2,
   "gb": 0,
-  "tier": "小"
+  "tier": "小",
+  "cl": 12.4,
+  "roads": 11,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_064",
@@ -4469,7 +4809,11 @@
   "shards": 1,
   "machine_h": 4.5,
   "gb": 3,
-  "tier": "小"
+  "tier": "小",
+  "cl": 372.0,
+  "roads": 575,
+  "kept": 0.956,
+  "region_m2": null
  },
  {
   "fid": "Fab_064",
@@ -4517,7 +4861,11 @@
   "core": null,
   "mb": 9.1,
   "one_pass_min": null,
-  "recorded": false
+  "recorded": false,
+  "cl": 45.5,
+  "roads": 133,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_065",
@@ -4534,7 +4882,11 @@
   "shards": 1,
   "machine_h": 12.8,
   "gb": 8,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1219.8,
+  "roads": 2407,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_066",
@@ -4563,7 +4915,11 @@
   "core": 2149.2,
   "mb": 6.7,
   "one_pass_min": 255.8,
-  "recorded": false
+  "recorded": false,
+  "cl": 2839.9,
+  "roads": 4769,
+  "kept": 0.9898,
+  "region_m2": null
  },
  {
   "fid": "Fab_066",
@@ -4592,7 +4948,11 @@
   "shards": 1,
   "machine_h": 1.7,
   "gb": 1,
-  "tier": "小"
+  "tier": "小",
+  "cl": 140.9,
+  "roads": 256,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_067",
@@ -4628,7 +4988,11 @@
   "core": null,
   "mb": 14.8,
   "one_pass_min": null,
-  "recorded": false
+  "recorded": false,
+  "cl": 397.9,
+  "roads": 885,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_069",
@@ -4652,7 +5016,11 @@
   "core": 99.8,
   "mb": 0.3,
   "one_pass_min": 4.7,
-  "recorded": false
+  "recorded": false,
+  "cl": 69.3,
+  "roads": 78,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_069",
@@ -4693,7 +5061,11 @@
   "shards": 1,
   "machine_h": 0.5,
   "gb": 0,
-  "tier": "小"
+  "tier": "小",
+  "cl": 42.9,
+  "roads": 71,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_069",
@@ -4710,7 +5082,11 @@
   "shards": 1,
   "machine_h": 1.1,
   "gb": 1,
-  "tier": "小"
+  "tier": "小",
+  "cl": 98.1,
+  "roads": 124,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_069",
@@ -4811,7 +5187,11 @@
   "shards": 1,
   "machine_h": 29.1,
   "gb": 18,
-  "tier": "大"
+  "tier": "大",
+  "cl": 2472.0,
+  "roads": 4230,
+  "kept": 0.9942,
+  "region_m2": null
  },
  {
   "fid": "Fab_070",
@@ -5032,7 +5412,11 @@
   "shards": 1,
   "machine_h": 2.4,
   "gb": 1,
-  "tier": "小"
+  "tier": "小",
+  "cl": 240.0,
+  "roads": 449,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_072",
@@ -5049,7 +5433,11 @@
   "shards": 1,
   "machine_h": 4.2,
   "gb": 3,
-  "tier": "小"
+  "tier": "小",
+  "cl": 446.0,
+  "roads": 770,
+  "kept": 0.8491,
+  "region_m2": null
  },
  {
   "fid": "Fab_072",
@@ -5078,7 +5466,11 @@
   "shards": 1,
   "machine_h": 7.7,
   "gb": 5,
-  "tier": "中"
+  "tier": "中",
+  "cl": 702.5,
+  "roads": 1053,
+  "kept": 0.9927,
+  "region_m2": null
  },
  {
   "fid": "Fab_073",
@@ -5107,7 +5499,11 @@
   "shards": 1,
   "machine_h": 46.3,
   "gb": 28,
-  "tier": "大"
+  "tier": "大",
+  "cl": 4456.0,
+  "roads": 8027,
+  "kept": 0.9994,
+  "region_m2": null
  },
  {
   "fid": "Fab_073",
@@ -5160,7 +5556,11 @@
   "shards": 1,
   "machine_h": 1.0,
   "gb": 1,
-  "tier": "小"
+  "tier": "小",
+  "cl": 87.7,
+  "roads": 66,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_074",
@@ -5189,7 +5589,11 @@
   "shards": 1,
   "machine_h": 3.4,
   "gb": 2,
-  "tier": "小"
+  "tier": "小",
+  "cl": 374.8,
+  "roads": 455,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_075",
@@ -5206,7 +5610,11 @@
   "shards": 1,
   "machine_h": 8.4,
   "gb": 5,
-  "tier": "中"
+  "tier": "中",
+  "cl": 802.3,
+  "roads": 1096,
+  "kept": 0.9461,
+  "region_m2": null
  },
  {
   "fid": "Fab_075",
@@ -5223,7 +5631,11 @@
   "shards": 1,
   "machine_h": 8.5,
   "gb": 5,
-  "tier": "中"
+  "tier": "中",
+  "cl": 812.6,
+  "roads": 1128,
+  "kept": 0.9511,
+  "region_m2": null
  },
  {
   "fid": "Fab_075",
@@ -5283,7 +5695,11 @@
   "core": 250.2,
   "mb": 6.8,
   "one_pass_min": 18.7,
-  "recorded": false
+  "recorded": false,
+  "cl": 260.5,
+  "roads": 271,
+  "kept": 0.5668,
+  "region_m2": null
  },
  {
   "fid": "Fab_078",
@@ -5300,7 +5716,11 @@
   "shards": 1,
   "machine_h": 0.9,
   "gb": 1,
-  "tier": "小"
+  "tier": "小",
+  "cl": 88.9,
+  "roads": 109,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_078",
@@ -5449,7 +5869,11 @@
   "shards": 1,
   "machine_h": 4.2,
   "gb": 3,
-  "tier": "小"
+  "tier": "小",
+  "cl": 389.3,
+  "roads": 532,
+  "kept": 0.9079,
+  "region_m2": null
  },
  {
   "fid": "Fab_080",
@@ -5473,7 +5897,11 @@
   "core": 118.1,
   "mb": 4.1,
   "one_pass_min": 15.3,
-  "recorded": false
+  "recorded": false,
+  "cl": 210.9,
+  "roads": 384,
+  "kept": 0.5568,
+  "region_m2": null
  },
  {
   "fid": "Fab_081",
@@ -5514,7 +5942,11 @@
   "shards": 1,
   "machine_h": 0.5,
   "gb": 0,
-  "tier": "小"
+  "tier": "小",
+  "cl": 50.3,
+  "roads": 75,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_082",
@@ -5526,7 +5958,11 @@
   "core": null,
   "mb": 0.2,
   "one_pass_min": null,
-  "recorded": false
+  "recorded": false,
+  "cl": 616.0,
+  "roads": 1121,
+  "kept": 0.9844,
+  "region_m2": null
  },
  {
   "fid": "Fab_082",
@@ -5550,7 +5986,11 @@
   "core": null,
   "mb": 2.6,
   "one_pass_min": null,
-  "recorded": false
+  "recorded": false,
+  "cl": 927.4,
+  "roads": 1598,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_083",
@@ -5603,7 +6043,11 @@
   "shards": 1,
   "machine_h": 16.5,
   "gb": 10,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1375.2,
+  "roads": 1935,
+  "kept": 0.996,
+  "region_m2": null
  },
  {
   "fid": "Fab_083",
@@ -5632,7 +6076,11 @@
   "shards": 1,
   "machine_h": 17.7,
   "gb": 11,
-  "tier": "中"
+  "tier": "中",
+  "cl": 1846.3,
+  "roads": 1972,
+  "kept": 0.9827,
+  "region_m2": null
  },
  {
   "fid": "Fab_084",
@@ -5661,7 +6109,11 @@
   "shards": 1,
   "machine_h": 4.0,
   "gb": 2,
-  "tier": "小"
+  "tier": "小",
+  "cl": 359.2,
+  "roads": 415,
+  "kept": 0.9402,
+  "region_m2": null
  },
  {
   "fid": "Fab_085",
@@ -5702,7 +6154,11 @@
   "shards": 1,
   "machine_h": 0.4,
   "gb": 0,
-  "tier": "小"
+  "tier": "小",
+  "cl": 35.7,
+  "roads": 54,
+  "kept": 1.0,
+  "region_m2": null
  },
  {
   "fid": "Fab_087",
@@ -5726,6 +6182,10 @@
   "core": 40.2,
   "mb": 97.2,
   "one_pass_min": 0.5,
-  "recorded": false
+  "recorded": false,
+  "cl": 8.1,
+  "roads": 3,
+  "kept": 0.3166,
+  "region_m2": null
  }
 ]

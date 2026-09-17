@@ -50,19 +50,19 @@ md = ["# 全部交付地图的录制规划（按关卡）", "", f"2026-09-17。�
       "| | 值 |", "|---|---:|", f"| 可直接录 | {len(A)} 张（其中 {rec} 张已录过旧设置版本） |", f"| 成片总时长 | {tot['ep']:.0f} h |", f"| 集数 | {len(A)} |",
       f"| 机时（实时 2.5 倍） | {tot['mh']:.0f} h |", f"| 10 台 | {tot['mh']/240:.1f} 天 |", f"| 20 台 | {tot['mh']/480:.1f} 天 |", f"| 存储（1.5 GB/成片小时） | {tot['gb']:,} GB |",
       f"| 大 / 中 / 小（成片 ≥8 h / ≥2 h / <2 h） | {big} / {mid} / {small} |", f"| 核心 <50 m²（开阔地形或单间，内容价值低） | {lowcore} |", "", RULE, "",
-      "## 执行顺序", ""] + [f"{i}. {p}" for i, p in enumerate(PHASES, 1)] + ["",
+      "**路网列的含义**：路网 m = 选定区域中心线总长，覆盖走法要把它每条路走一遍（实际约重走 1.6 倍）；路数 = 中心线被路口切成的段数；保留率 = 头部净空剪枝后剩下的中心线比例，剪掉的路不在覆盖范围内。录制时长跟路网走，不跟核心走。", "", "## 执行顺序", ""] + [f"{i}. {p}" for i, p in enumerate(PHASES, 1)] + ["",
       "## 442 张交付关卡的去向", "", "| 分类 | 张数 | 说明 |", "|---|---:|---|"]
 for c in ORDER: md.append(f"| {c} | {sum(1 for x in LV if x['cls']==c)} | {EXPL[c]} |")
 md += ["", f"真正的可录场景 = 442 − H 212 − F 83 = **147 张**；现在能录 {len(A)} 张，最多能到 {147 - sum(1 for x in LV if x['cls']=='G 放弃')} 张。", "",
-       f"## A 类：可直接录的 {len(A)} 张（按成片时长降序）", "", "| # | 资源包 | 关卡 | 核心 m² | 间隙 | 一遍 min | 成片 h | 机时 | 备注 |", "|---:|---|---|---:|---:|---:|---:|---:|---|"]
+       f"## A 类：可直接录的 {len(A)} 张（按成片时长降序）", "", "| # | 资源包 | 关卡 | 核心 m² | 路网 m | 路数 | 保留率 | 间隙 | 一遍 min | 成片 h | 机时 | 备注 |", "|---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|"]
 for i, x in enumerate(A, 1):
     note = ('已录 ' if x['recorded'] else '') + ('核心≈0 ' if (x['core'] or 0) < 50 else '')
-    md.append(f"| {i} | {x['fid']} {x['title'][:30]} | `{x['level'].split('/')[-1]}` | {n(x['core'])} | {n(CLR.get(x['slug']))} | {n(x.get('one_pass_min'), '{:.0f}')} | {x['episode_h']:.1f} | {x['machine_h']:.0f} | {note.strip()} |")
+    md.append(f"| {i} | {x['fid']} {x['title'][:30]} | `{x['level'].split('/')[-1]}` | {n(x['core'])} | {n(x.get('cl'))} | {n(x.get('roads'))} | {n(x.get('kept'), '{:.0%}')} | {n(CLR.get(x['slug']))} | {n(x.get('one_pass_min'), '{:.0f}')} | {x['episode_h']:.1f} | {x['machine_h']:.0f} | {note.strip()} |")
 for c in ORDER[1:6]:
     rows = [x for x in LV if x['cls'] == c]
     if not rows: continue
-    md += ["", f"## {c}（{len(rows)} 张）", "", EXPL[c], "", "| 资源包 | 关卡 | 最近状态 | 核心 m² |", "|---|---|---|---:|"]
-    for x in rows: md.append(f"| {x['fid']} {x['title'][:34]} | `{x['level'].split('/')[-1]}` | {x['state'] or '未跑'} | {n(x['core'])} |")
+    md += ["", f"## {c}（{len(rows)} 张）", "", EXPL[c], "", "| 资源包 | 关卡 | 最近状态 | 核心 m² | 路网 m | 保留率 |", "|---|---|---|---:|---:|---:|"]
+    for x in rows: md.append(f"| {x['fid']} {x['title'][:34]} | `{x['level'].split('/')[-1]}` | {x['state'] or '未跑'} | {n(x['core'])} | {n(x.get('cl'))} | {n(x.get('kept'), '{:.0%}')} |")
 md += ["", "## 附录：按资源包的统计（仅供参考）", "", "主统计按关卡。这里把同一资源包的关卡合并，只用来对照采购单位；一个包的分类取其关卡里最好的一档。", "",
        "| 分类 | 资源包数 |", "|---|---:|"] + [f"| {c} | {pk_cnt[c]} |" for c in ORDER if pk_cnt[c]] + ["",
        f"有可录关卡的资源包 {len(pk_a)} 个，合计可录关卡 {sum(P['a'] for P in pk_a)} 张、成片 {sum(P['ep'] for P in pk_a):.0f} h、机时 {sum(P['mh'] for P in pk_a):.0f} h。若每包只录一张代表关卡，则为 {len(pk_a)} 集。", "",
@@ -80,21 +80,21 @@ h = [f"<!doctype html><meta charset=utf-8><title>地图录制规划 · 按关卡
      f"<tr><td>可直接录</td><td class=r>{len(A)} 张（其中 {rec} 张已录过旧设置版本）</td></tr><tr><td>成片总时长</td><td class=r>{tot['ep']:.0f} h</td></tr><tr><td>集数</td><td class=r>{len(A)}</td></tr>",
      f"<tr><td>机时（实时 2.5 倍）</td><td class=r>{tot['mh']:.0f} h</td></tr><tr><td>10 台 / 20 台</td><td class=r>{tot['mh']/240:.1f} 天 / {tot['mh']/480:.1f} 天</td></tr><tr><td>存储（1.5 GB/成片小时）</td><td class=r>{tot['gb']:,} GB</td></tr>",
      f"<tr><td>大 / 中 / 小（成片 ≥8 h / ≥2 h / &lt;2 h）</td><td class=r>{big} / {mid} / {small}</td></tr><tr><td>核心 &lt;50 m²（开阔地形或单间）</td><td class=r>{lowcore}</td></tr></table>",
-     "<p>" + RULE.replace('**', '') + "</p>", "<h2>执行顺序</h2><ol>" + ''.join(f"<li>{p.replace('**','')}</li>" for p in PHASES) + "</ol>",
+     "<p>" + RULE.replace('**', '') + "</p>", "<p><b>路网列的含义</b>：路网 m = 选定区域中心线总长，覆盖走法要把它每条路走一遍（实际约重走 1.6 倍）；路数 = 中心线被路口切成的段数；保留率 = 头部净空剪枝后剩下的中心线比例，剪掉的路不在覆盖范围内。录制时长跟路网走，不跟核心走。</p>", "<h2>执行顺序</h2><ol>" + ''.join(f"<li>{p.replace('**','')}</li>" for p in PHASES) + "</ol>",
      "<h2>442 张交付关卡的去向</h2><table><tr><th>分类</th><th>张数</th><th>说明</th></tr>"]
 for c in ORDER: h.append(f"<tr><td><span class='tag {c[0]}'>{c}</span></td><td class=r>{sum(1 for x in LV if x['cls']==c)}</td><td>{EXPL[c]}</td></tr>")
 h.append(f"</table><p>真正的可录场景 = 442 − H 212 − F 83 = <b>147 张</b>；现在能录 {len(A)} 张，最多能到 {147 - sum(1 for x in LV if x['cls']=='G 放弃')} 张。</p>")
-h.append(f"<h2>A 类：可直接录的 {len(A)} 张（按成片时长降序）</h2><table><tr><th>#</th><th>资源包</th><th>关卡</th><th>核心 m²</th><th>间隙</th><th>一遍 min</th><th>成片 h</th><th>机时</th><th>备注</th></tr>")
+h.append(f"<h2>A 类：可直接录的 {len(A)} 张（按成片时长降序）</h2><table><tr><th>#</th><th>资源包</th><th>关卡</th><th>核心 m²</th><th>路网 m</th><th>路数</th><th>保留率</th><th>间隙</th><th>一遍 min</th><th>成片 h</th><th>机时</th><th>备注</th></tr>")
 for i, x in enumerate(A, 1):
     cls = 'big' if x['tier'] == '大' else 'low' if (x['core'] or 0) < 50 else ''
     note = ('<b>已录</b> ' if x['recorded'] else '') + ('核心≈0' if (x['core'] or 0) < 50 else '')
-    h.append(f"<tr class='{cls}'><td class=r>{i}</td><td>{html.escape(x['title'])}<div class=mut>{x['fid']}</div></td><td><code>{html.escape(x['level'])}</code></td><td class=r>{n(x['core'])}</td><td class=r>{n(CLR.get(x['slug']))}</td><td class=r>{n(x.get('one_pass_min'),'{:.0f}')}</td><td class=r>{x['episode_h']:.1f}</td><td class=r>{x['machine_h']:.0f}</td><td>{note}</td></tr>")
+    h.append(f"<tr class='{cls}'><td class=r>{i}</td><td>{html.escape(x['title'])}<div class=mut>{x['fid']}</div></td><td><code>{html.escape(x['level'])}</code></td><td class=r>{n(x['core'])}</td><td class=r>{n(x.get('cl'))}</td><td class=r>{n(x.get('roads'))}</td><td class=r>{n(x.get('kept'),'{:.0%}')}</td><td class=r>{n(CLR.get(x['slug']))}</td><td class=r>{n(x.get('one_pass_min'),'{:.0f}')}</td><td class=r>{x['episode_h']:.1f}</td><td class=r>{x['machine_h']:.0f}</td><td>{note}</td></tr>")
 h.append("</table>")
 for c in ORDER[1:6]:
     rows = [x for x in LV if x['cls'] == c]
     if not rows: continue
-    h.append(f"<h2><span class='tag {c[0]}'>{c}</span> {len(rows)} 张</h2><p>{EXPL[c]}</p><table><tr><th>资源包</th><th>关卡</th><th>最近状态</th><th>核心 m²</th></tr>")
-    for x in rows: h.append(f"<tr><td>{html.escape(x['title'])}<div class=mut>{x['fid']}</div></td><td><code>{html.escape(x['level'])}</code></td><td>{x['state'] or '未跑'}</td><td class=r>{n(x['core'])}</td></tr>")
+    h.append(f"<h2><span class='tag {c[0]}'>{c}</span> {len(rows)} 张</h2><p>{EXPL[c]}</p><table><tr><th>资源包</th><th>关卡</th><th>最近状态</th><th>核心 m²</th><th>路网 m</th><th>保留率</th></tr>")
+    for x in rows: h.append(f"<tr><td>{html.escape(x['title'])}<div class=mut>{x['fid']}</div></td><td><code>{html.escape(x['level'])}</code></td><td>{x['state'] or '未跑'}</td><td class=r>{n(x['core'])}</td><td class=r>{n(x.get('cl'))}</td><td class=r>{n(x.get('kept'),'{:.0%}')}</td></tr>")
     h.append("</table>")
 h.append("<h2>单独立项</h2><ul><li><b>Dubai Downtown</b>：64 GB，需 Cesium；悬浮模式录过 30 s 演示，地面无碰撞，要录先解决碰撞。</li><li><b>Lyra</b>：射击示例，非环境。</li><li><b>Factory Environment Collection / Demonstration</b>：资产全在通用目录，合不进 gym_citynav，要单独立工程。</li><li><b>AdditionalSamples</b>：CitySample 82 GB / 439 张关卡是完整城市，值得单独评估；另两个不是环境。</li></ul>")
 h.append("<h2>附录：按资源包的统计（仅供参考）</h2><p>主统计按关卡。这里把同一资源包的关卡合并，只用来对照采购单位；一个包的分类取其关卡里最好的一档。</p><table><tr><th>分类</th><th>资源包数</th></tr>" + ''.join(f"<tr><td><span class='tag {c[0]}'>{c}</span></td><td class=r>{pk_cnt[c]}</td></tr>" for c in ORDER if pk_cnt[c]) + "</table>"
