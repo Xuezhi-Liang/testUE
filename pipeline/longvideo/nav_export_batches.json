@@ -1,0 +1,398 @@
+{
+ "0": [
+  {
+   "slug": "Game_Brushify_Maps_Arctic_Arctic",
+   "map_id": "/Game/Brushify/Maps/Arctic/Arctic"
+  },
+  {
+   "slug": "Game_GrassHillsLandscape_Maps_Overview_Overview",
+   "map_id": "/Game/GrassHillsLandscape/Maps/Overview/Overview"
+  },
+  {
+   "slug": "Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down",
+   "map_id": "/Game/LowPolyMedievalConstructions/Maps/Map_5_Top-Down"
+  },
+  {
+   "slug": "Game_ModularGothicFantasyEnvironment_Maps_DemoMapNight",
+   "map_id": "/Game/ModularGothicFantasyEnvironment/Maps/DemoMapNight"
+  },
+  {
+   "slug": "Game_OperaHouse_Maps_Demonstration",
+   "map_id": "/Game/OperaHouse/Maps/Demonstration"
+  },
+  {
+   "slug": "Game_SoulCave_Maps_LV_Soul_Cave",
+   "map_id": "/Game/SoulCave/Maps/LV_Soul_Cave"
+  },
+  {
+   "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night",
+   "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Night"
+  },
+  {
+   "slug": "Game_Village_Maps_Village_SummerNightExample",
+   "map_id": "/Game/Village/Maps/Village_SummerNightExample"
+  }
+ ],
+ "1": [
+  {
+   "slug": "Game_Bunker_Maps_demonstration_BUNKER",
+   "map_id": "/Game/Bunker/Maps/demonstration_BUNKER"
+  },
+  {
+   "slug": "Game_HotelCorridor_Maps_Hotel_Corridor",
+   "map_id": "/Game/HotelCorridor/Maps/Hotel_Corridor"
+  },
+  {
+   "slug": "Game_LowPolyMedievalConstructions_Maps_Map_6_Top-Down",
+   "map_id": "/Game/LowPolyMedievalConstructions/Maps/Map_6_Top-Down"
+  },
+  {
+   "slug": "Game_ModularPlatformerIndustrialArea_Map_Factory",
+   "map_id": "/Game/ModularPlatformerIndustrialArea/Map/Factory"
+  },
+  {
+   "slug": "Game_OperatingRoom_Levels_Operating_Room",
+   "map_id": "/Game/OperatingRoom/Levels/Operating_Room"
+  },
+  {
+   "slug": "Game_SoulCave_Maps_LV_Soul_Cave_Mobile",
+   "map_id": "/Game/SoulCave/Maps/LV_Soul_Cave_Mobile"
+  },
+  {
+   "slug": "Game_SwimmingPool_Maps_ChangingRoom_Male",
+   "map_id": "/Game/SwimmingPool/Maps/ChangingRoom_Male"
+  },
+  {
+   "slug": "Game_Wild_West_Maps_WildWest",
+   "map_id": "/Game/Wild_West/Maps/WildWest"
+  }
+ ],
+ "2": [
+  {
+   "slug": "Game_CastleRiver_Maps_Demonstration",
+   "map_id": "/Game/CastleRiver/Maps/Demonstration"
+  },
+  {
+   "slug": "Game_InfinityWeather_Demo_Maps_DesertMap",
+   "map_id": "/Game/InfinityWeather/Demo/Maps/DesertMap"
+  },
+  {
+   "slug": "Game_LowPolyMedievalConstructions_Maps_Map_9",
+   "map_id": "/Game/LowPolyMedievalConstructions/Maps/Map_9"
+  },
+  {
+   "slug": "Game_ModularPlatformerIndustrialArea_Map_HANGAR",
+   "map_id": "/Game/ModularPlatformerIndustrialArea/Map/HANGAR"
+  },
+  {
+   "slug": "Game_ParkingGarage_Maps_UndergroundParking",
+   "map_id": "/Game/ParkingGarage/Maps/UndergroundParking"
+  },
+  {
+   "slug": "Game_StonePineForest_Maps_GooseLand_Map",
+   "map_id": "/Game/StonePineForest/Maps/GooseLand_Map"
+  },
+  {
+   "slug": "Game_SwimmingPool_Maps_Demonstration_Master",
+   "map_id": "/Game/SwimmingPool/Maps/Demonstration_Master"
+  },
+  {
+   "slug": "Game_WinterTown_Maps_RussianWinterTownDemo02",
+   "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo02"
+  }
+ ],
+ "3": [
+  {
+   "slug": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_1",
+   "map_id": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_1"
+  },
+  {
+   "slug": "Game_InfinityWeather_Demo_Maps_RainMap",
+   "map_id": "/Game/InfinityWeather/Demo/Maps/RainMap"
+  },
+  {
+   "slug": "Game_Medieval_Env_Maps_Map_NorthenIsle_01",
+   "map_id": "/Game/Medieval_Env/Maps/Map_NorthenIsle_01"
+  },
+  {
+   "slug": "Game_ModularSciFi_Levels_LandscapePreview",
+   "map_id": "/Game/ModularSciFi/Levels/LandscapePreview"
+  },
+  {
+   "slug": "Game_QA_HoldingCells_Maps_QA_Holding_Cells_A",
+   "map_id": "/Game/QA_HoldingCells/Maps/QA_Holding_Cells_A"
+  },
+  {
+   "slug": "Game_StonePineForest_Maps_Mountains_Map",
+   "map_id": "/Game/StonePineForest/Maps/Mountains_Map"
+  },
+  {
+   "slug": "Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_01_Exterior_TemplesOfCambodia_01_01_Exterior",
+   "map_id": "/Game/TemplesOfCambodia/Demo/Maps/TemplesOfCambodia_01_Exterior/TemplesOfCambodia_01_01_Exterior"
+  },
+  {
+   "slug": "Game_racing_track_map_racing_track",
+   "map_id": "/Game/racing_track/map/racing_track"
+  }
+ ],
+ "4": [
+  {
+   "slug": "Game_ChineseWaterTown_Ver1_Map_DemoMap",
+   "map_id": "/Game/ChineseWaterTown/Ver1/Map/DemoMap"
+  },
+  {
+   "slug": "Game_InfinityWeather_Demo_Maps_SnowMap",
+   "map_id": "/Game/InfinityWeather/Demo/Maps/SnowMap"
+  },
+  {
+   "slug": "Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo",
+   "map_id": "/Game/Medieval_Environment/Real_Landscape/Default/Maps/Default_Demo"
+  },
+  {
+   "slug": "Game_ModularSciFi_Levels_PreviewSceneIndoor",
+   "map_id": "/Game/ModularSciFi/Levels/PreviewSceneIndoor"
+  },
+  {
+   "slug": "Game_QA_HoldingCells_Maps_QA_Holding_Cells_B",
+   "map_id": "/Game/QA_HoldingCells/Maps/QA_Holding_Cells_B"
+  },
+  {
+   "slug": "Game_StonePineForest_Maps_Mountains_Map_LevelDesign",
+   "map_id": "/Game/StonePineForest/Maps/Mountains_Map_LevelDesign"
+  },
+  {
+   "slug": "Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior",
+   "map_id": "/Game/TemplesOfCambodia/Demo/Maps/TemplesOfCambodia_02_Interior/TemplesOfCambodia_02_01_Interior"
+  }
+ ],
+ "5": [
+  {
+   "slug": "Game_ContainerYard_Maps_Demonstration",
+   "map_id": "/Game/ContainerYard/Maps/Demonstration"
+  },
+  {
+   "slug": "Game_InfinityWeather_Demo_Maps_WorldMap",
+   "map_id": "/Game/InfinityWeather/Demo/Maps/WorldMap"
+  },
+  {
+   "slug": "Game_ModularCourtyard_Maps_SampleScene_overcast",
+   "map_id": "/Game/ModularCourtyard/Maps/SampleScene_overcast"
+  },
+  {
+   "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Daytime",
+   "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Daytime"
+  },
+  {
+   "slug": "Game_QA_ModularParking_Maps_Map_demonstration",
+   "map_id": "/Game/QA_ModularParking/Maps/Map_demonstration"
+  },
+  {
+   "slug": "Game_StonePineForest_Maps_Traditional_Map",
+   "map_id": "/Game/StonePineForest/Maps/Traditional_Map"
+  },
+  {
+   "slug": "Game_TrainStation_Maps_Demonstration",
+   "map_id": "/Game/TrainStation/Maps/Demonstration"
+  }
+ ],
+ "6": [
+  {
+   "slug": "Game_Dungeon_Levels_Dungeon_Demo_00",
+   "map_id": "/Game/Dungeon/Levels/Dungeon_Demo_00"
+  },
+  {
+   "slug": "Game_Lighthouse_Island_Levels_Lighthouse_Demo_00",
+   "map_id": "/Game/Lighthouse_Island/Levels/Lighthouse_Demo_00"
+  },
+  {
+   "slug": "Game_ModularCourtyard_Maps_SampleScene_sanny",
+   "map_id": "/Game/ModularCourtyard/Maps/SampleScene_sanny"
+  },
+  {
+   "slug": "Game_Nimikko_CommandCenter_Scenes_CommandCenter",
+   "map_id": "/Game/Nimikko_CommandCenter/Scenes/CommandCenter"
+  },
+  {
+   "slug": "Game_RoofProps_Scenes_Demo_Roof",
+   "map_id": "/Game/RoofProps/Scenes/Demo_Roof"
+  },
+  {
+   "slug": "Game_StorageHouse_Maps_Demonstration",
+   "map_id": "/Game/StorageHouse/Maps/Demonstration"
+  },
+  {
+   "slug": "Game_UrbanDistrict_Demo_Maps_Main_UADistrict_01_P",
+   "map_id": "/Game/UrbanDistrict/Demo/Maps/Main/UADistrict_01_P"
+  }
+ ],
+ "7": [
+  {
+   "slug": "Game_ErikStadium_Maps_Stadium",
+   "map_id": "/Game/ErikStadium/Maps/Stadium"
+  },
+  {
+   "slug": "Game_LookoutTower_Maps_Demo",
+   "map_id": "/Game/LookoutTower/Maps/Demo"
+  },
+  {
+   "slug": "Game_ModularGothicFantasyEnvironment_Maps_DemoMapDay",
+   "map_id": "/Game/ModularGothicFantasyEnvironment/Maps/DemoMapDay"
+  },
+  {
+   "slug": "Game_Old_Factory_01_Maps_Demoscene_01",
+   "map_id": "/Game/Old_Factory_01/Maps/Demoscene_01"
+  },
+  {
+   "slug": "Game_SchoolGym_Maps_SchoolGymDay",
+   "map_id": "/Game/SchoolGym/Maps/SchoolGymDay"
+  },
+  {
+   "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day",
+   "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day"
+  },
+  {
+   "slug": "Game_Venice_fast_building_Maps_Overview",
+   "map_id": "/Game/Venice_fast_building/Maps/Overview"
+  }
+ ],
+ "8": [
+  {
+   "slug": "Game_CastleRiver_Maps_Demonstration",
+   "map_id": "/Game/CastleRiver/Maps/Demonstration"
+  },
+  {
+   "slug": "Game_GrassHillsLandscape_Maps_Overview_Overview",
+   "map_id": "/Game/GrassHillsLandscape/Maps/Overview/Overview"
+  },
+  {
+   "slug": "Game_InfinityWeather_Demo_Maps_RainMap",
+   "map_id": "/Game/InfinityWeather/Demo/Maps/RainMap"
+  },
+  {
+   "slug": "Game_InfinityWeather_Demo_Maps_WorldMap",
+   "map_id": "/Game/InfinityWeather/Demo/Maps/WorldMap"
+  }
+ ],
+ "9": [
+  {
+   "slug": "Game_Medieval_Env_Maps_Map_NorthenIsle_01",
+   "map_id": "/Game/Medieval_Env/Maps/Map_NorthenIsle_01"
+  },
+  {
+   "slug": "Game_ModularSciFi_Levels_LandscapePreview",
+   "map_id": "/Game/ModularSciFi/Levels/LandscapePreview"
+  },
+  {
+   "slug": "Game_ModularSciFi_Levels_PreviewSceneIndoor",
+   "map_id": "/Game/ModularSciFi/Levels/PreviewSceneIndoor"
+  },
+  {
+   "slug": "Game_StonePineForest_Maps_Mountains_Map",
+   "map_id": "/Game/StonePineForest/Maps/Mountains_Map"
+  }
+ ],
+ "10": [
+  {
+   "slug": "Game_ModularGothicFantasyEnvironment_Maps_DemoMapNight",
+   "map_id": "/Game/ModularGothicFantasyEnvironment/Maps/DemoMapNight"
+  },
+  {
+   "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night",
+   "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Night"
+  },
+  {
+   "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Daytime",
+   "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Daytime"
+  },
+  {
+   "slug": "Game_TrainStation_Maps_Demonstration",
+   "map_id": "/Game/TrainStation/Maps/Demonstration"
+  },
+  {
+   "slug": "Game_StorageHouse_Maps_Demonstration",
+   "map_id": "/Game/StorageHouse/Maps/Demonstration"
+  }
+ ],
+ "11": [
+  {
+   "slug": "Game_OperaHouse_Maps_Demonstration",
+   "map_id": "/Game/OperaHouse/Maps/Demonstration"
+  },
+  {
+   "slug": "Game_Village_Maps_Village_SummerNightExample",
+   "map_id": "/Game/Village/Maps/Village_SummerNightExample"
+  },
+  {
+   "slug": "Game_QA_ModularParking_Maps_Map_demonstration",
+   "map_id": "/Game/QA_ModularParking/Maps/Map_demonstration"
+  },
+  {
+   "slug": "Game_Nimikko_CommandCenter_Scenes_CommandCenter",
+   "map_id": "/Game/Nimikko_CommandCenter/Scenes/CommandCenter"
+  },
+  {
+   "slug": "Game_UrbanDistrict_Demo_Maps_Main_UADistrict_01_P",
+   "map_id": "/Game/UrbanDistrict/Demo/Maps/Main/UADistrict_01_P"
+  }
+ ],
+ "12": [
+  {
+   "slug": "Game_SoulCave_Maps_LV_Soul_Cave",
+   "map_id": "/Game/SoulCave/Maps/LV_Soul_Cave"
+  },
+  {
+   "slug": "Game_Wild_West_Maps_WildWest",
+   "map_id": "/Game/Wild_West/Maps/WildWest"
+  },
+  {
+   "slug": "Game_StonePineForest_Maps_Traditional_Map",
+   "map_id": "/Game/StonePineForest/Maps/Traditional_Map"
+  },
+  {
+   "slug": "Game_RoofProps_Scenes_Demo_Roof",
+   "map_id": "/Game/RoofProps/Scenes/Demo_Roof"
+  }
+ ],
+ "13": [
+  {
+   "slug": "Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down",
+   "map_id": "/Game/LowPolyMedievalConstructions/Maps/Map_5_Top-Down"
+  },
+  {
+   "slug": "Game_SwimmingPool_Maps_ChangingRoom_Male",
+   "map_id": "/Game/SwimmingPool/Maps/ChangingRoom_Male"
+  },
+  {
+   "slug": "Game_ModularCourtyard_Maps_SampleScene_overcast",
+   "map_id": "/Game/ModularCourtyard/Maps/SampleScene_overcast"
+  },
+  {
+   "slug": "Game_ModularCourtyard_Maps_SampleScene_sanny",
+   "map_id": "/Game/ModularCourtyard/Maps/SampleScene_sanny"
+  }
+ ],
+ "14": [
+  {
+   "slug": "Game_SoulCave_Maps_LV_Soul_Cave",
+   "map_id": "/Game/SoulCave/Maps/LV_Soul_Cave"
+  }
+ ],
+ "15": [
+  {
+   "slug": "Game_Village_Maps_Village_SummerNightExample",
+   "map_id": "/Game/Village/Maps/Village_SummerNightExample"
+  }
+ ],
+ "16": [
+  {
+   "slug": "Game_RoofProps_Scenes_Demo_Roof",
+   "map_id": "/Game/RoofProps/Scenes/Demo_Roof"
+  }
+ ],
+ "17": [
+  {
+   "slug": "Game_UrbanDistrict_Demo_Maps_Main_UADistrict_01_P",
+   "map_id": "/Game/UrbanDistrict/Demo/Maps/Main/UADistrict_01_P"
+  }
+ ]
+}

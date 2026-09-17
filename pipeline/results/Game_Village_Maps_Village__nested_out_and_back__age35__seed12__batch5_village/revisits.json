@@ -1,0 +1,65 @@
+{
+ "anchor_window": [
+  0,
+  35
+ ],
+ "revisit_window": [
+  2772,
+  2795
+ ],
+ "anchor_to_revisit_age_s": 115.0,
+ "actual_episode_duration_s": 118.5,
+ "occluded_duration_s": null,
+ "relative_se3_translation_cm": 60.11746663874577,
+ "relative_se3_rotation_deg": 0.0,
+ "translation_error_cm": 60.11746663874577,
+ "rotation_error_deg": 0.0,
+ "revisit_kind": "near",
+ "revisit_events": [
+  {
+   "excursion": 1,
+   "window": [
+    852,
+    875
+   ],
+   "requested_age_s": 35.0,
+   "realised_age_s": 35.0,
+   "translation_error_cm": 60.06939602002172,
+   "rotation_error_deg": 0.0
+  },
+  {
+   "excursion": 2,
+   "window": [
+    2772,
+    2795
+   ],
+   "requested_age_s": 115.0,
+   "realised_age_s": 115.0,
+   "translation_error_cm": 60.11746663874577,
+   "rotation_error_deg": 0.0
+  }
+ ],
+ "exact_pass": false,
+ "depth_visible_overlap": null,
+ "rgb_feature_overlap_proxy": {
+  "method": "ORB mutual nearest-neighbour matches, Hamming distance < 40",
+  "is_not": "depth-visible overlap; no depth exists on this build",
+  "anchor_frame": 35,
+  "revisit_frame": 2795,
+  "keypoints_anchor": 2000,
+  "keypoints_revisit": 2000,
+  "mutual_good_matches": 339,
+  "match_ratio": 0.1695,
+  "match_displacement_px_median": 4.32000732421875,
+  "mean_abs_grey_diff": 21.932763671875
+ },
+ "fully_occluded_interval_s": null,
+ "sink_revisit_overlap": null,
+ "distractor_frame_ids": [],
+ "not_computed": {
+  "depth_visible_overlap": "requires metric depth; unavailable in this build",
+  "fully_occluded_interval_s": "requires metric depth for visibility",
+  "sink_revisit_overlap": "requires depth-based overlap",
+  "occluded_duration_s": "requires depth-based visibility"
+ }
+}

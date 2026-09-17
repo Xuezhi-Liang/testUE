@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "Game_TokyoStylizedEnvironment_Maps_Tokyo",
+    "policy": "content_region_unclipped",
+    "roads": 976,
+    "centreline_m": 769.3,
+    "core_m2": 1191.8,
+    "note": "Offline API/graph smoke only; cached navmesh, not an engine gate result"
+  },
+  {
+    "slug": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2",
+    "policy": "content_region_unclipped",
+    "roads": 3915,
+    "centreline_m": 2860.8,
+    "core_m2": 5779.1,
+    "note": "Offline API/graph smoke only; cached navmesh, not an engine gate result"
+  }
+]

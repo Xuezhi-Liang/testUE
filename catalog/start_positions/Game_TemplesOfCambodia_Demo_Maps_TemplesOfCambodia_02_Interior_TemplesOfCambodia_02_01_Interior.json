@@ -1,0 +1,112 @@
+{
+    "positions": [
+        {
+            "csv_index": 3,
+            "x": -5332.3,
+            "y": 71.732,
+            "z": 134.02,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/003.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 5,
+            "x": -5045.609,
+            "y": -936.451,
+            "z": 146.55,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/005.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 6,
+            "x": -5752.95,
+            "y": 229.525,
+            "z": 200.51,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/006.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 9,
+            "x": -4721.554,
+            "y": -430.73,
+            "z": 276.14,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/009.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 10,
+            "x": -5720.576,
+            "y": -109.919,
+            "z": 224.71,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/010.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 22,
+            "x": -6323.355,
+            "y": -569.355,
+            "z": 2909.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/022.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 29,
+            "x": -5516.853,
+            "y": -344.479,
+            "z": 175.98,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/029.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 37,
+            "x": -5728.946,
+            "y": -275.92,
+            "z": 205.62,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/037.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 43,
+            "x": -6452.23,
+            "y": -651.683,
+            "z": 2909.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/043.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 44,
+            "x": -6018.677,
+            "y": 314.646,
+            "z": 266.15,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/044.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 52,
+            "x": -5996.726,
+            "y": -427.137,
+            "z": 322.26,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/052.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 59,
+            "x": -1367.431,
+            "y": -168.862,
+            "z": 127.55,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/059.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 93,
+            "x": -5171.207,
+            "y": 192.455,
+            "z": 134.47,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior/frames/093.png",
+            "name": "test13"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

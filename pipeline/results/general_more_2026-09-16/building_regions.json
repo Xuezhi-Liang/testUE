@@ -1,0 +1,40 @@
+{
+  "middleeast": {
+    "bounds": [
+      760,
+      0,
+      1200,
+      390,
+      2,
+      150
+    ],
+    "description": "Opening right curved facade, balcony rails, shutters and windows; static screen ROI with baseline depth mask"
+  },
+  "winter": {
+    "bounds": [
+      0,
+      60,
+      330,
+      400,
+      5,
+      150
+    ],
+    "frames": [
+      500,
+      592,
+      4
+    ],
+    "description": "After the turn, 20.8-24.7s: left apartment facade, windows and rooftop railing; fixed screen ROI and baseline depth mask. Opening view is mostly trees."
+  },
+  "containers": {
+    "bounds": [
+      700,
+      195,
+      935,
+      390,
+      2,
+      150
+    ],
+    "description": "Opening central stacked container facades with dense corrugated metal ridges and seams; fixed screen ROI and baseline depth mask."
+  }
+}

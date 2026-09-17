@@ -1,0 +1,187 @@
+{
+ "episode_id": "winter_taa_balanced",
+ "frozen_sha256": "30e9529926401a3cc88fa8d9933d7af6e0fe44c7cc961484a23b8cc0119814e9",
+ "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
+ "spawn_id": "test1",
+ "seed": 5,
+ "split": "test",
+ "trajectory_family": "nested_out_and_back",
+ "trajectory_generator_version": "pipeline-freeze-1",
+ "recorder_version": "pipeline-capture-engine-1",
+ "control_model": "frozen trajectory executed inside the engine tick; the scene capture components are placed on the frozen camera pose directly, so there is no pawn and desired == actual by construction",
+ "fps": 24.0,
+ "frames": 600,
+ "duration_s": 25.0,
+ "planned_frames": 600,
+ "planned_duration_s": 25.0,
+ "ended_early_reason": null,
+ "review_video": {
+  "file": "rgb.mp4",
+  "frame_stride": 1,
+  "note": "every frame"
+ },
+ "resolution": "1280x720",
+ "intrinsics": {
+  "fx": 640.0000000000001,
+  "fy": 640.0000000000001,
+  "cx": 640.0,
+  "cy": 360.0,
+  "width": 1280,
+  "height": 720,
+  "hfov_deg": 90.0,
+  "vfov_deg": 58.71550708558254
+ },
+ "speed_tier": "fast",
+ "yaw_tier": "medium",
+ "planned_speed_m_s": 1.40250146187269,
+ "planned_yaw_deg_s": 54.23822369209481,
+ "eye_height_cm": 170.0,
+ "pose_tracking": {
+  "pos_error_cm_mean": 0.0,
+  "pos_error_cm_max": 0.0,
+  "yaw_error_deg_mean": 0.0,
+  "yaw_error_deg_max": 0.0
+ },
+ "measured_speed_m_s_max": 1.2275422862679268,
+ "measured_yaw_rate_deg_s_max": 47.37119999999959,
+ "blank_frames": 0,
+ "axis_smoke": {
+  "forward": [
+   640.0,
+   360.0
+  ],
+  "forward_right": [
+   1280.0,
+   360.0
+  ],
+  "forward_up": [
+   640.0,
+   -280.0000000000001
+  ],
+  "pass": true
+ },
+ "record_seconds": 46.3,
+ "engine_timing_ms": {
+  "render": 0.34,
+  "readback": 48.41,
+  "write": 9.84
+ },
+ "engine_fps": 12.952,
+ "render": {
+  "exposure": "auto_instant",
+  "motion_blur": false,
+  "depth_of_field": false,
+  "lumen": "project_default",
+  "taa": "taa",
+  "hud": false,
+  "exposure_bias_ev": null,
+  "lighting": "fill",
+  "skylight_factor": 1.0,
+  "history_mode": 4,
+  "local_exposure": {
+   "shadow_scale": 0.65,
+   "highlight_scale": 0.0,
+   "detail_strength": 1.0
+  },
+  "supersample": 2,
+  "cvars": [
+   "r.AntiAliasingMethod 2",
+   "r.Lumen.ScreenProbeGather.DownsampleFactor 8",
+   "r.MaxAnisotropy 16",
+   "r.MipMapLODBias 0",
+   "r.TemporalAA.HistoryScreenPercentage 200",
+   "r.TemporalAA.Quality 2",
+   "r.TemporalAACurrentFrameWeight 0.04",
+   "r.TemporalAASamples 8",
+   "r.Tonemapper.Sharpen 0",
+   "r.VolumetricFog.GridPixelSize 8",
+   "r.VolumetricFog.GridSizeZ 128"
+  ]
+ },
+ "render_runtime": {
+  "history_mode": 4,
+  "temporal_aa_enabled": true,
+  "warmup_frames": 32,
+  "rgb_render_width": 2560,
+  "rgb_render_height": 1440
+ },
+ "p0_gaps": [],
+ "lighting": {
+  "skylight_fix": {
+   "applied": false,
+   "made_dynamic": [],
+   "mode": "captured_scene",
+   "has_atmosphere": false,
+   "skipped_ours": [
+    "SkyLight_0"
+   ],
+   "skylights_before": [
+    {
+     "actor": "SkyLight_1",
+     "mobility": "<ComponentMobility.MOVABLE: 2>",
+     "real_time_capture": false,
+     "source_type": "<SkyLightSourceType.SLS_CAPTURED_SCENE: 0>"
+    }
+   ],
+   "note": "session-only change to the loaded level; nothing was saved to the map"
+  },
+  "fill": {
+   "ok": true,
+   "factor": 1.0,
+   "level_skylights_hidden": [
+    {
+     "actor": "SkyLight_1",
+     "base_intensity": 1.1,
+     "mobility": "<ComponentMobility.MOVABLE: 2>"
+    }
+   ],
+   "base_intensity": 1.1,
+   "fill_skylight": {
+    "ok": true,
+    "actor": "SkyLight_2",
+    "intensity": 1.1
+   },
+   "skylights": [
+    {
+     "actor": "SkyLight_2",
+     "base_intensity": 1.1,
+     "intensity": 1.1
+    }
+   ],
+   "applied": true,
+   "note": "session-only: the level's sky light hidden and a Movable captured-scene sky light spawned at base x factor (captured-scene, not real-time: the painted sky sphere is what it must see); sun, sky, fog and post-process untouched; auto-exposure cvars off"
+  },
+  "calibration": null,
+  "cvars": [
+   "r.AntiAliasingMethod 2",
+   "r.Lumen.ScreenProbeGather.DownsampleFactor 8",
+   "r.MaxAnisotropy 16",
+   "r.MipMapLODBias 0",
+   "r.TemporalAA.HistoryScreenPercentage 200",
+   "r.TemporalAA.Quality 2",
+   "r.TemporalAACurrentFrameWeight 0.04",
+   "r.TemporalAASamples 8",
+   "r.Tonemapper.Sharpen 0",
+   "r.VolumetricFog.GridPixelSize 8",
+   "r.VolumetricFog.GridSizeZ 128"
+  ],
+  "history_mode": 4,
+  "supersample": 2,
+  "exposure": {
+   "mode": "auto_instant",
+   "manual": false,
+   "bias_ev": 0.0,
+   "auto_exposure_speed": 100.0,
+   "auto_exposure_range": [
+    0.0,
+    0.0
+   ],
+   "local_exposure": {
+    "shadow_scale": 0.65,
+    "highlight_scale": 0.0,
+    "detail_strength": 1.0
+   },
+   "sweep": null
+  }
+ }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "source": "/home/ubuntu/UE5-Agent-Data/revisit_pipeline/cpp/SimWorldCaptureActor.cpp",
+    "deployed": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/cpp/SimWorldCaptureActor.cpp",
+    "sha256": "7cb449912787df15720d557e355287d331ea52fd5edb3e7eaf9a2fe5b9f6113a"
+  },
+  {
+    "source": "/home/ubuntu/UE5-Agent-Data/revisit_pipeline/cpp/SimWorldCaptureActor.h",
+    "deployed": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/cpp/SimWorldCaptureActor.h",
+    "sha256": "b2a901df4e0542d090743b2e966f5a1f38f2f74c709b26bf415bb4e7151a9712"
+  },
+  {
+    "source": "/home/ubuntu/UE5-Agent-Data/revisit_pipeline/capture_engine.py",
+    "deployed": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/capture_engine.py",
+    "sha256": "8cd7146a7a94f2e8376b537a1b3c1aaa65f1b8c42317bbc0a9aaf942f8f6d17f"
+  },
+  {
+    "source": "/home/ubuntu/UE5-Agent-Data/revisit_pipeline/tasks/longvideo_template.json",
+    "deployed": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/tasks/longvideo_template.json",
+    "sha256": "d1ddff7f717725502edd8a1ecfe0f4e6f0371af59022486ebb98a3adb3ec8577"
+  },
+  {
+    "source": "/home/ubuntu/UE5-Agent-Data/revisit_pipeline/qa_temporal.py",
+    "deployed": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/qa_temporal.py",
+    "sha256": "7e7c345eb3507a37e2883113fac8651a2ad53da21fda15adf13dca360497f61c"
+  },
+  {
+    "source": "/home/ubuntu/UE5-Agent-Data/revisit_pipeline/build_temporal_page.py",
+    "deployed": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/build_temporal_page.py",
+    "sha256": "6a4efebb00f756b81e2c500d3ea6d793219688d7d14106c9f866eaaa66818a88"
+  }
+]

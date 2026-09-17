@@ -1,0 +1,112 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": 5362.846,
+            "y": 4909.925,
+            "z": 848.19,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": 4826.885,
+            "y": 3468.022,
+            "z": 1112.06,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 4,
+            "x": 5322.239,
+            "y": 4474.677,
+            "z": 889.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/004.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 5,
+            "x": 3461.725,
+            "y": 4484.166,
+            "z": 838.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/005.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 8,
+            "x": 9050.989,
+            "y": 2826.473,
+            "z": 1006.08,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/008.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 9,
+            "x": 8896.154,
+            "y": 4324.302,
+            "z": 802.37,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/009.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 10,
+            "x": 9097.905,
+            "y": 5050.509,
+            "z": 838.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/010.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 13,
+            "x": 3070.299,
+            "y": 4621.934,
+            "z": 1348.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/013.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 15,
+            "x": 4256.394,
+            "y": 4171.951,
+            "z": 838.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/015.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 16,
+            "x": 6702.618,
+            "y": 4359.172,
+            "z": 838.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/016.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 19,
+            "x": 7071.214,
+            "y": 4021.926,
+            "z": 838.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/019.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 72,
+            "x": 3811.879,
+            "y": 3779.396,
+            "z": 838.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/072.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 112,
+            "x": 9190.182,
+            "y": 4309.944,
+            "z": 838.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bunker_Maps_demonstration_BUNKER/frames/112.png",
+            "name": "test13"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

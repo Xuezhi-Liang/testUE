@@ -1,0 +1,128 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": 2697.485,
+            "y": 452.416,
+            "z": 403.59,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": 2225.227,
+            "y": 278.648,
+            "z": 356.15,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 2,
+            "x": 2607.553,
+            "y": 212.174,
+            "z": 297.98,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/002.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 3,
+            "x": -142.116,
+            "y": 97.848,
+            "z": 346.02,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/003.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 4,
+            "x": 905.01,
+            "y": -318.792,
+            "z": 292.37,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/004.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 5,
+            "x": 2095.725,
+            "y": 209.091,
+            "z": 270.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/005.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 6,
+            "x": -193.663,
+            "y": 781.771,
+            "z": 242.28,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/006.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 8,
+            "x": -847.807,
+            "y": -828.626,
+            "z": 508.11,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/008.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 9,
+            "x": -978.182,
+            "y": 606.625,
+            "z": 398.54,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/009.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 10,
+            "x": 403.744,
+            "y": -419.625,
+            "z": 177.14,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/010.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 13,
+            "x": 1282.311,
+            "y": -258.37,
+            "z": 154.82,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/013.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 19,
+            "x": 3463.005,
+            "y": 182.116,
+            "z": 1599.02,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/019.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 22,
+            "x": 2757.9,
+            "y": -1553.05,
+            "z": 1070.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/022.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 35,
+            "x": 2457.954,
+            "y": 559.989,
+            "z": 529.45,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/035.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 38,
+            "x": 1515.544,
+            "y": -486.075,
+            "z": 307.56,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_OperaHouse_Maps_Demonstration/frames/038.png",
+            "name": "test15"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

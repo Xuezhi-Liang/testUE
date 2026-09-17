@@ -1,0 +1,12 @@
+{
+ "episode_id": "Game_TokyoStylizedEnvironment_Maps_Tokyo__coverage_walk__seed3029__lv_Game_TokyoStylizedEnvironment_Maps_Tokyo__s00",
+ "accepted": null,
+ "gates_run": false,
+ "gates": [],
+ "gates_passed": 0,
+ "gates_failed": 0,
+ "gates_skipped": 0,
+ "reason": "the acceptance gates were not run for this episode. `accepted` is null, which means UNJUDGED - not passing and not failing. Nothing here asserts the data is sound; equally, nothing here asserts it is not. Run longvideo/readjudicate.py against this prefix to compute a verdict.",
+ "frames": 358560,
+ "planned_frames": 358560
+}

@@ -1,0 +1,72 @@
+{
+  "scope": 86,
+  "visual_reviews": 73,
+  "input_reviews": 13,
+  "new_offline_drafts": 59,
+  "cloud_metadata_episodes": 71,
+  "sampled_cloud_routes": [
+    {
+      "episode": "Game_ContainerYard_Maps_Demonstration_Day__coverage_walk__seed3116__lv_Game_ContainerYard_Maps_Demonstration_Day__s06",
+      "actual_csv_frames": 84600,
+      "sampled_poses": 7051
+    },
+    {
+      "episode": "Game_TokyoStylizedEnvironment_Maps_Tokyo__coverage_walk__seed3030__lv_Game_TokyoStylizedEnvironment_Maps_Tokyo__s01",
+      "actual_csv_frames": 358560,
+      "sampled_poses": 29881
+    },
+    {
+      "episode": "Game_Downtown_West_Maps_Demo_Environment__coverage_walk__seed3019__lv_Game_Downtown_West_Maps_Demo_Environment__s03",
+      "actual_csv_frames": 406080,
+      "sampled_poses": 33841
+    },
+    {
+      "episode": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__coverage_walk__seed3107__lv_Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__s07",
+      "actual_csv_frames": 104400,
+      "sampled_poses": 8701
+    },
+    {
+      "episode": "Game_ModularTemplePlaza_Maps_ConceptMap__coverage_walk__seed3216__lv_Game_ModularTemplePlaza_Maps_ConceptMap__r2s06",
+      "actual_csv_frames": 66600,
+      "sampled_poses": 5551
+    },
+    {
+      "episode": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__coverage_walk__seed3307__lv_Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__r2s07",
+      "actual_csv_frames": 190080,
+      "sampled_poses": 15841
+    },
+    {
+      "episode": "Game_ForestGasStation_Maps_Demo__coverage_walk__seed3021__lv_Game_ForestGasStation_Maps_Demo__s01",
+      "actual_csv_frames": 452160,
+      "sampled_poses": 37681
+    },
+    {
+      "episode": "Game_HwaseongHaenggung_Maps_Demo__coverage_walk__seed3207__lv_Game_HwaseongHaenggung_Maps_Demo__r2s07",
+      "actual_csv_frames": 57770,
+      "sampled_poses": 4816
+    },
+    {
+      "episode": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__coverage_walk__seed3146__lv_Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__s06",
+      "actual_csv_frames": 70609,
+      "sampled_poses": 5885
+    },
+    {
+      "episode": "Game_Pyramids_Levels_L_pyramids__coverage_walk__seed3011__lv_Game_Pyramids_Levels_L_pyramids__s03",
+      "actual_csv_frames": 432000,
+      "sampled_poses": 36001
+    },
+    {
+      "episode": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2__coverage_walk__seed3007__lv_Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2__s03",
+      "actual_csv_frames": 155445,
+      "sampled_poses": 12955
+    }
+  ],
+  "status_counts": {
+    "\u8def\u7ebf\u9884\u68c0\u672a\u901a\u8fc7": 3,
+    "\u8349\u6848\u5f85\u5f15\u64ce\u9a8c\u8bc1": 34,
+    "\u4f18\u5148\u68c0\u67e5\u8865\u8def": 30,
+    "\u4fee\u8d77\u70b9 / \u8865\u5bfc\u822a": 13,
+    "\u53ef\u6cbf\u7528\u4e3b\u4f53\u8def\u7ebf\uff0c\u5f85\u9884\u5f55\u9a8c\u6536": 6
+  },
+  "note": "Offline route graph traversal is not UE collision/depth/camera validation. Gray navmesh overlays are cached and may differ from historical exports. Historical trajectory coverage fields are not recomputed actual coverage."
+}

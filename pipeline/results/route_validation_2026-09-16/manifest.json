@@ -1,0 +1,862 @@
+[
+  {
+    "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
+    "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
+    "seed": 160947,
+    "audit_status": "可沿用主体路线，待预录验收",
+    "audit_review": "已看图：上下两组主体区域及中间连接均有轨迹；后续轮次保留路网约 98.9%。主体路线可沿用。左右狭长支路是否值得补，先确认那里有可拍内容。",
+    "policy": "longest",
+    "ground_clearance_cm": 45,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_TokyoStylizedEnvironment_Maps_Tokyo",
+    "map_id": "/Game/TokyoStylizedEnvironment/Maps/Tokyo",
+    "seed": 160975,
+    "audit_status": "优先检查补路",
+    "audit_review": "已看图：代表实录集中在下方和左侧外围，上方密集街区缺少轨迹。即使所选路网保留 93.1%，也不能代表选对了街区。优先重新选择 A 区导航区域并做连接检查。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2",
+    "map_id": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_2",
+    "seed": 160909,
+    "audit_status": "优先检查补路",
+    "audit_review": "已看图：代表实录集中在图下半部，上半部没有经过轨迹；路网只保留 46.9%，其中 1857 条道路因断连被排除。先检查 A 区连接和净空，再决定绕路或分区补录；灰底不等于全部可走。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Downtown_West_Maps_Demo_Environment",
+    "map_id": "/Game/Downtown_West/Maps/Demo_Environment",
+    "seed": 160914,
+    "audit_status": "可沿用主体路线，待预录验收",
+    "audit_review": "已看图：中部横向街区和右侧道路均有经过，主体路线可沿用；上、下边缘的长直线较多，预录时检查是否主要拍空地，再决定减少外围、增加沿街观察。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_MiddleEast_Maps_MiddleEast",
+    "map_id": "/Game/MiddleEast/Maps/MiddleEast",
+    "seed": 160937,
+    "audit_status": "优先检查补路",
+    "audit_review": "旧路线审查：已看图：只有图左上方一小段往返，中央密集街区未被该路线遍历。需要生成完整街区路线，并保留原资产悬空建筑问题标记。\n新增草案已看图：新增草案比短往返范围大，但仍绕中央建筑群外围；需要检查中央街巷入口和独立导航区域，原红框供复查。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_HwaseongHaenggung_Maps_Demo",
+    "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
+    "seed": 160921,
+    "audit_status": "优先检查补路",
+    "audit_review": "已看图：后续轮次将路网保留比例从 22.1% 提升至 81.5%，但代表实录仍集中在中央庭院。图上方还有其他导航结构，建议检查 A 区是否是可进入的独立庭院，不能把 81.5% 当全地图覆盖。",
+    "policy": "content_region",
+    "ground_clearance_cm": 45,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_AnchientRuins_Maps_AncientRuins",
+    "map_id": "/Game/AnchientRuins/Maps/AncientRuins",
+    "seed": 160900,
+    "audit_status": "路线预检未通过",
+    "audit_review": "已看图：计划分布范围较广，但碰撞及深度预检失败。先修复违规段或绕行，再判断是否需要补区域，不能直接录完整长片。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_AnchientRuins_Maps_Grass_Hills",
+    "map_id": "/Game/AnchientRuins/Maps/Grass_Hills",
+    "seed": 160901,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "旧路线审查：已看图：现有路线只有右侧一小段。该地图内容稀疏，需先确认目标物体，避免为了路程重复拍空地。\n新增草案已看图：草案已围绕少量障碍形成环路，但大部分是空旷地；先用预录确认拍摄价值，避免反复拍空地。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_AsianTemple_Map_LV_Temple_Day",
+    "map_id": "/Game/AsianTemple/Map/LV_Temple_Day",
+    "seed": 160902,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "旧路线审查：已看图：只有下方短路线，无法代表整段寺庙区域。先确认内容所在位置，再生成完整路线。\n新增草案已看图：草案贯穿上下通道，比旧短往返范围更大；山体两侧不能由俯视图直接判为可达。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Bazaar_Meshingun_Map_LV_Bazaar",
+    "map_id": "/Game/Bazaar_Meshingun/Map/LV_Bazaar",
+    "seed": 160903,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案仅覆盖上方和左侧的 L 形通路；图右侧、下方其他结构没有经过，需检查独立街区与连接。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Brushify_Maps_Arctic_Arctic",
+    "map_id": "/Game/Brushify/Maps/Arctic/Arctic",
+    "seed": 160904,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案分布较广，主区域有多条连接；先进行地形起伏、植被和碰撞验证。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Bunker_Maps_demonstration_BUNKER",
+    "map_id": "/Game/Bunker/Maps/demonstration_BUNKER",
+    "seed": 160905,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案串联中间房间与右侧通道；外围矩形可能只是其他导航表面，先核对室内地面及入口。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Cave_Maps_Demonstration",
+    "map_id": "/Game/Cave/Maps/Demonstration",
+    "seed": 160907,
+    "audit_status": "优先检查补路",
+    "audit_review": "旧路线审查：已看图：只有中间桥面短往返，两端洞穴区域未遍历。需要分区检查连接和可行走路径。\n新增草案已看图：草案覆盖左侧区域和中间桥面，右端区域未连入；应检查桥头和右侧洞穴连接，必要时分区。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ChineseWaterTown_Ver1_Map_DemoMap",
+    "map_id": "/Game/ChineseWaterTown/Ver1/Map/DemoMap",
+    "seed": 160910,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案沿三组矩形结构周围及中间通道分布；先确认这些路段能看到沿街内容，而不是场景背面。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Chinese_Landscape_Levels_Chinese_Landscape_Demo",
+    "map_id": "/Game/Chinese_Landscape/Levels/Chinese_Landscape_Demo",
+    "seed": 160911,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案只落在图左侧很小的岛状区域，大部分地形没有路线；优先检查导航连通分量及有效起点。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ContainerYard_Maps_Demonstration",
+    "map_id": "/Game/ContainerYard/Maps/Demonstration",
+    "seed": 160912,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案贯穿集装箱之间的主通道；左侧大块导航区域是否有内容需预览确认，不能简单补满空地。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ContainerYard_Maps_Demonstration_Day",
+    "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
+    "seed": 160913,
+    "audit_status": "路线预检未通过",
+    "audit_review": "已看图：集装箱之间和主场站道路已有较完整轨迹，所选路网保留 100%，不优先补道路。历史任务因动作比例等验收问题未通过，应先修正任务与验收；左侧大块灰区需判断是否有内容，不能自动认定漏录。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Dungeon_Levels_Dungeon_Demo_00",
+    "map_id": "/Game/Dungeon/Levels/Dungeon_Demo_00",
+    "seed": 160915,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案仅在图上半部，其他格状区域未连入；检查门口、层高和导航区域选择后分区补路。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ErikStadium_Maps_Stadium",
+    "map_id": "/Game/ErikStadium/Maps/Stadium",
+    "seed": 160916,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案集中在左侧看台外围，主体其他区域无路线；先核对体育场地面高度及入口连接。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ForestGasStation_Maps_Demo",
+    "map_id": "/Game/ForestGasStation/Maps/Demo",
+    "seed": 160917,
+    "audit_status": "可沿用主体路线，待预录验收",
+    "audit_review": "已看图：路线覆盖站点周边，但外围空旷区域比例较大。先保留主体，预录确认店面/油泵实际观看方向，必要时补近距离观察点。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_HotelCorridor_Maps_Hotel_Corridor",
+    "map_id": "/Game/HotelCorridor/Maps/Hotel_Corridor",
+    "seed": 160920,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案只覆盖走廊上段十字区域，下方长走廊未连通；优先检查窄通道和导航分段。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_IndustrialArea_Maps_IndustrialArea",
+    "map_id": "/Game/IndustrialArea/Maps/IndustrialArea",
+    "seed": 160922,
+    "audit_status": "优先检查补路",
+    "audit_review": "已看图：本地实录主要在厂区中部及右侧通道，路网保留约 75.9%。建议复查上、下方厂房周边连接，确认剩余区域是不可达还是被过滤；暂不扩大为已通过全图遍历。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_InfinityWeather_Demo_Maps_DesertMap",
+    "map_id": "/Game/InfinityWeather/Demo/Maps/DesertMap",
+    "seed": 160923,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案覆盖主要障碍周围，内容稀疏；先走一遍检查，不为时长强行增加空地重复。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_InfinityWeather_Demo_Maps_SnowMap",
+    "map_id": "/Game/InfinityWeather/Demo/Maps/SnowMap",
+    "seed": 160925,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案覆盖中间障碍和周边通道；需验证雪地起伏与穿模，无明确补区结论。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Lighthouse_Island_Levels_Lighthouse_Demo_00",
+    "map_id": "/Game/Lighthouse_Island/Levels/Lighthouse_Demo_00",
+    "seed": 160927,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案仅覆盖图下部，灯塔周围上方区域没有路线；检查坡道、台阶及独立连通区。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_LookoutTower_Maps_Demo",
+    "map_id": "/Game/LookoutTower/Maps/Demo",
+    "seed": 160928,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案在大部分可见区域分布，主体路线可进入引擎预检；边缘坡面和植被需验证。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down",
+    "map_id": "/Game/LowPolyMedievalConstructions/Maps/Map_5_Top-Down",
+    "seed": 160929,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案仅覆盖下部一个很小区域，上部多个区域未连入；需检查窄门槛和分区，不宜直接长录。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_LowPolyMedievalConstructions_Maps_Map_6_Top-Down",
+    "map_id": "/Game/LowPolyMedievalConstructions/Maps/Map_6_Top-Down",
+    "seed": 160930,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案只覆盖右下方，上方多个区域没有路线；优先检查小尺度通道及连通性。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_LowPolyMedievalConstructions_Maps_Map_9",
+    "map_id": "/Game/LowPolyMedievalConstructions/Maps/Map_9",
+    "seed": 160931,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案沿中间竖向区域，右侧另一组结构未连通；检查连接或拆成独立路线。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_MMSupermarket_Maps_Supermarket_Map",
+    "map_id": "/Game/MMSupermarket/Maps/Supermarket_Map",
+    "seed": 160932,
+    "audit_status": "优先检查补路",
+    "audit_review": "旧路线审查：已看图：短路线在图上方开放区域，未遍历下方货架/室内结构。需核对导航高度、商店入口和室内连通性后另规划。\n新增草案已看图：草案绕超市外侧和上方空地，货架/室内结构仍未进入；需重新选择室内导航区域。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Medieval_Env_Maps_Map_MedievalEnv",
+    "map_id": "/Game/Medieval_Env/Maps/Map_MedievalEnv",
+    "seed": 160933,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案主要在下方和右侧外围，内部建筑密集区域未连入；优先检查内外场景的导航与入口。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
+    "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
+    "seed": 160935,
+    "audit_status": "可沿用主体路线，待预录验收",
+    "audit_review": "已看图：后续轮次代表路线沿城墙内侧贯穿多处院落，路网保留约 96.3%。可作为主体路线，但历史验收未给出最终通过结论；仍需重新预检和预录。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo",
+    "map_id": "/Game/Medieval_Environment/Real_Landscape/Default/Maps/Default_Demo",
+    "seed": 160936,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案在多数区域形成连接；先做地形与碰撞预检，内容稀疏处不必重复覆盖。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ModularCourtyard_Maps_SampleScene_overcast",
+    "map_id": "/Game/ModularCourtyard/Maps/SampleScene_overcast",
+    "seed": 160938,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案覆盖当前小型 U 形通道；先验收主体，不把暗色矩形自动当成遗漏可走区域。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ModularCourtyard_Maps_SampleScene_sanny",
+    "map_id": "/Game/ModularCourtyard/Maps/SampleScene_sanny",
+    "seed": 160939,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案覆盖当前小型 U 形通道，与阴天版范围相近；仍需按本地图独立验证材质和碰撞。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ModularGothicFantasyEnvironment_Maps_DemoMapDay",
+    "map_id": "/Game/ModularGothicFantasyEnvironment/Maps/DemoMapDay",
+    "seed": 160940,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案集中右侧，左侧大块建筑区没有路线；检查地面高度、连接与区域选择。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ModularGothicFantasyEnvironment_Maps_DemoMapNight",
+    "map_id": "/Game/ModularGothicFantasyEnvironment/Maps/DemoMapNight",
+    "seed": 160941,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案只覆盖右上和右侧，左下建筑区未连入；夜景保留原氛围并另验曝光。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ModularNeighborhood_Maps_Demo_Map",
+    "map_id": "/Game/ModularNeighborhood/Maps/Demo_Map",
+    "seed": 160942,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "旧路线审查：已看图：短路线仅覆盖围栏间局部区域；同时有历史材质缺失问题。先核对实际建筑区和材质，再生成完整路线。\n新增草案已看图：草案扩展到围栏右侧较大区域；仍需定位真正的建筑内容，并先解决已知材质依赖故障。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ModularPlatformerIndustrialArea_Map_Factory",
+    "map_id": "/Game/ModularPlatformerIndustrialArea/Map/Factory",
+    "seed": 160943,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案串联多组障碍之间的通道；先验证高度和碰撞，可作为初始候选。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ModularPlatformerIndustrialArea_Map_HANGAR",
+    "map_id": "/Game/ModularPlatformerIndustrialArea/Map/HANGAR",
+    "seed": 160944,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案贯穿障碍组周边通道；先验证工业构件下方净空，不直接认定可通行。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Daytime",
+    "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Daytime",
+    "seed": 160948,
+    "audit_status": "优先检查补路",
+    "audit_review": "旧路线审查：已看图：路线局限于中央建筑上方很短一段，需要覆盖其余可达街巷。与夜景是不同地图条目，不能直接共用验收结论。\n新增草案已看图：草案增加了外围环路，但中央建筑间通道仍较少；优先复查中央连接及窄巷。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime",
+    "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Nighttime",
+    "seed": 160949,
+    "audit_status": "优先检查补路",
+    "audit_review": "已看图：路线较多在外围，仅穿过中央一条通道；保留路网 65.3%。复查中央建筑之间的通路，夜景效果另行验收，不通过改成白天掩盖。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Nimikko_CommandCenter_Scenes_CommandCenter",
+    "map_id": "/Game/Nimikko_CommandCenter/Scenes/CommandCenter",
+    "seed": 160950,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案只有下方横廊和中间短段，两侧大区域未连入；需核对房间入口及地面所在层。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Old_Factory_01_Maps_Demoscene_01",
+    "map_id": "/Game/Old_Factory_01/Maps/Demoscene_01",
+    "seed": 160951,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案贯穿多个厂房周边和院落，分布较充分；先完成管线净空、碰撞和深度预检。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_OperaHouse_Maps_Demonstration",
+    "map_id": "/Game/OperaHouse/Maps/Demonstration",
+    "seed": 160952,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案覆盖主体椭圆区域及右侧多间小区域；可进入引擎验证，检查座椅和门口。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_OperatingRoom_Levels_Operating_Room",
+    "map_id": "/Game/OperatingRoom/Levels/Operating_Room",
+    "seed": 160953,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案退化为极短线段，不能形成有意义的遍历；需要核对房间尺度、导航范围，并设计小空间观察路线。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_ParkingGarage_Maps_UndergroundParking",
+    "map_id": "/Game/ParkingGarage/Maps/UndergroundParking",
+    "seed": 160954,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案覆盖上方停车区和右侧通道，下方狭长分支未贯通；检查车辆间距和分支可达性。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Pyramids_Levels_L_pyramids",
+    "map_id": "/Game/Pyramids/Levels/L_pyramids",
+    "seed": 160955,
+    "audit_status": "可沿用主体路线，待预录验收",
+    "audit_review": "已看图：路线经过多组主要结构周围，所选路网保留 100%。暂不判定需要增加遍历线路；仍不等于所有高度、室内或立面被看见。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_QA_HoldingCells_Maps_QA_Holding_Cells_A",
+    "map_id": "/Game/QA_HoldingCells/Maps/QA_Holding_Cells_A",
+    "seed": 160956,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：小房间草案只有单条主线，适合短段行走与观察；不宜套用多小时遍历目标。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_QA_HoldingCells_Maps_QA_Holding_Cells_B",
+    "map_id": "/Game/QA_HoldingCells/Maps/QA_Holding_Cells_B",
+    "seed": 160957,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：小房间草案呈分叉，分布与空间大小相符；局部锯齿需经平滑及逐帧碰撞验证。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_QA_ModularParking_Maps_Map_demonstration",
+    "map_id": "/Game/QA_ModularParking/Maps/Map_demonstration",
+    "seed": 160958,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案串联停车区各主分支；先检查车辆、柱子和坡道，未见必须重选区域的明显证据。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_RoofProps_Scenes_Demo_Roof",
+    "map_id": "/Game/RoofProps/Scenes/Demo_Roof",
+    "seed": 160959,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案集中在右下道具区域，可能符合屋顶道具场景目标；先确认所在高度和边缘安全。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_SoulCave_Maps_LV_Soul_Cave_Mobile",
+    "map_id": "/Game/SoulCave/Maps/LV_Soul_Cave_Mobile",
+    "seed": 160962,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案只覆盖右下洞穴分区；其余独立表面需判断是否是可进入场景，适合分区处理。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_StonePineForest_Maps_GooseLand_Map",
+    "map_id": "/Game/StonePineForest/Maps/GooseLand_Map",
+    "seed": 160963,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案局限于左侧一条带状区域，其他林地未连入；检查地形坡度、导航碎片与障碍。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_StonePineForest_Maps_Mountains_Map_LevelDesign",
+    "map_id": "/Game/StonePineForest/Maps/Mountains_Map_LevelDesign",
+    "seed": 160965,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案贯穿中央密集区域及周边，范围较广；需检查地形高差和植被穿模。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_StorageHouse_Maps_Demonstration",
+    "map_id": "/Game/StorageHouse/Maps/Demonstration",
+    "seed": 160967,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案串联中部仓储通道，外侧未走区域的用途需确认；先做入口与货架净空验证。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day",
+    "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day",
+    "seed": 160968,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案只覆盖图上方外围，住宅主体周边未连入；应重选导航区域或检查断开的街道。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen",
+    "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
+    "seed": 160969,
+    "audit_status": "可沿用主体路线，待预录验收",
+    "audit_review": "已看图：外侧道路和住宅周边连接较完整，路网保留约 95.1%。先沿用主体路线；图中房屋占地区域不直接视为漏走道路，是否需要室内路线另看入口和导航。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night",
+    "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Night",
+    "seed": 160970,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案沿住宅周边街道形成连接，范围与已录日间 Lumen 版相近；可预检，不能继承别图验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_SwimmingPool_Maps_ChangingRoom_Male",
+    "map_id": "/Game/SwimmingPool/Maps/ChangingRoom_Male",
+    "seed": 160971,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案为狭长更衣室主通道，范围与空间相符；局部锯齿、门口和高度需引擎验证。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_SwimmingPool_Maps_Demonstration_Master",
+    "map_id": "/Game/SwimmingPool/Maps/Demonstration_Master",
+    "seed": 160972,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案沿泳池周边连接；泳池水面不能当漏走道路，先确认两侧走廊和出入口。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_01_Exterior_TemplesOfCambodia_01_01_Exterior",
+    "map_id": "/Game/TemplesOfCambodia/Demo/Maps/TemplesOfCambodia_01_Exterior/TemplesOfCambodia_01_01_Exterior",
+    "seed": 160973,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：外景草案围绕寺庙主体和外围障碍分布；优先验证外景通路，内部不自动计入本路线目标。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior",
+    "map_id": "/Game/TemplesOfCambodia/Demo/Maps/TemplesOfCambodia_02_Interior/TemplesOfCambodia_02_01_Interior",
+    "seed": 160974,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：室内地图的草案却主要沿外圈，中央结构没有路线；需核对入口、楼层和所选导航区域。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_TrainStation_Maps_Demonstration",
+    "map_id": "/Game/TrainStation/Maps/Demonstration",
+    "seed": 160976,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案串联主要站台通道；需检查两侧站台是否全部可达，以及轨道是否应排除。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_UltimateFarming_Maps_TinyFields",
+    "map_id": "/Game/UltimateFarming/Maps/TinyFields",
+    "seed": 160977,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "旧路线审查：已看图：短路线主要在右侧空旷地，中央及下方建筑附近没有经过轨迹。需要围绕实际道路重新规划，避免直接穿田地。\n新增草案已看图：草案已扩展到中央建筑周围；需确认走在真实道路而非田地，并检查农具和地形。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_UrbanDistrict_Demo_Maps_Main_UADistrict_01_P",
+    "map_id": "/Game/UrbanDistrict/Demo/Maps/Main/UADistrict_01_P",
+    "seed": 160978,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案在多个街区之间形成密集连通路线，明显优于只走外围；可优先做引擎预检。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Venice_fast_building_Maps_Overview",
+    "map_id": "/Game/Venice_fast_building/Maps/Overview",
+    "seed": 160979,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案贯穿多排构件和主要纵向通道；确认是可行走街道还是资产展示场，再决定录制范围。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Village_Maps_Village",
+    "map_id": "/Game/Village/Maps/Village",
+    "seed": 160980,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "旧路线审查：已看图：短路线在图右上方，下方村落主体没有经过轨迹。建议先将起点和主要路线移入村落道路，生成完整覆盖计划。\n新增草案已看图：草案已延伸到下方村落附近，弥补旧短路线的明显范围不足；仍需确认屋间通路和地形。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Village_Maps_Village_SummerNightExample",
+    "map_id": "/Game/Village/Maps/Village_SummerNightExample",
+    "seed": 160981,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案围绕几组建筑及外围分布，范围较广但空地多；按夜景独立验曝光和地形。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_Wild_West_Maps_WildWest",
+    "map_id": "/Game/Wild_West/Maps/WildWest",
+    "seed": 160982,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案仅剩图最上方一小条，中央及下方场景未连入；优先重选导航区域并检查起点。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_WinterTown_Maps_RussianWinterTownDemo01",
+    "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
+    "seed": 160983,
+    "audit_status": "路线预检未通过",
+    "audit_review": "已看图：所展示的是旧参数试验计划，包含较高净空参数，并非本轮已批准路线；覆盖有较大环路，但深度预检失败。先修违规段并确认建筑附近观察，不能直接沿用这组旧试验参数。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_WinterTown_Maps_RussianWinterTownDemo02",
+    "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo02",
+    "seed": 160984,
+    "audit_status": "草案待引擎验证",
+    "audit_review": "新增草案已看图：草案覆盖中央和右侧多组结构周边；需独立验证雪地碰撞，不能直接继承另一张雪城地图结论。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_racing_track_map_racing_track",
+    "map_id": "/Game/racing_track/map/racing_track",
+    "seed": 160985,
+    "audit_status": "优先检查补路",
+    "audit_review": "新增草案已看图：草案只在图下方扇形区域，未呈现完整赛道闭环；需要确认导航导出范围及目标道路。",
+    "policy": "content_region",
+    "ground_clearance_cm": 6,
+    "recover_start": false
+  },
+  {
+    "slug": "Game_CastleRiver_Maps_Demonstration",
+    "map_id": "/Game/CastleRiver/Maps/Demonstration",
+    "seed": 160906,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：18 个非空坐标，磁盘资产存在。历史问题：起始点悬空：向下 trace 找不到地面，围着它建的 navmesh 为空（0 顶点）。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_1",
+    "map_id": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_1",
+    "seed": 160908,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：0 个非空坐标，磁盘资产存在。历史问题：起始点文件里 x/y/z 全是 null，没有可用坐标。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_GrassHillsLandscape_Maps_Overview_Overview",
+    "map_id": "/Game/GrassHillsLandscape/Maps/Overview/Overview",
+    "seed": 160918,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：2 个非空坐标，磁盘资产存在。历史问题：起始点悬空：向下 trace 找不到地面，围着它建的 navmesh 为空（0 顶点）。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_Hangar_Maps_Hangar",
+    "map_id": null,
+    "seed": 160919,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：1 个非空坐标，磁盘未找到对应资产。历史问题：资产清单里没有对应的地图路径，无法打开。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_InfinityWeather_Demo_Maps_RainMap",
+    "map_id": "/Game/InfinityWeather/Demo/Maps/RainMap",
+    "seed": 160924,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：5 个非空坐标，磁盘资产存在。历史问题：起始点悬空：向下 trace 找不到地面，围着它建的 navmesh 为空（0 顶点）。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_InfinityWeather_Demo_Maps_WorldMap",
+    "map_id": "/Game/InfinityWeather/Demo/Maps/WorldMap",
+    "seed": 160926,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：10 个非空坐标，磁盘资产存在。历史问题：起始点悬空：向下 trace 找不到地面，围着它建的 navmesh 为空（0 顶点）。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_Medieval_Env_Maps_Map_NorthenIsle_01",
+    "map_id": "/Game/Medieval_Env/Maps/Map_NorthenIsle_01",
+    "seed": 160934,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：5 个非空坐标，磁盘资产存在。历史问题：起始点悬空：向下 trace 找不到地面，围着它建的 navmesh 为空（0 顶点）。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_ModularSciFi_Levels_LandscapePreview",
+    "map_id": "/Game/ModularSciFi/Levels/LandscapePreview",
+    "seed": 160945,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：1 个非空坐标，磁盘资产存在。历史问题：起始点悬空：向下 trace 找不到地面，围着它建的 navmesh 为空（0 顶点）。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_ModularSciFi_Levels_PreviewSceneIndoor",
+    "map_id": "/Game/ModularSciFi/Levels/PreviewSceneIndoor",
+    "seed": 160946,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：1 个非空坐标，磁盘资产存在。历史问题：起始点悬空：向下 trace 找不到地面，围着它建的 navmesh 为空（0 顶点）。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_SchoolGym_Maps_SchoolGymDay",
+    "map_id": "/Game/SchoolGym/Maps/SchoolGymDay",
+    "seed": 160960,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：0 个非空坐标，磁盘资产存在。历史问题：起始点文件里 x/y/z 全是 null，没有可用坐标。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_SoulCave_Maps_LV_Soul_Cave",
+    "map_id": "/Game/SoulCave/Maps/LV_Soul_Cave",
+    "seed": 160961,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：15 个非空坐标，磁盘资产存在。历史问题：起始点悬空：向下 trace 找不到地面，围着它建的 navmesh 为空（0 顶点）。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_StonePineForest_Maps_Mountains_Map",
+    "map_id": "/Game/StonePineForest/Maps/Mountains_Map",
+    "seed": 160964,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：2 个非空坐标，磁盘资产存在。历史问题：起始点悬空：向下 trace 找不到地面，围着它建的 navmesh 为空（0 顶点）。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  },
+  {
+    "slug": "Game_StonePineForest_Maps_Traditional_Map",
+    "map_id": "/Game/StonePineForest/Maps/Traditional_Map",
+    "seed": 160966,
+    "audit_status": "修起点 / 补导航",
+    "audit_review": "已核对输入：2 个非空坐标，磁盘资产存在。历史问题：起始点悬空：向下 trace 找不到地面，围着它建的 navmesh 为空（0 顶点）。本轮没有进入 UE 重测地面，暂无路线可供目视验收。",
+    "policy": "longest",
+    "ground_clearance_cm": 6,
+    "recover_start": true
+  }
+]

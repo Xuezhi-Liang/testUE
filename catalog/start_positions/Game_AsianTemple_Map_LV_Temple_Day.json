@@ -1,0 +1,96 @@
+{
+    "positions": [
+        {
+            "csv_index": 4,
+            "x": 26196.601,
+            "y": -8305.869,
+            "z": -3691.07,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AsianTemple_Map_LV_Temple_Day/frames/004.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 8,
+            "x": -20052.819,
+            "y": -9678.996,
+            "z": 5479.68,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AsianTemple_Map_LV_Temple_Day/frames/008.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 19,
+            "x": -15517.605,
+            "y": 5693.166,
+            "z": 6962.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AsianTemple_Map_LV_Temple_Day/frames/019.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 25,
+            "x": 11619.837,
+            "y": 14945.285,
+            "z": 3859.08,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AsianTemple_Map_LV_Temple_Day/frames/025.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 29,
+            "x": 17773.818,
+            "y": 16369.162,
+            "z": 4348.07,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AsianTemple_Map_LV_Temple_Day/frames/029.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 50,
+            "x": -19720.941,
+            "y": 16016.598,
+            "z": 7550.05,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AsianTemple_Map_LV_Temple_Day/frames/050.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 52,
+            "x": -17350.99,
+            "y": 12619.898,
+            "z": 6508.16,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AsianTemple_Map_LV_Temple_Day/frames/052.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 90,
+            "x": -15828.976,
+            "y": 4380.435,
+            "z": 6369.75,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AsianTemple_Map_LV_Temple_Day/frames/090.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 138,
+            "x": 15760.945,
+            "y": -10039.903,
+            "z": 5785.13,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AsianTemple_Map_LV_Temple_Day/frames/138.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 172,
+            "x": 16642.018,
+            "y": -5792.481,
+            "z": 3319.89,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AsianTemple_Map_LV_Temple_Day/frames/172.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 197,
+            "x": -17360.278,
+            "y": 12384.165,
+            "z": 6508.16,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AsianTemple_Map_LV_Temple_Day/frames/197.png",
+            "name": "test11"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

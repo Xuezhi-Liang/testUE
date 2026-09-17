@@ -1,0 +1,24 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": 66606.879,
+            "y": 108935.983,
+            "z": 1638500.0,
+            "csv_index": 0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map/frames/000.png"
+        },
+        {
+            "name": "test2",
+            "x": 910092.779,
+            "y": -70467.173,
+            "z": 1638500.0,
+            "csv_index": 1,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map/frames/001.png"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

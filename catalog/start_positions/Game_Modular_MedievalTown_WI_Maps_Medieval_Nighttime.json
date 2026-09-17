@@ -1,0 +1,256 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": -658.274,
+            "y": -728.841,
+            "z": 596.83,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": 1167.702,
+            "y": 279.681,
+            "z": 897.34,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 2,
+            "x": 1439.568,
+            "y": -694.727,
+            "z": 493.22,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/002.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 4,
+            "x": 950.311,
+            "y": 290.546,
+            "z": 900.34,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/004.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 5,
+            "x": 1715.612,
+            "y": -883.284,
+            "z": 424.61,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/005.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 7,
+            "x": 1763.354,
+            "y": -518.021,
+            "z": 493.22,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/007.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 9,
+            "x": -241.638,
+            "y": -671.155,
+            "z": 430.34,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/009.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 12,
+            "x": -1074.435,
+            "y": -693.2,
+            "z": 489.34,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/012.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 13,
+            "x": 1309.597,
+            "y": 442.227,
+            "z": 958.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/013.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 14,
+            "x": 1438.828,
+            "y": -1193.713,
+            "z": 414.87,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/014.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 15,
+            "x": 1788.393,
+            "y": -633.653,
+            "z": 587.35,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/015.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 16,
+            "x": 805.191,
+            "y": 601.861,
+            "z": 619.16,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/016.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 22,
+            "x": 2095.88,
+            "y": -383.544,
+            "z": 587.35,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/022.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 23,
+            "x": 559.258,
+            "y": 625.529,
+            "z": 455.34,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/023.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 29,
+            "x": -1167.865,
+            "y": -331.196,
+            "z": 635.83,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/029.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 30,
+            "x": 615.104,
+            "y": -473.305,
+            "z": 898.34,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/030.png",
+            "name": "test16"
+        },
+        {
+            "csv_index": 31,
+            "x": 1636.553,
+            "y": -185.226,
+            "z": 864.48,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/031.png",
+            "name": "test17"
+        },
+        {
+            "csv_index": 33,
+            "x": -88.823,
+            "y": -781.228,
+            "z": 600.16,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/033.png",
+            "name": "test18"
+        },
+        {
+            "csv_index": 34,
+            "x": 1039.35,
+            "y": 1538.625,
+            "z": 392.05,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/034.png",
+            "name": "test19"
+        },
+        {
+            "csv_index": 39,
+            "x": -84.88,
+            "y": 613.899,
+            "z": 456.34,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/039.png",
+            "name": "test20"
+        },
+        {
+            "csv_index": 40,
+            "x": 1435.401,
+            "y": 1126.357,
+            "z": 794.91,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/040.png",
+            "name": "test21"
+        },
+        {
+            "csv_index": 41,
+            "x": -1139.757,
+            "y": -607.653,
+            "z": 549.87,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/041.png",
+            "name": "test22"
+        },
+        {
+            "csv_index": 43,
+            "x": 806.883,
+            "y": -252.226,
+            "z": 913.52,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/043.png",
+            "name": "test23"
+        },
+        {
+            "csv_index": 49,
+            "x": 1433.129,
+            "y": 113.919,
+            "z": 958.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/049.png",
+            "name": "test24"
+        },
+        {
+            "csv_index": 51,
+            "x": 1410.75,
+            "y": 779.315,
+            "z": 392.05,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/051.png",
+            "name": "test25"
+        },
+        {
+            "csv_index": 53,
+            "x": -1337.271,
+            "y": -1210.968,
+            "z": 352.05,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/053.png",
+            "name": "test26"
+        },
+        {
+            "csv_index": 55,
+            "x": 500.208,
+            "y": 1083.045,
+            "z": 226.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/055.png",
+            "name": "test27"
+        },
+        {
+            "csv_index": 56,
+            "x": 1826.298,
+            "y": -347.462,
+            "z": 562.8,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/056.png",
+            "name": "test28"
+        },
+        {
+            "csv_index": 57,
+            "x": 1507.334,
+            "y": -49.476,
+            "z": 590.97,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/057.png",
+            "name": "test29"
+        },
+        {
+            "csv_index": 67,
+            "x": 339.849,
+            "y": 1709.519,
+            "z": 226.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/067.png",
+            "name": "test30"
+        },
+        {
+            "csv_index": 70,
+            "x": 560.162,
+            "y": 2096.204,
+            "z": 309.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime/frames/070.png",
+            "name": "test31"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

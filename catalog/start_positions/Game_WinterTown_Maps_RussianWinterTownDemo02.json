@@ -1,0 +1,116 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": 2579,
+            "y": -1000,
+            "z": 283
+        },
+        {
+            "name": "test2",
+            "x": 1260,
+            "y": 260,
+            "z": 400
+        },
+        {
+            "csv_index": 1,
+            "x": 5388.971,
+            "y": 1850.355,
+            "z": 1314.39,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/001.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 5,
+            "x": 2753.547,
+            "y": -4609.899,
+            "z": 1450.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/005.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 8,
+            "x": 2302.597,
+            "y": -4697.063,
+            "z": 1490.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/008.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 12,
+            "x": 5607.726,
+            "y": 1250.692,
+            "z": 754.39,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/012.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 14,
+            "x": 2494.668,
+            "y": -2048.823,
+            "z": 1830.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/014.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 17,
+            "x": -410.51,
+            "y": -908.676,
+            "z": 190.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/017.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 24,
+            "x": 3183.261,
+            "y": -4043.513,
+            "z": 477.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/024.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 25,
+            "x": 2287.241,
+            "y": -992.838,
+            "z": 1263.99,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/025.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 28,
+            "x": 1837.626,
+            "y": -1501.334,
+            "z": 1730.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/028.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 32,
+            "x": 5165.825,
+            "y": -3967.054,
+            "z": 1490.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/032.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 41,
+            "x": 3667.097,
+            "y": -1223.852,
+            "z": 350.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/041.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 60,
+            "x": 4844.498,
+            "y": 9.032,
+            "z": 714.39,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_WinterTown_Maps_RussianWinterTownDemo02/frames/060.png",
+            "name": "test14"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

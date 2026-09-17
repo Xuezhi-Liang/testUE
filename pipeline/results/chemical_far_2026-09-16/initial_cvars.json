@@ -1,0 +1,14 @@
+{
+  "r.TSR.ShadingRejection.Flickering": 1.0,
+  "r.TSR.ShadingRejection.Flickering.AdjustToFrameRate": 1.0,
+  "r.TSR.ShadingRejection.Flickering.Period": 2.0,
+  "r.TSR.History.SampleCount": 16.0,
+  "r.TSR.History.ScreenPercentage": 200.0,
+  "r.TSR.ThinGeometryDetection": 0.0,
+  "r.VolumetricFog": 1.0,
+  "r.VolumetricFog.TemporalReprojection": 1.0,
+  "r.Fog": 1.0,
+  "r.StaticMeshLODDistanceScale": 1.0,
+  "r.ViewDistanceScale": 1.0,
+  "r.TextureStreaming": 1.0
+}

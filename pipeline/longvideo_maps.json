@@ -1,0 +1,98 @@
+[
+ {
+  "slug": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2",
+  "map_id": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_2",
+  "core_rank": 1,
+  "core_m2": 5761.7,
+  "core_clearance_median_m": 2.24,
+  "seed": 2000
+ },
+ {
+  "slug": "Game_WinterTown_Maps_RussianWinterTownDemo01",
+  "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
+  "core_rank": 2,
+  "core_m2": 3778.0,
+  "core_clearance_median_m": 3.18,
+  "seed": 2001
+ },
+ {
+  "slug": "Game_AnchientRuins_Maps_AncientRuins",
+  "map_id": "/Game/AnchientRuins/Maps/AncientRuins",
+  "core_rank": 3,
+  "core_m2": 3287.0,
+  "core_clearance_median_m": 2.46,
+  "seed": 2002
+ },
+ {
+  "slug": "Game_Pyramids_Levels_L_pyramids",
+  "map_id": "/Game/Pyramids/Levels/L_pyramids",
+  "core_rank": 4,
+  "core_m2": 3162.8,
+  "core_clearance_median_m": 3.0,
+  "seed": 2003
+ },
+ {
+  "slug": "Game_Downtown_West_Maps_Demo_Environment",
+  "map_id": "/Game/Downtown_West/Maps/Demo_Environment",
+  "core_rank": 5,
+  "core_m2": 2811.4,
+  "core_clearance_median_m": 2.5,
+  "seed": 2004
+ },
+ {
+  "slug": "Game_MiddleEast_Maps_MiddleEast",
+  "map_id": "/Game/MiddleEast/Maps/MiddleEast",
+  "core_rank": 6,
+  "core_m2": 2621.1,
+  "core_clearance_median_m": 3.0,
+  "seed": 2005
+ },
+ {
+  "slug": "Game_ContainerYard_Maps_Demonstration_Day",
+  "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
+  "core_rank": 7,
+  "core_m2": 1677.1,
+  "core_clearance_median_m": 3.5,
+  "seed": 2006
+ },
+ {
+  "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen",
+  "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
+  "core_rank": 8,
+  "core_m2": 1635.6,
+  "core_clearance_median_m": 2.25,
+  "seed": 2007
+ },
+ {
+  "slug": "Game_HwaseongHaenggung_Maps_Demo",
+  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
+  "core_rank": 9,
+  "core_m2": 1613.4,
+  "core_clearance_median_m": 4.32,
+  "seed": 2008
+ },
+ {
+  "slug": "Game_Village_Maps_Village",
+  "map_id": "/Game/Village/Maps/Village",
+  "core_rank": 10,
+  "core_m2": 1229.5,
+  "core_clearance_median_m": 3.64,
+  "seed": 2009
+ },
+ {
+  "slug": "Game_TokyoStylizedEnvironment_Maps_Tokyo",
+  "map_id": "/Game/TokyoStylizedEnvironment/Maps/Tokyo",
+  "core_rank": 11,
+  "core_m2": 1191.8,
+  "core_clearance_median_m": 1.77,
+  "seed": 2010
+ },
+ {
+  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
+  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
+  "core_rank": 13,
+  "core_m2": 812.8,
+  "core_clearance_median_m": 2.51,
+  "seed": 2011
+ }
+]

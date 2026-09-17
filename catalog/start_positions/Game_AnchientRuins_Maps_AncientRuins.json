@@ -1,0 +1,48 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": -7966.802,
+            "y": 36.146,
+            "z": -21722.98,
+            "csv_index": 0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AnchientRuins_Maps_AncientRuins/frames/000.png"
+        },
+        {
+            "name": "test2",
+            "x": -8021.973,
+            "y": -344.241,
+            "z": -21478.74,
+            "csv_index": 1,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AnchientRuins_Maps_AncientRuins/frames/001.png"
+        },
+        {
+            "name": "test3",
+            "x": -5587.007,
+            "y": 823.075,
+            "z": -21646.43,
+            "csv_index": 2,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AnchientRuins_Maps_AncientRuins/frames/002.png"
+        },
+        {
+            "name": "test4",
+            "x": -8743.258,
+            "y": 64.553,
+            "z": -21662.75,
+            "csv_index": 3,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AnchientRuins_Maps_AncientRuins/frames/003.png"
+        },
+        {
+            "name": "test5",
+            "x": -8567.846,
+            "y": 470.687,
+            "z": -21761.71,
+            "csv_index": 4,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_AnchientRuins_Maps_AncientRuins/frames/004.png"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 200
+    }
+}

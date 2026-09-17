@@ -1,0 +1,192 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": 3008.225,
+            "y": -10353.713,
+            "z": -12043.7,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": 1651.313,
+            "y": 6398.58,
+            "z": -12435.82,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 2,
+            "x": 16342.514,
+            "y": -2579.416,
+            "z": -12227.87,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/002.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 3,
+            "x": 20918.433,
+            "y": -731.153,
+            "z": -12647.88,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/003.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 4,
+            "x": 12326.958,
+            "y": -14444.103,
+            "z": -12306.37,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/004.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 5,
+            "x": -22167.038,
+            "y": -11725.029,
+            "z": -12771.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/005.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 6,
+            "x": 21294.981,
+            "y": 1108.081,
+            "z": -12364.76,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/006.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 7,
+            "x": 11381.165,
+            "y": -8106.518,
+            "z": -12707.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/007.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 8,
+            "x": 7453.506,
+            "y": -954.631,
+            "z": -12539.74,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/008.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 9,
+            "x": 4907.723,
+            "y": -1990.532,
+            "z": -11814.57,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/009.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 10,
+            "x": 3989.665,
+            "y": -9143.065,
+            "z": -12421.79,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/010.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 11,
+            "x": 19848.914,
+            "y": -5627.239,
+            "z": -12637.8,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/011.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 12,
+            "x": 11590.026,
+            "y": -11020.212,
+            "z": -12632.32,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/012.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 13,
+            "x": 5485.492,
+            "y": -5196.178,
+            "z": -11948.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/013.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 14,
+            "x": 8593.221,
+            "y": -5029.635,
+            "z": -12211.54,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/014.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 15,
+            "x": 512.615,
+            "y": 3245.739,
+            "z": -12747.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/015.png",
+            "name": "test16"
+        },
+        {
+            "csv_index": 17,
+            "x": 9238.118,
+            "y": 3196.381,
+            "z": -12707.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/017.png",
+            "name": "test17"
+        },
+        {
+            "csv_index": 18,
+            "x": 1358.299,
+            "y": -1561.732,
+            "z": -12706.46,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/018.png",
+            "name": "test18"
+        },
+        {
+            "csv_index": 19,
+            "x": 18147.06,
+            "y": -641.001,
+            "z": -11955.74,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/019.png",
+            "name": "test19"
+        },
+        {
+            "csv_index": 20,
+            "x": 10818.284,
+            "y": -2908.522,
+            "z": -12707.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/020.png",
+            "name": "test20"
+        },
+        {
+            "csv_index": 23,
+            "x": 14505.482,
+            "y": 6478.89,
+            "z": -12347.99,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/023.png",
+            "name": "test21"
+        },
+        {
+            "csv_index": 24,
+            "x": -8109.197,
+            "y": -9931.957,
+            "z": -12706.19,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/024.png",
+            "name": "test22"
+        },
+        {
+            "csv_index": 25,
+            "x": 8354.203,
+            "y": -9756.739,
+            "z": -12706.19,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2/frames/025.png",
+            "name": "test23"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

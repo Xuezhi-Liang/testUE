@@ -1,0 +1,64 @@
+{
+  "factor": 1.0,
+  "calibration": {
+    "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
+    "poses": 12,
+    "factors_tried": [
+      1.0
+    ],
+    "bar": {
+      "max_black": 0.03,
+      "max_blown": 0.01,
+      "min_contrast_ratio": 0.8,
+      "p50_ratio": [
+        0.6,
+        1.6
+      ],
+      "p50_floor": 30
+    },
+    "reference": {
+      "p10": 62,
+      "p50": 152,
+      "p99": 227,
+      "black_frac": 0.03847,
+      "blown_frac": 0.0,
+      "contrast": 169
+    },
+    "trials": [
+      {
+        "factor": 1.0,
+        "chosen_ev": 10.0,
+        "p10": 55,
+        "p50": 145,
+        "p99": 223,
+        "black_frac": 0.02781,
+        "blown_frac": 0.0,
+        "contrast": 168,
+        "contrast_ratio": 0.9940828402366864,
+        "p50_ratio": 0.9539473684210527,
+        "target_p50": 152,
+        "violation": 0.0,
+        "checks": {
+          "black": true,
+          "blown": true,
+          "contrast": true,
+          "brightness": true
+        },
+        "passes": true,
+        "fill": {
+          "base_intensity": 0.5,
+          "fill_skylight": {
+            "ok": true,
+            "actor": "SkyLight_0",
+            "intensity": 0.5
+          }
+        }
+      }
+    ],
+    "chosen_factor": 1.0,
+    "chosen_ev": 10.0,
+    "quality_bar_missed": false,
+    "took_s": 16.1
+  },
+  "note": "Calibrated once using baseline; reuse this exact fill for the candidate."
+}

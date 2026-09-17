@@ -1,0 +1,39 @@
+{
+ "fx": 640.0000000000001,
+ "fy": 640.0000000000001,
+ "cx": 640.0,
+ "cy": 360.0,
+ "width": 1280,
+ "height": 720,
+ "hfov_deg": 90.0,
+ "vfov_deg": 58.71550708558254,
+ "fov_source": "vget /camera/N/fov read back from the engine after being set",
+ "crop": null,
+ "resize": null,
+ "padding": null,
+ "K_applies_to": "the delivered rgb.mp4 frames, unmodified since render",
+ "source_axis_convention": "UE: left-handed, X forward, Y right, Z up, centimetres",
+ "canonical_axis_convention": "x right, y down, z forward, metres, camera-to-world, column vectors",
+ "ue_to_canonical_basis": "canonical columns are (right, -up, forward) of the UE camera basis",
+ "coordinate_conversion_version": "geom-1",
+ "rotation_truth": "quaternion (quat_x..quat_w) and the 4x4 c2w; both are derived from the engine's Euler readback of the CameraComponent, which is the only rotation form this build exposes. Euler is kept for reading.",
+ "camera_source": "CameraComponent world transform via vget /camera/N/location|rotation",
+ "near_clip_cm": null,
+ "far_clip_cm": null,
+ "lens_model": "pinhole, no distortion",
+ "not_available": {
+  "near_far_clip": "not exposed by UnrealCV on this build"
+ },
+ "depth": {
+  "format": "EXR, linear metres, in the R channel; G and B are 0, A is 1",
+  "reader_warning": "OpenCV decodes EXR as BGRA, so with cv2.imread the depth is index 2, not 0. Index 0 is an all-zero plane that looks exactly like a failed capture. An opencv build reporting `OpenEXR: NO` returns None for a perfectly good file.",
+  "invalid_value": -1.0,
+  "invalid_meaning": "sky, unwritten pixels, and anything beyond max_range_m. Not a measurement. Mask with depth > 0 before unprojecting.",
+  "kind": "planar (distance along the camera view axis), not radial",
+  "bit_depth": 16,
+  "max_range_m": 1000.0,
+  "source": "SimWorldCapture::CaptureDepthEXR - SCS_SceneDepth into an RTF_R32f target, read back with FRHIGPUTextureReadback. NOT ReadLinearColorPixels, which on Vulkan is not a float path and fires a checkf for R32F.",
+  "verified": "centre pixel agreed with an independent line trace to 0.0-0.4 cm at 3.6-4.2 m and within 0.8% at 180-270 m",
+  "pose": "captured at the ACTUAL camera pose read back from the engine, not the commanded pose"
+ }
+}

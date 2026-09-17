@@ -1,0 +1,136 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": 5803.58,
+            "y": -214.015,
+            "z": 1201.66,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 2,
+            "x": 1690.357,
+            "y": 2598.693,
+            "z": 1266.94,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/002.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 3,
+            "x": -1519.174,
+            "y": -1407.114,
+            "z": 1610.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/003.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 4,
+            "x": -582.036,
+            "y": 1630.663,
+            "z": 1106.59,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/004.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 5,
+            "x": 8364.559,
+            "y": 13526.748,
+            "z": 8890.1,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/005.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 6,
+            "x": 7401.239,
+            "y": -920.785,
+            "z": 402.04,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/006.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 8,
+            "x": 3777.448,
+            "y": 5028.556,
+            "z": 3541.46,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/008.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 15,
+            "x": 2972.134,
+            "y": -283.71,
+            "z": 1341.23,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/015.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 17,
+            "x": -46.641,
+            "y": 270.543,
+            "z": 292.68,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/017.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 22,
+            "x": 4725.229,
+            "y": -1020.053,
+            "z": 407.43,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/022.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 28,
+            "x": -1079.407,
+            "y": 429.147,
+            "z": 1010.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/028.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 33,
+            "x": 586.964,
+            "y": -1269.66,
+            "z": 636.07,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/033.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 38,
+            "x": 468.082,
+            "y": 1123.501,
+            "z": 1028.34,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/038.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 39,
+            "x": 2796.327,
+            "y": -11090.686,
+            "z": 5655.24,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/039.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 42,
+            "x": -1425.343,
+            "y": -746.135,
+            "z": 234.02,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/042.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 68,
+            "x": 9304.884,
+            "y": 13238.596,
+            "z": 8237.49,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Bazaar_Meshingun_Map_LV_Bazaar/frames/068.png",
+            "name": "test16"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

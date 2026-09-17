@@ -1,0 +1,112 @@
+{
+    "positions": [
+        {
+            "name": "alley",
+            "x": -550,
+            "y": 6500,
+            "z": 0
+        },
+        {
+            "name": "alley2",
+            "x": 200,
+            "y": 6000,
+            "z": 600
+        },
+        {
+            "name": "alley3",
+            "x": -500,
+            "y": 9010,
+            "z": 64
+        },
+        {
+            "name": "alley4",
+            "x": -500,
+            "y": 12135,
+            "z": 64
+        },
+        {
+            "csv_index": 1,
+            "x": -1418.033,
+            "y": 11967.705,
+            "z": 598.94,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ChineseWaterTown_Ver1_Map_DemoMap/frames/001.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 2,
+            "x": -1261.105,
+            "y": 12108.131,
+            "z": 246.11,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ChineseWaterTown_Ver1_Map_DemoMap/frames/002.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 5,
+            "x": 159.695,
+            "y": 9001.539,
+            "z": 408.09,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ChineseWaterTown_Ver1_Map_DemoMap/frames/005.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 6,
+            "x": -98.932,
+            "y": 10127.71,
+            "z": 719.82,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ChineseWaterTown_Ver1_Map_DemoMap/frames/006.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 7,
+            "x": -1621.033,
+            "y": 8700.033,
+            "z": 620.05,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ChineseWaterTown_Ver1_Map_DemoMap/frames/007.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 10,
+            "x": 304.9,
+            "y": 6311.324,
+            "z": 265.85,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ChineseWaterTown_Ver1_Map_DemoMap/frames/010.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 12,
+            "x": -2092.487,
+            "y": 11506.81,
+            "z": 308.72,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ChineseWaterTown_Ver1_Map_DemoMap/frames/012.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 21,
+            "x": -1053.15,
+            "y": 5191.598,
+            "z": 408.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ChineseWaterTown_Ver1_Map_DemoMap/frames/021.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 36,
+            "x": -207.499,
+            "y": 10482.92,
+            "z": 353.42,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ChineseWaterTown_Ver1_Map_DemoMap/frames/036.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 65,
+            "x": -1615.31,
+            "y": 11128.427,
+            "z": 595.2,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ChineseWaterTown_Ver1_Map_DemoMap/frames/065.png",
+            "name": "test10"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

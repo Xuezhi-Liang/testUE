@@ -1,0 +1,40 @@
+{
+  "source_frozen": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/frozen/Game_TokyoStylizedEnvironment_Maps_Tokyo__nested_out_and_back__age35__seed2__batch5_tokyo__walkpath.json",
+  "source_episode_id": "Game_TokyoStylizedEnvironment_Maps_Tokyo__nested_out_and_back__age35__seed2__batch5_tokyo__walkpath",
+  "map_id": "/Game/TokyoStylizedEnvironment/Maps/Tokyo",
+  "meshes": null,
+  "walker_blueprint": "/Game/CitySampleCrowd/Blueprints/BP_CrowdCharacter.BP_CrowdCharacter_C",
+  "walk_animation": "/Game/CitySampleCrowd/Character/Anims/Loco/MTN_N_Walk_F",
+  "face_mesh": null,
+  "walk_animation_measured": {
+    "walk_anim_length_s": 5.5667,
+    "walk_root_motion_cm": 779.33,
+    "walk_anim_speed_cm_s": 140.0,
+    "measured_by": "ASimWorldCaptureActor::AttachWalker via UAnimSequence::ExtractRootMotionFromRange"
+  },
+  "eye_height_cm": 170.0,
+  "camera": {
+    "behind_cm": 450.0,
+    "above_eye_cm": 40.0,
+    "side_cm": 80.0,
+    "pitch_deg": -10.0,
+    "follows_walker_view": true,
+    "look_at_height_cm": null,
+    "fov_deg": 90.0
+  },
+  "note": "Third-person footage of a CitySampleCrowd citizen on the same route as the episode named above, re-timed as a walk: constant cruise speed, corners rounded, reversals taken as a real arc, speed limited by curvature so the turn is not a spin, and heading from the path tangent. The rebuilt path was swept with the body capsule again before recording - rounding cuts inside the route the navmesh planner verified, and a U-turn arc bulges outside it. The episode's own frozen trajectory is untouched and is what the dataset uses.",
+  "path": {
+    "label": "\u8d70\u8def",
+    "anim": "MTN_N_Walk_F",
+    "cruise_cm_s": 140.0,
+    "speed_min_cm_s": 95.0,
+    "speed_max_cm_s": 140.0,
+    "u_turn_radius_cm": 100.0,
+    "u_turn_flipped": true,
+    "corner_radius_cm": 150.0,
+    "frames": 965,
+    "sweep_hits": 0,
+    "play_rate_min": 0.68,
+    "play_rate_max": 1.0
+  }
+}

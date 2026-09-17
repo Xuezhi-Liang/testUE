@@ -1,0 +1,225 @@
+{
+ "episode_id": "containers_baseline",
+ "frozen_sha256": "5739b0cdc6fdbd6c63b12be1b7d8621fa86a78265fe59008dbac116cfa775dfa",
+ "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
+ "spawn_id": "test1",
+ "seed": 21,
+ "split": "train",
+ "trajectory_family": "nested_out_and_back",
+ "trajectory_generator_version": "pipeline-freeze-1",
+ "recorder_version": "pipeline-capture-engine-1",
+ "control_model": "frozen trajectory executed inside the engine tick; the scene capture components are placed on the frozen camera pose directly, so there is no pawn and desired == actual by construction",
+ "fps": 24.0,
+ "frames": 600,
+ "duration_s": 25.0,
+ "planned_frames": 600,
+ "planned_duration_s": 25.0,
+ "ended_early_reason": null,
+ "review_video": {
+  "file": "rgb.mp4",
+  "frame_stride": 1,
+  "note": "every frame"
+ },
+ "resolution": "1280x720",
+ "intrinsics": {
+  "fx": 640.0000000000001,
+  "fy": 640.0000000000001,
+  "cx": 640.0,
+  "cy": 360.0,
+  "width": 1280,
+  "height": 720,
+  "hfov_deg": 90.0,
+  "vfov_deg": 58.71550708558254
+ },
+ "speed_tier": "fast",
+ "yaw_tier": "medium",
+ "planned_speed_m_s": 1.3905587944087354,
+ "planned_yaw_deg_s": 48.17541088712904,
+ "eye_height_cm": 170.0,
+ "pose_tracking": {
+  "pos_error_cm_mean": 0.0,
+  "pos_error_cm_max": 0.0,
+  "yaw_error_deg_mean": 0.0,
+  "yaw_error_deg_max": 0.0
+ },
+ "measured_speed_m_s_max": 1.215479999999661,
+ "measured_yaw_rate_deg_s_max": 42.11760000000049,
+ "blank_frames": 0,
+ "axis_smoke": {
+  "forward": [
+   640.0,
+   360.0
+  ],
+  "forward_right": [
+   1280.0,
+   360.0
+  ],
+  "forward_up": [
+   640.0,
+   -280.0000000000001
+  ],
+  "pass": true
+ },
+ "record_seconds": 45.5,
+ "engine_timing_ms": {
+  "render": 0.79,
+  "readback": 46.75,
+  "write": 9.49
+ },
+ "engine_fps": 13.186,
+ "render": {
+  "exposure": "auto_instant",
+  "motion_blur": false,
+  "depth_of_field": false,
+  "lumen": "project_default",
+  "taa": "tsr",
+  "hud": false,
+  "exposure_bias_ev": null,
+  "lighting": "fill",
+  "skylight_factor": "auto",
+  "history_mode": 4,
+  "local_exposure": {
+   "shadow_scale": 0.65,
+   "highlight_scale": 0.0,
+   "detail_strength": 1.0
+  },
+  "supersample": 2,
+  "cvars": [
+   "r.AntiAliasingMethod 4",
+   "r.Lumen.ScreenProbeGather.DownsampleFactor 16",
+   "r.MaxAnisotropy 8",
+   "r.MipMapLODBias 0",
+   "r.TemporalAA.HistoryScreenPercentage 100",
+   "r.TemporalAA.Quality 2",
+   "r.TemporalAACurrentFrameWeight 0.04",
+   "r.TemporalAASamples 8",
+   "r.Tonemapper.Sharpen -1",
+   "r.VolumetricFog.GridPixelSize 8",
+   "r.VolumetricFog.GridSizeZ 128"
+  ]
+ },
+ "render_runtime": {
+  "history_mode": 4,
+  "temporal_aa_enabled": true,
+  "warmup_frames": 32,
+  "rgb_render_width": 2560,
+  "rgb_render_height": 1440
+ },
+ "p0_gaps": [],
+ "lighting": {
+  "skylight_fix": {
+   "applied": true,
+   "made_dynamic": [
+    "SkyLight_1"
+   ],
+   "mode": "real_time_capture",
+   "has_atmosphere": true,
+   "skipped_ours": [],
+   "skylights_before": [
+    {
+     "actor": "SkyLight_1",
+     "mobility": "<ComponentMobility.STATIONARY: 1>",
+     "real_time_capture": false,
+     "source_type": "<SkyLightSourceType.SLS_CAPTURED_SCENE: 0>"
+    }
+   ],
+   "note": "session-only change to the loaded level; nothing was saved to the map"
+  },
+  "fill": {
+   "applied": true,
+   "factor": 1.0,
+   "from_calibration": true
+  },
+  "calibration": {
+   "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
+   "poses": 12,
+   "factors_tried": [
+    1.0
+   ],
+   "bar": {
+    "max_black": 0.03,
+    "max_blown": 0.01,
+    "min_contrast_ratio": 0.8,
+    "p50_ratio": [
+     0.6,
+     1.6
+    ],
+    "p50_floor": 30
+   },
+   "reference": {
+    "p10": 62,
+    "p50": 152,
+    "p99": 227,
+    "black_frac": 0.03847,
+    "blown_frac": 0.0,
+    "contrast": 169
+   },
+   "trials": [
+    {
+     "factor": 1.0,
+     "chosen_ev": 10.0,
+     "p10": 55,
+     "p50": 145,
+     "p99": 223,
+     "black_frac": 0.02781,
+     "blown_frac": 0.0,
+     "contrast": 168,
+     "contrast_ratio": 0.9940828402366864,
+     "p50_ratio": 0.9539473684210527,
+     "target_p50": 152,
+     "violation": 0.0,
+     "checks": {
+      "black": true,
+      "blown": true,
+      "contrast": true,
+      "brightness": true
+     },
+     "passes": true,
+     "fill": {
+      "base_intensity": 0.5,
+      "fill_skylight": {
+       "ok": true,
+       "actor": "SkyLight_0",
+       "intensity": 0.5
+      }
+     }
+    }
+   ],
+   "chosen_factor": 1.0,
+   "chosen_ev": 10.0,
+   "quality_bar_missed": false,
+   "took_s": 16.1
+  },
+  "cvars": [
+   "r.AntiAliasingMethod 4",
+   "r.Lumen.ScreenProbeGather.DownsampleFactor 16",
+   "r.MaxAnisotropy 8",
+   "r.MipMapLODBias 0",
+   "r.TemporalAA.HistoryScreenPercentage 100",
+   "r.TemporalAA.Quality 2",
+   "r.TemporalAACurrentFrameWeight 0.04",
+   "r.TemporalAASamples 8",
+   "r.Tonemapper.Sharpen -1",
+   "r.VolumetricFog.GridPixelSize 8",
+   "r.VolumetricFog.GridSizeZ 128"
+  ],
+  "history_mode": 4,
+  "supersample": 2,
+  "exposure": {
+   "mode": "auto_instant",
+   "manual": false,
+   "bias_ev": 0.0,
+   "auto_exposure_speed": 100.0,
+   "auto_exposure_range": [
+    0.0,
+    0.0
+   ],
+   "local_exposure": {
+    "shadow_scale": 0.65,
+    "highlight_scale": 0.0,
+    "detail_strength": 1.0
+   },
+   "sweep": null
+  }
+ }
+}

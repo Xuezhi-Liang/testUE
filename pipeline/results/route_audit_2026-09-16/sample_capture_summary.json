@@ -1,0 +1,91 @@
+{
+ "episode_id": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2__coverage_walk__seed3004__lv_Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2__s00",
+ "frozen_sha256": "b7fe3187188ea7d8f47ff2d36d30552cdc1c51920e9d9d6f1dcb80f86906de57",
+ "map_id": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_2",
+ "spawn_id": "test1",
+ "seed": 3004,
+ "split": "train",
+ "trajectory_family": "coverage_walk",
+ "trajectory_generator_version": "pipeline-coverage-1",
+ "recorder_version": "pipeline-capture-engine-1",
+ "control_model": "frozen trajectory executed inside the engine tick; the scene capture components are placed on the frozen camera pose directly, so there is no pawn and desired == actual by construction",
+ "fps": 24.0,
+ "frames": 139186,
+ "duration_s": 5799.416666666667,
+ "planned_frames": 139186,
+ "planned_duration_s": 5799.416666666667,
+ "ended_early_reason": null,
+ "review_video": {
+  "file": "rgb_proxy.mp4",
+  "frame_stride": 33,
+  "note": "a timelapse of every 33th frame; frame numbers in it do not correspond to frames.csv"
+ },
+ "resolution": "1280x720",
+ "intrinsics": {
+  "fx": 640.0000000000001,
+  "fy": 640.0000000000001,
+  "cx": 640.0,
+  "cy": 360.0,
+  "width": 1280,
+  "height": 720,
+  "hfov_deg": 90.0,
+  "vfov_deg": 58.71550708558254
+ },
+ "speed_tier": "medium",
+ "yaw_tier": "fast",
+ "planned_speed_m_s": 0.8,
+ "planned_yaw_deg_s": 85.544750518122,
+ "eye_height_cm": 170.0,
+ "pose_tracking": {
+  "pos_error_cm_mean": 0.0,
+  "pos_error_cm_max": 0.0,
+  "yaw_error_deg_mean": 4.45447099452795e-08,
+  "yaw_error_deg_max": 9.999999997489795e-05
+ },
+ "measured_speed_m_s_max": 1.1683176581734294,
+ "measured_yaw_rate_deg_s_max": 115.48079999999936,
+ "blank_frames": 0,
+ "axis_smoke": {
+  "forward": [
+   640.0,
+   360.0
+  ],
+  "forward_right": [
+   1280.0,
+   360.0
+  ],
+  "forward_up": [
+   640.0,
+   -280.0000000000001
+  ],
+  "pass": true
+ },
+ "record_seconds": 9650.4,
+ "engine_timing_ms": {
+  "render": 0.33,
+  "readback": 41.46,
+  "write": 9.54
+ },
+ "engine_fps": 14.423,
+ "render": {
+  "exposure": "fixed",
+  "motion_blur": false,
+  "depth_of_field": false,
+  "lumen": "project_default",
+  "taa": "project_default",
+  "hud": false
+ },
+ "p0_gaps": [],
+ "lighting": {
+  "applied": false,
+  "made_dynamic": [],
+  "skylights_before": [
+   {
+    "actor": "SkyLight2_3",
+    "mobility": "<ComponentMobility.MOVABLE: 2>",
+    "real_time_capture": true
+   }
+  ],
+  "note": "session-only change to the loaded level; nothing was saved to the map"
+ }
+}

@@ -1,0 +1,46 @@
+{
+  "chemical": {
+    "bounds": [
+      0,
+      0,
+      500,
+      360,
+      35,
+      80
+    ],
+    "description": "User-selected opening left tower, ~48-60m"
+  },
+  "downtown": {
+    "bounds": [
+      700,
+      0,
+      1280,
+      440,
+      1,
+      120
+    ],
+    "description": "Opening right brick facade, windows and roof cornice"
+  },
+  "hwaseong": {
+    "bounds": [
+      20,
+      120,
+      1260,
+      415,
+      1,
+      150
+    ],
+    "description": "Opening tiled roofs, eaves and surrounding facade band"
+  },
+  "forest": {
+    "bounds": [
+      250,
+      280,
+      640,
+      415,
+      5,
+      150
+    ],
+    "description": "Opening gas-station facade, canopy and pumps; includes some surrounding foliage; a fixed ROI, not semantic segmentation"
+  }
+}

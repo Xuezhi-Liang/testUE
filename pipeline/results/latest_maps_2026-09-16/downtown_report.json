@@ -1,0 +1,941 @@
+{
+  "map": "/Game/Downtown_West/Maps/Demo_Environment",
+  "episode": "/home/ubuntu/ue_latest_two_maps_20260916_0639/downtown/episode/downtown_latest_20260916",
+  "frames": 2844,
+  "duration_s": 118.5,
+  "runtime": {
+    "ok": true,
+    "armed": true,
+    "finished": true,
+    "frame": 2844,
+    "total": 2844,
+    "elapsed_s": 255.38,
+    "fps": 11.136,
+    "render_ms": 0.62,
+    "readback_ms": 57.44,
+    "write_ms": 9.0,
+    "pending_writes": 0,
+    "write_failures": 0,
+    "walker": false,
+    "walk_anim_length_s": 0.0,
+    "walk_root_motion_cm": 0.0,
+    "walk_anim_speed_cm_s": 0.0,
+    "walker_parts": 0,
+    "exposure_manual": false,
+    "exposure_bias_ev": 0.0,
+    "auto_exposure_speed": 100.0,
+    "local_exposure_shadow": 0.65,
+    "local_exposure_highlight": 0.0,
+    "history_mode": 4,
+    "temporal_aa_enabled": true,
+    "warmup_frames": 32,
+    "rgb_render_width": 2560,
+    "rgb_render_height": 1440,
+    "states": "/home/ubuntu/ue_latest_two_maps_20260916_0639/downtown/episode/downtown_latest_20260916/engine_states.jsonl",
+    "reason": "reached the end of the frozen trajectory"
+  },
+  "render": {
+    "exposure": "auto_instant",
+    "motion_blur": false,
+    "depth_of_field": false,
+    "lumen": "project_default",
+    "taa": "tsr",
+    "hud": false,
+    "exposure_bias_ev": null,
+    "lighting": "fill",
+    "skylight_factor": "auto",
+    "history_mode": 4,
+    "local_exposure": {
+      "shadow_scale": 0.65,
+      "highlight_scale": 0.0,
+      "detail_strength": 1.0
+    },
+    "supersample": 2,
+    "cvars": [
+      "r.AntiAliasingMethod 4"
+    ]
+  },
+  "pose_tracking": {
+    "pos_error_cm_mean": 0.0,
+    "pos_error_cm_max": 0.0,
+    "yaw_error_deg_mean": 0.0,
+    "yaw_error_deg_max": 0.0
+  },
+  "lighting": {
+    "skylight_fix": {
+      "applied": false,
+      "made_dynamic": [],
+      "mode": "captured_scene",
+      "has_atmosphere": false,
+      "skipped_ours": [],
+      "skylights_before": [
+        {
+          "actor": "SkyLight_4",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "real_time_capture": false,
+          "source_type": "<SkyLightSourceType.SLS_CAPTURED_SCENE: 0>"
+        }
+      ],
+      "note": "session-only change to the loaded level; nothing was saved to the map"
+    },
+    "fill": {
+      "applied": true,
+      "factor": 3.0,
+      "from_calibration": true
+    },
+    "calibration": {
+      "map_id": "/Game/Downtown_West/Maps/Demo_Environment",
+      "poses": 12,
+      "factors_tried": [
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ],
+      "bar": {
+        "max_black": 0.03,
+        "max_blown": 0.01,
+        "min_contrast_ratio": 0.8,
+        "p50_ratio": [
+          0.6,
+          1.6
+        ],
+        "p50_floor": 30
+      },
+      "reference": {
+        "p10": 52,
+        "p50": 145,
+        "p99": 250,
+        "black_frac": 0.03645,
+        "blown_frac": 0.01164,
+        "contrast": 191
+      },
+      "trials": [
+        {
+          "factor": 1.0,
+          "chosen_ev": 11.5,
+          "p10": 60,
+          "p50": 156,
+          "p99": 253,
+          "black_frac": 0.0374,
+          "blown_frac": 0.02082,
+          "contrast": 193,
+          "contrast_ratio": 1.0104712041884816,
+          "p50_ratio": 1.0758620689655172,
+          "target_p50": 145,
+          "violation": 1.3286666666666669,
+          "checks": {
+            "black": false,
+            "blown": false,
+            "contrast": true,
+            "brightness": true
+          },
+          "passes": false,
+          "fill": {
+            "base_intensity": 3.0,
+            "fill_skylight": {
+              "ok": true,
+              "actor": "SkyLight_0",
+              "intensity": 3.0
+            }
+          }
+        },
+        {
+          "factor": 1.5,
+          "chosen_ev": 11.0,
+          "p10": 45,
+          "p50": 141,
+          "p99": 250,
+          "black_frac": 0.0382,
+          "blown_frac": 0.01106,
+          "contrast": 205,
+          "contrast_ratio": 1.0732984293193717,
+          "p50_ratio": 0.9724137931034482,
+          "target_p50": 145,
+          "violation": 0.3793333333333333,
+          "checks": {
+            "black": false,
+            "blown": false,
+            "contrast": true,
+            "brightness": true
+          },
+          "passes": false,
+          "fill": {
+            "base_intensity": 3.0,
+            "fill_skylight": {
+              "ok": true,
+              "actor": "SkyLight_1",
+              "intensity": 4.5
+            }
+          }
+        },
+        {
+          "factor": 2.0,
+          "chosen_ev": 11.0,
+          "p10": 61,
+          "p50": 153,
+          "p99": 250,
+          "black_frac": 0.02774,
+          "blown_frac": 0.01132,
+          "contrast": 189,
+          "contrast_ratio": 0.9895287958115183,
+          "p50_ratio": 1.0551724137931036,
+          "target_p50": 145,
+          "violation": 0.132,
+          "checks": {
+            "black": true,
+            "blown": false,
+            "contrast": true,
+            "brightness": true
+          },
+          "passes": false,
+          "fill": {
+            "base_intensity": 3.0,
+            "fill_skylight": {
+              "ok": true,
+              "actor": "SkyLight_2",
+              "intensity": 6.0
+            }
+          }
+        },
+        {
+          "factor": 3.0,
+          "chosen_ev": 10.5,
+          "p10": 52,
+          "p50": 144,
+          "p99": 246,
+          "black_frac": 0.02885,
+          "blown_frac": 0.00513,
+          "contrast": 194,
+          "contrast_ratio": 1.0157068062827226,
+          "p50_ratio": 0.993103448275862,
+          "target_p50": 145,
+          "violation": 0.0,
+          "checks": {
+            "black": true,
+            "blown": true,
+            "contrast": true,
+            "brightness": true
+          },
+          "passes": true,
+          "fill": {
+            "base_intensity": 3.0,
+            "fill_skylight": {
+              "ok": true,
+              "actor": "SkyLight_3",
+              "intensity": 9.0
+            }
+          }
+        }
+      ],
+      "chosen_factor": 3.0,
+      "chosen_ev": 10.5,
+      "quality_bar_missed": false,
+      "took_s": 30.9
+    },
+    "cvars": [
+      "r.AntiAliasingMethod 4"
+    ],
+    "history_mode": 4,
+    "supersample": 2,
+    "exposure": {
+      "mode": "auto_instant",
+      "manual": false,
+      "bias_ev": 0.0,
+      "auto_exposure_speed": 100.0,
+      "auto_exposure_range": [
+        0.0,
+        0.0
+      ],
+      "local_exposure": {
+        "shadow_scale": 0.65,
+        "highlight_scale": 0.0,
+        "detail_strength": 1.0
+      },
+      "sweep": null
+    }
+  },
+  "image_samples": [
+    {
+      "frame": 0,
+      "luma": 163.5485601128472,
+      "black_pct": 0.9881727430555556,
+      "blown_pct": 0.990234375
+    },
+    {
+      "frame": 91,
+      "luma": 164.88168402777777,
+      "black_pct": 0.6661241319444444,
+      "blown_pct": 1.0241970486111112
+    },
+    {
+      "frame": 183,
+      "luma": 164.51101779513888,
+      "black_pct": 0.7506510416666666,
+      "blown_pct": 1.0044487847222223
+    },
+    {
+      "frame": 275,
+      "luma": 162.57506293402778,
+      "black_pct": 1.4871961805555556,
+      "blown_pct": 0.9605034722222221
+    },
+    {
+      "frame": 366,
+      "luma": 162.2328168402778,
+      "black_pct": 1.4760199652777777,
+      "blown_pct": 0.9330512152777778
+    },
+    {
+      "frame": 458,
+      "luma": 146.45452690972223,
+      "black_pct": 0.09809027777777778,
+      "blown_pct": 0.005859375
+    },
+    {
+      "frame": 550,
+      "luma": 147.671962890625,
+      "black_pct": 0.7635633680555556,
+      "blown_pct": 0.004557291666666667
+    },
+    {
+      "frame": 641,
+      "luma": 148.17715928819445,
+      "black_pct": 0.23155381944444442,
+      "blown_pct": 0.007486979166666666
+    },
+    {
+      "frame": 733,
+      "luma": 148.10261176215278,
+      "black_pct": 0.23914930555555555,
+      "blown_pct": 0.006618923611111112
+    },
+    {
+      "frame": 825,
+      "luma": 150.06518988715277,
+      "black_pct": 0.5550130208333334,
+      "blown_pct": 0.03624131944444445
+    },
+    {
+      "frame": 917,
+      "luma": 157.5302615017361,
+      "black_pct": 1.0123697916666667,
+      "blown_pct": 0.5602213541666666
+    },
+    {
+      "frame": 1008,
+      "luma": 147.7033930121528,
+      "black_pct": 0.3314887152777778,
+      "blown_pct": 0.007161458333333333
+    },
+    {
+      "frame": 1100,
+      "luma": 147.77776584201388,
+      "black_pct": 0.12424045138888888,
+      "blown_pct": 0.006727430555555556
+    },
+    {
+      "frame": 1192,
+      "luma": 146.99249131944444,
+      "black_pct": 0.2595486111111111,
+      "blown_pct": 0.00857204861111111
+    },
+    {
+      "frame": 1283,
+      "luma": 145.09658094618055,
+      "black_pct": 0.9487847222222222,
+      "blown_pct": 0.008680555555555556
+    },
+    {
+      "frame": 1375,
+      "luma": 144.76596028645832,
+      "black_pct": 1.6041666666666665,
+      "blown_pct": 0.011176215277777778
+    },
+    {
+      "frame": 1467,
+      "luma": 145.06193359375,
+      "black_pct": 1.202690972222222,
+      "blown_pct": 0.012912326388888888
+    },
+    {
+      "frame": 1559,
+      "luma": 144.57721462673612,
+      "black_pct": 1.9227430555555556,
+      "blown_pct": 0.015190972222222222
+    },
+    {
+      "frame": 1650,
+      "luma": 145.07550672743056,
+      "black_pct": 1.973849826388889,
+      "blown_pct": 0.018120659722222224
+    },
+    {
+      "frame": 1742,
+      "luma": 145.13820638020835,
+      "black_pct": 1.8884548611111112,
+      "blown_pct": 0.016710069444444444
+    },
+    {
+      "frame": 1834,
+      "luma": 145.15053602430555,
+      "black_pct": 1.8892144097222223,
+      "blown_pct": 0.017252604166666668
+    },
+    {
+      "frame": 1925,
+      "luma": 145.14845269097222,
+      "black_pct": 1.8929036458333333,
+      "blown_pct": 0.016818576388888888
+    },
+    {
+      "frame": 2017,
+      "luma": 152.71773980034723,
+      "black_pct": 0.00021701388888888888,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 2109,
+      "luma": 162.11230143229167,
+      "black_pct": 0.8662109374999999,
+      "blown_pct": 1.1355251736111112
+    },
+    {
+      "frame": 2201,
+      "luma": 164.3003732638889,
+      "black_pct": 1.2338324652777777,
+      "blown_pct": 1.1397569444444444
+    },
+    {
+      "frame": 2292,
+      "luma": 164.51730577256944,
+      "black_pct": 1.2730034722222223,
+      "blown_pct": 1.1490885416666667
+    },
+    {
+      "frame": 2384,
+      "luma": 165.0705447048611,
+      "black_pct": 0.879123263888889,
+      "blown_pct": 1.1554904513888888
+    },
+    {
+      "frame": 2476,
+      "luma": 164.83060546875,
+      "black_pct": 0.8442925347222222,
+      "blown_pct": 1.157660590277778
+    },
+    {
+      "frame": 2567,
+      "luma": 165.3862109375,
+      "black_pct": 0.3921440972222222,
+      "blown_pct": 1.1647135416666665
+    },
+    {
+      "frame": 2659,
+      "luma": 164.752607421875,
+      "black_pct": 0.674587673611111,
+      "blown_pct": 1.1563585069444444
+    },
+    {
+      "frame": 2751,
+      "luma": 164.42910373263888,
+      "black_pct": 0.828884548611111,
+      "blown_pct": 1.1494140625
+    },
+    {
+      "frame": 2843,
+      "luma": 163.64433051215278,
+      "black_pct": 0.8885633680555555,
+      "blown_pct": 1.0096571180555556
+    }
+  ],
+  "depth_traces": [
+    {
+      "frame": 0,
+      "hit": {
+        "distance": 6628.14306640625,
+        "impact": [
+          -13312.576930999756,
+          5395.90270614624,
+          161.48846435546875
+        ],
+        "actor": "build_cafe_a_wall_pillar76_280",
+        "planar_m": 66.28139058134472
+      },
+      "recorded_depth_m": 66.3125,
+      "absolute_difference_m": 0.0311094186552765
+    },
+    {
+      "frame": 91,
+      "hit": {
+        "distance": 6505.76220703125,
+        "impact": [
+          -13312.576906204224,
+          5395.999813079834,
+          162.66546630859375
+        ],
+        "actor": "build_cafe_a_wall_pillar76_280",
+        "planar_m": 65.05757888981
+      },
+      "recorded_depth_m": 65.0625,
+      "absolute_difference_m": 0.00492111018999708
+    },
+    {
+      "frame": 183,
+      "hit": {
+        "distance": 6110.27685546875,
+        "impact": [
+          -13312.576826095581,
+          5396.313690185547,
+          163.07684326171875
+        ],
+        "actor": "build_cafe_a_wall_pillar76_280",
+        "planar_m": 61.10273138069799
+      },
+      "recorded_depth_m": 61.09375,
+      "absolute_difference_m": 0.008981380697989039
+    },
+    {
+      "frame": 275,
+      "hit": {
+        "distance": 5807.42529296875,
+        "impact": [
+          -13312.576763153076,
+          5396.553882598877,
+          164.04205322265625
+        ],
+        "actor": "build_cafe_a_wall_pillar76_280",
+        "planar_m": 58.074218954725204
+      },
+      "recorded_depth_m": 58.0625,
+      "absolute_difference_m": 0.0117189547252039
+    },
+    {
+      "frame": 366,
+      "hit": {
+        "distance": 5801.087890625,
+        "impact": [
+          -13312.576763153076,
+          5396.558879852295,
+          164.10301208496094
+        ],
+        "actor": "build_cafe_a_wall_pillar76_280",
+        "planar_m": 58.01083957028868
+      },
+      "recorded_depth_m": 58.0,
+      "absolute_difference_m": 0.010839570288680989
+    },
+    {
+      "frame": 458,
+      "hit": {
+        "distance": 1950.0791015625,
+        "impact": [
+          -5876.23256621631,
+          5497.318936538507,
+          167.11160167303711
+        ],
+        "actor": "build_d_pillar_b38",
+        "planar_m": 19.500778601883738
+      },
+      "recorded_depth_m": 19.5,
+      "absolute_difference_m": 0.0007786018837379061
+    },
+    {
+      "frame": 550,
+      "hit": {
+        "distance": 23147.705078125,
+        "impact": [
+          15571.182060118346,
+          8800.705632864716,
+          150.1526674117663
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 231.47689712953445
+      },
+      "recorded_depth_m": 232.875,
+      "absolute_difference_m": 1.39810287046555
+    },
+    {
+      "frame": 641,
+      "hit": {
+        "distance": 22758.06640625,
+        "impact": [
+          15577.537027158072,
+          8801.050646380916,
+          150.86767171330447
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 227.58052206984345
+      },
+      "recorded_depth_m": 229.125,
+      "absolute_difference_m": 1.544477930156546
+    },
+    {
+      "frame": 733,
+      "hit": {
+        "distance": 22467.6953125,
+        "impact": [
+          15571.791504109126,
+          8800.233867412275,
+          150.26462327787576
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 224.67682204332903
+      },
+      "recorded_depth_m": 226.0,
+      "absolute_difference_m": 1.3231779566709747
+    },
+    {
+      "frame": 825,
+      "hit": {
+        "distance": 1929.480712890625,
+        "impact": [
+          -8317.162336374557,
+          5332.480047902591,
+          166.29909412464175
+        ],
+        "actor": "build_cafe_a_wall_windows_long315",
+        "planar_m": 19.294795492611357
+      },
+      "recorded_depth_m": 19.296875,
+      "absolute_difference_m": 0.0020795073886432647
+    },
+    {
+      "frame": 917,
+      "hit": {
+        "distance": 2694.00537109375,
+        "impact": [
+          -9208.89588980312,
+          5336.676891678062,
+          165.70180967574564
+        ],
+        "actor": "build_cafe_a_wall_windows_long315",
+        "planar_m": 26.940035927152703
+      },
+      "recorded_depth_m": 26.9375,
+      "absolute_difference_m": 0.0025359271527030103
+    },
+    {
+      "frame": 1008,
+      "hit": {
+        "distance": 16365.4296875,
+        "impact": [
+          9559.011153181307,
+          5489.248899721882,
+          155.02101608148328
+        ],
+        "actor": "build_b_mod_lvl1_storefront_b_wall5m39",
+        "planar_m": 163.65419415725984
+      },
+      "recorded_depth_m": 163.625,
+      "absolute_difference_m": 0.02919415725983754
+    },
+    {
+      "frame": 1100,
+      "hit": {
+        "distance": 16208.220703125,
+        "impact": [
+          9557.034955253685,
+          5489.248896809834,
+          154.57293518408878
+        ],
+        "actor": "build_b_mod_lvl1_storefront_b_wall5m39",
+        "planar_m": 162.08210964525938
+      },
+      "recorded_depth_m": 162.125,
+      "absolute_difference_m": 0.04289035474062075
+    },
+    {
+      "frame": 1192,
+      "hit": {
+        "distance": 15901.9296875,
+        "impact": [
+          9553.195166605105,
+          5489.248285017357,
+          155.34032534341753
+        ],
+        "actor": "build_b_mod_lvl1_storefront_b_wall5m39",
+        "planar_m": 159.01919560847506
+      },
+      "recorded_depth_m": 159.0,
+      "absolute_difference_m": 0.019195608475058634
+    },
+    {
+      "frame": 1283,
+      "hit": {
+        "distance": 15523.3564453125,
+        "impact": [
+          9552.655801652822,
+          5488.985829423385,
+          157.44078550592138
+        ],
+        "actor": "build_b_mod_lvl1_storefront_b_wall5m39",
+        "planar_m": 155.23346552878297
+      },
+      "recorded_depth_m": 155.25,
+      "absolute_difference_m": 0.016534471217028113
+    },
+    {
+      "frame": 1375,
+      "hit": {
+        "distance": 15107.6337890625,
+        "impact": [
+          9552.655795945644,
+          5488.660690217844,
+          156.57116844369307
+        ],
+        "actor": "build_b_mod_lvl1_storefront_b_wall5m39",
+        "planar_m": 151.07624392529112
+      },
+      "recorded_depth_m": 151.125,
+      "absolute_difference_m": 0.04875607470887644
+    },
+    {
+      "frame": 1467,
+      "hit": {
+        "distance": 14702.2001953125,
+        "impact": [
+          9552.655808709025,
+          5488.343679153585,
+          158.52141327122757
+        ],
+        "actor": "build_b_mod_lvl1_storefront_b_wall5m39",
+        "planar_m": 147.02191013283573
+      },
+      "recorded_depth_m": 147.0,
+      "absolute_difference_m": 0.02191013283572829
+    },
+    {
+      "frame": 1559,
+      "hit": {
+        "distance": 14351.81640625,
+        "impact": [
+          9552.655811633005,
+          5488.069642920966,
+          158.96925005950976
+        ],
+        "actor": "build_b_mod_lvl1_storefront_b_wall5m39",
+        "planar_m": 143.5180792428115
+      },
+      "recorded_depth_m": 143.5,
+      "absolute_difference_m": 0.018079242811495533
+    },
+    {
+      "frame": 1650,
+      "hit": {
+        "distance": 14109.291015625,
+        "impact": [
+          9552.655807818128,
+          5487.880005380264,
+          158.38782304118354
+        ],
+        "actor": "build_b_mod_lvl1_storefront_b_wall5m39",
+        "planar_m": 141.0928250773793
+      },
+      "recorded_depth_m": 141.125,
+      "absolute_difference_m": 0.032174922620697544
+    },
+    {
+      "frame": 1742,
+      "hit": {
+        "distance": 14051.90234375,
+        "impact": [
+          9552.655809553245,
+          5487.835060853353,
+          158.65295827539674
+        ],
+        "actor": "build_b_mod_lvl1_storefront_b_wall5m39",
+        "planar_m": 140.51893407944848
+      },
+      "recorded_depth_m": 140.5,
+      "absolute_difference_m": 0.01893407944848491
+    },
+    {
+      "frame": 1834,
+      "hit": {
+        "distance": 14051.90234375,
+        "impact": [
+          9552.655809553245,
+          5487.835060853353,
+          158.65295827539674
+        ],
+        "actor": "build_b_mod_lvl1_storefront_b_wall5m39",
+        "planar_m": 140.51893407944848
+      },
+      "recorded_depth_m": 140.5,
+      "absolute_difference_m": 0.01893407944848491
+    },
+    {
+      "frame": 1925,
+      "hit": {
+        "distance": 14051.90234375,
+        "impact": [
+          9552.655809553245,
+          5487.835060853353,
+          158.65295827539674
+        ],
+        "actor": "build_b_mod_lvl1_storefront_b_wall5m39",
+        "planar_m": 140.51893407944848
+      },
+      "recorded_depth_m": 140.5,
+      "absolute_difference_m": 0.01893407944848491
+    },
+    {
+      "frame": 2017,
+      "hit": {
+        "distance": 2874.773193359375,
+        "impact": [
+          -5418.1131592843585,
+          9064.484891060738,
+          167.38508489983542
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 28.747713282438113
+      },
+      "recorded_depth_m": 28.75,
+      "absolute_difference_m": 0.0022867175618870306
+    },
+    {
+      "frame": 2109,
+      "hit": {
+        "distance": 19941.103515625,
+        "impact": [
+          -24337.964129860855,
+          8590.267596661988,
+          153.79682306459432
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 199.41090477684764
+      },
+      "recorded_depth_m": 199.75,
+      "absolute_difference_m": 0.33909522315235563
+    },
+    {
+      "frame": 2201,
+      "hit": {
+        "distance": 19708.5625,
+        "impact": [
+          -24344.624199726517,
+          8591.207038309738,
+          154.43619446771078
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 197.08551081691402
+      },
+      "recorded_depth_m": 197.375,
+      "absolute_difference_m": 0.28948918308597626
+    },
+    {
+      "frame": 2292,
+      "hit": {
+        "distance": 19363.55859375,
+        "impact": [
+          -24342.689949911855,
+          8591.258773885122,
+          154.3256292544938
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 193.63546554602829
+      },
+      "recorded_depth_m": 193.875,
+      "absolute_difference_m": 0.23953445397171436
+    },
+    {
+      "frame": 2384,
+      "hit": {
+        "distance": 18942.68359375,
+        "impact": [
+          -24325.706706604687,
+          8589.660895683888,
+          152.71603789483143
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 189.4267149496293
+      },
+      "recorded_depth_m": 189.75,
+      "absolute_difference_m": 0.3232850503707141
+    },
+    {
+      "frame": 2476,
+      "hit": {
+        "distance": 18534.0625,
+        "impact": [
+          -24333.84352798264,
+          8590.906624084711,
+          153.60477201764525
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 185.34051817753772
+      },
+      "recorded_depth_m": 185.625,
+      "absolute_difference_m": 0.2844818224622827
+    },
+    {
+      "frame": 2567,
+      "hit": {
+        "distance": 18133.587890625,
+        "impact": [
+          -24315.77308514372,
+          8589.169175584017,
+          151.8401434448084
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 181.3357639097759
+      },
+      "recorded_depth_m": 181.625,
+      "absolute_difference_m": 0.289236090224108
+    },
+    {
+      "frame": 2659,
+      "hit": {
+        "distance": 17818.86328125,
+        "impact": [
+          -24311.9089746604,
+          8588.977876621588,
+          151.49942180456736
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 178.18852090480365
+      },
+      "recorded_depth_m": 178.5,
+      "absolute_difference_m": 0.3114790951963471
+    },
+    {
+      "frame": 2751,
+      "hit": {
+        "distance": 17646.7109375,
+        "impact": [
+          -24312.942320236554,
+          8589.230714699373,
+          151.63151581884563
+        ],
+        "actor": "Landscape_0",
+        "planar_m": 176.4669975220103
+      },
+      "recorded_depth_m": 176.75,
+      "absolute_difference_m": 0.28300247798969735
+    },
+    {
+      "frame": 2843,
+      "hit": {
+        "distance": 6633.4384765625,
+        "impact": [
+          -13312.561836242676,
+          5454.750823020935,
+          160.24612426757812
+        ],
+        "actor": "build_cafe_a_wall_pillar76_280",
+        "planar_m": 66.33434524890906
+      },
+      "recorded_depth_m": 66.3125,
+      "absolute_difference_m": 0.021845248909059478
+    }
+  ],
+  "trace_summary": {
+    "comparable": 32,
+    "within_15cm": 21,
+    "max_error_cm": 154.4477930156546
+  },
+  "note": "Collision and visible geometry can differ; trace mismatches are retained. This is a recording test, not full dataset acceptance.",
+  "trace_note": "All 11 >15 cm discrepancies hit Landscape_0 at rendered depths 176.75\u2013232.875 m. Rendered terrain and collision can differ in LOD; this is a possible explanation, not proven equivalence. All 21 non-landscape sampled hits are within 15 cm."
+}

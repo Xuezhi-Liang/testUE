@@ -1,0 +1,160 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": -2420.421,
+            "y": 1148.321,
+            "z": 256.38,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": -5034.579,
+            "y": -2321.66,
+            "z": 1851.75,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 2,
+            "x": -8190.788,
+            "y": -2799.995,
+            "z": 103.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/002.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 3,
+            "x": 9985.467,
+            "y": 5276.402,
+            "z": 688.59,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/003.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 4,
+            "x": -11923.789,
+            "y": -1129.258,
+            "z": 102.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/004.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 5,
+            "x": -3404.757,
+            "y": 28032.092,
+            "z": 189.06,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/005.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 6,
+            "x": 14616.111,
+            "y": 18.464,
+            "z": 102.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/006.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 7,
+            "x": -18587.826,
+            "y": 5685.066,
+            "z": 714.16,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/007.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 8,
+            "x": -5806.973,
+            "y": -1018.368,
+            "z": 529.55,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/008.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 10,
+            "x": -18744.728,
+            "y": 2163.359,
+            "z": 538.02,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/010.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 11,
+            "x": -1010.101,
+            "y": 197.359,
+            "z": 217.95,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/011.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 12,
+            "x": 8644.416,
+            "y": 1319.237,
+            "z": 1884.25,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/012.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 13,
+            "x": 8548.728,
+            "y": 7066.705,
+            "z": 211.94,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/013.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 14,
+            "x": 787.606,
+            "y": -4513.123,
+            "z": 241.16,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/014.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 15,
+            "x": -4591.873,
+            "y": -1826.417,
+            "z": 497.96,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/015.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 16,
+            "x": 12530.787,
+            "y": 4449.433,
+            "z": 102.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/016.png",
+            "name": "test16"
+        },
+        {
+            "csv_index": 21,
+            "x": -472.416,
+            "y": 917.273,
+            "z": 237.73,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/021.png",
+            "name": "test17"
+        },
+        {
+            "csv_index": 113,
+            "x": 5225.699,
+            "y": 3529.204,
+            "z": 701.3,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/113.png",
+            "name": "test18"
+        },
+        {
+            "csv_index": 118,
+            "x": -12680.38,
+            "y": 2082.473,
+            "z": 1299.99,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Downtown_West_Maps_Demo_Environment/frames/118.png",
+            "name": "test19"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

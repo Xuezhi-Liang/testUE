@@ -1,0 +1,9 @@
+{
+  "primary_docs": [
+    "https://dev.epicgames.com/documentation/unreal-engine/anti-aliasing-and-upscaling-in-unreal-engine",
+    "https://dev.epicgames.com/documentation/unreal-engine/temporal-super-resolution-frequently-asked-questions-for-unreal-engine"
+  ],
+  "engine_version": "local UE 5.8",
+  "engine_source": "Engine/Source/Runtime/Renderer/Private/PostProcess/TemporalAA.cpp and TemporalSuperResolution.cpp",
+  "note": "Source inspection verified console variable names and defaults. More history and larger internal resolution have tradeoffs; measurements decide promotion."
+}

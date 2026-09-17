@@ -1,0 +1,72 @@
+[
+  {
+    "worker": "00",
+    "id": "i-07eb4f8935b7ab42e",
+    "state": "running",
+    "ip": "172.31.30.133",
+    "az": "eu-north-1a"
+  },
+  {
+    "worker": "01",
+    "id": "i-0b78a067fc047c21a",
+    "state": "running",
+    "ip": "172.31.31.39",
+    "az": "eu-north-1a"
+  },
+  {
+    "worker": "02",
+    "id": "i-0e42ab9a1a06d2f62",
+    "state": "running",
+    "ip": "172.31.26.234",
+    "az": "eu-north-1a"
+  },
+  {
+    "worker": "03",
+    "id": "i-0703d9715e30289b7",
+    "state": "running",
+    "ip": "172.31.30.191",
+    "az": "eu-north-1a"
+  },
+  {
+    "worker": "04",
+    "id": "i-00a045f47411c2a5f",
+    "state": "running",
+    "ip": "172.31.18.143",
+    "az": "eu-north-1a"
+  },
+  {
+    "worker": "05",
+    "id": "i-09ea3ed41bcf77ad9",
+    "state": "running",
+    "ip": "172.31.17.57",
+    "az": "eu-north-1a"
+  },
+  {
+    "worker": "06",
+    "id": "i-01e7b8168fabadc3a",
+    "state": "running",
+    "ip": "172.31.39.193",
+    "az": "eu-north-1b"
+  },
+  {
+    "worker": "07",
+    "id": "i-0fcae8618eec60e98",
+    "state": "running",
+    "ip": "172.31.44.1",
+    "az": "eu-north-1b"
+  },
+  {
+    "worker": "08",
+    "id": "i-067c09550c4bf1289",
+    "state": "running",
+    "ip": "172.31.43.13",
+    "az": "eu-north-1b"
+  },
+  {
+    "worker": "09",
+    "id": "i-0db3336129cfa07c7",
+    "state": "running",
+    "ip": "172.31.41.230",
+    "az": "eu-north-1b"
+  }
+]

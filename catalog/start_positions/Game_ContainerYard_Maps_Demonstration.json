@@ -1,0 +1,92 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": -4550,
+            "y": -3550,
+            "z": 64
+        },
+        {
+            "name": "test2",
+            "x": -2500,
+            "y": 1450,
+            "z": 64
+        },
+        {
+            "csv_index": 0,
+            "x": -1517.303,
+            "y": -10108.929,
+            "z": 228.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ContainerYard_Maps_Demonstration/frames/000.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 1,
+            "x": -4666.408,
+            "y": 4754.093,
+            "z": 487.37,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ContainerYard_Maps_Demonstration/frames/001.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 2,
+            "x": 467.59,
+            "y": -7491.498,
+            "z": 497.96,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ContainerYard_Maps_Demonstration/frames/002.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 5,
+            "x": -5770.576,
+            "y": 81.367,
+            "z": 1947.91,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ContainerYard_Maps_Demonstration/frames/005.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 9,
+            "x": -6962.017,
+            "y": -7853.611,
+            "z": 881.98,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ContainerYard_Maps_Demonstration/frames/009.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 10,
+            "x": -2631.468,
+            "y": -10442.867,
+            "z": 720.93,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ContainerYard_Maps_Demonstration/frames/010.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 15,
+            "x": -3492.523,
+            "y": 2537.096,
+            "z": 228.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ContainerYard_Maps_Demonstration/frames/015.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 21,
+            "x": -3194.471,
+            "y": -10376.484,
+            "z": 227.98,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ContainerYard_Maps_Demonstration/frames/021.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 32,
+            "x": -5663.921,
+            "y": -2307.207,
+            "z": 220.24,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ContainerYard_Maps_Demonstration/frames/032.png",
+            "name": "test11"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

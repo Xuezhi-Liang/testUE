@@ -1,0 +1,52 @@
+{
+  "status": 200,
+  "maps": [
+    {
+      "name": "hwaseong",
+      "players": [
+        {
+          "time": 1.770927,
+          "width": 1280,
+          "height": 720,
+          "duration": 36.5,
+          "paused": false,
+          "error": null
+        },
+        {
+          "time": 1.808416,
+          "width": 1280,
+          "height": 720,
+          "duration": 36.5,
+          "paused": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "chemical",
+      "players": [
+        {
+          "time": 1.759196,
+          "width": 1280,
+          "height": 720,
+          "duration": 36.5,
+          "paused": false,
+          "error": null
+        },
+        {
+          "time": 1.806275,
+          "width": 1280,
+          "height": 720,
+          "duration": 36.5,
+          "paused": false,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "mobile_body_width": 390,
+  "errors": [],
+  "/dubai/?view=first": 200,
+  "/longvideo/flicker/": 200,
+  "range_status": 206
+}

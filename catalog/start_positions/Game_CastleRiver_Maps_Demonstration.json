@@ -1,0 +1,148 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": -34712,
+            "y": 16000,
+            "z": -1000
+        },
+        {
+            "name": "test2",
+            "x": -42012,
+            "y": 16000,
+            "z": -950
+        },
+        {
+            "csv_index": 0,
+            "x": -47738.913,
+            "y": 15203.989,
+            "z": -22523.21,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/000.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 1,
+            "x": -43033.746,
+            "y": 18043.016,
+            "z": -22527.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/001.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 2,
+            "x": -39658.147,
+            "y": 15852.109,
+            "z": -23110.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/002.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 5,
+            "x": -47627.289,
+            "y": 13337.496,
+            "z": -21530.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/005.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 6,
+            "x": -43510.103,
+            "y": 12819.416,
+            "z": -21671.99,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/006.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 7,
+            "x": -48401.2,
+            "y": 16393.802,
+            "z": -20540.24,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/007.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 8,
+            "x": -48747.56,
+            "y": 15324.88,
+            "z": -22464.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/008.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 9,
+            "x": -44620.529,
+            "y": 16659.575,
+            "z": -22399.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/009.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 10,
+            "x": -45582.618,
+            "y": 15631.545,
+            "z": -22527.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/010.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 11,
+            "x": -39157.513,
+            "y": 16134.374,
+            "z": -23156.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/011.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 13,
+            "x": -41849.295,
+            "y": 10351.793,
+            "z": -24249.36,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/013.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 14,
+            "x": -47520.017,
+            "y": 13075.66,
+            "z": -22529.9,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/014.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 15,
+            "x": -39744.961,
+            "y": 16032.36,
+            "z": -23113.08,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/015.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 16,
+            "x": -47018.154,
+            "y": 18744.942,
+            "z": -22409.55,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/016.png",
+            "name": "test16"
+        },
+        {
+            "csv_index": 18,
+            "x": -43801.747,
+            "y": 13215.236,
+            "z": -21544.71,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/018.png",
+            "name": "test17"
+        },
+        {
+            "csv_index": 22,
+            "x": -48252.984,
+            "y": 15001.976,
+            "z": -21826.39,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_CastleRiver_Maps_Demonstration/frames/022.png",
+            "name": "test18"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

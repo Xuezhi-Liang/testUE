@@ -1,0 +1,42 @@
+{
+  "task_id": "downtown_pilot_001",
+  "note": "Pilot task: nested out-and-back. A short excursion with a recent revisit, then a much longer one on a clearly different bearing, so the anchor has to survive a second excursion to be recognised again. Ages must leave room for the two 180 deg turns each excursion needs: at the medium yaw tier those alone cost ~8 s, which is why a 10 s age is impossible for this family and belongs to rotate_away_return.",
+  "map_id": "/Game/Downtown_West/Maps/Demo_Environment",
+  "spawn_id": "auto",
+  "split": "train",
+  "seed": 1,
+  "trajectory_family": "nested_out_and_back",
+  "return_kind": "near",
+  "revisit_ages_s": [
+    25.0,
+    75.0
+  ],
+  "probe_after_revisit": true,
+  "speed_tier": "medium",
+  "yaw_tier": "fast",
+  "fps": 24,
+  "duration_s": 150.0,
+  "camera": {
+    "resolution": [
+      1280,
+      720
+    ],
+    "fov_deg": 90.0,
+    "eye_height_m": 1.6,
+    "pitch_limit_deg": 15.0,
+    "roll_limit_deg": 5.0
+  },
+  "body": {
+    "collision_radius_cm": 40.0,
+    "collision_half_height_cm": 88.0,
+    "leg_margin_cm": 120.0
+  },
+  "render": {
+    "exposure": "fixed",
+    "motion_blur": false,
+    "depth_of_field": false,
+    "lumen": "project_default",
+    "taa": "project_default",
+    "hud": false
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "note": "Long-video sharded random walk, on the profile the Tokyo coverage episode was recorded and accepted with: the road network is whatever region has the longest centreline, NOT the built-up core. Core confinement was tried and abandoned - on four maps measured end to end it needed a 60 cm body clearance, a 120 cm corridor and a reroute loop to pass its gates, and delivered a fraction of the footage. This profile is the one with a passing episode behind it.",
+  "trajectory_family": "coverage_walk",
+  "family_note": "coverage_walk IS the random walk. coverage.py:coverage_walk takes a random unwalked road at each junction rather than solving route inspection, and prepare_walks chains one pass into the next from where the last ended. A separate random_walk family would have been a second copy of the same traversal.",
+  "spawn_id": "auto",
+  "split": "train",
+  "seed": 2000,
+  "fps": 24,
+  "duration_s": 0,
+  "target_passes": 8,
+  "max_duration_s": 72000,
+  "size_headroom": 1.25,
+  "confine_to_core": false,
+  "speed_tier": "medium",
+  "yaw_tier": "medium",
+  "styles": [
+    "stroll",
+    "survey",
+    "inspect"
+  ],
+  "fill_styles": [
+    "study",
+    "stroll"
+  ],
+  "action_mix_target": {
+    "forward": [
+      0.26,
+      0.42
+    ],
+    "backward": [
+      0.1,
+      0.2
+    ],
+    "turn_left": [
+      0.06,
+      0.15
+    ],
+    "turn_right": [
+      0.06,
+      0.15
+    ],
+    "look_up": [
+      0.08,
+      0.18
+    ],
+    "look_down": [
+      0.07,
+      0.16
+    ],
+    "hold": [
+      0.04,
+      0.14
+    ]
+  },
+  "action_mix_note": "coverage_tokyo_stroll's bands verbatim. Achieved there: forward 31.9%, backward 16.5%, turn 14.4/13.6%, look 8.6/9.4%, hold 5.6%, in band. The floors sum to 0.67, so the bands are jointly satisfiable.",
+  "camera": {
+    "resolution": [
+      1280,
+      720
+    ],
+    "fov_deg": 90.0,
+    "eye_height_m": 1.7,
+    "pitch_limit_deg": 30.0,
+    "pitch_limit_up_deg": 15.0,
+    "roll_limit_deg": 5.0
+  },
+  "camera_note": "pitch_limit_up_deg caps looking UP at 15 deg while looking down keeps 30. Not taste: ASimWorldCaptureActor refuses to write a frame whose depth channel is entirely invalid and calls Finish, and pitching up on a street empties it - measured 35.5% of the frame valid at pitch 0, 3.6% at 20 deg, zero at 27.5, which ended a capture 97519 frames in. A single 20 h episode has no checkpoint, so this cap matters more here than it did there.",
+  "body": {
+    "collision_radius_cm": 40.0,
+    "collision_half_height_cm": 88.0,
+    "ground_clearance_cm": 6.0,
+    "corridor_clear_cm": 90.0
+  },
+  "body_note": "Tokyo's own values. 6 cm is a step offset - a capsule resting exactly on the floor reports a hit at distance 0 - and 90 cm is the corridor clearance that produced Tokyo's 1065 m network, 0 collisions and a depth probe whose nearest reading was 85.2 cm. On rolling terrain inside a CORE these are not enough (WinterTown: 989 collisions, 20% of the network kept), which is documented in FINDINGS.md - but this profile does not walk cores.",
+  "render": {
+    "exposure": "auto_instant",
+    "motion_blur": false,
+    "depth_of_field": false,
+    "lumen": "project_default",
+    "taa": "tsr",
+    "hud": false,
+    "exposure_bias_ev": null,
+    "lighting": "fill",
+    "skylight_factor": "auto",
+    "history_mode": 4,
+    "local_exposure": {
+      "shadow_scale": 0.65,
+      "highlight_scale": 0.0,
+      "detail_strength": 1.0
+    },
+    "supersample": 2,
+    "cvars": [
+      "r.AntiAliasingMethod 4"
+    ]
+  },
+  "reroute_note": "MAX_REROUTE_ATTEMPTS defaults to 4 and is left on: it costs nothing when a route is already clean, and it is what turns a blocked place into a different road rather than a refused map.",
+  "yaw_deg_per_s": 45.0,
+  "turn_profile": "constant",
+  "yaw_note": "yaw_deg_per_s pins the rotation rate (no per-episode draw from yaw_tier; the tier is kept for the 1.5x gate and metadata). turn_profile constant: every turning frame rotates exactly 45/24 deg, no ramp.",
+  "render_note": "16 Sep motion-shimmer fix: history_mode 4 explicitly enables the capture TemporalAA show flag, keeps its view state and renders 32 warmup frames at pose 0. r.AntiAliasingMethod 4 selects TSR; a cvar alone previously fell back to FXAA because SceneCapture defaults TemporalAA=false. RGB remains 2x (2560x1440 -> 1280x720); depth remains native resolution without temporal AA or filtering. auto_instant keeps level metering with fast adaptation now that history persists; fill and local exposure are retained. On aligned 876-frame diagnostic routes, motion sparkle fell 60.5% Hwaseong / 61.4% ChemicalPlant; static diff changed 0.195 -> 0.802 / 1.458 -> 1.197 respectively. This reduces motion shimmer, not a claim of zero flicker or history-independent identical pixels. See RENDER_QUALITY.md and /longvideo/flicker-fix/. Modes 0..3 and old recordings remain available for reproducibility. Rebuild the native module before using mode 4; capture_engine verifies runtime flag and warmup."
+}

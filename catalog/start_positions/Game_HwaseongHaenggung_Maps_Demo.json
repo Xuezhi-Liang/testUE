@@ -1,0 +1,132 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": -1000,
+            "y": 10989,
+            "z": 64
+        },
+        {
+            "name": "test2",
+            "x": 10000,
+            "y": 10000,
+            "z": 64
+        },
+        {
+            "csv_index": 0,
+            "x": -3205.112,
+            "y": 15267.298,
+            "z": 113.25,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/000.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 1,
+            "x": -4344.705,
+            "y": 16616.949,
+            "z": 373.95,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/001.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 3,
+            "x": -3231.158,
+            "y": 7647.3,
+            "z": 474.57,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/003.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 4,
+            "x": -3889.244,
+            "y": 7730.755,
+            "z": 176.9,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/004.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 7,
+            "x": -421.832,
+            "y": 15270.787,
+            "z": 159.1,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/007.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 8,
+            "x": 10247.321,
+            "y": 15662.083,
+            "z": 374.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/008.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 9,
+            "x": 15655.51,
+            "y": 9562.434,
+            "z": 649.2,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/009.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 12,
+            "x": -4993.9,
+            "y": 6990.106,
+            "z": 180.95,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/012.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 13,
+            "x": 7720.102,
+            "y": 14851.091,
+            "z": 122.31,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/013.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 17,
+            "x": 11782.724,
+            "y": 9487.82,
+            "z": 613.23,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/017.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 18,
+            "x": 5246.628,
+            "y": 16067.798,
+            "z": 475.96,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/018.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 20,
+            "x": -4486.652,
+            "y": 17319.671,
+            "z": 649.2,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/020.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 21,
+            "x": 5861.377,
+            "y": 7564.924,
+            "z": 649.2,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/021.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 22,
+            "x": -464.772,
+            "y": 15739.55,
+            "z": 321.72,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_HwaseongHaenggung_Maps_Demo/frames/022.png",
+            "name": "test16"
+        }
+    ],
+    "noise": {
+        "x": 900,
+        "y": 400
+    }
+}

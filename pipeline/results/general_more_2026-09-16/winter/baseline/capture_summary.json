@@ -1,0 +1,223 @@
+{
+ "episode_id": "winter_baseline",
+ "frozen_sha256": "922517a26dd16ae8eefaf85046e8ab72c3d401bbd0704c4df019655ab066c2c0",
+ "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
+ "spawn_id": "test1",
+ "seed": 5,
+ "split": "test",
+ "trajectory_family": "nested_out_and_back",
+ "trajectory_generator_version": "pipeline-freeze-1",
+ "recorder_version": "pipeline-capture-engine-1",
+ "control_model": "frozen trajectory executed inside the engine tick; the scene capture components are placed on the frozen camera pose directly, so there is no pawn and desired == actual by construction",
+ "fps": 24.0,
+ "frames": 600,
+ "duration_s": 25.0,
+ "planned_frames": 600,
+ "planned_duration_s": 25.0,
+ "ended_early_reason": null,
+ "review_video": {
+  "file": "rgb.mp4",
+  "frame_stride": 1,
+  "note": "every frame"
+ },
+ "resolution": "1280x720",
+ "intrinsics": {
+  "fx": 640.0000000000001,
+  "fy": 640.0000000000001,
+  "cx": 640.0,
+  "cy": 360.0,
+  "width": 1280,
+  "height": 720,
+  "hfov_deg": 90.0,
+  "vfov_deg": 58.71550708558254
+ },
+ "speed_tier": "fast",
+ "yaw_tier": "medium",
+ "planned_speed_m_s": 1.40250146187269,
+ "planned_yaw_deg_s": 54.23822369209481,
+ "eye_height_cm": 170.0,
+ "pose_tracking": {
+  "pos_error_cm_mean": 0.0,
+  "pos_error_cm_max": 0.0,
+  "yaw_error_deg_mean": 0.0,
+  "yaw_error_deg_max": 0.0
+ },
+ "measured_speed_m_s_max": 1.2275422862679268,
+ "measured_yaw_rate_deg_s_max": 47.37119999999959,
+ "blank_frames": 0,
+ "axis_smoke": {
+  "forward": [
+   640.0,
+   360.0
+  ],
+  "forward_right": [
+   1280.0,
+   360.0
+  ],
+  "forward_up": [
+   640.0,
+   -280.0000000000001
+  ],
+  "pass": true
+ },
+ "record_seconds": 54.7,
+ "engine_timing_ms": {
+  "render": 0.37,
+  "readback": 50.24,
+  "write": 9.63
+ },
+ "engine_fps": 10.964,
+ "render": {
+  "exposure": "auto_instant",
+  "motion_blur": false,
+  "depth_of_field": false,
+  "lumen": "project_default",
+  "taa": "tsr",
+  "hud": false,
+  "exposure_bias_ev": null,
+  "lighting": "fill",
+  "skylight_factor": "auto",
+  "history_mode": 4,
+  "local_exposure": {
+   "shadow_scale": 0.65,
+   "highlight_scale": 0.0,
+   "detail_strength": 1.0
+  },
+  "supersample": 2,
+  "cvars": [
+   "r.AntiAliasingMethod 4",
+   "r.Lumen.ScreenProbeGather.DownsampleFactor 16",
+   "r.MaxAnisotropy 8",
+   "r.MipMapLODBias 0",
+   "r.TemporalAA.HistoryScreenPercentage 100",
+   "r.TemporalAA.Quality 2",
+   "r.TemporalAACurrentFrameWeight 0.04",
+   "r.TemporalAASamples 8",
+   "r.Tonemapper.Sharpen -1",
+   "r.VolumetricFog.GridPixelSize 8",
+   "r.VolumetricFog.GridSizeZ 128"
+  ]
+ },
+ "render_runtime": {
+  "history_mode": 4,
+  "temporal_aa_enabled": true,
+  "warmup_frames": 32,
+  "rgb_render_width": 2560,
+  "rgb_render_height": 1440
+ },
+ "p0_gaps": [],
+ "lighting": {
+  "skylight_fix": {
+   "applied": false,
+   "made_dynamic": [],
+   "mode": "captured_scene",
+   "has_atmosphere": false,
+   "skipped_ours": [],
+   "skylights_before": [
+    {
+     "actor": "SkyLight_1",
+     "mobility": "<ComponentMobility.MOVABLE: 2>",
+     "real_time_capture": false,
+     "source_type": "<SkyLightSourceType.SLS_CAPTURED_SCENE: 0>"
+    }
+   ],
+   "note": "session-only change to the loaded level; nothing was saved to the map"
+  },
+  "fill": {
+   "applied": true,
+   "factor": 1.0,
+   "from_calibration": true
+  },
+  "calibration": {
+   "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
+   "poses": 12,
+   "factors_tried": [
+    1.0
+   ],
+   "bar": {
+    "max_black": 0.03,
+    "max_blown": 0.01,
+    "min_contrast_ratio": 0.8,
+    "p50_ratio": [
+     0.6,
+     1.6
+    ],
+    "p50_floor": 30
+   },
+   "reference": {
+    "p10": 62,
+    "p50": 161,
+    "p99": 220,
+    "black_frac": 0.02329,
+    "blown_frac": 0.0,
+    "contrast": 173
+   },
+   "trials": [
+    {
+     "factor": 1.0,
+     "chosen_ev": 11.5,
+     "p10": 63,
+     "p50": 158,
+     "p99": 217,
+     "black_frac": 0.02841,
+     "blown_frac": 0.0,
+     "contrast": 154,
+     "contrast_ratio": 0.8901734104046243,
+     "p50_ratio": 0.9813664596273292,
+     "target_p50": 161,
+     "violation": 0.0,
+     "checks": {
+      "black": true,
+      "blown": true,
+      "contrast": true,
+      "brightness": true
+     },
+     "passes": true,
+     "fill": {
+      "base_intensity": 1.100000023841858,
+      "fill_skylight": {
+       "ok": true,
+       "actor": "SkyLight_0",
+       "intensity": 1.1
+      }
+     }
+    }
+   ],
+   "chosen_factor": 1.0,
+   "chosen_ev": 11.5,
+   "quality_bar_missed": false,
+   "took_s": 18.2
+  },
+  "cvars": [
+   "r.AntiAliasingMethod 4",
+   "r.Lumen.ScreenProbeGather.DownsampleFactor 16",
+   "r.MaxAnisotropy 8",
+   "r.MipMapLODBias 0",
+   "r.TemporalAA.HistoryScreenPercentage 100",
+   "r.TemporalAA.Quality 2",
+   "r.TemporalAACurrentFrameWeight 0.04",
+   "r.TemporalAASamples 8",
+   "r.Tonemapper.Sharpen -1",
+   "r.VolumetricFog.GridPixelSize 8",
+   "r.VolumetricFog.GridSizeZ 128"
+  ],
+  "history_mode": 4,
+  "supersample": 2,
+  "exposure": {
+   "mode": "auto_instant",
+   "manual": false,
+   "bias_ev": 0.0,
+   "auto_exposure_speed": 100.0,
+   "auto_exposure_range": [
+    0.0,
+    0.0
+   ],
+   "local_exposure": {
+    "shadow_scale": 0.65,
+    "highlight_scale": 0.0,
+    "detail_strength": 1.0
+   },
+   "sweep": null
+  }
+ }
+}

@@ -1,0 +1,164 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": -800,
+            "y": -500,
+            "z": 64
+        },
+        {
+            "name": "test2",
+            "x": -274,
+            "y": 3500,
+            "z": 64
+        },
+        {
+            "csv_index": 0,
+            "x": -1625.762,
+            "y": 201.282,
+            "z": 111.31,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/000.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 1,
+            "x": 598.111,
+            "y": 2892.041,
+            "z": 269.65,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/001.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 2,
+            "x": -1933.104,
+            "y": -1249.427,
+            "z": -18.69,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/002.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 3,
+            "x": 269.975,
+            "y": -0.895,
+            "z": 386.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/003.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 4,
+            "x": -1086.733,
+            "y": -1746.695,
+            "z": -18.69,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/004.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 5,
+            "x": -186.851,
+            "y": -1941.313,
+            "z": 241.31,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/005.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 8,
+            "x": 597.449,
+            "y": -1686.908,
+            "z": 241.31,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/008.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 9,
+            "x": -407.284,
+            "y": -887.713,
+            "z": 460.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/009.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 10,
+            "x": 345.879,
+            "y": -1519.236,
+            "z": 241.31,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/010.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 11,
+            "x": -203.087,
+            "y": -502.791,
+            "z": 321.2,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/011.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 12,
+            "x": -1514.179,
+            "y": -646.994,
+            "z": 145.95,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/012.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 18,
+            "x": 117.245,
+            "y": 3406.342,
+            "z": 333.5,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/018.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 21,
+            "x": -2059.502,
+            "y": -272.869,
+            "z": 309.95,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/021.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 22,
+            "x": -187.915,
+            "y": -598.85,
+            "z": 281.2,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/022.png",
+            "name": "test16"
+        },
+        {
+            "csv_index": 27,
+            "x": -2082.256,
+            "y": -2.676,
+            "z": 111.31,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/027.png",
+            "name": "test17"
+        },
+        {
+            "csv_index": 30,
+            "x": 1107.8,
+            "y": 1390.703,
+            "z": 106.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/030.png",
+            "name": "test18"
+        },
+        {
+            "csv_index": 31,
+            "x": -497.127,
+            "y": -2660.865,
+            "z": 220.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/031.png",
+            "name": "test19"
+        },
+        {
+            "csv_index": 33,
+            "x": -1911.218,
+            "y": 2359.771,
+            "z": 106.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_ModularTemplePlaza_Maps_ConceptMap/frames/033.png",
+            "name": "test20"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

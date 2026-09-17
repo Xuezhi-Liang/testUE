@@ -1,0 +1,24 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": 62130.877,
+            "y": 207808.952,
+            "z": 33576645.94,
+            "csv_index": 0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_GrassHillsLandscape_Maps_Overview_Overview/frames/000.png"
+        },
+        {
+            "name": "test2",
+            "x": -36177.553,
+            "y": 230009.976,
+            "z": 33576645.94,
+            "csv_index": 1,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_GrassHillsLandscape_Maps_Overview_Overview/frames/001.png"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

@@ -1,0 +1,182 @@
+{
+ "episode_id": "Game_HwaseongHaenggung_Maps_Demo__coverage_walk__seed3203__lv_Game_HwaseongHaenggung_Maps_Demo__r2s03",
+ "accepted": true,
+ "accepted_seconds": 2730.0416666666665,
+ "accepted_note": "Section 14 counts candidate, failed and incomplete data as 0 seconds. This episode is accepted for the gates that can be evaluated on this build; the skipped depth gates mean it is not a complete P0 episode under section 9 and must not be counted toward the final target.",
+ "p0_complete": true,
+ "p0_missing": [
+  "section 12 depth-visible overlap (computation not implemented)"
+ ],
+ "gates_passed": 22,
+ "gates_failed": 0,
+ "gates_skipped": 8,
+ "gates": [
+  {
+   "gate": "frame_count_matches_frozen",
+   "result": "pass",
+   "detail": "65521 recorded vs 65521 frozen"
+  },
+  {
+   "gate": "time_base_exact",
+   "result": "pass",
+   "detail": "max |t - frame/24| = 0.000e+00 s"
+  },
+  {
+   "gate": "all_frames_present",
+   "result": "pass",
+   "detail": "65521 JPEGs in rgb/ for 65521 recorded frames"
+  },
+  {
+   "gate": "frames_decode",
+   "result": "pass",
+   "detail": "5461 of 5461 sampled frames decoded, 0 unreadable (stride 12)"
+  },
+  {
+   "gate": "resolution_matches_K",
+   "result": "pass",
+   "detail": "frames 1280x720, K built for 1280x720"
+  },
+  {
+   "gate": "no_blank_frames",
+   "result": "pass",
+   "detail": "0 blank frames among 5461 sampled (stride 12); not a claim about the 60060 frames not sampled"
+  },
+  {
+   "gate": "no_duplicate_frames",
+   "result": "pass",
+   "detail": "0 near-identical consecutive pairs among 5461 sampled pairs (i, i+1) at stride 12; not a claim about the pairs not sampled"
+  },
+  {
+   "gate": "materials_compiled",
+   "result": "pass",
+   "detail": "every material in the level compiled for this shader platform"
+  },
+  {
+   "gate": "axis_semantics",
+   "result": "pass",
+   "detail": "forward->[640.0, 360.0], forward+right->[1280.0, 360.0], forward+up->[640.0, -280.0000000000001]"
+  },
+  {
+   "gate": "pose_tracking",
+   "result": "pass",
+   "detail": "max position error 0.000 mm (limit 20 mm, from section 12's 2 cm exact-revisit closure), p99 0.00 mm, max yaw error 0.0001 deg"
+  },
+  {
+   "gate": "route_reachable",
+   "result": "skip",
+   "detail": "no pawn on this map"
+  },
+  {
+   "gate": "collision_free",
+   "result": "pass",
+   "detail": "0 capsule hits, 0 near-plane penetrations, min clearance 142.24978637695312 cm"
+  },
+  {
+   "gate": "frame_translation_bounded",
+   "result": "pass",
+   "detail": "max 4.86 cm per frame"
+  },
+  {
+   "gate": "frame_rotation_bounded",
+   "result": "pass",
+   "detail": "max yaw rate 106.4 deg/s against tier 78.8 deg/s (limit 118.2); 0 frames over"
+  },
+  {
+   "gate": "revisit_age_matches_request",
+   "result": "skip",
+   "detail": "inapplicable to the coverage_walk family: it covers every road once and has no memory anchor or revisit, so there is no pose to close back onto"
+  },
+  {
+   "gate": "memory_anchor_is_not_first_frame",
+   "result": "skip",
+   "detail": "inapplicable to the coverage_walk family: it covers every road once and has no memory anchor or revisit, so there is no pose to close back onto"
+  },
+  {
+   "gate": "revisit_pose_closure",
+   "result": "skip",
+   "detail": "inapplicable to the coverage_walk family: it covers every road once and has no memory anchor or revisit, so there is no pose to close back onto"
+  },
+  {
+   "gate": "speed_within_tier",
+   "result": "pass",
+   "detail": "p95 speed 1.00 m/s against tier medium 0.6-1.0 m/s"
+  },
+  {
+   "gate": "attitude_within_limits",
+   "result": "pass",
+   "detail": "max |pitch| 28.96 deg, max |roll| 0.00 deg"
+  },
+  {
+   "gate": "revisit_view_overlap_proxy",
+   "result": "skip",
+   "detail": "inapplicable to the coverage_walk family: it covers every road once and has no memory anchor or revisit, so there is no pose to close back onto"
+  },
+  {
+   "gate": "metric_depth_present",
+   "result": "pass",
+   "detail": "65521 of 65521 frames carry depth, 0 files missing; EXR, linear metres in R, -1 = sky/beyond range"
+  },
+  {
+   "gate": "depth_not_empty",
+   "result": "pass",
+   "detail": "valid-pixel fraction: min 36.9%, median 73.2%, max 100.0%; 0 frames with no valid depth at all"
+  },
+  {
+   "gate": "depth_range_plausible",
+   "result": "pass",
+   "detail": "nearest 0.772 m, farthest 883.5 m across the episode (near clip and the 1000 m cutoff bound this)"
+  },
+  {
+   "gate": "no_geometry_penetration",
+   "result": "pass",
+   "detail": "nearest depth over the episode 0.773 m, 0 frames with geometry on the near clip plane, 0 frames with over 20% of the image inside 0.60 m - the camera never enters geometry"
+  },
+  {
+   "gate": "depth_visible_overlap",
+   "result": "skip",
+   "detail": "inapplicable to the coverage_walk family: it covers every road once and has no memory anchor or revisit, so there is no pose to close back onto"
+  },
+  {
+   "gate": "fully_occluded_interval",
+   "result": "skip",
+   "detail": "inapplicable to the coverage_walk family: it covers every road once and has no memory anchor or revisit, so there is no pose to close back onto"
+  },
+  {
+   "gate": "instance_semantic_masks",
+   "result": "skip",
+   "detail": "P1 modality, not captured in this pilot"
+  },
+  {
+   "gate": "road_coverage_complete",
+   "result": "pass",
+   "detail": "886 of 886 roads walked, 524.3 of 524.3 m of centreline (100.0%); every point of a road within 160 cm of some frame's camera position, sampled every 40 cm; measured from the delivered poses, not from the plan"
+  },
+  {
+   "gate": "action_mix_in_band",
+   "result": "pass",
+   "detail": "measured from frames.csv phase labels: backward 18.6%, forward 31.9%, hold 4.2%, look_down 9.7%, look_up 8.9%, turn_left 13.7%, turn_right 13.0%; all inside their bands"
+  },
+  {
+   "gate": "all_six_actions_present",
+   "result": "pass",
+   "detail": "frames per action: forward=20881, backward=12216, turn_left=8950, turn_right=8543, look_up=5805, look_down=6373"
+  }
+ ],
+ "video_stats": {
+  "sampled_frames": 5461,
+  "sample_stride": 12,
+  "blank": 0,
+  "duplicate_pairs": 0,
+  "unreadable": 0,
+  "width": 1280,
+  "height": 720,
+  "measured_on": "the delivered rgb/*.jpg, not rgb.mp4",
+  "dead_black_pixel_fraction": {
+   "median": 0.1201,
+   "worst": 0.7054,
+   "frames_over_10pct": 3665,
+   "sampled_frames": 5461,
+   "not_a_gate": "Zero-in-all-channels pixels, reported only. A dark scene reaches zero the same way a Default Material fallback does: a sound night level measured 66.7% here and a sound cave 25.2%, above the 28.0% of the one map whose materials genuinely failed. Use materials_compiled, which reads the editor's compile errors, to judge that."
+  }
+ }
+}

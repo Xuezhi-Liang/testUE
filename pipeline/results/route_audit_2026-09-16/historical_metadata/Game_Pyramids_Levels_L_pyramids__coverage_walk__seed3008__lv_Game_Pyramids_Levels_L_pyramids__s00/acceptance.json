@@ -1,0 +1,12 @@
+{
+ "episode_id": "Game_Pyramids_Levels_L_pyramids__coverage_walk__seed3008__lv_Game_Pyramids_Levels_L_pyramids__s00",
+ "accepted": null,
+ "gates_run": false,
+ "gates": [],
+ "gates_passed": 0,
+ "gates_failed": 0,
+ "gates_skipped": 0,
+ "reason": "the acceptance gates were not run for this episode. `accepted` is null, which means UNJUDGED - not passing and not failing. Nothing here asserts the data is sound; equally, nothing here asserts it is not. Run longvideo/readjudicate.py against this prefix to compute a verdict.",
+ "frames": 432000,
+ "planned_frames": 432000
+}

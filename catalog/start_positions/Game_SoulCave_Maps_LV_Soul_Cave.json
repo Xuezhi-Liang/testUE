@@ -1,0 +1,128 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": -18733.117,
+            "y": -10600.107,
+            "z": 6440.42,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 3,
+            "x": -19787.938,
+            "y": -15569.372,
+            "z": 1863.86,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/003.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 4,
+            "x": -7777.674,
+            "y": -3136.809,
+            "z": 1476.61,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/004.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 5,
+            "x": -18546.519,
+            "y": -138.428,
+            "z": 850.48,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/005.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 8,
+            "x": -17442.998,
+            "y": -197.365,
+            "z": 850.48,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/008.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 17,
+            "x": -6559.592,
+            "y": -637.995,
+            "z": 4128.16,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/017.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 21,
+            "x": -18124.827,
+            "y": -12615.934,
+            "z": 2178.32,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/021.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 23,
+            "x": -19697.579,
+            "y": -14572.927,
+            "z": 1863.86,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/023.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 28,
+            "x": -22877.981,
+            "y": -10298.015,
+            "z": 1667.78,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/028.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 30,
+            "x": -5815.807,
+            "y": -7490.573,
+            "z": 1591.28,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/030.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 34,
+            "x": -12005.588,
+            "y": -3598.241,
+            "z": 1965.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/034.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 50,
+            "x": -7531.324,
+            "y": -5568.927,
+            "z": 1591.28,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/050.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 62,
+            "x": -22991.45,
+            "y": -13106.13,
+            "z": 1082.97,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/062.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 64,
+            "x": -22806.558,
+            "y": -13803.653,
+            "z": 336.89,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/064.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 65,
+            "x": -19639.657,
+            "y": -5.001,
+            "z": -137.49,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SoulCave_Maps_LV_Soul_Cave/frames/065.png",
+            "name": "test15"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

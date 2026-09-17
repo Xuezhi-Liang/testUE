@@ -1,0 +1,88 @@
+{
+    "positions": [
+        {
+            "csv_index": 2,
+            "x": -3455.896,
+            "y": 10560.477,
+            "z": 2273.45,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ErikStadium_Maps_Stadium/frames/002.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 4,
+            "x": -4063.882,
+            "y": -11693.78,
+            "z": 2356.62,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ErikStadium_Maps_Stadium/frames/004.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 7,
+            "x": 2509.746,
+            "y": -10279.887,
+            "z": 2356.62,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ErikStadium_Maps_Stadium/frames/007.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 8,
+            "x": -4648.576,
+            "y": -10576.508,
+            "z": 2356.62,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ErikStadium_Maps_Stadium/frames/008.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 10,
+            "x": -9290.833,
+            "y": 2692.917,
+            "z": 2356.62,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ErikStadium_Maps_Stadium/frames/010.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 18,
+            "x": -2141.099,
+            "y": -12593.676,
+            "z": 2300.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ErikStadium_Maps_Stadium/frames/018.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 26,
+            "x": 165.216,
+            "y": -12286.976,
+            "z": 2300.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ErikStadium_Maps_Stadium/frames/026.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 107,
+            "x": 3058.589,
+            "y": 9274.809,
+            "z": 2273.45,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ErikStadium_Maps_Stadium/frames/107.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 108,
+            "x": -6296.273,
+            "y": -2506.889,
+            "z": 2273.45,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ErikStadium_Maps_Stadium/frames/108.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 186,
+            "x": -5562.393,
+            "y": 2396.342,
+            "z": 236.91,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ErikStadium_Maps_Stadium/frames/186.png",
+            "name": "test10"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

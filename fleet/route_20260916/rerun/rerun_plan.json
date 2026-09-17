@@ -1,0 +1,502 @@
+{
+ "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2": {
+  "category": "clearance45",
+  "reason": "kept 0.4685, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.4685,
+  "prev_clearance": 6
+ },
+ "Game_MiddleEast_Maps_MiddleEast": {
+  "category": "clearance45",
+  "reason": "kept 0.3388, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.3388,
+  "prev_clearance": 6
+ },
+ "Game_AnchientRuins_Maps_AncientRuins": {
+  "category": "drop",
+  "reason": "kept fraction 0.09 at 6 cm; not recoverable",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free",
+   "depth_probe_clear"
+  ],
+  "prev_kept": 0.0899,
+  "prev_clearance": 6
+ },
+ "Game_AnchientRuins_Maps_Grass_Hills": {
+  "category": "clearance45",
+  "reason": "kept 0.9631, collisions 677, clamped 0",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free",
+   "depth_probe_clear"
+  ],
+  "prev_kept": 0.9631,
+  "prev_clearance": 6
+ },
+ "Game_Bazaar_Meshingun_Map_LV_Bazaar": {
+  "category": "clearance45",
+  "reason": "kept 0.5216, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.5216,
+  "prev_clearance": 6
+ },
+ "Game_Brushify_Maps_Arctic_Arctic": {
+  "category": "clearance45",
+  "reason": "kept 0.7583, collisions 136, clamped 0",
+  "prev_state": "timeout",
+  "prev_gates": [
+   "collision_free"
+  ],
+  "prev_kept": 0.7583,
+  "prev_clearance": 6
+ },
+ "Game_Chinese_Landscape_Levels_Chinese_Landscape_Demo": {
+  "category": "drop",
+  "reason": "action mix unattainable: core too small (kept 0.0618)",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "depth_probe_clear",
+   "action_mix_in_band"
+  ],
+  "prev_kept": 0.0618,
+  "prev_clearance": 6
+ },
+ "Game_Dungeon_Levels_Dungeon_Demo_00": {
+  "category": "drop",
+  "reason": "floor band (z -50) is 22 disconnected navmesh pieces; the largest, 697 m2, yields 30 m of 90 cm corridor, too little for the action mix. Roof band was the pass-1 route. Narrow-corridor map: parked.",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "depth_probe_clear"
+  ],
+  "prev_kept": 1.0,
+  "prev_clearance": 6,
+  "region_z_cm": -50,
+  "second_pass": "route_failed action_mix_in_band, kept 1.0, 30 m centreline"
+ },
+ "Game_ErikStadium_Maps_Stadium": {
+  "category": "clearance45",
+  "reason": "kept 0.4564, collisions 73, clamped 0",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free"
+  ],
+  "prev_kept": 0.4564,
+  "prev_clearance": 6
+ },
+ "Game_HotelCorridor_Maps_Hotel_Corridor": {
+  "category": "drop",
+  "reason": "action mix unattainable: core too small (kept 1.0)",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "action_mix_in_band"
+  ],
+  "prev_kept": 1.0,
+  "prev_clearance": 6
+ },
+ "Game_InfinityWeather_Demo_Maps_DesertMap": {
+  "category": "clearance45",
+  "reason": "kept 0.8924, collisions 35, clamped 3",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free",
+   "depth_probe_clear"
+  ],
+  "prev_kept": 0.8924,
+  "prev_clearance": 6
+ },
+ "Game_InfinityWeather_Demo_Maps_SnowMap": {
+  "category": "clearance45",
+  "reason": "kept 0.4351, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.4351,
+  "prev_clearance": 6
+ },
+ "Game_Lighthouse_Island_Levels_Lighthouse_Demo_00": {
+  "category": "clearance45",
+  "reason": "kept 0.5804, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.5804,
+  "prev_clearance": 6
+ },
+ "Game_LookoutTower_Maps_Demo": {
+  "category": "retry",
+  "reason": "editor wedge after connect, not a map fault",
+  "prev_state": "timeout",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_MMSupermarket_Maps_Supermarket_Map": {
+  "category": "clearance45",
+  "reason": "kept 0.5668, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.5668,
+  "prev_clearance": 6
+ },
+ "Game_Medieval_Env_Maps_Map_MedievalEnv": {
+  "category": "clearance45",
+  "reason": "kept 0.5909, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.5909,
+  "prev_clearance": 6
+ },
+ "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene": {
+  "category": "clearance45",
+  "reason": "kept 0.3988, collisions 519, clamped 0",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free"
+  ],
+  "prev_kept": 0.3988,
+  "prev_clearance": 6
+ },
+ "Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo": {
+  "category": "drop",
+  "reason": "kept fraction 0.09 at 6 cm; not recoverable",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free"
+  ],
+  "prev_kept": 0.0861,
+  "prev_clearance": 6
+ },
+ "Game_ModularCourtyard_Maps_SampleScene_overcast": {
+  "category": "recover_start",
+  "reason": "catalogue start points do not project onto the navmesh at any z extent up to 50 m (both passes); retry with PlayerStart / large-mesh start recovery",
+  "prev_state": "route_failed",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_ModularCourtyard_Maps_SampleScene_sanny": {
+  "category": "recover_start",
+  "reason": "catalogue start points do not project onto the navmesh at any z extent up to 50 m (both passes); retry with PlayerStart / large-mesh start recovery",
+  "prev_state": "route_failed",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_ModularGothicFantasyEnvironment_Maps_DemoMapNight": {
+  "category": "clearance45",
+  "reason": "kept 1.0, collisions 0, clamped 2",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "depth_probe_clear"
+  ],
+  "prev_kept": 1.0,
+  "prev_clearance": 6
+ },
+ "Game_ModularPlatformerIndustrialArea_Map_Factory": {
+  "category": "drop",
+  "reason": "the 1248 m2 route region at z 1900 is the factory roof (skylights, open sky at pitch 0); interior navmesh is 90 m2.",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "depth_probe_clear"
+  ],
+  "prev_kept": 0.8964,
+  "prev_clearance": 6,
+  "region_z_cm": null
+ },
+ "Game_Modular_MedievalTown_WI_Maps_Medieval_Daytime": {
+  "category": "lookup10",
+  "reason": "thin 1 / sky 0: sky-heavy frames",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "depth_probe_clear"
+  ],
+  "prev_kept": 0.7167,
+  "prev_clearance": 6
+ },
+ "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime": {
+  "category": "clearance45",
+  "reason": "kept 0.6529, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.6529,
+  "prev_clearance": 6
+ },
+ "Game_Nimikko_CommandCenter_Scenes_CommandCenter": {
+  "category": "region_hint",
+  "reason": "content region (z 480, 69 m2 core) is the building roof: probe frames show open sky and desert. Rerun on the z 0..100 band (348 m2), 45 cm.",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "depth_probe_clear"
+  ],
+  "prev_kept": 1.0,
+  "prev_clearance": 6,
+  "region_z_cm": 50
+ },
+ "Game_Old_Factory_01_Maps_Demoscene_01": {
+  "category": "retry",
+  "reason": "editor wedge after connect, not a map fault",
+  "prev_state": "timeout",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_OperaHouse_Maps_Demonstration": {
+  "category": "clearance45",
+  "reason": "kept 0.5699, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.5699,
+  "prev_clearance": 6
+ },
+ "Game_OperatingRoom_Levels_Operating_Room": {
+  "category": "drop",
+  "reason": "action mix unattainable: core too small (kept 1.0)",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "action_mix_in_band"
+  ],
+  "prev_kept": 1.0,
+  "prev_clearance": 6
+ },
+ "Game_QA_HoldingCells_Maps_QA_Holding_Cells_A": {
+  "category": "drop",
+  "reason": "action mix unattainable: core too small (kept 1.0)",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "depth_probe_clear",
+   "action_mix_in_band"
+  ],
+  "prev_kept": 1.0,
+  "prev_clearance": 6
+ },
+ "Game_QA_HoldingCells_Maps_QA_Holding_Cells_B": {
+  "category": "drop",
+  "reason": "action mix unattainable: core too small (kept 1.0)",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "depth_probe_clear",
+   "action_mix_in_band"
+  ],
+  "prev_kept": 1.0,
+  "prev_clearance": 6
+ },
+ "Game_QA_ModularParking_Maps_Map_demonstration": {
+  "category": "clearance45",
+  "reason": "kept 0.7086, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.7086,
+  "prev_clearance": 6
+ },
+ "Game_StonePineForest_Maps_GooseLand_Map": {
+  "category": "clearance45",
+  "reason": "kept 0.3093, collisions 1026, clamped 0",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free"
+  ],
+  "prev_kept": 0.3093,
+  "prev_clearance": 6
+ },
+ "Game_StonePineForest_Maps_Mountains_Map_LevelDesign": {
+  "category": "clearance45",
+  "reason": "7200 s worker limit; rerun with 14400 s",
+  "prev_state": "timeout",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day": {
+  "category": "retry",
+  "reason": "editor wedge after connect, not a map fault",
+  "prev_state": "timeout",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_SwimmingPool_Maps_ChangingRoom_Male": {
+  "category": "retry",
+  "reason": "editor wedge after connect, not a map fault",
+  "prev_state": "timeout",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_SwimmingPool_Maps_Demonstration_Master": {
+  "category": "drop",
+  "reason": "every probe frame at z 660 renders as a white void with no depth at 1000 m; the pool content is not in this level as loaded (ChangingRoom_Male is catalogued separately).",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "depth_probe_clear"
+  ],
+  "prev_kept": 1.0,
+  "prev_clearance": 6,
+  "region_z_cm": null
+ },
+ "Game_UltimateFarming_Maps_TinyFields": {
+  "category": "clearance45",
+  "reason": "kept 0.2425, collisions 0, clamped 105",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "depth_probe_clear"
+  ],
+  "prev_kept": 0.2425,
+  "prev_clearance": 6
+ },
+ "Game_UrbanDistrict_Demo_Maps_Main_UADistrict_01_P": {
+  "category": "clearance45",
+  "reason": "kept 0.6683, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.6683,
+  "prev_clearance": 6
+ },
+ "Game_Village_Maps_Village": {
+  "category": "clearance45",
+  "reason": "kept 0.7559, collisions 8, clamped 1",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free",
+   "depth_probe_clear"
+  ],
+  "prev_kept": 0.7559,
+  "prev_clearance": 6
+ },
+ "Game_Village_Maps_Village_SummerNightExample": {
+  "category": "clearance45",
+  "reason": "kept 0.9089, collisions 112, clamped 9",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free",
+   "depth_probe_clear"
+  ],
+  "prev_kept": 0.9089,
+  "prev_clearance": 6
+ },
+ "Game_Wild_West_Maps_WildWest": {
+  "category": "drop",
+  "reason": "action mix unattainable: core too small (kept 0.3166)",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "action_mix_in_band"
+  ],
+  "prev_kept": 0.3166,
+  "prev_clearance": 6
+ },
+ "Game_WinterTown_Maps_RussianWinterTownDemo01": {
+  "category": "clearance45",
+  "reason": "kept 0.2174, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.2174,
+  "prev_clearance": 6
+ },
+ "Game_WinterTown_Maps_RussianWinterTownDemo02": {
+  "category": "clearance45",
+  "reason": "kept 0.7641, collisions 18, clamped 9",
+  "prev_state": "timeout",
+  "prev_gates": [
+   "collision_free",
+   "depth_probe_clear"
+  ],
+  "prev_kept": 0.7641,
+  "prev_clearance": 6
+ },
+ "Game_racing_track_map_racing_track": {
+  "category": "clearance45",
+  "reason": "kept 0.4793, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.4793,
+  "prev_clearance": 6
+ },
+ "Game_CastleRiver_Maps_Demonstration": {
+  "category": "clearance45",
+  "reason": "kept 0.4407, collisions 0, clamped 0",
+  "prev_state": "coverage_review",
+  "prev_gates": [],
+  "prev_kept": 0.4407,
+  "prev_clearance": 6
+ },
+ "Game_GrassHillsLandscape_Maps_Overview_Overview": {
+  "category": "drop",
+  "reason": "start recovery found no candidate with traceable ground (PlayerStarts, catalogue starts, large meshes); start file needs manual repair",
+  "prev_state": "timeout",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_Hangar_Maps_Hangar": {
+  "category": "drop",
+  "reason": "map asset not mounted",
+  "prev_state": "blocked_asset",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_InfinityWeather_Demo_Maps_RainMap": {
+  "category": "clearance45",
+  "reason": "kept 0.3492, collisions 187, clamped 0",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free"
+  ],
+  "prev_kept": 0.3492,
+  "prev_clearance": 6
+ },
+ "Game_InfinityWeather_Demo_Maps_WorldMap": {
+  "category": "retry",
+  "reason": "editor wedge after connect, not a map fault",
+  "prev_state": "timeout",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_Medieval_Env_Maps_Map_NorthenIsle_01": {
+  "category": "clearance45",
+  "reason": "kept 0.7269, collisions 892, clamped 0",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free"
+  ],
+  "prev_kept": 0.7269,
+  "prev_clearance": 6
+ },
+ "Game_ModularSciFi_Levels_LandscapePreview": {
+  "category": "retry",
+  "reason": "editor wedge after connect, not a map fault",
+  "prev_state": "timeout",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_SoulCave_Maps_LV_Soul_Cave": {
+  "category": "retry",
+  "reason": "editor wedge after connect, not a map fault",
+  "prev_state": "timeout",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ },
+ "Game_StonePineForest_Maps_Mountains_Map": {
+  "category": "clearance45",
+  "reason": "kept 0.4298, collisions 14, clamped 0",
+  "prev_state": "route_failed",
+  "prev_gates": [
+   "collision_free"
+  ],
+  "prev_kept": 0.4298,
+  "prev_clearance": 6
+ },
+ "Game_StonePineForest_Maps_Traditional_Map": {
+  "category": "drop",
+  "reason": "start points have no traceable ground",
+  "prev_state": "failed",
+  "prev_gates": [],
+  "prev_kept": null,
+  "prev_clearance": null
+ }
+}

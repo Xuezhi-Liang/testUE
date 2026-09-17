@@ -1,0 +1,56 @@
+{
+    "positions": [
+        {
+            "csv_index": 115,
+            "x": -2145.822,
+            "y": -2028.632,
+            "z": 249.27,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SwimmingPool_Maps_ChangingRoom_Male/frames/115.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 125,
+            "x": -2488.145,
+            "y": -2021.459,
+            "z": 201.32,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SwimmingPool_Maps_ChangingRoom_Male/frames/125.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 141,
+            "x": -2161.379,
+            "y": -1947.305,
+            "z": 344.14,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SwimmingPool_Maps_ChangingRoom_Male/frames/141.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 183,
+            "x": -2130.166,
+            "y": -1414.003,
+            "z": 233.83,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SwimmingPool_Maps_ChangingRoom_Male/frames/183.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 196,
+            "x": -3378.124,
+            "y": -1248.104,
+            "z": 167.46,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SwimmingPool_Maps_ChangingRoom_Male/frames/196.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 199,
+            "x": -1977.912,
+            "y": -1307.792,
+            "z": 351.26,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SwimmingPool_Maps_ChangingRoom_Male/frames/199.png",
+            "name": "test6"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

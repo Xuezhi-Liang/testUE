@@ -1,0 +1,104 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": 63652.767,
+            "y": 35189.997,
+            "z": 4310.83,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": 50994.412,
+            "y": 54974.536,
+            "z": 4310.83,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 2,
+            "x": -31709.906,
+            "y": 35702.889,
+            "z": -78.74,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/002.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 6,
+            "x": 48509.441,
+            "y": -35022.805,
+            "z": -2772.54,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/006.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 10,
+            "x": 38637.79,
+            "y": 37026.498,
+            "z": 2290.34,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/010.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 13,
+            "x": 56734.967,
+            "y": 46932.463,
+            "z": 2100.86,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/013.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 17,
+            "x": 51767.718,
+            "y": 45913.412,
+            "z": 2650.51,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/017.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 25,
+            "x": 32379.639,
+            "y": 32754.609,
+            "z": 2100.86,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/025.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 27,
+            "x": -35224.855,
+            "y": 36086.396,
+            "z": -1183.35,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/027.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 35,
+            "x": 38685.339,
+            "y": 44669.402,
+            "z": 2290.34,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/035.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 44,
+            "x": 20915.931,
+            "y": 43766.335,
+            "z": 1689.81,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/044.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 66,
+            "x": -62149.592,
+            "y": 10988.967,
+            "z": 889.55,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_StonePineForest_Maps_Mountains_Map_LevelDesign/frames/066.png",
+            "name": "test12"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

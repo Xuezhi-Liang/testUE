@@ -1,0 +1,76 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": -1288,
+            "y": 0,
+            "z": 200
+        },
+        {
+            "name": "test2",
+            "x": -2108,
+            "y": -73,
+            "z": 100
+        },
+        {
+            "csv_index": 0,
+            "x": -320.642,
+            "y": 26.443,
+            "z": 576.22,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Dungeon_Levels_Dungeon_Demo_00/frames/000.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 1,
+            "x": -1293.136,
+            "y": 35.111,
+            "z": 561.95,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Dungeon_Levels_Dungeon_Demo_00/frames/001.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 3,
+            "x": -795.2,
+            "y": -140.304,
+            "z": 502.76,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Dungeon_Levels_Dungeon_Demo_00/frames/003.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 6,
+            "x": -1321.081,
+            "y": 28.346,
+            "z": 579.47,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Dungeon_Levels_Dungeon_Demo_00/frames/006.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 11,
+            "x": -1327.627,
+            "y": -78.452,
+            "z": 594.59,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Dungeon_Levels_Dungeon_Demo_00/frames/011.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 17,
+            "x": -1327.462,
+            "y": 323.077,
+            "z": 521.43,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Dungeon_Levels_Dungeon_Demo_00/frames/017.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 24,
+            "x": -1978.06,
+            "y": -48.639,
+            "z": 558.36,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Dungeon_Levels_Dungeon_Demo_00/frames/024.png",
+            "name": "test9"
+        }
+    ],
+    "noise": {
+        "x": 200,
+        "y": 100
+    }
+}

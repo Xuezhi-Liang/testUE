@@ -1,0 +1,48 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": -187.009,
+            "y": 88.824,
+            "z": 1309.45,
+            "csv_index": 0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_HotelCorridor_Maps_Hotel_Corridor/frames/000.png"
+        },
+        {
+            "name": "test2",
+            "x": 147.976,
+            "y": -894.429,
+            "z": 1370.21,
+            "csv_index": 1,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_HotelCorridor_Maps_Hotel_Corridor/frames/001.png"
+        },
+        {
+            "name": "test3",
+            "x": -563.931,
+            "y": -143.572,
+            "z": 1385.18,
+            "csv_index": 2,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_HotelCorridor_Maps_Hotel_Corridor/frames/002.png"
+        },
+        {
+            "name": "test4",
+            "x": -1033.675,
+            "y": -484.42,
+            "z": 1351.78,
+            "csv_index": 3,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_HotelCorridor_Maps_Hotel_Corridor/frames/003.png"
+        },
+        {
+            "name": "test5",
+            "x": 50.781,
+            "y": -2199.484,
+            "z": 1319.35,
+            "csv_index": 4,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_HotelCorridor_Maps_Hotel_Corridor/frames/004.png"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

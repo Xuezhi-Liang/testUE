@@ -1,0 +1,114 @@
+{
+  "frames": 1440,
+  "fps": 24.0,
+  "duration_s": 60.0,
+  "position_error_cm": 0.0,
+  "rotation_error_deg": 0.0,
+  "native": {
+    "ok": true,
+    "armed": true,
+    "finished": true,
+    "frame": 1440,
+    "total": 1440,
+    "elapsed_s": 154.5,
+    "fps": 9.32,
+    "render_ms": 0.33,
+    "readback_ms": 67.61,
+    "write_ms": 9.2,
+    "pending_writes": 0,
+    "write_failures": 0,
+    "walker": false,
+    "walk_anim_length_s": 0.0,
+    "walk_root_motion_cm": 0.0,
+    "walk_anim_speed_cm_s": 0.0,
+    "walker_parts": 0,
+    "exposure_manual": false,
+    "exposure_bias_ev": 0.0,
+    "auto_exposure_speed": 100.0,
+    "local_exposure_shadow": 0.65,
+    "local_exposure_highlight": 0.0,
+    "history_mode": 4,
+    "temporal_aa_enabled": true,
+    "warmup_frames": 32,
+    "rgb_render_width": 2560,
+    "rgb_render_height": 1440,
+    "states": "/home/ubuntu/ue_chemical_far_20260916/zzfinal_taa2/episode/chemical_far_zzfinal_taa2/engine_states.jsonl",
+    "reason": "reached the end of the frozen trajectory"
+  },
+  "aa_method": 2.0,
+  "depth_samples": [
+    {
+      "frame": 0,
+      "valid_fraction": 0.8834385850694444,
+      "minimum_m": 3.150390625,
+      "maximum_m": 528.0
+    },
+    {
+      "frame": 1,
+      "valid_fraction": 0.8834385850694444,
+      "minimum_m": 3.150390625,
+      "maximum_m": 528.0
+    },
+    {
+      "frame": 35,
+      "valid_fraction": 0.8834385850694444,
+      "minimum_m": 3.150390625,
+      "maximum_m": 528.0
+    },
+    {
+      "frame": 100,
+      "valid_fraction": 0.8876671006944444,
+      "minimum_m": 3.150390625,
+      "maximum_m": 544.5
+    },
+    {
+      "frame": 191,
+      "valid_fraction": 0.9024229600694444,
+      "minimum_m": 3.150390625,
+      "maximum_m": 523.0
+    },
+    {
+      "frame": 360,
+      "valid_fraction": 0.8971082899305556,
+      "minimum_m": 3.150390625,
+      "maximum_m": 960.5
+    },
+    {
+      "frame": 600,
+      "valid_fraction": 0.8746842447916666,
+      "minimum_m": 3.150390625,
+      "maximum_m": 696.5
+    },
+    {
+      "frame": 720,
+      "valid_fraction": 0.8707779947916666,
+      "minimum_m": 3.150390625,
+      "maximum_m": 982.5
+    },
+    {
+      "frame": 900,
+      "valid_fraction": 0.8802018229166667,
+      "minimum_m": 3.150390625,
+      "maximum_m": 529.5
+    },
+    {
+      "frame": 1100,
+      "valid_fraction": 0.8610004340277778,
+      "minimum_m": 3.1484375,
+      "maximum_m": 478.75
+    },
+    {
+      "frame": 1300,
+      "valid_fraction": 0.8461827256944444,
+      "minimum_m": 3.150390625,
+      "maximum_m": 679.5
+    },
+    {
+      "frame": 1439,
+      "valid_fraction": 0.82,
+      "minimum_m": 3.150390625,
+      "maximum_m": 677.5
+    }
+  ],
+  "scope": "Render validation only. No new route/dataset acceptance; native depth remains unfiltered. Capture input retained descriptive taa=tsr from the source but its explicit cvar override and actual runtime AA method are 2 (TAA). Saved optional template has consistent taa=taa."
+}

@@ -1,0 +1,156 @@
+{
+  "checked_epoch": 1789555712.7707977,
+  "workers": [
+    {
+      "worker": "00",
+      "instance_id": "i-07eb4f8935b7ab42e",
+      "queue_state": "running",
+      "active": "Game_Downtown_West_Maps_Demo_Environment",
+      "worlds_verified": 1,
+      "editors": 1,
+      "hashes": {
+        "worker.py": "80232a404a8480a255e5215fe5d92195e65953b3fba6c789e64b4378fc92d640",
+        "runtime_guard.py": "11cf9e1ac0ac92229298c3c1aad114278d3da4a21463bf9618f596c59e86cf75",
+        "template.json": "16b0a6c42e1af4e880a3843c1886d143537ca03c2419349d9c09f79f64ea9920"
+      },
+      "errors": [],
+      "compiled": true
+    },
+    {
+      "worker": "01",
+      "instance_id": "i-0b78a067fc047c21a",
+      "queue_state": "running",
+      "active": "Game_MiddleEast_Maps_MiddleEast",
+      "worlds_verified": 1,
+      "editors": 1,
+      "hashes": {
+        "worker.py": "80232a404a8480a255e5215fe5d92195e65953b3fba6c789e64b4378fc92d640",
+        "runtime_guard.py": "11cf9e1ac0ac92229298c3c1aad114278d3da4a21463bf9618f596c59e86cf75",
+        "template.json": "16b0a6c42e1af4e880a3843c1886d143537ca03c2419349d9c09f79f64ea9920"
+      },
+      "errors": [],
+      "compiled": true
+    },
+    {
+      "worker": "02",
+      "instance_id": "i-0e42ab9a1a06d2f62",
+      "queue_state": "running",
+      "active": "Game_ContainerYard_Maps_Demonstration",
+      "worlds_verified": 2,
+      "editors": 1,
+      "hashes": {
+        "worker.py": "80232a404a8480a255e5215fe5d92195e65953b3fba6c789e64b4378fc92d640",
+        "runtime_guard.py": "11cf9e1ac0ac92229298c3c1aad114278d3da4a21463bf9618f596c59e86cf75",
+        "template.json": "16b0a6c42e1af4e880a3843c1886d143537ca03c2419349d9c09f79f64ea9920"
+      },
+      "errors": [],
+      "compiled": true
+    },
+    {
+      "worker": "03",
+      "instance_id": "i-0703d9715e30289b7",
+      "queue_state": "running",
+      "active": "Game_AnchientRuins_Maps_AncientRuins",
+      "worlds_verified": 1,
+      "editors": 1,
+      "hashes": {
+        "worker.py": "80232a404a8480a255e5215fe5d92195e65953b3fba6c789e64b4378fc92d640",
+        "runtime_guard.py": "11cf9e1ac0ac92229298c3c1aad114278d3da4a21463bf9618f596c59e86cf75",
+        "template.json": "16b0a6c42e1af4e880a3843c1886d143537ca03c2419349d9c09f79f64ea9920"
+      },
+      "errors": [],
+      "compiled": true
+    },
+    {
+      "worker": "04",
+      "instance_id": "i-00a045f47411c2a5f",
+      "queue_state": "running",
+      "active": "Game_AnchientRuins_Maps_Grass_Hills",
+      "worlds_verified": 1,
+      "editors": 1,
+      "hashes": {
+        "worker.py": "80232a404a8480a255e5215fe5d92195e65953b3fba6c789e64b4378fc92d640",
+        "runtime_guard.py": "11cf9e1ac0ac92229298c3c1aad114278d3da4a21463bf9618f596c59e86cf75",
+        "template.json": "16b0a6c42e1af4e880a3843c1886d143537ca03c2419349d9c09f79f64ea9920"
+      },
+      "errors": [],
+      "compiled": true
+    },
+    {
+      "worker": "05",
+      "instance_id": "i-09ea3ed41bcf77ad9",
+      "queue_state": "running",
+      "active": "Game_ErikStadium_Maps_Stadium",
+      "worlds_verified": 1,
+      "editors": 1,
+      "hashes": {
+        "worker.py": "80232a404a8480a255e5215fe5d92195e65953b3fba6c789e64b4378fc92d640",
+        "runtime_guard.py": "11cf9e1ac0ac92229298c3c1aad114278d3da4a21463bf9618f596c59e86cf75",
+        "template.json": "16b0a6c42e1af4e880a3843c1886d143537ca03c2419349d9c09f79f64ea9920"
+      },
+      "errors": [],
+      "compiled": true
+    },
+    {
+      "worker": "06",
+      "instance_id": "i-01e7b8168fabadc3a",
+      "queue_state": "running",
+      "active": "Game_Bazaar_Meshingun_Map_LV_Bazaar",
+      "worlds_verified": 1,
+      "editors": 1,
+      "hashes": {
+        "worker.py": "80232a404a8480a255e5215fe5d92195e65953b3fba6c789e64b4378fc92d640",
+        "runtime_guard.py": "11cf9e1ac0ac92229298c3c1aad114278d3da4a21463bf9618f596c59e86cf75",
+        "template.json": "16b0a6c42e1af4e880a3843c1886d143537ca03c2419349d9c09f79f64ea9920"
+      },
+      "errors": [],
+      "compiled": true
+    },
+    {
+      "worker": "07",
+      "instance_id": "i-0fcae8618eec60e98",
+      "queue_state": "running",
+      "active": "Game_Brushify_Maps_Arctic_Arctic",
+      "worlds_verified": 1,
+      "editors": 1,
+      "hashes": {
+        "worker.py": "80232a404a8480a255e5215fe5d92195e65953b3fba6c789e64b4378fc92d640",
+        "runtime_guard.py": "11cf9e1ac0ac92229298c3c1aad114278d3da4a21463bf9618f596c59e86cf75",
+        "template.json": "16b0a6c42e1af4e880a3843c1886d143537ca03c2419349d9c09f79f64ea9920"
+      },
+      "errors": [],
+      "compiled": true
+    },
+    {
+      "worker": "08",
+      "instance_id": "i-067c09550c4bf1289",
+      "queue_state": "running",
+      "active": "Game_IndustrialArea_Maps_IndustrialArea",
+      "worlds_verified": 1,
+      "editors": 1,
+      "hashes": {
+        "worker.py": "80232a404a8480a255e5215fe5d92195e65953b3fba6c789e64b4378fc92d640",
+        "runtime_guard.py": "11cf9e1ac0ac92229298c3c1aad114278d3da4a21463bf9618f596c59e86cf75",
+        "template.json": "16b0a6c42e1af4e880a3843c1886d143537ca03c2419349d9c09f79f64ea9920"
+      },
+      "errors": [],
+      "compiled": true
+    },
+    {
+      "worker": "09",
+      "instance_id": "i-0db3336129cfa07c7",
+      "queue_state": "running",
+      "active": "Game_InfinityWeather_Demo_Maps_DesertMap",
+      "worlds_verified": 2,
+      "editors": 1,
+      "hashes": {
+        "worker.py": "80232a404a8480a255e5215fe5d92195e65953b3fba6c789e64b4378fc92d640",
+        "runtime_guard.py": "11cf9e1ac0ac92229298c3c1aad114278d3da4a21463bf9618f596c59e86cf75",
+        "template.json": "16b0a6c42e1af4e880a3843c1886d143537ca03c2419349d9c09f79f64ea9920"
+      },
+      "errors": [],
+      "compiled": true
+    }
+  ],
+  "identical_worker_guard_template": true
+}

@@ -1,0 +1,124 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": 0,
+            "y": 0,
+            "z": 2000
+        },
+        {
+            "name": "test2",
+            "x": 3416,
+            "y": 3103,
+            "z": 2000
+        },
+        {
+            "csv_index": 0,
+            "x": -737.436,
+            "y": 1864.897,
+            "z": 2062.93,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/000.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 1,
+            "x": 3472.359,
+            "y": 4898.394,
+            "z": 2224.31,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/001.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 2,
+            "x": 1161.853,
+            "y": 420.082,
+            "z": 1632.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/002.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 3,
+            "x": -1079.857,
+            "y": -959.452,
+            "z": 4005.9,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/003.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 4,
+            "x": 3556.767,
+            "y": 4973.23,
+            "z": 2224.31,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/004.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 5,
+            "x": -1867.481,
+            "y": 1322.445,
+            "z": 3966.06,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/005.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 8,
+            "x": 2401.585,
+            "y": 2764.098,
+            "z": 2292.65,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/008.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 9,
+            "x": -581.265,
+            "y": 580.422,
+            "z": 4027.74,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/009.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 10,
+            "x": -871.906,
+            "y": 3369.927,
+            "z": 2062.93,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/010.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 15,
+            "x": -1224.546,
+            "y": -847.353,
+            "z": 4076.68,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/015.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 19,
+            "x": 3313.847,
+            "y": 4223.614,
+            "z": 4005.36,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/019.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 27,
+            "x": 2043.973,
+            "y": 3737.127,
+            "z": 4005.36,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/027.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 33,
+            "x": 2366.013,
+            "y": 1765.086,
+            "z": 2307.62,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Village_Maps_Village_SummerNightExample/frames/033.png",
+            "name": "test15"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

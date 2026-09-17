@@ -1,0 +1,5 @@
+{
+  "source": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/frozen/Game_AnchientRuins_Maps_AncientRuins__coverage_walk__seed2002__pf_Game_AnchientRuins_Maps_AncientRuins_s2002.json",
+  "passed": true,
+  "note": "Tested plotting against an existing frozen route; not a new engine-validation result"
+}

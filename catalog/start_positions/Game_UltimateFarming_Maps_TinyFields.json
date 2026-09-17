@@ -1,0 +1,176 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": 177.901,
+            "y": 4.749,
+            "z": 269.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": -12.448,
+            "y": 94.393,
+            "z": 228.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 2,
+            "x": 2546.023,
+            "y": -203.219,
+            "z": 585.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/002.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 4,
+            "x": 69.871,
+            "y": -916.521,
+            "z": 362.78,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/004.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 5,
+            "x": 951.431,
+            "y": -641.124,
+            "z": 268.66,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/005.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 6,
+            "x": 17.639,
+            "y": -961.164,
+            "z": 418.57,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/006.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 8,
+            "x": 459.85,
+            "y": -1288.44,
+            "z": 394.08,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/008.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 10,
+            "x": 731.146,
+            "y": -514.132,
+            "z": 356.17,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/010.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 11,
+            "x": 30.874,
+            "y": -953.094,
+            "z": 362.78,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/011.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 12,
+            "x": -56.393,
+            "y": -16.047,
+            "z": 228.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/012.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 15,
+            "x": -1520.116,
+            "y": 2480.521,
+            "z": 366.16,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/015.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 22,
+            "x": 235.644,
+            "y": -10.882,
+            "z": 266.75,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/022.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 25,
+            "x": -116.599,
+            "y": -623.751,
+            "z": 276.11,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/025.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 31,
+            "x": 565.838,
+            "y": -1092.506,
+            "z": 394.08,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/031.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 32,
+            "x": 497.96,
+            "y": 319.766,
+            "z": 300.25,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/032.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 33,
+            "x": 257.357,
+            "y": 471.971,
+            "z": 271.1,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/033.png",
+            "name": "test16"
+        },
+        {
+            "csv_index": 34,
+            "x": 216.555,
+            "y": -851.569,
+            "z": 418.57,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/034.png",
+            "name": "test17"
+        },
+        {
+            "csv_index": 35,
+            "x": 652.493,
+            "y": -1344.13,
+            "z": 394.08,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/035.png",
+            "name": "test18"
+        },
+        {
+            "csv_index": 39,
+            "x": -750.81,
+            "y": 91.096,
+            "z": 397.65,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/039.png",
+            "name": "test19"
+        },
+        {
+            "csv_index": 65,
+            "x": 19.207,
+            "y": -45.786,
+            "z": 305.91,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/065.png",
+            "name": "test20"
+        },
+        {
+            "csv_index": 115,
+            "x": 534.847,
+            "y": -349.934,
+            "z": 370.96,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_UltimateFarming_Maps_TinyFields/frames/115.png",
+            "name": "test21"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

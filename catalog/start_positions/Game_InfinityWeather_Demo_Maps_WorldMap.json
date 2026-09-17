@@ -1,0 +1,88 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": -34197.193,
+            "y": -23909.045,
+            "z": 13470.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_InfinityWeather_Demo_Maps_WorldMap/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": -9101.733,
+            "y": -14451.428,
+            "z": 17094.55,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_InfinityWeather_Demo_Maps_WorldMap/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 2,
+            "x": -3394.694,
+            "y": -11036.092,
+            "z": 17094.55,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_InfinityWeather_Demo_Maps_WorldMap/frames/002.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 3,
+            "x": -32169.023,
+            "y": -20427.89,
+            "z": 13470.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_InfinityWeather_Demo_Maps_WorldMap/frames/003.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 5,
+            "x": 23397.037,
+            "y": -25380.865,
+            "z": 14200.27,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_InfinityWeather_Demo_Maps_WorldMap/frames/005.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 6,
+            "x": 22488.582,
+            "y": -26984.573,
+            "z": 14200.27,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_InfinityWeather_Demo_Maps_WorldMap/frames/006.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 7,
+            "x": -8642.163,
+            "y": -22524.771,
+            "z": 30748.02,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_InfinityWeather_Demo_Maps_WorldMap/frames/007.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 9,
+            "x": 11741.003,
+            "y": -41152.417,
+            "z": 3666.51,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_InfinityWeather_Demo_Maps_WorldMap/frames/009.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 11,
+            "x": 13821.811,
+            "y": -40432.293,
+            "z": 3666.51,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_InfinityWeather_Demo_Maps_WorldMap/frames/011.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 12,
+            "x": -20891.827,
+            "y": -24316.768,
+            "z": 30748.02,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_InfinityWeather_Demo_Maps_WorldMap/frames/012.png",
+            "name": "test10"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

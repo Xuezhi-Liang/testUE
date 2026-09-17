@@ -1,0 +1,144 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": -3290.751,
+            "y": -2370.535,
+            "z": 377.89,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": -2140.346,
+            "y": 1430.124,
+            "z": 450.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 3,
+            "x": 1391.223,
+            "y": 2357.49,
+            "z": 541.77,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/003.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 4,
+            "x": -773.862,
+            "y": 1917.057,
+            "z": 407.45,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/004.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 6,
+            "x": 1728.173,
+            "y": 2104.21,
+            "z": 541.77,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/006.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 8,
+            "x": 492.642,
+            "y": 1330.391,
+            "z": 386.98,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/008.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 9,
+            "x": -4201.918,
+            "y": -474.584,
+            "z": 341.52,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/009.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 10,
+            "x": 477.141,
+            "y": 59.271,
+            "z": 154.8,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/010.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 13,
+            "x": -571.076,
+            "y": -1755.957,
+            "z": 277.2,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/013.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 14,
+            "x": 1097.417,
+            "y": -1326.764,
+            "z": 273.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/014.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 17,
+            "x": -89.858,
+            "y": 839.866,
+            "z": 223.71,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/017.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 19,
+            "x": 3164.889,
+            "y": 1779.256,
+            "z": 450.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/019.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 20,
+            "x": -4973.298,
+            "y": -1598.989,
+            "z": 150.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/020.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 22,
+            "x": -2068.442,
+            "y": -1151.177,
+            "z": 489.93,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/022.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 28,
+            "x": 2609.396,
+            "y": -3022.385,
+            "z": 254.05,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/028.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 30,
+            "x": 1651.238,
+            "y": -1609.379,
+            "z": 383.6,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/030.png",
+            "name": "test16"
+        },
+        {
+            "csv_index": 32,
+            "x": 2756.59,
+            "y": -1361.555,
+            "z": 762.88,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night/frames/032.png",
+            "name": "test17"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "note": "Second take. v1 planned a clean route by navmesh and was then refused by the full-trajectory capsule sweep on 14 of 2844 frames. The sweep now runs as a planning-time veto, so a blocked heading is banned and re-searched rather than costing the whole episode.",
+  "spawn_id": "auto",
+  "trajectory_family": "nested_out_and_back",
+  "return_kind": "near",
+  "revisit_ages_s": [
+    35.0,
+    115.0
+  ],
+  "probe_after_revisit": true,
+  "speed_tier": "fast",
+  "yaw_tier": "medium",
+  "fps": 24,
+  "duration_s": 120.0,
+  "camera": {
+    "resolution": [
+      1280,
+      720
+    ],
+    "fov_deg": 90.0,
+    "eye_height_m": 1.7,
+    "pitch_limit_deg": 15.0,
+    "roll_limit_deg": 5.0
+  },
+  "body": {
+    "collision_radius_cm": 40.0,
+    "collision_half_height_cm": 88.0,
+    "leg_margin_cm": 150.0
+  },
+  "render": {
+    "exposure": "fixed",
+    "motion_blur": false,
+    "depth_of_field": false,
+    "lumen": "project_default",
+    "taa": "project_default",
+    "hud": false
+  },
+  "task_id": "batch5_suburb_v2",
+  "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
+  "split": "validation",
+  "seed": 10
+}

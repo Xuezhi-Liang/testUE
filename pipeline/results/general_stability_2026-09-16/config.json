@@ -1,0 +1,82 @@
+{
+  "frames": 600,
+  "maps": {
+    "chemical": {
+      "source": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/frozen/Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2__nested_out_and_back__age35__seed20__batch7_chemplant2.json",
+      "label": "化工厂",
+      "fill": 1.5
+    },
+    "downtown": {
+      "source": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/frozen/Game_Downtown_West_Maps_Demo_Environment__nested_out_and_back__age35__seed1__batch5_downtown_west.json",
+      "label": "Downtown 街区",
+      "fill": 3
+    },
+    "hwaseong": {
+      "source": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/frozen/Game_HwaseongHaenggung_Maps_Demo__nested_out_and_back__age35__seed25__batch7_hwaseong.json",
+      "label": "华城古建",
+      "fill": 4
+    },
+    "forest": {
+      "source": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/frozen/Game_ForestGasStation_Maps_Demo__nested_out_and_back__age35__seed26__batch7_gasstation.json",
+      "label": "森林加油站",
+      "fill": 1
+    }
+  },
+  "variants": {
+    "baseline": {
+      "label": "当前 TSR 2×",
+      "ss": 2,
+      "cvars": {
+        "r.AntiAliasingMethod": 4
+      }
+    },
+    "taa_detail": {
+      "label": "TAA 3× · 高分辨率历史与光照",
+      "ss": 3,
+      "cvars": {
+        "r.AntiAliasingMethod": 2,
+        "r.TemporalAA.HistoryScreenPercentage": 200,
+        "r.TemporalAA.Quality": 2,
+        "r.TemporalAACurrentFrameWeight": 0.04,
+        "r.TemporalAASamples": 8,
+        "r.Lumen.ScreenProbeGather.DownsampleFactor": 8,
+        "r.VolumetricFog.GridPixelSize": 8,
+        "r.VolumetricFog.GridSizeZ": 128,
+        "r.MaxAnisotropy": 16,
+        "r.MipMapLODBias": 0,
+        "r.Tonemapper.Sharpen": 0
+      }
+    },
+    "tsr_detail": {
+      "label": "TSR 3× · 高质量光照",
+      "ss": 3,
+      "cvars": {
+        "r.AntiAliasingMethod": 4,
+        "r.Lumen.ScreenProbeGather.DownsampleFactor": 8,
+        "r.VolumetricFog.GridPixelSize": 8,
+        "r.VolumetricFog.GridSizeZ": 128,
+        "r.MaxAnisotropy": 16,
+        "r.MipMapLODBias": 0,
+        "r.Tonemapper.Sharpen": 0,
+        "r.TSR.History.SampleCount": 32
+      }
+    },
+    "taa_balanced": {
+      "label": "TAA 2× · 高分辨率历史与光照",
+      "ss": 2,
+      "cvars": {
+        "r.AntiAliasingMethod": 2,
+        "r.TemporalAA.HistoryScreenPercentage": 200,
+        "r.TemporalAA.Quality": 2,
+        "r.TemporalAACurrentFrameWeight": 0.04,
+        "r.TemporalAASamples": 8,
+        "r.Lumen.ScreenProbeGather.DownsampleFactor": 8,
+        "r.VolumetricFog.GridPixelSize": 8,
+        "r.VolumetricFog.GridSizeZ": 128,
+        "r.MaxAnisotropy": 16,
+        "r.MipMapLODBias": 0,
+        "r.Tonemapper.Sharpen": 0
+      }
+    }
+  }
+}

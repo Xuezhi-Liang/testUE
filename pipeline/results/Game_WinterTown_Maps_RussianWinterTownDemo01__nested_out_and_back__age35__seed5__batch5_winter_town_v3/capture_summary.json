@@ -1,0 +1,71 @@
+{
+ "episode_id": "Game_WinterTown_Maps_RussianWinterTownDemo01__nested_out_and_back__age35__seed5__batch5_winter_town_v3",
+ "frozen_sha256": "71d39963b566965620fbe24239a2cedb64e6921f377e76f2c4ff252d14e72547",
+ "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
+ "spawn_id": "test1",
+ "seed": 5,
+ "split": "test",
+ "trajectory_family": "nested_out_and_back",
+ "trajectory_generator_version": "pipeline-freeze-1",
+ "recorder_version": "pipeline-capture-engine-1",
+ "control_model": "frozen trajectory executed inside the engine tick; the scene capture components are placed on the frozen camera pose directly, so there is no pawn and desired == actual by construction",
+ "fps": 24.0,
+ "frames": 2844,
+ "duration_s": 118.5,
+ "resolution": "1280x720",
+ "intrinsics": {
+  "fx": 640.0000000000001,
+  "fy": 640.0000000000001,
+  "cx": 640.0,
+  "cy": 360.0,
+  "width": 1280,
+  "height": 720,
+  "hfov_deg": 90.0,
+  "vfov_deg": 58.71550708558254
+ },
+ "speed_tier": "fast",
+ "yaw_tier": "medium",
+ "planned_speed_m_s": 1.40250146187269,
+ "planned_yaw_deg_s": 54.23822369209481,
+ "eye_height_cm": 170.0,
+ "pose_tracking": {
+  "pos_error_cm_mean": 0.0,
+  "pos_error_cm_max": 0.0,
+  "yaw_error_deg_mean": 0.0,
+  "yaw_error_deg_max": 0.0
+ },
+ "measured_speed_m_s_max": 1.2275422862679268,
+ "measured_yaw_rate_deg_s_max": 48.84240000000136,
+ "blank_frames": 0,
+ "axis_smoke": {
+  "forward": [
+   640.0,
+   360.0
+  ],
+  "forward_right": [
+   1280.0,
+   360.0
+  ],
+  "forward_up": [
+   640.0,
+   -280.0000000000001
+  ],
+  "pass": true
+ },
+ "record_seconds": 117.4,
+ "engine_timing_ms": {
+  "render": 0.32,
+  "readback": 19.74,
+  "write": 9.6
+ },
+ "engine_fps": 24.232,
+ "render": {
+  "exposure": "fixed",
+  "motion_blur": false,
+  "depth_of_field": false,
+  "lumen": "project_default",
+  "taa": "project_default",
+  "hud": false
+ },
+ "p0_gaps": []
+}

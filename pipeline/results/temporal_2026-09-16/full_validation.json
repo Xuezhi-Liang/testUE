@@ -1,0 +1,501 @@
+{
+  "rows": [
+    {
+      "frame": 0,
+      "hit": {
+        "distance": 4820.06103515625,
+        "impact": [
+          -914.5521505431135,
+          7528.539857869426,
+          166.2343441588956
+        ],
+        "actor": "StaticMeshActor_21135",
+        "planar_m": 48.20058297973978
+      },
+      "recorded_depth_m": 48.1875,
+      "absolute_difference_m": 0.013082979739778011
+    },
+    {
+      "frame": 91,
+      "hit": {
+        "distance": 4685.17333984375,
+        "impact": [
+          -914.6612847403486,
+          7528.53985787133,
+          166.33970609737216
+        ],
+        "actor": "StaticMeshActor_21135",
+        "planar_m": 46.85170405752564
+      },
+      "recorded_depth_m": 46.84375,
+      "absolute_difference_m": 0.007954057525637381
+    },
+    {
+      "frame": 183,
+      "hit": {
+        "distance": 4383.0263671875,
+        "impact": [
+          -914.9056943015058,
+          7528.539857875596,
+          166.57575956416903
+        ],
+        "actor": "StaticMeshActor_21135",
+        "planar_m": 43.83023487932464
+      },
+      "recorded_depth_m": 43.84375,
+      "absolute_difference_m": 0.01351512067535765
+    },
+    {
+      "frame": 275,
+      "hit": {
+        "distance": 4689.39453125,
+        "impact": [
+          -721.2752183216178,
+          7162.358123,
+          166.33641014169933
+        ],
+        "actor": "StaticMeshActor_21584",
+        "planar_m": 46.89391712067188
+      },
+      "recorded_depth_m": 46.90625,
+      "absolute_difference_m": 0.012332879328120328
+    },
+    {
+      "frame": 366,
+      "hit": {
+        "distance": 1604.2362060546875,
+        "impact": [
+          1695.4399047418713,
+          11140.237740231574,
+          168.74669181624162
+        ],
+        "actor": "StaticMeshActor_6045",
+        "planar_m": 16.042352459391385
+      },
+      "recorded_depth_m": 16.046875,
+      "absolute_difference_m": 0.004522540608615344
+    },
+    {
+      "frame": 458,
+      "hit": {
+        "distance": 2136.78173828125,
+        "impact": [
+          1246.2972409728184,
+          13628.650598453749,
+          168.33063850935775
+        ],
+        "actor": "StaticMeshActor_20995",
+        "planar_m": 21.367802921857987
+      },
+      "recorded_depth_m": 21.375,
+      "absolute_difference_m": 0.0071970781420134244
+    },
+    {
+      "frame": 550,
+      "hit": {
+        "distance": 2194.512451171875,
+        "impact": [
+          1137.6023194620284,
+          13966.810445,
+          168.2855412887979
+        ],
+        "actor": "StaticMeshActor_4727",
+        "planar_m": 21.945110671681167
+      },
+      "recorded_depth_m": 21.9375,
+      "absolute_difference_m": 0.007610671681167247
+    },
+    {
+      "frame": 641,
+      "hit": {
+        "distance": 1962.9425048828125,
+        "impact": [
+          1177.1683709451827,
+          13966.810445,
+          168.4664494919229
+        ],
+        "actor": "StaticMeshActor_4727",
+        "planar_m": 19.62941331606398
+      },
+      "recorded_depth_m": 19.625,
+      "absolute_difference_m": 0.004413316063981654
+    },
+    {
+      "frame": 733,
+      "hit": {
+        "distance": 1178.357177734375,
+        "impact": [
+          1552.7742868135122,
+          11996.113279184941,
+          169.0794021936559
+        ],
+        "actor": "StaticMeshActor_17463",
+        "planar_m": 11.78356429685444
+      },
+      "recorded_depth_m": 11.78125,
+      "absolute_difference_m": 0.0023142968544398457
+    },
+    {
+      "frame": 825,
+      "hit": {
+        "distance": 5030.16845703125,
+        "impact": [
+          -90.2639017356801,
+          7162.358123000001,
+          166.07017679013683
+        ],
+        "actor": "StaticMeshActor_21632",
+        "planar_m": 50.30164753701957
+      },
+      "recorded_depth_m": 50.3125,
+      "absolute_difference_m": 0.010852462980430744
+    },
+    {
+      "frame": 917,
+      "hit": {
+        "distance": 5375.1875,
+        "impact": [
+          -1566.707878154721,
+          7162.358123282388,
+          165.80062951669905
+        ],
+        "actor": "StaticMeshActor_21463",
+        "planar_m": 53.75183902611339
+      },
+      "recorded_depth_m": 53.75,
+      "absolute_difference_m": 0.0018390261133873764
+    },
+    {
+      "frame": 1008,
+      "hit": {
+        "distance": 1926.7783203125,
+        "impact": [
+          -1429.8351780164776,
+          12810.53233811441,
+          168.4947075426868
+        ],
+        "actor": "StaticMeshActor_22888",
+        "planar_m": 19.267771526797926
+      },
+      "recorded_depth_m": 19.265625,
+      "absolute_difference_m": 0.0021465267979259295
+    },
+    {
+      "frame": 1100,
+      "hit": {
+        "distance": 2300.398681640625,
+        "impact": [
+          -1155.7966705886456,
+          13935.40076823676,
+          168.20280387173113
+        ],
+        "actor": "StaticMeshActor_13382",
+        "planar_m": 23.00397269589307
+      },
+      "recorded_depth_m": 23.0,
+      "absolute_difference_m": 0.00397269589306859
+    },
+    {
+      "frame": 1192,
+      "hit": {
+        "distance": 2082.9150390625,
+        "impact": [
+          -1155.9269196334446,
+          13935.808742473104,
+          168.37272574673113
+        ],
+        "actor": "StaticMeshActor_13382",
+        "planar_m": 20.829136838722384
+      },
+      "recorded_depth_m": 20.828125,
+      "absolute_difference_m": 0.0010118387223840841
+    },
+    {
+      "frame": 1283,
+      "hit": {
+        "distance": 1774.224609375,
+        "impact": [
+          -1156.1118561871956,
+          13936.387687623333,
+          168.61389090786395
+        ],
+        "actor": "StaticMeshActor_13382",
+        "planar_m": 17.742235241304442
+      },
+      "recorded_depth_m": 17.75,
+      "absolute_difference_m": 0.007764758695557816
+    },
+    {
+      "frame": 1375,
+      "hit": {
+        "distance": 1418.427734375,
+        "impact": [
+          -1155.3492218862543,
+          13935.937007884211,
+          169.5378563619655
+        ],
+        "actor": "StaticMeshActor_13382",
+        "planar_m": 14.184268025148704
+      },
+      "recorded_depth_m": 14.1875,
+      "absolute_difference_m": 0.0032319748512961155
+    },
+    {
+      "frame": 1467,
+      "hit": {
+        "distance": 1072.41796875,
+        "impact": [
+          -1157.8215426127813,
+          13939.181600421387,
+          175.63207938442645
+        ],
+        "actor": "StaticMeshActor_13382",
+        "planar_m": 10.724172135630551
+      },
+      "recorded_depth_m": 10.7265625,
+      "absolute_difference_m": 0.0023903643694485055
+    },
+    {
+      "frame": 1559,
+      "hit": {
+        "distance": 775.549072265625,
+        "impact": [
+          -1157.8804720781623,
+          13939.60218032858,
+          176.08810355434832
+        ],
+        "actor": "StaticMeshActor_13382",
+        "planar_m": 7.755485296214718
+      },
+      "recorded_depth_m": 7.75390625,
+      "absolute_difference_m": 0.0015790462147178275
+    },
+    {
+      "frame": 1650,
+      "hit": {
+        "distance": 588.8284912109375,
+        "impact": [
+          -1157.6474093316629,
+          13939.557130673425,
+          174.87287833462176
+        ],
+        "actor": "StaticMeshActor_13382",
+        "planar_m": 5.888280852745936
+      },
+      "recorded_depth_m": 5.88671875,
+      "absolute_difference_m": 0.0015621027459360448
+    },
+    {
+      "frame": 1742,
+      "hit": {
+        "distance": 570.5023193359375,
+        "impact": [
+          -1157.5939730502985,
+          13939.517644744827,
+          174.59318473110613
+        ],
+        "actor": "StaticMeshActor_13382",
+        "planar_m": 5.705019289979547
+      },
+      "recorded_depth_m": 5.703125,
+      "absolute_difference_m": 0.0018942899795471035
+    },
+    {
+      "frame": 1834,
+      "hit": {
+        "distance": 570.5023193359375,
+        "impact": [
+          -1157.5939730502985,
+          13939.517644744827,
+          174.59318473110613
+        ],
+        "actor": "StaticMeshActor_13382",
+        "planar_m": 5.705019289979547
+      },
+      "recorded_depth_m": 5.703125,
+      "absolute_difference_m": 0.0018942899795471035
+    },
+    {
+      "frame": 1925,
+      "hit": {
+        "distance": 736.6050415039062,
+        "impact": [
+          -1455.6188346315892,
+          13808.351507958274,
+          174.46342983244136
+        ],
+        "actor": "StaticMeshActor_4939",
+        "planar_m": 7.366045915233717
+      },
+      "recorded_depth_m": 7.3671875,
+      "absolute_difference_m": 0.0011415847662830103
+    },
+    {
+      "frame": 2017,
+      "hit": {
+        "distance": 4789.6494140625,
+        "impact": [
+          -2409.7007487865067,
+          9005.312476749552,
+          171.2969864066626
+        ],
+        "actor": "StaticMeshActor_20769",
+        "planar_m": 47.89646347621674
+      },
+      "recorded_depth_m": 47.90625,
+      "absolute_difference_m": 0.009786523783262169
+    },
+    {
+      "frame": 2109,
+      "hit": {
+        "distance": 3799.46240234375,
+        "impact": [
+          1561.9836790077456,
+          10515.782553938783,
+          172.11857737199077
+        ],
+        "actor": "StaticMeshActor_17458",
+        "planar_m": 37.99459924588811
+      },
+      "recorded_depth_m": 38.0,
+      "absolute_difference_m": 0.005400754111889228
+    },
+    {
+      "frame": 2201,
+      "hit": {
+        "distance": 3637.8291015625,
+        "impact": [
+          1561.9836790147451,
+          10515.578055654767,
+          173.78334940568217
+        ],
+        "actor": "StaticMeshActor_17458",
+        "planar_m": 36.378269205065656
+      },
+      "recorded_depth_m": 36.375,
+      "absolute_difference_m": 0.003269205065656422
+    },
+    {
+      "frame": 2292,
+      "hit": {
+        "distance": 3355.028564453125,
+        "impact": [
+          1561.9836790270401,
+          10515.21886377253,
+          173.62178934708842
+        ],
+        "actor": "StaticMeshActor_17458",
+        "planar_m": 33.55026530399638
+      },
+      "recorded_depth_m": 33.5625,
+      "absolute_difference_m": 0.012234696003616818
+    },
+    {
+      "frame": 2384,
+      "hit": {
+        "distance": 3008.83447265625,
+        "impact": [
+          1561.9836790420536,
+          10514.780234637154,
+          168.72664774552592
+        ],
+        "actor": "StaticMeshActor_17458",
+        "planar_m": 30.088323431903422
+      },
+      "recorded_depth_m": 30.09375,
+      "absolute_difference_m": 0.005426568096577711
+    },
+    {
+      "frame": 2476,
+      "hit": {
+        "distance": 2652.875732421875,
+        "impact": [
+          1561.9836790575082,
+          10514.328727084248,
+          167.9274457801939
+        ],
+        "actor": "StaticMeshActor_17458",
+        "planar_m": 26.528741379807247
+      },
+      "recorded_depth_m": 26.53125,
+      "absolute_difference_m": 0.002508620192752886
+    },
+    {
+      "frame": 2567,
+      "hit": {
+        "distance": 2340.3759765625,
+        "impact": [
+          1561.9836790710758,
+          10513.93233427555,
+          168.1715864051939
+        ],
+        "actor": "StaticMeshActor_17458",
+        "planar_m": 23.40374625377155
+      },
+      "recorded_depth_m": 23.40625,
+      "absolute_difference_m": 0.0025037462284487333
+    },
+    {
+      "frame": 2659,
+      "hit": {
+        "distance": 2119.335205078125,
+        "impact": [
+          1561.9836790806717,
+          10513.65199981249,
+          168.3442701210142
+        ],
+        "actor": "StaticMeshActor_17458",
+        "planar_m": 21.19333762124403
+      },
+      "recorded_depth_m": 21.1875,
+      "absolute_difference_m": 0.005837621244030089
+    },
+    {
+      "frame": 2751,
+      "hit": {
+        "distance": 4989.8134765625,
+        "impact": [
+          51.21178669058531,
+          7162.358122999999,
+          166.10169928328816
+        ],
+        "actor": "StaticMeshActor_21656",
+        "planar_m": 49.89810161280484
+      },
+      "recorded_depth_m": 49.90625,
+      "absolute_difference_m": 0.008148387195163309
+    },
+    {
+      "frame": 2843,
+      "hit": {
+        "distance": 5159.16259765625,
+        "impact": [
+          -1048.0246212584102,
+          7162.358123,
+          165.96940164117981
+        ],
+        "actor": "StaticMeshActor_21560",
+        "planar_m": 51.59158859447614
+      },
+      "recorded_depth_m": 51.59375,
+      "absolute_difference_m": 0.0021614055238572405
+    }
+  ],
+  "frames": 2844,
+  "rgb_files": 2844,
+  "depth_files": 2844,
+  "pose_tracking": {
+    "pos_error_cm_mean": 0.0,
+    "pos_error_cm_max": 0.0,
+    "yaw_error_deg_mean": 0.0,
+    "yaw_error_deg_max": 0.0
+  },
+  "note": "Visibility collision and rendered geometry can differ. Ray comparison is independent validation, not a requirement that all assets have collision.",
+  "depth_trace_summary": {
+    "sampled": 32,
+    "comparable": 32,
+    "within_15cm": 32,
+    "max_error_cm": 1.351512067535765,
+    "noncomparable_frames": []
+  }
+}

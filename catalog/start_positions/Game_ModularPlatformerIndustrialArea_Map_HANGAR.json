@@ -1,0 +1,136 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": 573.197,
+            "y": -198.085,
+            "z": 210.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": -255.262,
+            "y": -2345.753,
+            "z": -19.29,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 2,
+            "x": -281.905,
+            "y": -979.397,
+            "z": 1209.27,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/002.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 3,
+            "x": -90.393,
+            "y": 394.593,
+            "z": 121.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/003.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 5,
+            "x": -531.792,
+            "y": -1419.645,
+            "z": 1410.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/005.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 6,
+            "x": -114.782,
+            "y": 619.964,
+            "z": -990.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/006.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 7,
+            "x": 1068.343,
+            "y": 24.265,
+            "z": 968.06,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/007.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 9,
+            "x": 868.87,
+            "y": -367.914,
+            "z": -490.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/009.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 10,
+            "x": -1265.485,
+            "y": -1605.637,
+            "z": -1590.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/010.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 11,
+            "x": 3485.557,
+            "y": 1346.015,
+            "z": 2010.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/011.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 14,
+            "x": 2944.27,
+            "y": -1172.457,
+            "z": 330.01,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/014.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 15,
+            "x": -120.581,
+            "y": -2055.768,
+            "z": -19.29,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/015.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 19,
+            "x": 1860.637,
+            "y": -1314.084,
+            "z": 210.7,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/019.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 25,
+            "x": -380.268,
+            "y": 1583.548,
+            "z": -1590.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/025.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 44,
+            "x": 1207.557,
+            "y": -2876.711,
+            "z": 1999.51,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/044.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 71,
+            "x": 556.488,
+            "y": 1655.366,
+            "z": 810.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_ModularPlatformerIndustrialArea_Map_HANGAR/frames/071.png",
+            "name": "test16"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

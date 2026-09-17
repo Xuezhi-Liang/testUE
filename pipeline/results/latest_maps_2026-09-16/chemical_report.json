@@ -1,0 +1,971 @@
+{
+  "map": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_2",
+  "episode": "/home/ubuntu/ue_latest_two_maps_20260916_0639/chemical/episode/chemical_latest_20260916",
+  "frames": 2844,
+  "duration_s": 118.5,
+  "runtime": {
+    "ok": true,
+    "armed": true,
+    "finished": true,
+    "frame": 2844,
+    "total": 2844,
+    "elapsed_s": 301.62,
+    "fps": 9.429,
+    "render_ms": 0.32,
+    "readback_ms": 68.99,
+    "write_ms": 9.07,
+    "pending_writes": 0,
+    "write_failures": 0,
+    "walker": false,
+    "walk_anim_length_s": 0.0,
+    "walk_root_motion_cm": 0.0,
+    "walk_anim_speed_cm_s": 0.0,
+    "walker_parts": 0,
+    "exposure_manual": false,
+    "exposure_bias_ev": 0.0,
+    "auto_exposure_speed": 100.0,
+    "local_exposure_shadow": 0.65,
+    "local_exposure_highlight": 0.0,
+    "history_mode": 4,
+    "temporal_aa_enabled": true,
+    "warmup_frames": 32,
+    "rgb_render_width": 2560,
+    "rgb_render_height": 1440,
+    "states": "/home/ubuntu/ue_latest_two_maps_20260916_0639/chemical/episode/chemical_latest_20260916/engine_states.jsonl",
+    "reason": "reached the end of the frozen trajectory"
+  },
+  "render": {
+    "exposure": "auto_instant",
+    "motion_blur": false,
+    "depth_of_field": false,
+    "lumen": "project_default",
+    "taa": "tsr",
+    "hud": false,
+    "exposure_bias_ev": null,
+    "lighting": "fill",
+    "skylight_factor": "auto",
+    "history_mode": 4,
+    "local_exposure": {
+      "shadow_scale": 0.65,
+      "highlight_scale": 0.0,
+      "detail_strength": 1.0
+    },
+    "supersample": 2,
+    "cvars": [
+      "r.AntiAliasingMethod 4"
+    ]
+  },
+  "pose_tracking": {
+    "pos_error_cm_mean": 0.0,
+    "pos_error_cm_max": 0.0,
+    "yaw_error_deg_mean": 0.0,
+    "yaw_error_deg_max": 0.0
+  },
+  "lighting": {
+    "skylight_fix": {
+      "applied": false,
+      "made_dynamic": [],
+      "mode": "real_time_capture",
+      "has_atmosphere": true,
+      "skipped_ours": [],
+      "skylights_before": [
+        {
+          "actor": "SkyLight2_3",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "real_time_capture": true,
+          "source_type": "<SkyLightSourceType.SLS_CAPTURED_SCENE: 0>"
+        }
+      ],
+      "note": "session-only change to the loaded level; nothing was saved to the map"
+    },
+    "fill": {
+      "applied": true,
+      "factor": 1.5,
+      "from_calibration": true
+    },
+    "calibration": {
+      "map_id": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_2",
+      "poses": 12,
+      "factors_tried": [
+        1.0,
+        1.5,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "bar": {
+        "max_black": 0.03,
+        "max_blown": 0.01,
+        "min_contrast_ratio": 0.8,
+        "p50_ratio": [
+          0.6,
+          1.6
+        ],
+        "p50_floor": 30
+      },
+      "reference": {
+        "p10": 0,
+        "p50": 113,
+        "p99": 234,
+        "black_frac": 0.14493,
+        "blown_frac": 0.0,
+        "contrast": 230
+      },
+      "trials": [
+        {
+          "factor": 1.0,
+          "chosen_ev": 12.0,
+          "p10": 0,
+          "p50": 128,
+          "p99": 241,
+          "black_frac": 0.12461,
+          "blown_frac": 0.0,
+          "contrast": 241,
+          "contrast_ratio": 1.0478260869565217,
+          "p50_ratio": 1.1327433628318584,
+          "target_p50": 113,
+          "violation": 3.1536666666666666,
+          "checks": {
+            "black": false,
+            "blown": true,
+            "contrast": true,
+            "brightness": true
+          },
+          "passes": false,
+          "fill": {
+            "base_intensity": 1.5,
+            "fill_skylight": {
+              "ok": true,
+              "actor": "SkyLight_0",
+              "intensity": 1.5
+            }
+          }
+        },
+        {
+          "factor": 1.5,
+          "chosen_ev": 11.5,
+          "p10": 0,
+          "p50": 132,
+          "p99": 235,
+          "black_frac": 0.12423,
+          "blown_frac": 0.0,
+          "contrast": 235,
+          "contrast_ratio": 1.0217391304347827,
+          "p50_ratio": 1.168141592920354,
+          "target_p50": 113,
+          "violation": 3.141,
+          "checks": {
+            "black": false,
+            "blown": true,
+            "contrast": true,
+            "brightness": true
+          },
+          "passes": false,
+          "fill": {
+            "base_intensity": 1.5,
+            "fill_skylight": {
+              "ok": true,
+              "actor": "SkyLight_1",
+              "intensity": 2.25
+            }
+          }
+        },
+        {
+          "factor": 2.0,
+          "chosen_ev": 11.0,
+          "p10": 0,
+          "p50": 126,
+          "p99": 226,
+          "black_frac": 0.13566,
+          "blown_frac": 0.0,
+          "contrast": 226,
+          "contrast_ratio": 0.9826086956521739,
+          "p50_ratio": 1.1150442477876106,
+          "target_p50": 113,
+          "violation": 3.5220000000000002,
+          "checks": {
+            "black": false,
+            "blown": true,
+            "contrast": true,
+            "brightness": true
+          },
+          "passes": false,
+          "fill": {
+            "base_intensity": 1.5,
+            "fill_skylight": {
+              "ok": true,
+              "actor": "SkyLight_2",
+              "intensity": 3.0
+            }
+          }
+        },
+        {
+          "factor": 3.0,
+          "chosen_ev": 10.5,
+          "p10": 0,
+          "p50": 130,
+          "p99": 214,
+          "black_frac": 0.13257,
+          "blown_frac": 0.0,
+          "contrast": 214,
+          "contrast_ratio": 0.9304347826086956,
+          "p50_ratio": 1.1504424778761062,
+          "target_p50": 113,
+          "violation": 3.419,
+          "checks": {
+            "black": false,
+            "blown": true,
+            "contrast": true,
+            "brightness": true
+          },
+          "passes": false,
+          "fill": {
+            "base_intensity": 1.5,
+            "fill_skylight": {
+              "ok": true,
+              "actor": "SkyLight_3",
+              "intensity": 4.5
+            }
+          }
+        },
+        {
+          "factor": 4.0,
+          "chosen_ev": 10.0,
+          "p10": 0,
+          "p50": 124,
+          "p99": 201,
+          "black_frac": 0.14011,
+          "blown_frac": 0.0,
+          "contrast": 201,
+          "contrast_ratio": 0.8739130434782608,
+          "p50_ratio": 1.0973451327433628,
+          "target_p50": 113,
+          "violation": 3.670333333333334,
+          "checks": {
+            "black": false,
+            "blown": true,
+            "contrast": true,
+            "brightness": true
+          },
+          "passes": false,
+          "fill": {
+            "base_intensity": 1.5,
+            "fill_skylight": {
+              "ok": true,
+              "actor": "SkyLight_4",
+              "intensity": 6.0
+            }
+          }
+        }
+      ],
+      "chosen_factor": 1.5,
+      "chosen_ev": 11.5,
+      "quality_bar_missed": true,
+      "took_s": 43.0
+    },
+    "cvars": [
+      "r.AntiAliasingMethod 4"
+    ],
+    "history_mode": 4,
+    "supersample": 2,
+    "exposure": {
+      "mode": "auto_instant",
+      "manual": false,
+      "bias_ev": 0.0,
+      "auto_exposure_speed": 100.0,
+      "auto_exposure_range": [
+        0.0,
+        0.0
+      ],
+      "local_exposure": {
+        "shadow_scale": 0.65,
+        "highlight_scale": 0.0,
+        "detail_strength": 1.0
+      },
+      "sweep": null
+    }
+  },
+  "image_samples": [
+    {
+      "frame": 0,
+      "luma": 120.54002604166666,
+      "black_pct": 3.495008680555556,
+      "blown_pct": 0.0022786458333333335
+    },
+    {
+      "frame": 91,
+      "luma": 120.026767578125,
+      "black_pct": 3.936957465277778,
+      "blown_pct": 0.001953125
+    },
+    {
+      "frame": 183,
+      "luma": 121.0001171875,
+      "black_pct": 3.979600694444444,
+      "blown_pct": 0.0035807291666666665
+    },
+    {
+      "frame": 275,
+      "luma": 119.70518880208333,
+      "black_pct": 4.028428819444444,
+      "blown_pct": 0.004340277777777778
+    },
+    {
+      "frame": 366,
+      "luma": 116.00093207465278,
+      "black_pct": 4.6728515625,
+      "blown_pct": 0.003146701388888889
+    },
+    {
+      "frame": 458,
+      "luma": 117.068115234375,
+      "black_pct": 6.900499131944445,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 550,
+      "luma": 117.32805447048611,
+      "black_pct": 6.206380208333333,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 641,
+      "luma": 109.92254665798612,
+      "black_pct": 8.024956597222223,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 733,
+      "luma": 114.51238823784722,
+      "black_pct": 7.583875868055556,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 825,
+      "luma": 120.94338758680556,
+      "black_pct": 4.379231770833333,
+      "blown_pct": 0.0007595486111111111
+    },
+    {
+      "frame": 917,
+      "luma": 121.45894205729167,
+      "black_pct": 3.101779513888889,
+      "blown_pct": 0.0020616319444444445
+    },
+    {
+      "frame": 1008,
+      "luma": 120.58322916666667,
+      "black_pct": 5.212239583333334,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 1100,
+      "luma": 108.16613172743055,
+      "black_pct": 9.49631076388889,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 1192,
+      "luma": 106.44186631944444,
+      "black_pct": 10.721028645833334,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 1283,
+      "luma": 100.93400065104167,
+      "black_pct": 13.542643229166668,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 1375,
+      "luma": 100.19482204861112,
+      "black_pct": 11.3349609375,
+      "blown_pct": 0.00010850694444444444
+    },
+    {
+      "frame": 1467,
+      "luma": 97.15785915798611,
+      "black_pct": 11.93142361111111,
+      "blown_pct": 0.00021701388888888888
+    },
+    {
+      "frame": 1559,
+      "luma": 101.77089735243055,
+      "black_pct": 8.570203993055555,
+      "blown_pct": 0.00021701388888888888
+    },
+    {
+      "frame": 1650,
+      "luma": 102.69792317708334,
+      "black_pct": 10.243598090277779,
+      "blown_pct": 0.00010850694444444444
+    },
+    {
+      "frame": 1742,
+      "luma": 104.23417534722222,
+      "black_pct": 9.67599826388889,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 1834,
+      "luma": 104.473203125,
+      "black_pct": 9.580837673611112,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 1925,
+      "luma": 104.42887478298611,
+      "black_pct": 9.5810546875,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 2017,
+      "luma": 102.81548394097223,
+      "black_pct": 7.009548611111111,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 2109,
+      "luma": 119.89977430555555,
+      "black_pct": 5.175455729166667,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 2201,
+      "luma": 122.16066514756945,
+      "black_pct": 5.443576388888889,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 2292,
+      "luma": 120.98976128472222,
+      "black_pct": 5.238172743055555,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 2384,
+      "luma": 119.25630859375,
+      "black_pct": 3.547417534722222,
+      "blown_pct": 0.0
+    },
+    {
+      "frame": 2476,
+      "luma": 125.13999240451389,
+      "black_pct": 3.138671875,
+      "blown_pct": 0.00010850694444444444
+    },
+    {
+      "frame": 2567,
+      "luma": 124.59682725694445,
+      "black_pct": 3.0766059027777777,
+      "blown_pct": 0.0005425347222222222
+    },
+    {
+      "frame": 2659,
+      "luma": 114.50866644965278,
+      "black_pct": 3.553927951388889,
+      "blown_pct": 0.0010850694444444445
+    },
+    {
+      "frame": 2751,
+      "luma": 116.50257378472222,
+      "black_pct": 3.5100911458333335,
+      "blown_pct": 0.001193576388888889
+    },
+    {
+      "frame": 2843,
+      "luma": 120.03697699652778,
+      "black_pct": 3.8218315972222223,
+      "blown_pct": 0.001736111111111111
+    }
+  ],
+  "depth_traces": [
+    {
+      "frame": 0,
+      "hit": {
+        "distance": 5444.98779296875,
+        "impact": [
+          9364.19075388855,
+          -6637.632434441333,
+          -12634.25389396942
+        ],
+        "actor": "SM_Tank_11",
+        "planar_m": 54.44984280863856
+      },
+      "recorded_depth_m": 54.4375,
+      "absolute_difference_m": 0.012342808638557301
+    },
+    {
+      "frame": 91,
+      "hit": {
+        "distance": 5324.83154296875,
+        "impact": [
+          9364.326723527061,
+          -6637.70382771891,
+          -12634.160022197031
+        ],
+        "actor": "SM_Tank_11",
+        "planar_m": 53.248284122064824
+      },
+      "recorded_depth_m": 53.25,
+      "absolute_difference_m": 0.0017158779351760245
+    },
+    {
+      "frame": 183,
+      "hit": {
+        "distance": 4961.44580078125,
+        "impact": [
+          9364.737687780813,
+          -6637.919606079875,
+          -12633.876126976953
+        ],
+        "actor": "SM_Tank_11",
+        "planar_m": 49.61442530505948
+      },
+      "recorded_depth_m": 49.625,
+      "absolute_difference_m": 0.010574694940522988
+    },
+    {
+      "frame": 275,
+      "hit": {
+        "distance": 4794.82568359375,
+        "impact": [
+          9364.926095111801,
+          -6638.018529419645,
+          -12633.74595523765
+        ],
+        "actor": "SM_Tank_11",
+        "planar_m": 47.948227041972785
+      },
+      "recorded_depth_m": 47.9375,
+      "absolute_difference_m": 0.0107270419727854
+    },
+    {
+      "frame": 366,
+      "hit": {
+        "distance": 3363.7744140625,
+        "impact": [
+          7393.429504167899,
+          -5536.951124655196,
+          -12632.627947073734
+        ],
+        "actor": "SM_PlywoodCover_513",
+        "planar_m": 33.63772254391749
+      },
+      "recorded_depth_m": 33.625,
+      "absolute_difference_m": 0.012722543917490725
+    },
+    {
+      "frame": 458,
+      "hit": {
+        "distance": 2894.15771484375,
+        "impact": [
+          1816.8647453031692,
+          -6853.254589644288,
+          -12632.261059226454
+        ],
+        "actor": "SM_Truss_749",
+        "planar_m": 28.94155796844806
+      },
+      "recorded_depth_m": 28.9375,
+      "absolute_difference_m": 0.004057968448059057
+    },
+    {
+      "frame": 550,
+      "hit": {
+        "distance": 5334.38330078125,
+        "impact": [
+          -830.621050214847,
+          -7931.70954684176,
+          -12634.16748441602
+        ],
+        "actor": "SM_PlywoodCover_38",
+        "planar_m": 53.343800519184114
+      },
+      "recorded_depth_m": 53.34375,
+      "absolute_difference_m": 5.051918411425049e-05
+    },
+    {
+      "frame": 641,
+      "hit": {
+        "distance": 4973.42724609375,
+        "impact": [
+          -830.6210496115143,
+          -7931.426640389036,
+          -12633.885487651258
+        ],
+        "actor": "SM_PlywoodCover_38",
+        "planar_m": 49.73424193024725
+      },
+      "recorded_depth_m": 49.71875,
+      "absolute_difference_m": 0.015491930247250707
+    },
+    {
+      "frame": 733,
+      "hit": {
+        "distance": 1663.5006103515625,
+        "impact": [
+          2432.5134887692307,
+          -6949.918633087359,
+          -12631.299606323242
+        ],
+        "actor": "SM_Fence_242",
+        "planar_m": 16.6349953518965
+      },
+      "recorded_depth_m": 17.90625,
+      "absolute_difference_m": 1.2712546481035005
+    },
+    {
+      "frame": 825,
+      "hit": {
+        "distance": 5439.96484375,
+        "impact": [
+          8830.03828857293,
+          -5040.478524663239,
+          -12634.249969861965
+        ],
+        "actor": "SM_Wall_02_Door535",
+        "planar_m": 54.39961423331887
+      },
+      "recorded_depth_m": 54.40625,
+      "absolute_difference_m": 0.00663576668112853
+    },
+    {
+      "frame": 917,
+      "hit": {
+        "distance": 2276.328125,
+        "impact": [
+          6136.212635072114,
+          -6763.338878322883,
+          -12631.77838023922
+        ],
+        "actor": "SM_Wall_02_Door460",
+        "planar_m": 22.763267062061704
+      },
+      "recorded_depth_m": 22.765625,
+      "absolute_difference_m": 0.002357937938295862
+    },
+    {
+      "frame": 1008,
+      "hit": {
+        "distance": 1705.712890625,
+        "impact": [
+          2536.07562515455,
+          -6639.978464538758,
+          -12631.332587376413
+        ],
+        "actor": "SM_OilBarrel_126",
+        "planar_m": 17.057118418337936
+      },
+      "recorded_depth_m": 17.0625,
+      "absolute_difference_m": 0.00538158166206415
+    },
+    {
+      "frame": 1100,
+      "hit": {
+        "distance": 4250.95703125,
+        "impact": [
+          -315.61126917334286,
+          -7658.993131051728,
+          -12633.32105801847
+        ],
+        "actor": "SM_Wall_03_Window22",
+        "planar_m": 42.50954263848536
+      },
+      "recorded_depth_m": 42.5,
+      "absolute_difference_m": 0.009542638485356747
+    },
+    {
+      "frame": 1192,
+      "hit": {
+        "distance": 4017.73583984375,
+        "impact": [
+          -315.7431866332432,
+          -7658.814784173806,
+          -12633.138854086346
+        ],
+        "actor": "SM_Wall_03_Window22",
+        "planar_m": 40.17733230727578
+      },
+      "recorded_depth_m": 40.1875,
+      "absolute_difference_m": 0.010167692724216693
+    },
+    {
+      "frame": 1283,
+      "hit": {
+        "distance": 3693.963134765625,
+        "impact": [
+          -315.9263876852143,
+          -7658.567104027432,
+          -12632.885906953634
+        ],
+        "actor": "SM_Wall_03_Window22",
+        "planar_m": 36.93960900848623
+      },
+      "recorded_depth_m": 36.9375,
+      "absolute_difference_m": 0.0021090084862294134
+    },
+    {
+      "frame": 1375,
+      "hit": {
+        "distance": 3321.458984375,
+        "impact": [
+          -316.13710488043654,
+          -7658.282223209129,
+          -12632.5948881687
+        ],
+        "actor": "SM_Wall_03_Window22",
+        "planar_m": 33.21456856126209
+      },
+      "recorded_depth_m": 33.21875,
+      "absolute_difference_m": 0.0041814387379091045
+    },
+    {
+      "frame": 1467,
+      "hit": {
+        "distance": 2947.760986328125,
+        "impact": [
+          -316.3485085533125,
+          -7657.996414301639,
+          -12632.302936756418
+        ],
+        "actor": "SM_Wall_03_Window22",
+        "planar_m": 29.47759048397765
+      },
+      "recorded_depth_m": 29.484375,
+      "absolute_difference_m": 0.006784516022349862
+    },
+    {
+      "frame": 1559,
+      "hit": {
+        "distance": 2617.19677734375,
+        "impact": [
+          -316.5450084335261,
+          -7657.7438261967945,
+          -12632.044683743015
+        ],
+        "actor": "SM_Wall_03_Window22",
+        "planar_m": 26.17195191237933
+      },
+      "recorded_depth_m": 26.171875,
+      "absolute_difference_m": 7.691237933116213e-05
+    },
+    {
+      "frame": 1650,
+      "hit": {
+        "distance": 2380.498046875,
+        "impact": [
+          -316.69380932650085,
+          -7657.563241260636,
+          -12631.85976292238
+        ],
+        "actor": "SM_Wall_03_Window22",
+        "planar_m": 23.804965408186252
+      },
+      "recorded_depth_m": 23.8125,
+      "absolute_difference_m": 0.007534591813747937
+    },
+    {
+      "frame": 1742,
+      "hit": {
+        "distance": 2312.458984375,
+        "impact": [
+          -316.73660112111463,
+          -7657.511309066296,
+          -12631.806607511277
+        ],
+        "actor": "SM_Wall_03_Window22",
+        "planar_m": 23.124576146049446
+      },
+      "recorded_depth_m": 23.125,
+      "absolute_difference_m": 0.0004238539505543315
+    },
+    {
+      "frame": 1834,
+      "hit": {
+        "distance": 2312.458984375,
+        "impact": [
+          -316.73660112111463,
+          -7657.511309066296,
+          -12631.806607511277
+        ],
+        "actor": "SM_Wall_03_Window22",
+        "planar_m": 23.124576146049446
+      },
+      "recorded_depth_m": 23.125,
+      "absolute_difference_m": 0.0004238539505543315
+    },
+    {
+      "frame": 1925,
+      "hit": {
+        "distance": 2312.458984375,
+        "impact": [
+          -316.73660112111463,
+          -7657.511309066296,
+          -12631.806607511277
+        ],
+        "actor": "SM_Wall_03_Window22",
+        "planar_m": 23.124576146049446
+      },
+      "recorded_depth_m": 23.125,
+      "absolute_difference_m": 0.0004238539505543315
+    },
+    {
+      "frame": 2017,
+      "hit": {
+        "distance": 514.4390258789062,
+        "impact": [
+          1951.9920593827894,
+          -8099.999960386671,
+          -12630.401905257244
+        ],
+        "actor": "SM_Fence_208",
+        "planar_m": 5.144387292674063
+      },
+      "recorded_depth_m": 6.9765625,
+      "absolute_difference_m": 1.8321752073259372
+    },
+    {
+      "frame": 2109,
+      "hit": {
+        "distance": 26792.390625,
+        "impact": [
+          28781.606005059635,
+          -8366.791819477387,
+          -12650.93154141361
+        ],
+        "actor": "SM_Pavement_Small2328",
+        "planar_m": 267.9237301080556
+      },
+      "recorded_depth_m": 268.0,
+      "absolute_difference_m": 0.07626989194437783
+    },
+    {
+      "frame": 2201,
+      "hit": {
+        "distance": 26622.880859375,
+        "impact": [
+          28781.59535885168,
+          -8366.924074252513,
+          -12650.79911218583
+        ],
+        "actor": "SM_Pavement_Small2328",
+        "planar_m": 266.22863599248063
+      },
+      "recorded_depth_m": 266.25,
+      "absolute_difference_m": 0.021364007519366623
+    },
+    {
+      "frame": 2292,
+      "hit": {
+        "distance": 26333.384765625,
+        "impact": [
+          28781.57718911847,
+          -8367.1497982766,
+          -12650.572943308334
+        ],
+        "actor": "SM_Pavement_Small2328",
+        "planar_m": 263.3336743605282
+      },
+      "recorded_depth_m": 263.25,
+      "absolute_difference_m": 0.08367436052822086
+    },
+    {
+      "frame": 2384,
+      "hit": {
+        "distance": 25975.18359375,
+        "impact": [
+          28781.554698106997,
+          -8367.429200924425,
+          -12650.293099455832
+        ],
+        "actor": "SM_Pavement_Small2328",
+        "planar_m": 259.7516730485066
+      },
+      "recorded_depth_m": 259.75,
+      "absolute_difference_m": 0.0016730485065750145
+    },
+    {
+      "frame": 2476,
+      "hit": {
+        "distance": 25596.09765625,
+        "impact": [
+          28781.53090185099,
+          -8367.724821754382,
+          -12649.996938622598
+        ],
+        "actor": "SM_Pavement_Small2328",
+        "planar_m": 255.96081438313004
+      },
+      "recorded_depth_m": 256.0,
+      "absolute_difference_m": 0.039185616869957585
+    },
+    {
+      "frame": 2567,
+      "hit": {
+        "distance": 25243.396484375,
+        "impact": [
+          28781.50876751269,
+          -8367.999799608253,
+          -12649.72139170916
+        ],
+        "actor": "SM_Pavement_Small2328",
+        "planar_m": 252.43381389113893
+      },
+      "recorded_depth_m": 252.5,
+      "absolute_difference_m": 0.0661861088610749
+    },
+    {
+      "frame": 2659,
+      "hit": {
+        "distance": 24954.240234375,
+        "impact": [
+          28781.490615377315,
+          -8368.225303006948,
+          -12649.495488191977
+        ],
+        "actor": "SM_Pavement_Small2328",
+        "planar_m": 249.54224887118772
+      },
+      "recorded_depth_m": 249.5,
+      "absolute_difference_m": 0.04224887118772358
+    },
+    {
+      "frame": 2751,
+      "hit": {
+        "distance": 24792.484375,
+        "impact": [
+          28781.480459683775,
+          -8368.351466185877,
+          -12649.369116127014
+        ],
+        "actor": "SM_Pavement_Small2328",
+        "planar_m": 247.92468643967572
+      },
+      "recorded_depth_m": 247.875,
+      "absolute_difference_m": 0.049686439675724614
+    },
+    {
+      "frame": 2843,
+      "hit": {
+        "distance": 2197.072509765625,
+        "impact": [
+          6166.061229601469,
+          -7264.125533578198,
+          -12631.716461746782
+        ],
+        "actor": "SM_Wall_02_Door460",
+        "planar_m": 21.97071035882686
+      },
+      "recorded_depth_m": 21.96875,
+      "absolute_difference_m": 0.001960358826860187
+    }
+  ],
+  "trace_summary": {
+    "comparable": 32,
+    "within_15cm": 30,
+    "max_error_cm": 183.21752073259373
+  },
+  "note": "Collision and visible geometry can differ; trace mismatches are retained. This is a recording test, not full dataset acceptance.",
+  "trace_note": "The two >15 cm differences hit SM_Fence_242 and SM_Fence_208. Visible surfaces and fence collision geometry may differ; raw measurements are retained rather than marking them as passing."
+}

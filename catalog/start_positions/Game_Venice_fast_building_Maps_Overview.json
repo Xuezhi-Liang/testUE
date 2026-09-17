@@ -1,0 +1,112 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": 69.97,
+            "y": -172.71,
+            "z": 890.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": -1608.385,
+            "y": -5721.358,
+            "z": 361.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 2,
+            "x": 668.742,
+            "y": -591.933,
+            "z": 890.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/002.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 5,
+            "x": -14.564,
+            "y": 733.306,
+            "z": 605.75,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/005.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 6,
+            "x": -3375.453,
+            "y": 601.494,
+            "z": 469.29,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/006.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 8,
+            "x": -1512.755,
+            "y": -4040.117,
+            "z": 361.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/008.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 9,
+            "x": -1734.118,
+            "y": -6922.068,
+            "z": 361.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/009.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 10,
+            "x": -2173.697,
+            "y": -5677.732,
+            "z": 361.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/010.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 11,
+            "x": -1704.332,
+            "y": -4433.555,
+            "z": 361.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/011.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 80,
+            "x": -2597.514,
+            "y": -5337.594,
+            "z": 495.03,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/080.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 92,
+            "x": -3251.691,
+            "y": 3247.868,
+            "z": 253.77,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/092.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 93,
+            "x": -754.008,
+            "y": 6977.135,
+            "z": 431.31,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/093.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 95,
+            "x": -364.072,
+            "y": 3972.48,
+            "z": 217.57,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Venice_fast_building_Maps_Overview/frames/095.png",
+            "name": "test13"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

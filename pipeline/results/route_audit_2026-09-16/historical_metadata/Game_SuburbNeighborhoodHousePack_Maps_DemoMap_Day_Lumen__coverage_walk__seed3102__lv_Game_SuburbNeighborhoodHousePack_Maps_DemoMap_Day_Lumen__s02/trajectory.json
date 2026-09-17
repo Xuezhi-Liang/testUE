@@ -1,0 +1,615 @@
+{
+ "episode_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__coverage_walk__seed3102__lv_Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__s02",
+ "task": {
+  "note": "Long-video sharded random walk, on the profile the Tokyo coverage episode was recorded and accepted with: the road network is whatever region has the longest centreline, NOT the built-up core. Core confinement was tried and abandoned - on four maps measured end to end it needed a 60 cm body clearance, a 120 cm corridor and a reroute loop to pass its gates, and delivered a fraction of the footage. This profile is the one with a passing episode behind it.",
+  "trajectory_family": "coverage_walk",
+  "family_note": "coverage_walk IS the random walk. coverage.py:coverage_walk takes a random unwalked road at each junction rather than solving route inspection, and prepare_walks chains one pass into the next from where the last ended. A separate random_walk family would have been a second copy of the same traversal.",
+  "spawn_id": "auto",
+  "split": "train",
+  "seed": 3102,
+  "fps": 24,
+  "duration_s": 0,
+  "target_passes": 1,
+  "max_duration_s": 4350.0,
+  "size_headroom": 1.25,
+  "confine_to_core": false,
+  "speed_tier": "medium",
+  "yaw_tier": "fast",
+  "styles": [
+   "stroll",
+   "survey",
+   "inspect"
+  ],
+  "fill_styles": [
+   "study",
+   "stroll"
+  ],
+  "action_mix_target": {
+   "forward": [
+    0.26,
+    0.42
+   ],
+   "backward": [
+    0.1,
+    0.2
+   ],
+   "turn_left": [
+    0.06,
+    0.15
+   ],
+   "turn_right": [
+    0.06,
+    0.15
+   ],
+   "look_up": [
+    0.08,
+    0.18
+   ],
+   "look_down": [
+    0.07,
+    0.16
+   ],
+   "hold": [
+    0.04,
+    0.14
+   ]
+  },
+  "action_mix_note": "coverage_tokyo_stroll's bands verbatim. Achieved there: forward 31.9%, backward 16.5%, turn 14.4/13.6%, look 8.6/9.4%, hold 5.6%, in band. The floors sum to 0.67, so the bands are jointly satisfiable.",
+  "camera": {
+   "resolution": [
+    1280,
+    720
+   ],
+   "fov_deg": 90.0,
+   "eye_height_m": 1.7,
+   "pitch_limit_deg": 30.0,
+   "pitch_limit_up_deg": 15.0,
+   "roll_limit_deg": 5.0
+  },
+  "camera_note": "pitch_limit_up_deg caps looking UP at 15 deg while looking down keeps 30. Not taste: ASimWorldCaptureActor refuses to write a frame whose depth channel is entirely invalid and calls Finish, and pitching up on a street empties it - measured 35.5% of the frame valid at pitch 0, 3.6% at 20 deg, zero at 27.5, which ended a capture 97519 frames in. A single 20 h episode has no checkpoint, so this cap matters more here than it did there.",
+  "body": {
+   "collision_radius_cm": 40.0,
+   "collision_half_height_cm": 88.0,
+   "ground_clearance_cm": 6.0,
+   "corridor_clear_cm": 90.0
+  },
+  "body_note": "Tokyo's own values. 6 cm is a step offset - a capsule resting exactly on the floor reports a hit at distance 0 - and 90 cm is the corridor clearance that produced Tokyo's 1065 m network, 0 collisions and a depth probe whose nearest reading was 85.2 cm. On rolling terrain inside a CORE these are not enough (WinterTown: 989 collisions, 20% of the network kept), which is documented in FINDINGS.md - but this profile does not walk cores.",
+  "render": {
+   "exposure": "fixed",
+   "motion_blur": false,
+   "depth_of_field": false,
+   "lumen": "project_default",
+   "taa": "project_default",
+   "hud": false
+  },
+  "reroute_note": "MAX_REROUTE_ATTEMPTS defaults to 4 and is left on: it costs nothing when a route is already clean, and it is what turns a blocked place into a different road rather than a refused map.",
+  "task_id": "lv_Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__s02",
+  "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
+  "allow_short_episode": true,
+  "min_frames": 14400,
+  "shard": {
+   "shard": 2,
+   "shards": 8,
+   "estimated_hours": 1.21,
+   "one_pass_min_estimate": 58
+  }
+ },
+ "generator_version": "pipeline-coverage-1",
+ "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
+ "spawn_id": "test1",
+ "fps": 24.0,
+ "frames": 94450,
+ "duration_s": 3935.4166666666665,
+ "trajectory_family": "coverage_walk",
+ "speed_tier": "medium",
+ "speed_m_per_s": 0.8,
+ "yaw_tier": "fast",
+ "yaw_deg_per_s": 84.69343493393563,
+ "eye_height_cm": 170.0,
+ "eye_height_requested_cm": 170.0,
+ "camera_offset_from_pawn_cm": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "start_xy_cm": [
+  -5381.0,
+  -2980.0
+ ],
+ "spawn_ground_z_cm": 60.0,
+ "anchor_window": [
+  0,
+  23
+ ],
+ "revisit_events": [],
+ "revisit_window": null,
+ "road_network": {
+  "cell_cm": 25.0,
+  "min_clearance_cm": 90.0,
+  "centreline_off_surface_sampled": 84,
+  "centreline_off_surface_count": 0,
+  "grid": [
+   346,
+   502
+  ],
+  "region_area_m2": 5702.9,
+  "corridor_area_m2": 2533.1,
+  "centreline_m": 798.3,
+  "junctions": 597,
+  "roads": 1087,
+  "components_found": 1,
+  "dropped_unreachable_m": 0.0,
+  "min_road_clearance_cm": 100.0
+ },
+ "head_clearance_pruning": {
+  "method": "capsule r=40 half-h=88 cm, centred 6 cm above the walkable surface, swept along each road at 40 cm steps. A road is dropped if any sweep along it is blocked; sweeps straddling two roads are discarded by index.",
+  "why": "a navmesh is built for the navmesh agent's radius and height, so walkable surface can run under pipes, awnings and gantries that this camera does not clear",
+  "roads_before": 1143,
+  "roads_blocked": 56,
+  "roads_after_pruning": 1087,
+  "roads_kept_connected": 1087,
+  "centreline_before_m": 839.5,
+  "centreline_kept_m": 798.3,
+  "kept_fraction": 0.9509,
+  "dropped_disconnected": 0,
+  "components_after_pruning": 1,
+  "sample_cm": 40.0,
+  "swept_points": 3513,
+  "took_s": 0.6,
+  "worst_blocked": [
+   {
+    "road": [
+     [
+      128,
+      144
+     ],
+     [
+      97,
+      129
+     ],
+     0
+    ],
+    "length_m": 9.7,
+    "blocked_by": "BP_Ground86",
+    "at_cm": 30.1
+   },
+   {
+    "road": [
+     [
+      69,
+      184
+     ],
+     [
+      69,
+      147
+     ],
+     0
+    ],
+    "length_m": 9.2,
+    "blocked_by": "BP_Ground91",
+    "at_cm": 29.2
+   },
+   {
+    "road": [
+     [
+      39,
+      184
+     ],
+     [
+      42,
+      161
+     ],
+     0
+    ],
+    "length_m": 6.1,
+    "blocked_by": "BP_Ground87",
+    "at_cm": 7.8
+   },
+   {
+    "road": [
+     [
+      148,
+      132
+     ],
+     [
+      147,
+      133
+     ],
+     0
+    ],
+    "length_m": 0.4,
+    "blocked_by": "BP_Ground67",
+    "at_cm": 21.4
+   },
+   {
+    "road": [
+     [
+      98,
+      176
+     ],
+     [
+      99,
+      175
+     ],
+     0
+    ],
+    "length_m": 0.4,
+    "blocked_by": "BP_Ground83",
+    "at_cm": 25.8
+   },
+   {
+    "road": [
+     [
+      84,
+      134
+     ],
+     [
+      83,
+      135
+     ],
+     0
+    ],
+    "length_m": 0.4,
+    "blocked_by": "BP_Ground86",
+    "at_cm": 11.1
+   },
+   {
+    "road": [
+     [
+      41,
+      28
+     ],
+     [
+      40,
+      29
+     ],
+     0
+    ],
+    "length_m": 0.4,
+    "blocked_by": "BP_Ground100",
+    "at_cm": 0.0
+   },
+   {
+    "road": [
+     [
+      41,
+      28
+     ],
+     [
+      42,
+      27
+     ],
+     0
+    ],
+    "length_m": 0.4,
+    "blocked_by": "BP_Ground100",
+    "at_cm": 0.0
+   },
+   {
+    "road": [
+     [
+      79,
+      139
+     ],
+     [
+      78,
+      140
+     ],
+     0
+    ],
+    "length_m": 0.4,
+    "blocked_by": "BP_Ground86",
+    "at_cm": 0.0
+   },
+   {
+    "road": [
+     [
+      79,
+      139
+     ],
+     [
+      80,
+      138
+     ],
+     0
+    ],
+    "length_m": 0.4,
+    "blocked_by": "BP_Ground86",
+    "at_cm": 0.0
+   }
+  ]
+ },
+ "reroutes": {
+  "attempts": 1,
+  "vetoed_places": 2,
+  "veto_radius_cm": 150.0,
+  "max_attempts": 4,
+  "detail": [
+   {
+    "attempt": 1,
+    "blocked_frames": 151,
+    "new_vetoes": 2,
+    "places": [
+     {
+      "xy_cm": [
+       -5662.7,
+       -727.5
+      ],
+      "why": "collision"
+     },
+     {
+      "xy_cm": [
+       -4688.5,
+       -3383.7
+      ],
+      "why": "collision"
+     }
+    ]
+   }
+  ],
+  "note": "places a previous attempt's body capsule hit, near plane entered, or depth probe found geometry inside; cut out of the corridor so the walk turns and takes another road. Counted, not hidden - the coverage fraction is still measured from the poses."
+ },
+ "collision_surface": {
+  "method": "downward trace from each point's navmesh height + 60 cm, batched in 150 cm z bands, cached on a 50 cm grid",
+  "why": "the navmesh is not the collision surface; a capsule placed on the navmesh can start inside the terrain, and the camera inherits the same offset",
+  "cells": 1292,
+  "traced": 1292,
+  "no_hit_kept_navmesh": 0,
+  "too_far_below_kept_navmesh": 0,
+  "traced_minus_navmesh_cm": {
+   "p10": -14.2,
+   "median": -8.7,
+   "p90": -1.7,
+   "min": -26.6,
+   "max": 10.3
+  },
+  "took_s": 0.4
+ },
+ "coverage": {
+  "method": "every point of a road within 160 cm of some frame's camera position, sampled every 40 cm; measured from the delivered poses, not from the plan",
+  "radius_cm": 160.0,
+  "roads_total": 1087,
+  "roads_walked": 1087,
+  "roads_missed": 0,
+  "fraction": 1.0,
+  "centreline_m": 798.3,
+  "centreline_walked_m": 798.3,
+  "length_fraction": 1.0,
+  "worst_misses": []
+ },
+ "passes": [
+  {
+   "pass": 1,
+   "style": "stroll+survey+inspect",
+   "walk_seed": 307911877,
+   "frames": 94450,
+   "from_frame": 0,
+   "to_frame": 94449,
+   "complete_pass": true,
+   "roads_walked": 1087,
+   "roads_total": 1087,
+   "covering_m": 798.3,
+   "repositioning_m": 486.5,
+   "walk_m": 1284.8,
+   "walk_over_centreline": 1.609
+  }
+ ],
+ "passes_summary": {
+  "passes_started": 1,
+  "complete_passes": 1,
+  "first_pass_complete": true,
+  "passes_requested": 1,
+  "frames_per_pass_measured": [
+   81130,
+   184212,
+   80302,
+   178105,
+   100185,
+   182081,
+   88598,
+   197692
+  ]
+ },
+ "length": {
+  "frames": 94450,
+  "duration_s": 3935.417,
+  "bound_by": "target_passes=1",
+  "target_passes": 1,
+  "max_duration_s": 4350.0,
+  "tuned_on_frames": 101412,
+  "tuned_on_note": "the action mix was tuned on a one-pass proxy and the reported mix was measured on the full-length episode"
+ },
+ "core_confined": false,
+ "feasibility": {
+  "walk_m": 1284.8,
+  "min_frames_all_forward": 38543,
+  "budget_frames": 101412,
+  "slack_frames": 62869,
+  "slack_fraction": 0.62,
+  "feasible": true
+ },
+ "action_mix": {
+  "frames": 94450,
+  "fraction": {
+   "forward": 0.3107,
+   "backward": 0.1753,
+   "turn_left": 0.1103,
+   "turn_right": 0.1137,
+   "look_up": 0.0915,
+   "look_down": 0.1039,
+   "hold": 0.0946
+  },
+  "frames_by_action": {
+   "forward": 29346,
+   "backward": 16553,
+   "turn_left": 10421,
+   "turn_right": 10737,
+   "look_up": 8645,
+   "look_down": 9813,
+   "hold": 8935
+  }
+ },
+ "action_mix_target": {
+  "forward": [
+   0.26,
+   0.42
+  ],
+  "backward": [
+   0.1,
+   0.2
+  ],
+  "turn_left": [
+   0.06,
+   0.15
+  ],
+  "turn_right": [
+   0.06,
+   0.15
+  ],
+  "look_up": [
+   0.08,
+   0.18
+  ],
+  "look_down": [
+   0.07,
+   0.16
+  ],
+  "hold": [
+   0.04,
+   0.14
+  ]
+ },
+ "action_mix_in_band": true,
+ "mix_tuning": {
+  "knobs": {
+   "back": 1.0010000000000001,
+   "look": 1.3,
+   "scan": 1.0,
+   "chunk": 0.5929,
+   "hold": 2.856100000000001,
+   "speed": 1.6900000000000002
+  },
+  "speed_tier_m_s": [
+   0.6,
+   1.0
+  ],
+  "iterations": 5
+ },
+ "navmesh": {
+  "ensure": {
+   "ok": true,
+   "synthesised": true,
+   "bounds_volumes": 1,
+   "volumes_covering_region": 0,
+   "agent_radius_cm": 35.0,
+   "agent_height_cm": 144.0,
+   "provenance": "synthesised by this call and NOT saved into the map; walkable surface outside the region exists in the level but was not generated here",
+   "note": "build dispatched; the navigation system already reports idle, which on entry can also mean it has not started yet - poll nav_build_status rather than trusting it",
+   "in_progress": false,
+   "has_navmesh": true,
+   "settled": true,
+   "build_wait_s": 8.1
+  },
+  "export": {
+   "ok": true,
+   "vertex_count": 3084,
+   "triangle_count": 2229,
+   "agent_radius_cm": 35.0,
+   "agent_height_cm": 144.0,
+   "bounds_min": [
+    -9006.0,
+    -5795.0,
+    0.0
+   ],
+   "bounds_max": [
+    3420.0,
+    3876.0,
+    1120.0
+   ],
+   "bin": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/frozen/nav/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen.bin",
+   "json": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/frozen/nav/Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen.json",
+   "triangles_per_area": {
+    "63": 2229
+   }
+  }
+ },
+ "collision": {
+  "collision_count": 0,
+  "penetration_count": 0,
+  "minimum_clearance_cm": 148.6493377685547,
+  "clearance_ray_range_cm": 1500.0,
+  "clearance_note": "42327 of 94450 frames had an obstacle within 1500 cm",
+  "maximum_frame_translation_cm": 5.084049004470345,
+  "maximum_frame_rotation_deg": 4.763519086805331,
+  "maximum_frame_yaw_rate_deg_s": 114.32445808332795,
+  "collision_free": true,
+  "first_collision_frames": [],
+  "first_penetration_frames": [],
+  "method": "capsule r=40 half-h=88 cm swept between consecutive frames, centred 6 cm above the surface; near plane traced at its four corners",
+  "validated_in_s": 15.4
+ },
+ "depth_probe": {
+  "ok": true,
+  "probed_frames": 500,
+  "every": 377,
+  "minimum_depth_cm": 108.3,
+  "threshold_cm": 60.0,
+  "frames_too_close": [],
+  "too_close_count": 0,
+  "clear": true,
+  "all_sky_probes": 0,
+  "all_sky_examples": [],
+  "thin_depth_probes": 0,
+  "thin_depth_examples": [],
+  "min_valid_fraction_required": 0.01,
+  "extremes_probed": 250,
+  "all_sky_note": "an all-sky probe is a VETO: the capture actor refuses to write a depth channel containing no depth and ends the run. `thin` frames are the same failure approaching - under 1% of the probe had valid depth.",
+  "method": "scene depth rendered at every 377th frame's exact pose, 320x180, max range 200 m; this is the only check that sees geometry whose collision is disabled"
+ },
+ "pre_gates": {
+  "frame_translation_bounded": true,
+  "frame_rotation_bounded": true,
+  "attitude_within_limits": true,
+  "collision_free": true,
+  "depth_probe_clear": true,
+  "coverage_complete": true,
+  "action_mix_in_band": true
+ },
+ "reachability": {
+  "available": false,
+  "reachable": true,
+  "sampled_frames": 0,
+  "method": "not run for this family: the in-engine capture places the scene-capture components on the frozen pose and spawns no pawn, and the route is already navmesh-planned, corridor-swept per frame and depth-probed"
+ },
+ "intrinsics": {
+  "fx": 640.0000000000001,
+  "fy": 640.0000000000001,
+  "cx": 640.0,
+  "cy": 360.0,
+  "width": 1280,
+  "height": 720,
+  "hfov_deg": 90.0,
+  "vfov_deg": 58.71550708558254
+ },
+ "camera_fov_deg_actual": 90.0,
+ "axis_smoke": {
+  "forward": [
+   640.0,
+   360.0
+  ],
+  "forward_right": [
+   1280.0,
+   360.0
+  ],
+  "forward_up": [
+   640.0,
+   -280.0000000000001
+  ],
+  "pass": true
+ },
+ "known_gaps": [
+  "instance/ and semantic/ masks are not captured by this build",
+  "section 12 depth_visible_overlap and fully_occluded_interval are not computed; this family has no revisit events, so those gates do not apply to it either way"
+ ],
+ "sha256": "b256d5b6de7f1eec78bbfaa4c20fcd8b2c0584e79a5e3258daf7b1503b00fe4b"
+}

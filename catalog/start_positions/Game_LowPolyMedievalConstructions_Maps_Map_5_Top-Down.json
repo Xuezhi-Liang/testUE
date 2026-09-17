@@ -1,0 +1,120 @@
+{
+    "positions": [
+        {
+            "csv_index": 1,
+            "x": 282.24,
+            "y": 1490.844,
+            "z": 510.02,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/001.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 5,
+            "x": -162.104,
+            "y": 431.56,
+            "z": 334.77,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/005.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 8,
+            "x": 841.307,
+            "y": 1045.397,
+            "z": 575.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/008.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 9,
+            "x": 1801.483,
+            "y": 1420.901,
+            "z": 648.27,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/009.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 12,
+            "x": 597.281,
+            "y": 884.029,
+            "z": 767.63,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/012.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 13,
+            "x": 324.226,
+            "y": 856.321,
+            "z": 912.36,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/013.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 14,
+            "x": 267.152,
+            "y": 382.848,
+            "z": 500.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/014.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 18,
+            "x": 748.687,
+            "y": 724.021,
+            "z": 900.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/018.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 21,
+            "x": 2092.199,
+            "y": 1803.478,
+            "z": 1009.56,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/021.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 26,
+            "x": 1185.097,
+            "y": 1257.64,
+            "z": 624.16,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/026.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 32,
+            "x": 856.18,
+            "y": 102.075,
+            "z": 700.53,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/032.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 33,
+            "x": 18.087,
+            "y": 82.488,
+            "z": 900.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/033.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 43,
+            "x": 228.665,
+            "y": 166.22,
+            "z": 500.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/043.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 48,
+            "x": 1165.534,
+            "y": 1451.591,
+            "z": 900.05,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down/frames/048.png",
+            "name": "test14"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

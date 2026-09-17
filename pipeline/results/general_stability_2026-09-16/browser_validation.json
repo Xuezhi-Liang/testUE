@@ -1,0 +1,273 @@
+{
+  "checks": [
+    {
+      "map": "chemical",
+      "variant": "taa_detail",
+      "playback": [
+        {
+          "time": 0.963953,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 1.009465,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "chemical",
+      "variant": "tsr_detail",
+      "playback": [
+        {
+          "time": 11.004616,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 11.004462,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "chemical",
+      "variant": "taa_balanced",
+      "playback": [
+        {
+          "time": 11.00552,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 11.005422,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "downtown",
+      "variant": "taa_detail",
+      "playback": [
+        {
+          "time": 0.966796,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 1.004739,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "downtown",
+      "variant": "tsr_detail",
+      "playback": [
+        {
+          "time": 11.006293,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 11.006219,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "downtown",
+      "variant": "taa_balanced",
+      "playback": [
+        {
+          "time": 11.007205,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 11.007114,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "hwaseong",
+      "variant": "taa_detail",
+      "playback": [
+        {
+          "time": 0.958115,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 1.00458,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "hwaseong",
+      "variant": "tsr_detail",
+      "playback": [
+        {
+          "time": 11.008296,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 11.008192,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "hwaseong",
+      "variant": "taa_balanced",
+      "playback": [
+        {
+          "time": 11.008387,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 11.008328,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "forest",
+      "variant": "taa_detail",
+      "playback": [
+        {
+          "time": 0.960564,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 1.006676,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "forest",
+      "variant": "tsr_detail",
+      "playback": [
+        {
+          "time": 11.004495,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 11.004354,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "forest",
+      "variant": "taa_balanced",
+      "playback": [
+        {
+          "time": 11.007776,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 11.007667,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    }
+  ],
+  "zoom_canvases": true,
+  "mobile_overflow": false,
+  "javascript_errors": [],
+  "previous_pages": 200,
+  "range_requests": 206
+}

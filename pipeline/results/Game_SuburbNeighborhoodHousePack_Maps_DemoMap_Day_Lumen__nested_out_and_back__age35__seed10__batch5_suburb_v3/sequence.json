@@ -1,0 +1,30 @@
+{
+ "episode_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__nested_out_and_back__age35__seed10__batch5_suburb_v3",
+ "split": "validation",
+ "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
+ "asset_family_id": "SuburbNeighborhoodHousePack",
+ "spawn_id": "test1",
+ "seed": 10,
+ "ue_version": "5.8",
+ "project_commit": null,
+ "trajectory_family": "nested_out_and_back",
+ "trajectory_generator_version": "pipeline-freeze-1",
+ "recorder_version": "pipeline-capture-engine-1",
+ "speed_tier": "fast",
+ "yaw_tier": "medium",
+ "camera_height_cm": 170.0,
+ "collision_radius_cm": 40.0,
+ "fps": 24.0,
+ "simulation_time_policy": "frozen trajectory evaluated at exactly frame_id / fps; no physics or animation drives the camera, so the pose for a given frame is reproducible from the frozen file alone",
+ "resolution": "1280x720",
+ "render": {
+  "exposure": "fixed",
+  "motion_blur": false,
+  "depth_of_field": false,
+  "lumen": "project_default",
+  "taa": "project_default",
+  "hud": false
+ },
+ "license_provenance": "project assets under the gym_citynav project's own licensing; not cleared for redistribution here",
+ "frames_table": "frames.csv"
+}

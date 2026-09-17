@@ -1,0 +1,64 @@
+{
+  "factor": 1.0,
+  "calibration": {
+    "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
+    "poses": 12,
+    "factors_tried": [
+      1.0
+    ],
+    "bar": {
+      "max_black": 0.03,
+      "max_blown": 0.01,
+      "min_contrast_ratio": 0.8,
+      "p50_ratio": [
+        0.6,
+        1.6
+      ],
+      "p50_floor": 30
+    },
+    "reference": {
+      "p10": 62,
+      "p50": 161,
+      "p99": 220,
+      "black_frac": 0.02329,
+      "blown_frac": 0.0,
+      "contrast": 173
+    },
+    "trials": [
+      {
+        "factor": 1.0,
+        "chosen_ev": 11.5,
+        "p10": 63,
+        "p50": 158,
+        "p99": 217,
+        "black_frac": 0.02841,
+        "blown_frac": 0.0,
+        "contrast": 154,
+        "contrast_ratio": 0.8901734104046243,
+        "p50_ratio": 0.9813664596273292,
+        "target_p50": 161,
+        "violation": 0.0,
+        "checks": {
+          "black": true,
+          "blown": true,
+          "contrast": true,
+          "brightness": true
+        },
+        "passes": true,
+        "fill": {
+          "base_intensity": 1.100000023841858,
+          "fill_skylight": {
+            "ok": true,
+            "actor": "SkyLight_0",
+            "intensity": 1.1
+          }
+        }
+      }
+    ],
+    "chosen_factor": 1.0,
+    "chosen_ev": 11.5,
+    "quality_bar_missed": false,
+    "took_s": 18.2
+  },
+  "note": "Calibrated once using baseline; reuse this exact fill for the candidate."
+}

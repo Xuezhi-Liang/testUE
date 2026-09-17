@@ -1,0 +1,38 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": null,
+            "y": null,
+            "z": null
+        },
+        {
+            "name": "test2",
+            "x": null,
+            "y": null,
+            "z": null
+        },
+        {
+            "name": "test3",
+            "x": null,
+            "y": null,
+            "z": null
+        },
+        {
+            "name": "test4",
+            "x": null,
+            "y": null,
+            "z": null
+        },
+        {
+            "name": "test5",
+            "x": null,
+            "y": null,
+            "z": null
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

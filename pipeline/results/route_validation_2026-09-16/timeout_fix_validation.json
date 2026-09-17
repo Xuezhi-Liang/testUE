@@ -1,0 +1,22 @@
+{
+  "checked_epoch": 1789554661.5875814,
+  "startup": {
+    "ready_epoch": 1789554612.3530989,
+    "startup_s": 40.1,
+    "method": "UnrealCV listener + PIE startup completion in fresh native UE log (stdout may be buffered)",
+    "client_connected": false
+  },
+  "single_client_connections": 1,
+  "connected_after_pie": true,
+  "world": {
+    "world_name": "Map_ChemicalPlant_2",
+    "world_path": "/Game/ChemicalPlantEnv/Maps/UEDPIE_0_Map_ChemicalPlant_2.Map_ChemicalPlant_2"
+  },
+  "navmesh_exported": true,
+  "route_validation_state": "running",
+  "note": "Original startup failure point passed on fresh UE; full route gates are still running",
+  "preserved_passed_maps": [
+    "Game_ModularTemplePlaza_Maps_ConceptMap",
+    "Game_TokyoStylizedEnvironment_Maps_Tokyo"
+  ]
+}

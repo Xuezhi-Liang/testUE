@@ -1,0 +1,60 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": -270,
+            "y": -2240,
+            "z": 64
+        },
+        {
+            "name": "test2",
+            "x": 1040,
+            "y": -440,
+            "z": 64
+        },
+        {
+            "csv_index": 8,
+            "x": -241.846,
+            "y": 26.14,
+            "z": 557.84,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_TrainStation_Maps_Demonstration/frames/008.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 12,
+            "x": 1043.344,
+            "y": 1272.422,
+            "z": 147.5,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_TrainStation_Maps_Demonstration/frames/012.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 18,
+            "x": -1584.961,
+            "y": -2400.51,
+            "z": 146.84,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_TrainStation_Maps_Demonstration/frames/018.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 80,
+            "x": 3105.938,
+            "y": 1351.341,
+            "z": -687.21,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_TrainStation_Maps_Demonstration/frames/080.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 86,
+            "x": 963.688,
+            "y": -1766.027,
+            "z": 262.6,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_TrainStation_Maps_Demonstration/frames/086.png",
+            "name": "test7"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

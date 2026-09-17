@@ -1,0 +1,128 @@
+{
+    "positions": [
+        {
+            "csv_index": 1,
+            "x": -50820.767,
+            "y": -52876.604,
+            "z": -13656.49,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/001.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 2,
+            "x": -24319.063,
+            "y": -59527.321,
+            "z": -13894.88,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/002.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 6,
+            "x": 124191.983,
+            "y": -159603.511,
+            "z": -2324.85,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/006.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 7,
+            "x": 94814.161,
+            "y": -42050.486,
+            "z": -13676.49,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/007.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 8,
+            "x": -88643.641,
+            "y": 39104.387,
+            "z": -13646.49,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/008.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 10,
+            "x": -34452.651,
+            "y": -119597.793,
+            "z": -11276.49,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/010.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 12,
+            "x": 27509.637,
+            "y": -121875.262,
+            "z": -13824.96,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/012.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 14,
+            "x": 36686.203,
+            "y": -34867.932,
+            "z": -13894.88,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/014.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 16,
+            "x": -28185.371,
+            "y": -59686.769,
+            "z": -13894.88,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/016.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 17,
+            "x": -4186.129,
+            "y": -37652.482,
+            "z": -13970.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/017.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 19,
+            "x": -2988.471,
+            "y": -37758.874,
+            "z": -13970.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/019.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 25,
+            "x": -114084.989,
+            "y": 37157.45,
+            "z": -13456.49,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/025.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 29,
+            "x": -76410.784,
+            "y": -39853.055,
+            "z": -13970.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/029.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 31,
+            "x": -113520.848,
+            "y": 39453.834,
+            "z": -13868.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/031.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 36,
+            "x": -36240.11,
+            "y": -128596.232,
+            "z": -10416.49,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_racing_track_map_racing_track/frames/036.png",
+            "name": "test15"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

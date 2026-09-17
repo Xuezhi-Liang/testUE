@@ -1,0 +1,71 @@
+{
+ "episode_id": "Game_Village_Maps_Village__nested_out_and_back__age35__seed12__batch5_village",
+ "frozen_sha256": "3dd5660c5927fd02aa5e2727c54eac97e15e6d6409a7fc4c8a9d605d58b0a455",
+ "map_id": "/Game/Village/Maps/Village",
+ "spawn_id": "test1",
+ "seed": 12,
+ "split": "test",
+ "trajectory_family": "nested_out_and_back",
+ "trajectory_generator_version": "pipeline-freeze-1",
+ "recorder_version": "pipeline-capture-engine-1",
+ "control_model": "frozen trajectory executed inside the engine tick; the scene capture components are placed on the frozen camera pose directly, so there is no pawn and desired == actual by construction",
+ "fps": 24.0,
+ "frames": 2844,
+ "duration_s": 118.5,
+ "resolution": "1280x720",
+ "intrinsics": {
+  "fx": 640.0000000000001,
+  "fy": 640.0000000000001,
+  "cx": 640.0,
+  "cy": 360.0,
+  "width": 1280,
+  "height": 720,
+  "hfov_deg": 90.0,
+  "vfov_deg": 58.71550708558254
+ },
+ "speed_tier": "fast",
+ "yaw_tier": "medium",
+ "planned_speed_m_s": 1.125412229054223,
+ "planned_yaw_deg_s": 58.40258828578274,
+ "eye_height_cm": 170.0,
+ "pose_tracking": {
+  "pos_error_cm_mean": 0.0,
+  "pos_error_cm_max": 0.0,
+  "yaw_error_deg_mean": 0.0,
+  "yaw_error_deg_max": 0.0
+ },
+ "measured_speed_m_s_max": 0.9831766689204311,
+ "measured_yaw_rate_deg_s_max": 51.367200000000594,
+ "blank_frames": 0,
+ "axis_smoke": {
+  "forward": [
+   640.0,
+   360.0
+  ],
+  "forward_right": [
+   1280.0,
+   360.0
+  ],
+  "forward_up": [
+   640.0,
+   -280.0000000000001
+  ],
+  "pass": true
+ },
+ "record_seconds": 131.7,
+ "engine_timing_ms": {
+  "render": 0.3,
+  "readback": 24.21,
+  "write": 10.72
+ },
+ "engine_fps": 21.593,
+ "render": {
+  "exposure": "fixed",
+  "motion_blur": false,
+  "depth_of_field": false,
+  "lumen": "project_default",
+  "taa": "project_default",
+  "hud": false
+ },
+ "p0_gaps": []
+}

@@ -1,0 +1,152 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": -1781.208,
+            "y": 2754.753,
+            "z": 735.23,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": 292.339,
+            "y": -2169.594,
+            "z": 249.99,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 3,
+            "x": -1806.424,
+            "y": 2448.844,
+            "z": 422.9,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/003.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 4,
+            "x": 870.754,
+            "y": 1609.201,
+            "z": 890.48,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/004.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 5,
+            "x": 218.432,
+            "y": -1504.994,
+            "z": 733.05,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/005.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 7,
+            "x": 53.896,
+            "y": -2673.175,
+            "z": 913.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/007.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 14,
+            "x": -1810.212,
+            "y": -1786.015,
+            "z": 220.53,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/014.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 16,
+            "x": 2044.452,
+            "y": -2890.573,
+            "z": 913.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/016.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 18,
+            "x": -312.133,
+            "y": -3144.409,
+            "z": 346.27,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/018.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 27,
+            "x": -439.185,
+            "y": -1060.131,
+            "z": 815.42,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/027.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 34,
+            "x": 282.844,
+            "y": 2671.227,
+            "z": 243.02,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/034.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 36,
+            "x": 310.718,
+            "y": -2033.973,
+            "z": 494.57,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/036.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 37,
+            "x": -1034.297,
+            "y": 2178.453,
+            "z": 180.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/037.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 40,
+            "x": -597.962,
+            "y": -2077.663,
+            "z": 543.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/040.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 53,
+            "x": -1518.597,
+            "y": -1800.093,
+            "z": 163.45,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/053.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 83,
+            "x": 2099.058,
+            "y": 2097.509,
+            "z": 160.85,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/083.png",
+            "name": "test16"
+        },
+        {
+            "csv_index": 87,
+            "x": 1473.266,
+            "y": -2051.533,
+            "z": 1197.61,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/087.png",
+            "name": "test17"
+        },
+        {
+            "csv_index": 88,
+            "x": -188.903,
+            "y": 2206.502,
+            "z": 120.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_IndustrialArea_Maps_IndustrialArea/frames/088.png",
+            "name": "test18"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

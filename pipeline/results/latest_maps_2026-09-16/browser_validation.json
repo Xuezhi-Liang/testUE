@@ -1,0 +1,24 @@
+{
+  "videos": [
+    {
+      "map": "downtown",
+      "time": 1.473216,
+      "duration": 118.5,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    },
+    {
+      "map": "chemical",
+      "time": 1.46795,
+      "duration": 118.5,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    }
+  ],
+  "mobile_overflow": false,
+  "javascript_errors": [],
+  "range_requests": 206,
+  "previous_pages": 200
+}

@@ -1,0 +1,92 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": -461,
+            "y": 68,
+            "z": 2000
+        },
+        {
+            "name": "test2",
+            "x": -417,
+            "y": -25,
+            "z": 2000
+        },
+        {
+            "csv_index": 2,
+            "x": 71.262,
+            "y": 8.626,
+            "z": 3033.22,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Lighthouse_Island_Levels_Lighthouse_Demo_00/frames/002.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 6,
+            "x": 1485.525,
+            "y": -2081.206,
+            "z": 1558.57,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Lighthouse_Island_Levels_Lighthouse_Demo_00/frames/006.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 7,
+            "x": -1084.026,
+            "y": 2077.504,
+            "z": 2528.95,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Lighthouse_Island_Levels_Lighthouse_Demo_00/frames/007.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 8,
+            "x": -585.987,
+            "y": 1610.244,
+            "z": 2528.95,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Lighthouse_Island_Levels_Lighthouse_Demo_00/frames/008.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 10,
+            "x": 3156.879,
+            "y": -202.719,
+            "z": 1536.3,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Lighthouse_Island_Levels_Lighthouse_Demo_00/frames/010.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 13,
+            "x": 2143.345,
+            "y": -653.289,
+            "z": 1579.72,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Lighthouse_Island_Levels_Lighthouse_Demo_00/frames/013.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 15,
+            "x": -824.07,
+            "y": -920.375,
+            "z": 1472.75,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Lighthouse_Island_Levels_Lighthouse_Demo_00/frames/015.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 46,
+            "x": 1689.517,
+            "y": -587.897,
+            "z": 1493.38,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Lighthouse_Island_Levels_Lighthouse_Demo_00/frames/046.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 80,
+            "x": -1130.699,
+            "y": 221.772,
+            "z": 1905.12,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Lighthouse_Island_Levels_Lighthouse_Demo_00/frames/080.png",
+            "name": "test11"
+        }
+    ],
+    "noise": {
+        "x": 100,
+        "y": 100
+    }
+}

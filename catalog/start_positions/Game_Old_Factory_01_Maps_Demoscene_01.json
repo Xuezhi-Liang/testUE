@@ -1,0 +1,136 @@
+{
+    "positions": [
+        {
+            "csv_index": 1,
+            "x": -5909.795,
+            "y": 769.314,
+            "z": 511.74,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/001.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 2,
+            "x": -10312.499,
+            "y": -2728.391,
+            "z": 1060.93,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/002.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 3,
+            "x": -8965.139,
+            "y": 5228.805,
+            "z": 1004.39,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/003.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 4,
+            "x": -4385.366,
+            "y": 12384.833,
+            "z": 121.55,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/004.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 5,
+            "x": -4663.078,
+            "y": 7331.196,
+            "z": 1643.97,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/005.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 6,
+            "x": -10098.727,
+            "y": 11375.928,
+            "z": 985.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/006.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 7,
+            "x": -3715.599,
+            "y": -2981.297,
+            "z": 236.37,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/007.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 8,
+            "x": -8789.877,
+            "y": 461.871,
+            "z": 1809.51,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/008.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 9,
+            "x": -5753.497,
+            "y": 12921.773,
+            "z": 1049.04,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/009.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 10,
+            "x": -9643.822,
+            "y": 13029.245,
+            "z": 1746.63,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/010.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 11,
+            "x": -2585.48,
+            "y": -776.929,
+            "z": 393.68,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/011.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 12,
+            "x": -9547.513,
+            "y": 6709.94,
+            "z": 1746.63,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/012.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 13,
+            "x": -5696.883,
+            "y": 10470.943,
+            "z": 583.82,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/013.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 15,
+            "x": -12194.66,
+            "y": -892.66,
+            "z": 484.73,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/015.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 18,
+            "x": -8385.276,
+            "y": 8771.234,
+            "z": 192.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/018.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 25,
+            "x": -3100.058,
+            "y": 4023.763,
+            "z": 673.37,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Old_Factory_01_Maps_Demoscene_01/frames/025.png",
+            "name": "test16"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

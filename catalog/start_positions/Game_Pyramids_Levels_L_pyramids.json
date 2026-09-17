@@ -1,0 +1,160 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": -11324.227,
+            "y": -45515.647,
+            "z": -342.04,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 1,
+            "x": -1819.169,
+            "y": -15457.22,
+            "z": -152.46,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/001.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 2,
+            "x": -7979.199,
+            "y": -45872.835,
+            "z": -108.73,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/002.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 3,
+            "x": 31988.413,
+            "y": -36536.693,
+            "z": 744.13,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/003.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 5,
+            "x": -8184.495,
+            "y": -56957.647,
+            "z": 1063.22,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/005.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 6,
+            "x": 72920.052,
+            "y": 30341.907,
+            "z": 1210.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/006.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 9,
+            "x": -20449.973,
+            "y": -40903.726,
+            "z": -1680.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/009.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 15,
+            "x": 75441.575,
+            "y": -37410.811,
+            "z": 2567.96,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/015.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 16,
+            "x": -26998.07,
+            "y": -33268.934,
+            "z": -794.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/016.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 18,
+            "x": -22581.248,
+            "y": -29205.059,
+            "z": -669.36,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/018.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 19,
+            "x": 7722.019,
+            "y": -8891.955,
+            "z": 433.48,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/019.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 22,
+            "x": -9486.538,
+            "y": -48306.463,
+            "z": -160.62,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/022.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 25,
+            "x": 72336.285,
+            "y": 34755.287,
+            "z": 1204.09,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/025.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 34,
+            "x": 3224.148,
+            "y": 5126.979,
+            "z": 1535.01,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/034.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 46,
+            "x": 59244.291,
+            "y": 41114.757,
+            "z": 1972.58,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/046.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 53,
+            "x": 3973.48,
+            "y": 1584.707,
+            "z": 324.42,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/053.png",
+            "name": "test16"
+        },
+        {
+            "csv_index": 78,
+            "x": 74096.783,
+            "y": -29677.776,
+            "z": 1181.44,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/078.png",
+            "name": "test17"
+        },
+        {
+            "csv_index": 79,
+            "x": 42730.485,
+            "y": -39494.111,
+            "z": -1220.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/079.png",
+            "name": "test18"
+        },
+        {
+            "csv_index": 98,
+            "x": -17707.589,
+            "y": -35417.586,
+            "z": -780.7,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Pyramids_Levels_L_pyramids/frames/098.png",
+            "name": "test19"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

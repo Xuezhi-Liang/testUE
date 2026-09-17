@@ -1,0 +1,12 @@
+{
+ "episode_id": "Game_ForestGasStation_Maps_Demo__coverage_walk__seed3021__lv_Game_ForestGasStation_Maps_Demo__s01",
+ "accepted": null,
+ "gates_run": false,
+ "gates": [],
+ "gates_passed": 0,
+ "gates_failed": 0,
+ "gates_skipped": 0,
+ "reason": "the acceptance gates were not run for this episode. `accepted` is null, which means UNJUDGED - not passing and not failing. Nothing here asserts the data is sound; equally, nothing here asserts it is not. Run longvideo/readjudicate.py against this prefix to compute a verdict.",
+ "frames": 452160,
+ "planned_frames": 452160
+}

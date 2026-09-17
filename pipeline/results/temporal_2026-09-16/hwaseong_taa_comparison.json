@@ -1,0 +1,230 @@
+{
+  "baseline": "/home/ubuntu/ue_flicker_20260916/hwaseong/fresh_ss2/hwaseong_probe",
+  "metric_note": "Flow-compensated residual includes optical-flow error and disocclusion. Review footage for ghosting and lost detail.",
+  "episodes": {
+    "fresh_ss2": {
+      "moving_pairs": 40,
+      "static_pairs": 40,
+      "motion_residual_mean": 2.97120201587677,
+      "motion_sparkle_pct": 0.9839302656546489,
+      "static_diff": 0.19468822330236435,
+      "sharpness": 493.13723001509004,
+      "mean_luma": 153.02486002604167,
+      "near_black_pct": 1.2535807291666665,
+      "blown_pct": 0.00010850694444444444,
+      "frames": 876,
+      "position_difference_cm": 0.0,
+      "rotation_difference_deg": 0.0,
+      "depth_samples": [
+        {
+          "frame": 0,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 79,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 159,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 238,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 318,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 397,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 477,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 556,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 636,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 715,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 795,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 875,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        }
+      ]
+    },
+    "taa_ss2": {
+      "moving_pairs": 40,
+      "static_pairs": 40,
+      "motion_residual_mean": 2.030745506286621,
+      "motion_sparkle_pct": 0.22147770398481972,
+      "static_diff": 0.8174372315406799,
+      "sharpness": 379.9130807953252,
+      "mean_luma": 151.05305338541666,
+      "near_black_pct": 1.2692599826388888,
+      "blown_pct": 0.0,
+      "frames": 876,
+      "position_difference_cm": 0.0,
+      "rotation_difference_deg": 0.0,
+      "depth_samples": [
+        {
+          "frame": 0,
+          "exact_equal": false,
+          "max_abs_m": 208.125,
+          "equal_pixel_pct": 98.90983072916667,
+          "valid_mask_agreement_pct": 99.97352430555554,
+          "p99_abs_m": 0.03125
+        },
+        {
+          "frame": 79,
+          "exact_equal": false,
+          "max_abs_m": 49.90625,
+          "equal_pixel_pct": 99.99869791666667,
+          "valid_mask_agreement_pct": 99.99869791666667,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 159,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 238,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 318,
+          "exact_equal": false,
+          "max_abs_m": 44.5,
+          "equal_pixel_pct": 99.99869791666667,
+          "valid_mask_agreement_pct": 99.99967447916667,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 397,
+          "exact_equal": false,
+          "max_abs_m": 135.25,
+          "equal_pixel_pct": 99.99761284722221,
+          "valid_mask_agreement_pct": 99.99848090277777,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 477,
+          "exact_equal": false,
+          "max_abs_m": 72.296875,
+          "equal_pixel_pct": 99.99978298611111,
+          "valid_mask_agreement_pct": 99.99989149305556,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 556,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 636,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 715,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 795,
+          "exact_equal": false,
+          "max_abs_m": 78.375,
+          "equal_pixel_pct": 99.99967447916667,
+          "valid_mask_agreement_pct": 99.99967447916667,
+          "p99_abs_m": 0.0
+        },
+        {
+          "frame": 875,
+          "exact_equal": true,
+          "max_abs_m": 0.0,
+          "equal_pixel_pct": 100.0,
+          "valid_mask_agreement_pct": 100.0,
+          "p99_abs_m": 0.0
+        }
+      ]
+    }
+  }
+}

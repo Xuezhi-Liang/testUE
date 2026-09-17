@@ -1,0 +1,96 @@
+{
+    "positions": [
+        {
+            "csv_index": 2,
+            "x": 1839.974,
+            "y": -244.299,
+            "z": 194.19,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_QA_HoldingCells_Maps_QA_Holding_Cells_A/frames/002.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 3,
+            "x": 1512.413,
+            "y": -173.308,
+            "z": 269.1,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_QA_HoldingCells_Maps_QA_Holding_Cells_A/frames/003.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 9,
+            "x": 1982.421,
+            "y": -247.112,
+            "z": 152.06,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_QA_HoldingCells_Maps_QA_Holding_Cells_A/frames/009.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 10,
+            "x": 706.434,
+            "y": -88.556,
+            "z": 175.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_QA_HoldingCells_Maps_QA_Holding_Cells_A/frames/010.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 11,
+            "x": 1817.694,
+            "y": -130.42,
+            "z": 175.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_QA_HoldingCells_Maps_QA_Holding_Cells_A/frames/011.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 19,
+            "x": 248.907,
+            "y": 200.719,
+            "z": 400.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_QA_HoldingCells_Maps_QA_Holding_Cells_A/frames/019.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 24,
+            "x": 603.288,
+            "y": -112.444,
+            "z": 175.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_QA_HoldingCells_Maps_QA_Holding_Cells_A/frames/024.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 25,
+            "x": 1547.885,
+            "y": -215.518,
+            "z": 248.34,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_QA_HoldingCells_Maps_QA_Holding_Cells_A/frames/025.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 28,
+            "x": 729.483,
+            "y": -166.068,
+            "z": 165.35,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_QA_HoldingCells_Maps_QA_Holding_Cells_A/frames/028.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 29,
+            "x": 247.672,
+            "y": -33.881,
+            "z": 402.23,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_QA_HoldingCells_Maps_QA_Holding_Cells_A/frames/029.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 34,
+            "x": 505.839,
+            "y": 187.471,
+            "z": 247.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_QA_HoldingCells_Maps_QA_Holding_Cells_A/frames/034.png",
+            "name": "test11"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

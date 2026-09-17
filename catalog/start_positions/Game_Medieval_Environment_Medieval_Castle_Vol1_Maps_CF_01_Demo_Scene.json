@@ -1,0 +1,184 @@
+{
+    "positions": [
+        {
+            "csv_index": 0,
+            "x": -13878.166,
+            "y": 15959.249,
+            "z": 11112.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/000.png",
+            "name": "test1"
+        },
+        {
+            "csv_index": 2,
+            "x": -23678.191,
+            "y": 1531.699,
+            "z": 13710.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/002.png",
+            "name": "test2"
+        },
+        {
+            "csv_index": 3,
+            "x": -27008.847,
+            "y": 7467.717,
+            "z": 13000.5,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/003.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 4,
+            "x": -28394.147,
+            "y": -3018.283,
+            "z": 13700.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/004.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 5,
+            "x": -29658.814,
+            "y": 5745.628,
+            "z": 12600.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/005.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 8,
+            "x": -23920.753,
+            "y": 12119.331,
+            "z": 10761.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/008.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 9,
+            "x": -21789.475,
+            "y": 7119.986,
+            "z": 12600.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/009.png",
+            "name": "test7"
+        },
+        {
+            "csv_index": 10,
+            "x": -26549.087,
+            "y": 4143.969,
+            "z": 12413.33,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/010.png",
+            "name": "test8"
+        },
+        {
+            "csv_index": 11,
+            "x": -17170.447,
+            "y": 24417.33,
+            "z": 10689.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/011.png",
+            "name": "test9"
+        },
+        {
+            "csv_index": 12,
+            "x": -20754.399,
+            "y": 8451.902,
+            "z": 11900.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/012.png",
+            "name": "test10"
+        },
+        {
+            "csv_index": 13,
+            "x": -24332.64,
+            "y": 2065.915,
+            "z": 12432.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/013.png",
+            "name": "test11"
+        },
+        {
+            "csv_index": 15,
+            "x": -24690.023,
+            "y": 1843.975,
+            "z": 13405.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/015.png",
+            "name": "test12"
+        },
+        {
+            "csv_index": 16,
+            "x": -26892.582,
+            "y": 12670.629,
+            "z": 11300.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/016.png",
+            "name": "test13"
+        },
+        {
+            "csv_index": 17,
+            "x": -25535.745,
+            "y": 15462.057,
+            "z": 11563.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/017.png",
+            "name": "test14"
+        },
+        {
+            "csv_index": 18,
+            "x": -23630.814,
+            "y": -501.335,
+            "z": 12600.93,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/018.png",
+            "name": "test15"
+        },
+        {
+            "csv_index": 19,
+            "x": -23682.682,
+            "y": 1442.965,
+            "z": 13409.9,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/019.png",
+            "name": "test16"
+        },
+        {
+            "csv_index": 22,
+            "x": -25004.636,
+            "y": 6725.869,
+            "z": 12500.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/022.png",
+            "name": "test17"
+        },
+        {
+            "csv_index": 25,
+            "x": -28325.876,
+            "y": -4701.616,
+            "z": 13695.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/025.png",
+            "name": "test18"
+        },
+        {
+            "csv_index": 26,
+            "x": -26593.809,
+            "y": 12828.736,
+            "z": 11300.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/026.png",
+            "name": "test19"
+        },
+        {
+            "csv_index": 29,
+            "x": -20360.41,
+            "y": 19977.742,
+            "z": 10630.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/029.png",
+            "name": "test20"
+        },
+        {
+            "csv_index": 30,
+            "x": -27562.051,
+            "y": 13617.182,
+            "z": 11310.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/030.png",
+            "name": "test21"
+        },
+        {
+            "csv_index": 31,
+            "x": -16783.915,
+            "y": 13864.94,
+            "z": 10689.0,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/maps_no_ai/v2/Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene/frames/031.png",
+            "name": "test22"
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

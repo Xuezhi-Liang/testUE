@@ -1,0 +1,83 @@
+{
+  "web": "http://51.20.82.218:8500/longvideo/latest-config-20260916/",
+  "maps": {
+    "downtown": {
+      "frames": 2844,
+      "duration_s": 118.5,
+      "render": {
+        "exposure": "auto_instant",
+        "motion_blur": false,
+        "depth_of_field": false,
+        "lumen": "project_default",
+        "taa": "tsr",
+        "hud": false,
+        "exposure_bias_ev": null,
+        "lighting": "fill",
+        "skylight_factor": "auto",
+        "history_mode": 4,
+        "local_exposure": {
+          "shadow_scale": 0.65,
+          "highlight_scale": 0.0,
+          "detail_strength": 1.0
+        },
+        "supersample": 2,
+        "cvars": [
+          "r.AntiAliasingMethod 4"
+        ]
+      },
+      "pose_tracking": {
+        "pos_error_cm_mean": 0.0,
+        "pos_error_cm_max": 0.0,
+        "yaw_error_deg_mean": 0.0,
+        "yaw_error_deg_max": 0.0
+      },
+      "chosen_fill_factor": 3.0,
+      "calibration_bar_missed": false,
+      "trace_summary": {
+        "comparable": 32,
+        "within_15cm": 21,
+        "max_error_cm": 154.4477930156546
+      }
+    },
+    "chemical": {
+      "frames": 2844,
+      "duration_s": 118.5,
+      "render": {
+        "exposure": "auto_instant",
+        "motion_blur": false,
+        "depth_of_field": false,
+        "lumen": "project_default",
+        "taa": "tsr",
+        "hud": false,
+        "exposure_bias_ev": null,
+        "lighting": "fill",
+        "skylight_factor": "auto",
+        "history_mode": 4,
+        "local_exposure": {
+          "shadow_scale": 0.65,
+          "highlight_scale": 0.0,
+          "detail_strength": 1.0
+        },
+        "supersample": 2,
+        "cvars": [
+          "r.AntiAliasingMethod 4"
+        ]
+      },
+      "pose_tracking": {
+        "pos_error_cm_mean": 0.0,
+        "pos_error_cm_max": 0.0,
+        "yaw_error_deg_mean": 0.0,
+        "yaw_error_deg_max": 0.0
+      },
+      "chosen_fill_factor": 1.5,
+      "calibration_bar_missed": true,
+      "trace_summary": {
+        "comparable": 32,
+        "within_15cm": 30,
+        "max_error_cm": 183.21752073259373
+      }
+    }
+  },
+  "capture_engine_sha256": "305e8c6a81a04a331f404bc22af58015c83e199e91faa2a50848e2b11f27186b",
+  "template_sha256": "d1ddff7f717725502edd8a1ecfe0f4e6f0371af59022486ebb98a3adb3ec8577"
+}

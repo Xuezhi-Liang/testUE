@@ -1,0 +1,184 @@
+{
+  "factor": 3.0,
+  "calibration": {
+    "map_id": "/Game/MiddleEast/Maps/MiddleEast",
+    "poses": 12,
+    "factors_tried": [
+      1.0,
+      1.5,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "bar": {
+      "max_black": 0.03,
+      "max_blown": 0.01,
+      "min_contrast_ratio": 0.8,
+      "p50_ratio": [
+        0.6,
+        1.6
+      ],
+      "p50_floor": 30
+    },
+    "reference": {
+      "p10": 0,
+      "p50": 189,
+      "p99": 236,
+      "black_frac": 0.15586,
+      "blown_frac": 0.0,
+      "contrast": 233
+    },
+    "trials": [
+      {
+        "factor": 1.0,
+        "chosen_ev": 11.5,
+        "p10": 12,
+        "p50": 196,
+        "p99": 237,
+        "black_frac": 0.07917,
+        "blown_frac": 0.0,
+        "contrast": 225,
+        "contrast_ratio": 0.9656652360515021,
+        "p50_ratio": 1.037037037037037,
+        "target_p50": 189,
+        "violation": 1.6390000000000002,
+        "checks": {
+          "black": false,
+          "blown": true,
+          "contrast": true,
+          "brightness": true
+        },
+        "passes": false,
+        "fill": {
+          "base_intensity": 1.0,
+          "fill_skylight": {
+            "ok": true,
+            "actor": "SkyLight_1",
+            "intensity": 1.0
+          }
+        }
+      },
+      {
+        "factor": 1.5,
+        "chosen_ev": 11.5,
+        "p10": 26,
+        "p50": 197,
+        "p99": 237,
+        "black_frac": 0.06062,
+        "blown_frac": 0.0,
+        "contrast": 211,
+        "contrast_ratio": 0.9055793991416309,
+        "p50_ratio": 1.0423280423280423,
+        "target_p50": 189,
+        "violation": 1.0206666666666668,
+        "checks": {
+          "black": false,
+          "blown": true,
+          "contrast": true,
+          "brightness": true
+        },
+        "passes": false,
+        "fill": {
+          "base_intensity": 1.0,
+          "fill_skylight": {
+            "ok": true,
+            "actor": "SkyLight_2",
+            "intensity": 1.5
+          }
+        }
+      },
+      {
+        "factor": 2.0,
+        "chosen_ev": 11.5,
+        "p10": 40,
+        "p50": 197,
+        "p99": 238,
+        "black_frac": 0.05024,
+        "blown_frac": 0.0,
+        "contrast": 198,
+        "contrast_ratio": 0.8497854077253219,
+        "p50_ratio": 1.0423280423280423,
+        "target_p50": 189,
+        "violation": 0.6746666666666667,
+        "checks": {
+          "black": false,
+          "blown": true,
+          "contrast": true,
+          "brightness": true
+        },
+        "passes": false,
+        "fill": {
+          "base_intensity": 1.0,
+          "fill_skylight": {
+            "ok": true,
+            "actor": "SkyLight_3",
+            "intensity": 2.0
+          }
+        }
+      },
+      {
+        "factor": 3.0,
+        "chosen_ev": 11.5,
+        "p10": 68,
+        "p50": 199,
+        "p99": 240,
+        "black_frac": 0.03348,
+        "blown_frac": 0.0,
+        "contrast": 172,
+        "contrast_ratio": 0.7381974248927039,
+        "p50_ratio": 1.052910052910053,
+        "target_p50": 189,
+        "violation": 0.1778025751072963,
+        "checks": {
+          "black": false,
+          "blown": true,
+          "contrast": false,
+          "brightness": true
+        },
+        "passes": false,
+        "fill": {
+          "base_intensity": 1.0,
+          "fill_skylight": {
+            "ok": true,
+            "actor": "SkyLight_4",
+            "intensity": 3.0
+          }
+        }
+      },
+      {
+        "factor": 4.0,
+        "chosen_ev": 11.0,
+        "p10": 58,
+        "p50": 183,
+        "p99": 234,
+        "black_frac": 0.04516,
+        "blown_frac": 0.0,
+        "contrast": 176,
+        "contrast_ratio": 0.7553648068669528,
+        "p50_ratio": 0.9682539682539683,
+        "target_p50": 189,
+        "violation": 0.5499685264663805,
+        "checks": {
+          "black": false,
+          "blown": true,
+          "contrast": false,
+          "brightness": true
+        },
+        "passes": false,
+        "fill": {
+          "base_intensity": 1.0,
+          "fill_skylight": {
+            "ok": true,
+            "actor": "SkyLight_5",
+            "intensity": 4.0
+          }
+        }
+      }
+    ],
+    "chosen_factor": 3.0,
+    "chosen_ev": 11.5,
+    "quality_bar_missed": true,
+    "took_s": 48.7
+  },
+  "note": "Calibrated once using baseline; reuse this exact fill for the candidate."
+}

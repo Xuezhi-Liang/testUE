@@ -1,0 +1,29 @@
+# Generated or machine-local. Nothing here belongs in the repo.
+__pycache__/
+*.pyc
+*.log
+*.tar.gz
+
+# Recorded data and its intermediates. One episode is 1-2 GiB of JPEG and EXR.
+episodes/
+frozen/
+maps/
+nav/
+*.exr
+*.jpg
+*.jpeg
+*.mp4
+*.bin
+
+# Licensed content. The Fab and Epic asset packs are licensed to an individual account and are
+# NOT redistributable; they must never be committed here.
+Content/
+*.umap
+*.uasset
+*.sqsh
+
+# Credentials.
+.aws/
+*.pem
+id_*
+*_deploy

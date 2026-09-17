@@ -1,0 +1,35 @@
+Content-Type: multipart/mixed; boundary="==LVBOUNDARY=="
+MIME-Version: 1.0
+
+--==LVBOUNDARY==
+Content-Type: text/cloud-config; charset="us-ascii"
+MIME-Version: 1.0
+
+#cloud-config
+# scripts-user is a PER-INSTANCE module by default, so a plain shell user-data runs on the first
+# boot and never again. A stop/start therefore brings the machine up with nothing running on it -
+# which is what happened to 15 recovery instances: they idled at 0% CPU for 70 minutes and the
+# console showed cloud-init's final stage finishing 0.05 s after it started. `always` makes it run
+# on every boot, which is what a tag-driven fleet needs: the tag is read by the boot script, so
+# re-tagging and starting is the whole control plane.
+cloud_final_modules:
+- [scripts-user, always]
+
+--==LVBOUNDARY==
+Content-Type: text/x-shellscript; charset="us-ascii"
+MIME-Version: 1.0
+
+#!/bin/bash
+# Long-video clone user-data: pull the latest boot script from S3 (hotfix channel that avoids
+# re-baking the 4 TB AMI), then hand off to it as ubuntu.
+#
+# mkdir first: the AMI is ue-campaign-20260818-1215, which predates longvideo/ entirely, so the
+# directory this writes into does not exist on a fresh clone. -H so the aws CLI reads ubuntu's
+# credentials - this instance family carries them in the home directory, not an IAM role.
+L=/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/longvideo
+sudo -u ubuntu -H mkdir -p "$L"
+sudo -u ubuntu -H aws s3 cp s3://pan-simworld/ue-revist-long-video/_ops/boot.sh "$L/boot.sh"
+chmod +x "$L/boot.sh"
+sudo -u ubuntu -i bash "$L/boot.sh" &
+
+--==LVBOUNDARY==--

@@ -1,0 +1,157 @@
+{
+ "episode_id": "Game_WinterTown_Maps_RussianWinterTownDemo01__nested_out_and_back__age35__seed5__batch5_winter_town_v3",
+ "accepted": false,
+ "accepted_seconds": 0.0,
+ "accepted_note": "Section 14 counts candidate, failed and incomplete data as 0 seconds. This episode is accepted for the gates that can be evaluated on this build; the skipped depth gates mean it is not a complete P0 episode under section 9 and must not be counted toward the final target.",
+ "p0_complete": true,
+ "p0_missing": [
+  "section 12 depth-visible overlap (computation not implemented)"
+ ],
+ "gates_passed": 23,
+ "gates_failed": 1,
+ "gates_skipped": 3,
+ "gates": [
+  {
+   "gate": "frame_count_matches_frozen",
+   "result": "pass",
+   "detail": "2844 recorded vs 2844 frozen"
+  },
+  {
+   "gate": "time_base_exact",
+   "result": "pass",
+   "detail": "max |t - frame/24| = 0.000e+00 s"
+  },
+  {
+   "gate": "video_decodes_fully",
+   "result": "pass",
+   "detail": "decoded 2844 of 2844 frames"
+  },
+  {
+   "gate": "resolution_matches_K",
+   "result": "pass",
+   "detail": "video 1280x720, K built for 1280x720"
+  },
+  {
+   "gate": "no_blank_frames",
+   "result": "pass",
+   "detail": "0 blank frames"
+  },
+  {
+   "gate": "no_duplicate_frames",
+   "result": "pass",
+   "detail": "0 near-identical consecutive frames"
+  },
+  {
+   "gate": "no_dead_black_regions",
+   "result": "pass",
+   "detail": "pixels zero in all channels: median 0.0% of the frame, worst 2.3%, 0 of 237 sampled frames over 10%. Above 10% means geometry is being drawn with the Default Material because its own material failed to compile - see materials_compiled for the asset names"
+  },
+  {
+   "gate": "materials_compiled",
+   "result": "FAIL",
+   "detail": "1 assets fell back to the Default Material: WinterTown/Particles/M_Fog"
+  },
+  {
+   "gate": "axis_semantics",
+   "result": "pass",
+   "detail": "forward->[640.0, 360.0], forward+right->[1280.0, 360.0], forward+up->[640.0, -280.0000000000001]"
+  },
+  {
+   "gate": "pose_tracking",
+   "result": "pass",
+   "detail": "max position error 0.000 mm (limit 20 mm, from section 12's 2 cm exact-revisit closure), p99 0.00 mm, max yaw error 0.0000 deg"
+  },
+  {
+   "gate": "route_reachable",
+   "result": "pass",
+   "detail": "143 poses placed with the real body: max lateral 3.472 cm (tolerance 20.0 cm), z 44.255 cm (expected - navmesh vs capsule rest height), 0 blocked"
+  },
+  {
+   "gate": "collision_free",
+   "result": "pass",
+   "detail": "0 capsule hits, 0 near-plane penetrations, min clearance 1314.1680908203125 cm"
+  },
+  {
+   "gate": "frame_translation_bounded",
+   "result": "pass",
+   "detail": "max 5.11 cm per frame"
+  },
+  {
+   "gate": "frame_rotation_bounded",
+   "result": "pass",
+   "detail": "max yaw rate 48.8 deg/s against tier 54.2 deg/s (limit 81.4); 0 frames over"
+  },
+  {
+   "gate": "revisit_age_matches_request",
+   "result": "pass",
+   "detail": "#1 requested 35.0 s realised 35.00 s; #2 requested 115.0 s realised 115.00 s"
+  },
+  {
+   "gate": "memory_anchor_is_not_first_frame",
+   "result": "pass",
+   "detail": "anchor window [0, 35]"
+  },
+  {
+   "gate": "revisit_pose_closure",
+   "result": "pass",
+   "detail": "#1 60.08 cm / 0.00 deg; #2 60.06 cm / 0.00 deg  [near limits 100 cm / 10 deg, project-chosen for 'near'; only 'exact' 2 cm/1 deg is from the spec]"
+  },
+  {
+   "gate": "speed_within_tier",
+   "result": "pass",
+   "detail": "p95 speed 1.22 m/s against tier fast 1.0-1.5 m/s"
+  },
+  {
+   "gate": "attitude_within_limits",
+   "result": "pass",
+   "detail": "max |pitch| 0.00 deg, max |roll| 0.00 deg"
+  },
+  {
+   "gate": "revisit_view_overlap_proxy",
+   "result": "pass",
+   "detail": "109 mutual ORB matches (5.5%), median displacement 21.6 px. Proxy only - NOT the section 12 depth-visible overlap, which needs depth this build cannot produce."
+  },
+  {
+   "gate": "metric_depth_present",
+   "result": "pass",
+   "detail": "2844 of 2844 frames carry depth, 0 files missing; EXR, linear metres in R, -1 = sky/beyond range"
+  },
+  {
+   "gate": "depth_not_empty",
+   "result": "pass",
+   "detail": "valid-pixel fraction: min 60.4%, median 79.1%, max 97.1%; 0 frames with no valid depth at all"
+  },
+  {
+   "gate": "depth_range_plausible",
+   "result": "pass",
+   "detail": "nearest 0.732 m, farthest 542.5 m across the episode (near clip and the 1000 m cutoff bound this)"
+  },
+  {
+   "gate": "no_geometry_penetration",
+   "result": "pass",
+   "detail": "nearest depth over the episode 0.761 m, 0 frames with geometry on the near clip plane, 0 frames with over 20% of the image inside 0.60 m - the camera never enters geometry"
+  },
+  {
+   "gate": "depth_visible_overlap",
+   "result": "skip",
+   "detail": "depth now exists, but the anchor/revisit overlap computation of section 12 (reproject anchor depth into the revisit view and z-buffer test it) is not implemented yet - the RGB feature proxy below is NOT it"
+  },
+  {
+   "gate": "fully_occluded_interval",
+   "result": "skip",
+   "detail": "needs the depth-visible overlap above"
+  },
+  {
+   "gate": "instance_semantic_masks",
+   "result": "skip",
+   "detail": "P1 modality, not captured in this pilot"
+  }
+ ],
+ "video_stats": {
+  "decoded_frames": 2844,
+  "blank": 0,
+  "duplicate": 0,
+  "width": 1280,
+  "height": 720
+ }
+}

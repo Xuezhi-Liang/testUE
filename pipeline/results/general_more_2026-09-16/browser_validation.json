@@ -1,0 +1,75 @@
+{
+  "checks": [
+    {
+      "map": "middleeast",
+      "variant": "taa_balanced",
+      "playback": [
+        {
+          "time": 0.963103,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 1.007314,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "winter",
+      "variant": "taa_balanced",
+      "playback": [
+        {
+          "time": 0.937432,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 1.004097,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    },
+    {
+      "map": "containers",
+      "variant": "taa_balanced",
+      "playback": [
+        {
+          "time": 0.944457,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        },
+        {
+          "time": 1.0042,
+          "duration": 25,
+          "width": 1280,
+          "error": null
+        }
+      ],
+      "seek": [
+        10,
+        10
+      ]
+    }
+  ],
+  "zoom_canvases": true,
+  "mobile_overflow": false,
+  "javascript_errors": [],
+  "previous_pages": 200,
+  "range_requests": 206
+}

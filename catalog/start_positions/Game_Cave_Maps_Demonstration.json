@@ -1,0 +1,60 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": 1320,
+            "y": 20,
+            "z": 100
+        },
+        {
+            "name": "test2",
+            "x": -3645,
+            "y": 295,
+            "z": 298
+        },
+        {
+            "csv_index": 1,
+            "x": 3395.354,
+            "y": -9808.903,
+            "z": 13830.39,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Cave_Maps_Demonstration/frames/001.png",
+            "name": "test3"
+        },
+        {
+            "csv_index": 5,
+            "x": -3939.923,
+            "y": 1598.091,
+            "z": 13830.39,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Cave_Maps_Demonstration/frames/005.png",
+            "name": "test4"
+        },
+        {
+            "csv_index": 7,
+            "x": 6830.639,
+            "y": -5275.455,
+            "z": -746.12,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Cave_Maps_Demonstration/frames/007.png",
+            "name": "test5"
+        },
+        {
+            "csv_index": 11,
+            "x": 797.766,
+            "y": 9719.273,
+            "z": 14600.68,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Cave_Maps_Demonstration/frames/011.png",
+            "name": "test6"
+        },
+        {
+            "csv_index": 25,
+            "x": -2775.631,
+            "y": 8010.944,
+            "z": 14045.43,
+            "frame_file": "/mnt/weka/home/yi.gu/arif/projects/tokenizer-data/simworld_unreal/repo/data-collection/collect_spawn_positions/positions/Game_Cave_Maps_Demonstration/frames/025.png",
+            "name": "test7"
+        }
+    ],
+    "noise": {
+        "x": 200,
+        "y": 200
+    }
+}

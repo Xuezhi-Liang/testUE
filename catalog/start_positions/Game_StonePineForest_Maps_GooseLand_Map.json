@@ -1,0 +1,32 @@
+{
+    "positions": [
+        {
+            "name": "test1",
+            "x": 400,
+            "y": 500,
+            "z": 300,
+            "csv_index": -1,
+            "frame_file": ""
+        },
+        {
+            "name": "test2",
+            "x": 4000,
+            "y": 5000,
+            "z": 3000,
+            "csv_index": -1,
+            "frame_file": ""
+        },
+        {
+            "name": "test3",
+            "x": -4000,
+            "y": -5000,
+            "z": -3000,
+            "csv_index": -1,
+            "frame_file": ""
+        }
+    ],
+    "noise": {
+        "x": 400,
+        "y": 400
+    }
+}

@@ -1,0 +1,13 @@
+# Captured media never goes in the repository: one episode is about 1-2 GiB of JPEG and EXR, and
+# episodes/ was 18 GiB when this was written. results/ carries the metadata only.
+episodes/
+frozen/
+logs/
+_qa/
+_cmp/
+__pycache__/
+*.mp4
+*.jpg
+*.png
+*.exr
+*.pyc

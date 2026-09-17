@@ -1,0 +1,47 @@
+{
+  "frames": 600,
+  "maps": {
+    "middleeast": {
+      "source": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/frozen/Game_MiddleEast_Maps_MiddleEast__nested_out_and_back__age35__seed13__batch6_middleeast.json",
+      "label": "中东街区",
+      "fill": "auto",
+      "note": "此资产包本身存在悬空建筑；本次保留原模型。照明校准未达到全部质量阈值，两版共用同一补光强度。"
+    },
+    "winter": {
+      "source": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/frozen/Game_WinterTown_Maps_RussianWinterTownDemo01__nested_out_and_back__age35__seed5__batch5_winter_town_v3.json",
+      "label": "雪城",
+      "fill": "auto"
+    },
+    "containers": {
+      "source": "/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/frozen/Game_ContainerYard_Maps_Demonstration_Day__nested_out_and_back__age35__seed21__batch7_containeryard.json",
+      "label": "集装箱场站",
+      "fill": "auto"
+    }
+  },
+  "variants": {
+    "baseline": {
+      "label": "当前 TSR 2×",
+      "ss": 2,
+      "cvars": {
+        "r.AntiAliasingMethod": 4
+      }
+    },
+    "taa_balanced": {
+      "label": "TAA 2× · 高分辨率历史与光照",
+      "ss": 2,
+      "cvars": {
+        "r.AntiAliasingMethod": 2,
+        "r.TemporalAA.HistoryScreenPercentage": 200,
+        "r.TemporalAA.Quality": 2,
+        "r.TemporalAACurrentFrameWeight": 0.04,
+        "r.TemporalAASamples": 8,
+        "r.Lumen.ScreenProbeGather.DownsampleFactor": 8,
+        "r.VolumetricFog.GridPixelSize": 8,
+        "r.VolumetricFog.GridSizeZ": 128,
+        "r.MaxAnisotropy": 16,
+        "r.MipMapLODBias": 0,
+        "r.Tonemapper.Sharpen": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+ "episode_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__coverage_walk__seed3307__lv_Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__r2s07",
+ "accepted": null,
+ "gates_run": false,
+ "gates": [],
+ "gates_passed": 0,
+ "gates_failed": 0,
+ "gates_skipped": 0,
+ "reason": "the acceptance gates were not run for this episode. `accepted` is null, which means UNJUDGED - not passing and not failing. Nothing here asserts the data is sound; equally, nothing here asserts it is not. Run longvideo/readjudicate.py against this prefix to compute a verdict.",
+ "frames": 190080,
+ "planned_frames": 190080
+}
