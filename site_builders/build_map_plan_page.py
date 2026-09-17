@@ -81,7 +81,7 @@ md += ["", "## 单独立项，不在上表", "",
 def _reorder(lines, a_key, l_key, end_key):
     ia = next(i for i, x in enumerate(lines) if a_key in x); il = next(i for i, x in enumerate(lines) if l_key in x); ie = next(i for i, x in enumerate(lines) if end_key in x)
     return lines[:ia] + lines[il:ie] + lines[ia:il] + lines[ie:]
-md = _reorder(md, "## A 类：可直接录", "## 两种统计口径（录制口径 = 按关卡）", "## 单独立项")
+md = _reorder(md, "## 对照：按资源包", "## 两种统计口径（录制口径 = 按关卡）", "## 单独立项")
 md[0] = "# 全部交付地图的录制规划（按关卡）"
 md[2] = "2026-09-17。口径：**从录制的角度数，一张关卡就是一个地图，一集视频**；87 个资源包展开成 442 张关卡，逐张归类。资源包视图保留在后面作对照。"
 (REPO / 'MAP_PLAN_2026-09-17.md').write_text('\n'.join(md) + '\n')
@@ -121,7 +121,7 @@ for i, x in enumerate(LA, 1):
 h.append("</table>")
 h.append("<h2>单独立项</h2><ul><li><b>Dubai Downtown</b>：64 GB，需 Cesium；悬浮模式录过 30 s 演示，地面无碰撞，要录先解决碰撞。</li><li><b>Lyra</b>：射击示例，非环境。</li><li><b>AdditionalSamples</b>：CitySample 82 GB / 439 张关卡是完整城市，值得单独评估；另两个不是环境。</li></ul>")
 h.append("<p class=mut>机器可读版：<code>revisit_pipeline/results/map_plan_2026-09-17/projects.json</code>；文档：<code>revisit_pipeline/MAP_PLAN_2026-09-17.md</code>。一遍耗时取自路线验证时的完整覆盖走法帧数（旧速度档），1 m/s 下会略短；存储按 1.5 GB/成片小时（166 GB / 108 h 实测）。</p>")
-h = _reorder(h, "A 类：可直接录（", "两种统计口径", "<h2>单独立项</h2>")
+h = _reorder(h, "对照：按资源包", "两种统计口径", "<h2>单独立项</h2>")
 h[1] = h[1].replace("全部交付地图的录制规划（按项目）", "全部交付地图的录制规划（按关卡）").replace("87 个资源包，每包一张代表关卡", "口径：一张关卡 = 一个地图 = 一集；442 张关卡逐张归类，资源包视图在后")
 (SITE / 'index.html').write_text('\n'.join(h))
 print('written', SITE / 'index.html', REPO / 'MAP_PLAN_2026-09-17.md', RES / 'projects.json')
