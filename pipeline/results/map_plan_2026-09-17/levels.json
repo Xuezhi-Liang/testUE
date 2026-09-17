@@ -34,11 +34,11 @@
   "mb": 25.6,
   "one_pass_min": 170.4,
   "recorded": false,
-  "episode_h": 5.7,
+  "episode_h": 8.5,
   "shards": 1,
-  "machine_h": 14.2,
-  "gb": 9,
-  "tier": "中"
+  "machine_h": 21.3,
+  "gb": 13,
+  "tier": "大"
  },
  {
   "fid": "Fab_002",
@@ -51,10 +51,10 @@
   "mb": 1.6,
   "one_pass_min": 45.3,
   "recorded": false,
-  "episode_h": 1.5,
+  "episode_h": 2.3,
   "shards": 1,
-  "machine_h": 3.8,
-  "gb": 2,
+  "machine_h": 5.7,
+  "gb": 3,
   "tier": "中"
  },
  {
@@ -80,10 +80,10 @@
   "mb": 135.6,
   "one_pass_min": 22.0,
   "recorded": true,
-  "episode_h": 0.7,
+  "episode_h": 1.1,
   "shards": 1,
-  "machine_h": 1.8,
-  "gb": 1,
+  "machine_h": 2.8,
+  "gb": 2,
   "tier": "小"
  },
  {
@@ -97,10 +97,10 @@
   "mb": 527.8,
   "one_pass_min": 139.1,
   "recorded": false,
-  "episode_h": 4.6,
+  "episode_h": 7.0,
   "shards": 1,
-  "machine_h": 11.6,
-  "gb": 7,
+  "machine_h": 17.4,
+  "gb": 11,
   "tier": "中"
  },
  {
@@ -126,11 +126,11 @@
   "mb": 64.3,
   "one_pass_min": 43.1,
   "recorded": false,
-  "episode_h": 1.4,
+  "episode_h": 2.2,
   "shards": 1,
-  "machine_h": 3.6,
-  "gb": 2,
-  "tier": "小"
+  "machine_h": 5.4,
+  "gb": 3,
+  "tier": "中"
  },
  {
   "fid": "Fab_004",
@@ -215,10 +215,10 @@
   "mb": 1.8,
   "one_pass_min": 21.7,
   "recorded": false,
-  "episode_h": 0.7,
+  "episode_h": 1.1,
   "shards": 1,
-  "machine_h": 1.8,
-  "gb": 1,
+  "machine_h": 2.7,
+  "gb": 2,
   "tier": "小"
  },
  {
@@ -232,10 +232,10 @@
   "mb": 12.8,
   "one_pass_min": 328.7,
   "recorded": false,
-  "episode_h": 11.0,
+  "episode_h": 16.4,
   "shards": 1,
-  "machine_h": 27.4,
-  "gb": 17,
+  "machine_h": 41.1,
+  "gb": 25,
   "tier": "大"
  },
  {
@@ -273,9 +273,9 @@
   "mb": 14.1,
   "one_pass_min": 15.8,
   "recorded": false,
-  "episode_h": 0.5,
+  "episode_h": 0.8,
   "shards": 1,
-  "machine_h": 1.3,
+  "machine_h": 2.0,
   "gb": 1,
   "tier": "小"
  },
@@ -290,10 +290,10 @@
   "mb": 232.5,
   "one_pass_min": 114.0,
   "recorded": false,
-  "episode_h": 3.8,
+  "episode_h": 5.7,
   "shards": 1,
-  "machine_h": 9.5,
-  "gb": 6,
+  "machine_h": 14.2,
+  "gb": 9,
   "tier": "中"
  },
  {
@@ -307,10 +307,10 @@
   "mb": 200.5,
   "one_pass_min": 218.3,
   "recorded": true,
-  "episode_h": 7.3,
+  "episode_h": 10.9,
   "shards": 1,
-  "machine_h": 18.2,
-  "gb": 11,
+  "machine_h": 27.3,
+  "gb": 17,
   "tier": "大"
  },
  {
@@ -372,11 +372,11 @@
   "mb": 8.0,
   "one_pass_min": 40.5,
   "recorded": false,
-  "episode_h": 1.4,
+  "episode_h": 2.0,
   "shards": 1,
-  "machine_h": 3.4,
-  "gb": 2,
-  "tier": "小"
+  "machine_h": 5.1,
+  "gb": 3,
+  "tier": "中"
  },
  {
   "fid": "Fab_010",
@@ -401,10 +401,10 @@
   "mb": 0.3,
   "one_pass_min": 8.0,
   "recorded": false,
-  "episode_h": 0.3,
+  "episode_h": 0.4,
   "shards": 1,
-  "machine_h": 0.7,
-  "gb": 0,
+  "machine_h": 1.0,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -430,10 +430,10 @@
   "mb": 1.9,
   "one_pass_min": 65.3,
   "recorded": false,
-  "episode_h": 2.2,
+  "episode_h": 3.3,
   "shards": 1,
-  "machine_h": 5.4,
-  "gb": 3,
+  "machine_h": 8.2,
+  "gb": 5,
   "tier": "中"
  },
  {
@@ -447,10 +447,10 @@
   "mb": 1.8,
   "one_pass_min": 72.4,
   "recorded": false,
-  "episode_h": 2.4,
+  "episode_h": 3.6,
   "shards": 1,
-  "machine_h": 6.0,
-  "gb": 4,
+  "machine_h": 9.1,
+  "gb": 6,
   "tier": "中"
  },
  {
@@ -464,11 +464,11 @@
   "mb": 2.0,
   "one_pass_min": 40.4,
   "recorded": false,
-  "episode_h": 1.3,
+  "episode_h": 2.0,
   "shards": 1,
-  "machine_h": 3.4,
-  "gb": 2,
-  "tier": "小"
+  "machine_h": 5.0,
+  "gb": 3,
+  "tier": "中"
  },
  {
   "fid": "Fab_012",
@@ -481,10 +481,10 @@
   "mb": 1.5,
   "one_pass_min": 183.4,
   "recorded": false,
-  "episode_h": 6.1,
+  "episode_h": 9.2,
   "shards": 1,
-  "machine_h": 15.3,
-  "gb": 9,
+  "machine_h": 22.9,
+  "gb": 14,
   "tier": "大"
  },
  {
@@ -534,10 +534,10 @@
   "mb": 6.3,
   "one_pass_min": 101.1,
   "recorded": false,
-  "episode_h": 3.4,
+  "episode_h": 5.1,
   "shards": 1,
-  "machine_h": 8.4,
-  "gb": 5,
+  "machine_h": 12.6,
+  "gb": 8,
   "tier": "中"
  },
  {
@@ -551,10 +551,10 @@
   "mb": 14.0,
   "one_pass_min": 102.6,
   "recorded": true,
-  "episode_h": 3.4,
+  "episode_h": 5.1,
   "shards": 1,
-  "machine_h": 8.6,
-  "gb": 5,
+  "machine_h": 12.8,
+  "gb": 8,
   "tier": "中"
  },
  {
@@ -580,10 +580,10 @@
   "mb": 4.5,
   "one_pass_min": 23.8,
   "recorded": false,
-  "episode_h": 0.8,
+  "episode_h": 1.2,
   "shards": 1,
-  "machine_h": 2.0,
-  "gb": 1,
+  "machine_h": 3.0,
+  "gb": 2,
   "tier": "小"
  },
  {
@@ -633,11 +633,11 @@
   "mb": 33.8,
   "one_pass_min": 166.8,
   "recorded": true,
-  "episode_h": 5.6,
+  "episode_h": 8.3,
   "shards": 1,
-  "machine_h": 13.9,
-  "gb": 9,
-  "tier": "中"
+  "machine_h": 20.9,
+  "gb": 13,
+  "tier": "大"
  },
  {
   "fid": "Fab_017",
@@ -1466,10 +1466,10 @@
   "mb": 89.0,
   "one_pass_min": 219.5,
   "recorded": true,
-  "episode_h": 7.3,
+  "episode_h": 11.0,
   "shards": 1,
-  "machine_h": 18.3,
-  "gb": 11,
+  "machine_h": 27.4,
+  "gb": 17,
   "tier": "大"
  },
  {
@@ -1495,10 +1495,10 @@
   "mb": 11.0,
   "one_pass_min": 114.9,
   "recorded": false,
-  "episode_h": 3.8,
+  "episode_h": 5.7,
   "shards": 1,
-  "machine_h": 9.6,
-  "gb": 6,
+  "machine_h": 14.4,
+  "gb": 9,
   "tier": "中"
  },
  {
@@ -1524,10 +1524,10 @@
   "mb": 6.9,
   "one_pass_min": 26.0,
   "recorded": false,
-  "episode_h": 0.9,
+  "episode_h": 1.3,
   "shards": 1,
-  "machine_h": 2.2,
-  "gb": 1,
+  "machine_h": 3.2,
+  "gb": 2,
   "tier": "小"
  },
  {
@@ -1577,9 +1577,9 @@
   "mb": 1.1,
   "one_pass_min": 6.2,
   "recorded": false,
-  "episode_h": 0.2,
+  "episode_h": 0.3,
   "shards": 1,
-  "machine_h": 0.5,
+  "machine_h": 0.8,
   "gb": 0,
   "tier": "小"
  },
@@ -1606,10 +1606,10 @@
   "mb": 150.3,
   "one_pass_min": 147.1,
   "recorded": false,
-  "episode_h": 4.9,
+  "episode_h": 7.4,
   "shards": 1,
-  "machine_h": 12.3,
-  "gb": 8,
+  "machine_h": 18.4,
+  "gb": 11,
   "tier": "中"
  },
  {
@@ -1635,10 +1635,10 @@
   "mb": 286.3,
   "one_pass_min": 132.8,
   "recorded": true,
-  "episode_h": 4.4,
+  "episode_h": 6.6,
   "shards": 1,
-  "machine_h": 11.1,
-  "gb": 7,
+  "machine_h": 16.6,
+  "gb": 10,
   "tier": "中"
  },
  {
@@ -1712,9 +1712,9 @@
   "mb": 55.6,
   "one_pass_min": 10.6,
   "recorded": false,
-  "episode_h": 0.4,
+  "episode_h": 0.5,
   "shards": 1,
-  "machine_h": 0.9,
+  "machine_h": 1.3,
   "gb": 1,
   "tier": "小"
  },
@@ -1789,10 +1789,10 @@
   "mb": 2.7,
   "one_pass_min": 198.1,
   "recorded": false,
-  "episode_h": 6.6,
+  "episode_h": 9.9,
   "shards": 1,
-  "machine_h": 16.5,
-  "gb": 10,
+  "machine_h": 24.8,
+  "gb": 15,
   "tier": "大"
  },
  {
@@ -1818,10 +1818,10 @@
   "mb": 3.7,
   "one_pass_min": 194.0,
   "recorded": false,
-  "episode_h": 6.5,
+  "episode_h": 9.7,
   "shards": 1,
-  "machine_h": 16.2,
-  "gb": 10,
+  "machine_h": 24.2,
+  "gb": 15,
   "tier": "大"
  },
  {
@@ -1895,10 +1895,10 @@
   "mb": 27.2,
   "one_pass_min": 109.6,
   "recorded": false,
-  "episode_h": 3.7,
+  "episode_h": 5.5,
   "shards": 1,
-  "machine_h": 9.1,
-  "gb": 6,
+  "machine_h": 13.7,
+  "gb": 8,
   "tier": "中"
  },
  {
@@ -1912,10 +1912,10 @@
   "mb": 28.2,
   "one_pass_min": 107.4,
   "recorded": false,
-  "episode_h": 3.6,
+  "episode_h": 5.4,
   "shards": 1,
-  "machine_h": 8.9,
-  "gb": 6,
+  "machine_h": 13.4,
+  "gb": 8,
   "tier": "中"
  },
  {
@@ -1929,10 +1929,10 @@
   "mb": 14.4,
   "one_pass_min": 60.4,
   "recorded": false,
-  "episode_h": 2.0,
+  "episode_h": 3.0,
   "shards": 1,
-  "machine_h": 5.0,
-  "gb": 3,
+  "machine_h": 7.5,
+  "gb": 5,
   "tier": "中"
  },
  {
@@ -1946,10 +1946,10 @@
   "mb": 52.6,
   "one_pass_min": 46.0,
   "recorded": true,
-  "episode_h": 1.5,
+  "episode_h": 2.3,
   "shards": 1,
-  "machine_h": 3.8,
-  "gb": 2,
+  "machine_h": 5.8,
+  "gb": 4,
   "tier": "中"
  },
  {
@@ -1975,10 +1975,10 @@
   "mb": 768.0,
   "one_pass_min": 49.5,
   "recorded": false,
-  "episode_h": 1.6,
+  "episode_h": 2.5,
   "shards": 1,
-  "machine_h": 4.1,
-  "gb": 3,
+  "machine_h": 6.2,
+  "gb": 4,
   "tier": "中"
  },
  {
@@ -2232,10 +2232,10 @@
   "mb": 0.6,
   "one_pass_min": 116.4,
   "recorded": false,
-  "episode_h": 3.9,
+  "episode_h": 5.8,
   "shards": 1,
-  "machine_h": 9.7,
-  "gb": 6,
+  "machine_h": 14.6,
+  "gb": 9,
   "tier": "中"
  },
  {
@@ -2285,9 +2285,9 @@
   "mb": 0.8,
   "one_pass_min": 3.2,
   "recorded": false,
-  "episode_h": 0.1,
+  "episode_h": 0.2,
   "shards": 1,
-  "machine_h": 0.3,
+  "machine_h": 0.4,
   "gb": 0,
   "tier": "小"
  },
@@ -2338,7 +2338,7 @@
   "mb": 0.6,
   "one_pass_min": 1.1,
   "recorded": false,
-  "episode_h": 0.0,
+  "episode_h": 0.1,
   "shards": 1,
   "machine_h": 0.1,
   "gb": 0,
@@ -2355,9 +2355,9 @@
   "mb": 0.5,
   "one_pass_min": 3.4,
   "recorded": false,
-  "episode_h": 0.1,
+  "episode_h": 0.2,
   "shards": 1,
-  "machine_h": 0.3,
+  "machine_h": 0.4,
   "gb": 0,
   "tier": "小"
  },
@@ -2386,7 +2386,7 @@
   "recorded": false,
   "episode_h": 0.1,
   "shards": 1,
-  "machine_h": 0.2,
+  "machine_h": 0.3,
   "gb": 0,
   "tier": "小"
  },
@@ -2403,7 +2403,7 @@
   "recorded": false,
   "episode_h": 0.1,
   "shards": 1,
-  "machine_h": 0.2,
+  "machine_h": 0.3,
   "gb": 0,
   "tier": "小"
  },
@@ -2718,10 +2718,10 @@
   "mb": 337.3,
   "one_pass_min": 157.1,
   "recorded": true,
-  "episode_h": 5.2,
+  "episode_h": 7.9,
   "shards": 1,
-  "machine_h": 13.1,
-  "gb": 8,
+  "machine_h": 19.6,
+  "gb": 12,
   "tier": "中"
  },
  {
@@ -2927,10 +2927,10 @@
   "mb": 43.1,
   "one_pass_min": 46.1,
   "recorded": true,
-  "episode_h": 1.5,
+  "episode_h": 2.3,
   "shards": 1,
-  "machine_h": 3.8,
-  "gb": 2,
+  "machine_h": 5.8,
+  "gb": 4,
   "tier": "中"
  },
  {
@@ -3100,10 +3100,10 @@
   "mb": 89.9,
   "one_pass_min": 63.3,
   "recorded": false,
-  "episode_h": 2.1,
+  "episode_h": 3.2,
   "shards": 1,
-  "machine_h": 5.3,
-  "gb": 3,
+  "machine_h": 7.9,
+  "gb": 5,
   "tier": "中"
  },
  {
@@ -3117,9 +3117,9 @@
   "mb": 90.6,
   "one_pass_min": 18.6,
   "recorded": false,
-  "episode_h": 0.6,
+  "episode_h": 0.9,
   "shards": 1,
-  "machine_h": 1.6,
+  "machine_h": 2.3,
   "gb": 1,
   "tier": "小"
  },
@@ -3182,9 +3182,9 @@
   "mb": 5.9,
   "one_pass_min": 14.2,
   "recorded": false,
-  "episode_h": 0.5,
+  "episode_h": 0.7,
   "shards": 1,
-  "machine_h": 1.2,
+  "machine_h": 1.8,
   "gb": 1,
   "tier": "小"
  },
@@ -3223,10 +3223,10 @@
   "mb": 390.7,
   "one_pass_min": 20.3,
   "recorded": false,
-  "episode_h": 0.7,
+  "episode_h": 1.0,
   "shards": 1,
-  "machine_h": 1.7,
-  "gb": 1,
+  "machine_h": 2.5,
+  "gb": 2,
   "tier": "小"
  },
  {
@@ -3240,11 +3240,11 @@
   "mb": 303.7,
   "one_pass_min": 165.9,
   "recorded": false,
-  "episode_h": 5.5,
+  "episode_h": 8.3,
   "shards": 1,
-  "machine_h": 13.8,
-  "gb": 8,
-  "tier": "中"
+  "machine_h": 20.7,
+  "gb": 13,
+  "tier": "大"
  },
  {
   "fid": "Fab_047",
@@ -3281,10 +3281,10 @@
   "mb": 17.6,
   "one_pass_min": 85.8,
   "recorded": false,
-  "episode_h": 2.9,
+  "episode_h": 4.3,
   "shards": 1,
-  "machine_h": 7.1,
-  "gb": 4,
+  "machine_h": 10.7,
+  "gb": 7,
   "tier": "中"
  },
  {
@@ -3298,11 +3298,11 @@
   "mb": 19.1,
   "one_pass_min": null,
   "recorded": true,
-  "episode_h": 6.0,
+  "episode_h": 9.0,
   "shards": 1,
-  "machine_h": 15.0,
-  "gb": 9,
-  "tier": "中(估)"
+  "machine_h": 22.5,
+  "gb": 14,
+  "tier": "大"
  },
  {
   "fid": "Fab_048",
@@ -3351,10 +3351,10 @@
   "mb": 13.5,
   "one_pass_min": 81.8,
   "recorded": false,
-  "episode_h": 2.7,
+  "episode_h": 4.1,
   "shards": 1,
-  "machine_h": 6.8,
-  "gb": 4,
+  "machine_h": 10.2,
+  "gb": 6,
   "tier": "中"
  },
  {
@@ -3428,10 +3428,10 @@
   "mb": 153.7,
   "one_pass_min": 153.8,
   "recorded": false,
-  "episode_h": 5.1,
+  "episode_h": 7.7,
   "shards": 1,
-  "machine_h": 12.8,
-  "gb": 8,
+  "machine_h": 19.2,
+  "gb": 12,
   "tier": "中"
  },
  {
@@ -3457,10 +3457,10 @@
   "mb": 2.5,
   "one_pass_min": 101.6,
   "recorded": false,
-  "episode_h": 3.4,
+  "episode_h": 5.1,
   "shards": 1,
-  "machine_h": 8.5,
-  "gb": 5,
+  "machine_h": 12.7,
+  "gb": 8,
   "tier": "中"
  },
  {
@@ -3486,10 +3486,10 @@
   "mb": 16.9,
   "one_pass_min": 67.9,
   "recorded": false,
-  "episode_h": 2.3,
+  "episode_h": 3.4,
   "shards": 1,
-  "machine_h": 5.7,
-  "gb": 3,
+  "machine_h": 8.5,
+  "gb": 5,
   "tier": "中"
  },
  {
@@ -3529,7 +3529,7 @@
   "recorded": false,
   "episode_h": 0.2,
   "shards": 1,
-  "machine_h": 0.4,
+  "machine_h": 0.6,
   "gb": 0,
   "tier": "小"
  },
@@ -3592,10 +3592,10 @@
   "mb": 82.1,
   "one_pass_min": 52.9,
   "recorded": true,
-  "episode_h": 1.8,
+  "episode_h": 2.6,
   "shards": 1,
-  "machine_h": 4.4,
-  "gb": 3,
+  "machine_h": 6.6,
+  "gb": 4,
   "tier": "中"
  },
  {
@@ -3645,10 +3645,10 @@
   "mb": 22.1,
   "one_pass_min": 108.7,
   "recorded": false,
-  "episode_h": 3.6,
+  "episode_h": 5.4,
   "shards": 1,
-  "machine_h": 9.1,
-  "gb": 6,
+  "machine_h": 13.6,
+  "gb": 8,
   "tier": "中"
  },
  {
@@ -3674,10 +3674,10 @@
   "mb": 11.1,
   "one_pass_min": 138.8,
   "recorded": false,
-  "episode_h": 4.6,
+  "episode_h": 6.9,
   "shards": 1,
-  "machine_h": 11.6,
-  "gb": 7,
+  "machine_h": 17.4,
+  "gb": 11,
   "tier": "中"
  },
  {
@@ -4159,10 +4159,10 @@
   "mb": 129.5,
   "one_pass_min": 33.7,
   "recorded": false,
-  "episode_h": 1.1,
+  "episode_h": 1.7,
   "shards": 1,
-  "machine_h": 2.8,
-  "gb": 2,
+  "machine_h": 4.2,
+  "gb": 3,
   "tier": "小"
  },
  {
@@ -4236,10 +4236,10 @@
   "mb": 6.6,
   "one_pass_min": 58.4,
   "recorded": false,
-  "episode_h": 1.9,
+  "episode_h": 2.9,
   "shards": 1,
-  "machine_h": 4.9,
-  "gb": 3,
+  "machine_h": 7.3,
+  "gb": 4,
   "tier": "中"
  },
  {
@@ -4265,10 +4265,10 @@
   "mb": 3.6,
   "one_pass_min": 46.0,
   "recorded": false,
-  "episode_h": 1.5,
+  "episode_h": 2.3,
   "shards": 1,
-  "machine_h": 3.8,
-  "gb": 2,
+  "machine_h": 5.8,
+  "gb": 4,
   "tier": "中"
  },
  {
@@ -4342,9 +4342,9 @@
   "mb": 9.7,
   "one_pass_min": 17.2,
   "recorded": false,
-  "episode_h": 0.6,
+  "episode_h": 0.9,
   "shards": 1,
-  "machine_h": 1.4,
+  "machine_h": 2.1,
   "gb": 1,
   "tier": "小"
  },
@@ -4407,10 +4407,10 @@
   "mb": 11.5,
   "one_pass_min": 22.3,
   "recorded": false,
-  "episode_h": 0.7,
+  "episode_h": 1.1,
   "shards": 1,
-  "machine_h": 1.9,
-  "gb": 1,
+  "machine_h": 2.8,
+  "gb": 2,
   "tier": "小"
  },
  {
@@ -4465,10 +4465,10 @@
   "mb": 8.7,
   "one_pass_min": 35.7,
   "recorded": false,
-  "episode_h": 1.2,
+  "episode_h": 1.8,
   "shards": 1,
-  "machine_h": 3.0,
-  "gb": 2,
+  "machine_h": 4.5,
+  "gb": 3,
   "tier": "小"
  },
  {
@@ -4530,10 +4530,10 @@
   "mb": 32.2,
   "one_pass_min": 102.6,
   "recorded": false,
-  "episode_h": 3.4,
+  "episode_h": 5.1,
   "shards": 1,
-  "machine_h": 8.6,
-  "gb": 5,
+  "machine_h": 12.8,
+  "gb": 8,
   "tier": "中"
  },
  {
@@ -4547,11 +4547,11 @@
   "mb": 19.5,
   "one_pass_min": null,
   "recorded": true,
-  "episode_h": 6.0,
+  "episode_h": 9.0,
   "shards": 1,
-  "machine_h": 15.0,
-  "gb": 9,
-  "tier": "中(估)"
+  "machine_h": 22.5,
+  "gb": 14,
+  "tier": "大"
  },
  {
   "fid": "Fab_066",
@@ -4588,9 +4588,9 @@
   "mb": 0.2,
   "one_pass_min": 13.6,
   "recorded": false,
-  "episode_h": 0.5,
+  "episode_h": 0.7,
   "shards": 1,
-  "machine_h": 1.1,
+  "machine_h": 1.7,
   "gb": 1,
   "tier": "小"
  },
@@ -4689,9 +4689,9 @@
   "mb": 0.9,
   "one_pass_min": 4.0,
   "recorded": false,
-  "episode_h": 0.1,
+  "episode_h": 0.2,
   "shards": 1,
-  "machine_h": 0.3,
+  "machine_h": 0.5,
   "gb": 0,
   "tier": "小"
  },
@@ -4706,10 +4706,10 @@
   "mb": 0.0,
   "one_pass_min": 8.6,
   "recorded": false,
-  "episode_h": 0.3,
+  "episode_h": 0.4,
   "shards": 1,
-  "machine_h": 0.7,
-  "gb": 0,
+  "machine_h": 1.1,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -4807,10 +4807,10 @@
   "mb": 68.9,
   "one_pass_min": 232.9,
   "recorded": true,
-  "episode_h": 7.8,
+  "episode_h": 11.6,
   "shards": 1,
-  "machine_h": 19.4,
-  "gb": 12,
+  "machine_h": 29.1,
+  "gb": 18,
   "tier": "大"
  },
  {
@@ -5028,9 +5028,9 @@
   "mb": 17.5,
   "one_pass_min": 19.2,
   "recorded": false,
-  "episode_h": 0.6,
+  "episode_h": 1.0,
   "shards": 1,
-  "machine_h": 1.6,
+  "machine_h": 2.4,
   "gb": 1,
   "tier": "小"
  },
@@ -5045,10 +5045,10 @@
   "mb": 17.0,
   "one_pass_min": 33.9,
   "recorded": false,
-  "episode_h": 1.1,
+  "episode_h": 1.7,
   "shards": 1,
-  "machine_h": 2.8,
-  "gb": 2,
+  "machine_h": 4.2,
+  "gb": 3,
   "tier": "小"
  },
  {
@@ -5074,10 +5074,10 @@
   "mb": 113.1,
   "one_pass_min": 61.8,
   "recorded": false,
-  "episode_h": 2.1,
+  "episode_h": 3.1,
   "shards": 1,
-  "machine_h": 5.2,
-  "gb": 3,
+  "machine_h": 7.7,
+  "gb": 5,
   "tier": "中"
  },
  {
@@ -5103,10 +5103,10 @@
   "mb": 84.7,
   "one_pass_min": 370.5,
   "recorded": false,
-  "episode_h": 12.3,
+  "episode_h": 18.5,
   "shards": 1,
-  "machine_h": 30.9,
-  "gb": 19,
+  "machine_h": 46.3,
+  "gb": 28,
   "tier": "大"
  },
  {
@@ -5156,10 +5156,10 @@
   "mb": 15.5,
   "one_pass_min": 8.3,
   "recorded": false,
-  "episode_h": 0.3,
+  "episode_h": 0.4,
   "shards": 1,
-  "machine_h": 0.7,
-  "gb": 0,
+  "machine_h": 1.0,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -5185,10 +5185,10 @@
   "mb": 7.5,
   "one_pass_min": 27.0,
   "recorded": false,
-  "episode_h": 0.9,
+  "episode_h": 1.4,
   "shards": 1,
-  "machine_h": 2.2,
-  "gb": 1,
+  "machine_h": 3.4,
+  "gb": 2,
   "tier": "小"
  },
  {
@@ -5202,10 +5202,10 @@
   "mb": 7.5,
   "one_pass_min": 67.6,
   "recorded": true,
-  "episode_h": 2.3,
+  "episode_h": 3.4,
   "shards": 1,
-  "machine_h": 5.6,
-  "gb": 3,
+  "machine_h": 8.4,
+  "gb": 5,
   "tier": "中"
  },
  {
@@ -5219,10 +5219,10 @@
   "mb": 7.7,
   "one_pass_min": 68.0,
   "recorded": false,
-  "episode_h": 2.3,
+  "episode_h": 3.4,
   "shards": 1,
-  "machine_h": 5.7,
-  "gb": 3,
+  "machine_h": 8.5,
+  "gb": 5,
   "tier": "中"
  },
  {
@@ -5296,10 +5296,10 @@
   "mb": 0.2,
   "one_pass_min": 7.5,
   "recorded": false,
-  "episode_h": 0.2,
+  "episode_h": 0.4,
   "shards": 1,
-  "machine_h": 0.6,
-  "gb": 0,
+  "machine_h": 0.9,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -5445,10 +5445,10 @@
   "mb": 9.6,
   "one_pass_min": 33.6,
   "recorded": true,
-  "episode_h": 1.1,
+  "episode_h": 1.7,
   "shards": 1,
-  "machine_h": 2.8,
-  "gb": 2,
+  "machine_h": 4.2,
+  "gb": 3,
   "tier": "小"
  },
  {
@@ -5510,9 +5510,9 @@
   "mb": 129.9,
   "one_pass_min": 4.0,
   "recorded": false,
-  "episode_h": 0.1,
+  "episode_h": 0.2,
   "shards": 1,
-  "machine_h": 0.3,
+  "machine_h": 0.5,
   "gb": 0,
   "tier": "小"
  },
@@ -5599,10 +5599,10 @@
   "mb": 14.5,
   "one_pass_min": 132.1,
   "recorded": false,
-  "episode_h": 4.4,
+  "episode_h": 6.6,
   "shards": 1,
-  "machine_h": 11.0,
-  "gb": 7,
+  "machine_h": 16.5,
+  "gb": 10,
   "tier": "中"
  },
  {
@@ -5628,10 +5628,10 @@
   "mb": 1.0,
   "one_pass_min": 141.9,
   "recorded": false,
-  "episode_h": 4.7,
+  "episode_h": 7.1,
   "shards": 1,
-  "machine_h": 11.8,
-  "gb": 7,
+  "machine_h": 17.7,
+  "gb": 11,
   "tier": "中"
  },
  {
@@ -5657,9 +5657,9 @@
   "mb": 5.2,
   "one_pass_min": 32.2,
   "recorded": false,
-  "episode_h": 1.1,
+  "episode_h": 1.6,
   "shards": 1,
-  "machine_h": 2.7,
+  "machine_h": 4.0,
   "gb": 2,
   "tier": "小"
  },
@@ -5698,9 +5698,9 @@
   "mb": 8.6,
   "one_pass_min": 3.2,
   "recorded": false,
-  "episode_h": 0.1,
+  "episode_h": 0.2,
   "shards": 1,
-  "machine_h": 0.3,
+  "machine_h": 0.4,
   "gb": 0,
   "tier": "小"
  },

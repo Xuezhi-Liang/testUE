@@ -33,7 +33,10 @@ MIX_FACTOR = 4.0
 TARGET_PASSES = 2
 CAP_H = math.inf
 SHARD_H = math.inf
-RUNAWAY_FACTOR = 3.0
+# Pass 2 is the study-style fill pass: same distance, about twice the action density, so it costs
+# ~2x the covering pass. The episode estimate is therefore one_pass x (1 + PASS2_FACTOR).
+PASS2_FACTOR = 2.0
+RUNAWAY_FACTOR = 2.0
 MAP_IDS_EXTRA = {   # maps the preflight list does not carry
     "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene":
         "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
@@ -43,7 +46,7 @@ MAP_IDS_EXTRA = {   # maps the preflight list does not carry
 def plan_for(slug, survey, pre, seed0, passes_per_shard=None, rnd="", cap_h=None):
     s = survey[slug]
     one_pass_min = round(s["tour_min"] * MIX_FACTOR)
-    episode_h = min(TARGET_PASSES * one_pass_min / 60.0, CAP_H)
+    episode_h = min((1.0 + PASS2_FACTOR * (TARGET_PASSES - 1)) * one_pass_min / 60.0, CAP_H)
     if passes_per_shard:
         # Fixed passes per shard, shards = 8 / that. With 1 pass per shard every machine records
         # exactly one complete cover from a fresh seed, and eight machines are eight covers.
