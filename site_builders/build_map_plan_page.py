@@ -19,11 +19,11 @@ LV = json.load(open(S.parent / 'levels_plan.json'))
 LA = sorted([x for x in LV if x['cls'].startswith('A')], key=lambda x: (-(x.get('episode_h') or 0), -(x['core'] or 0)))
 ltot = dict(ep=sum(x['episode_h'] for x in LA), sh=sum(x['shards'] for x in LA), mh=sum(x['machine_h'] for x in LA), gb=sum(x['gb'] for x in LA))
 LORDER = ['A 可直接录', 'B 待审', 'C 重跑', 'D 修路线', 'E 未验证', 'G 放弃', 'H 未挑选', 'F 排除']
-json.dump(LV, open(RES / 'levels.json', 'w'), ensure_ascii=False, indent=1)
 SITE = Path('/home/ubuntu/WM-Unreal-data-collection/local_run/site/longvideo/map-plan'); SITE.mkdir(parents=True, exist_ok=True)
 REPO = Path('/home/ubuntu/UE5-Agent-Data/revisit_pipeline')
 RES = REPO / 'results' / 'map_plan_2026-09-17'; RES.mkdir(parents=True, exist_ok=True)
 json.dump(P, open(RES / 'projects.json', 'w'), ensure_ascii=False, indent=1)
+json.dump(LV, open(RES / 'levels.json', 'w'), ensure_ascii=False, indent=1)
 ORDER = ['A 可直接录', 'B 待审', 'C 重跑', 'E 未验证', 'G 放弃', 'F 排除']
 EXPL = {'A 可直接录': '至少一张关卡路线几何全过（冻结、碰撞、深度探针），或已有录制。',
         'B 待审': '路线跑通但路网保留率低，要人看俯视图决定是否接受。',
