@@ -43,7 +43,7 @@ SO=$(find "$CTRROOT" -name 'libUnrealEditor-UnrealCV.so' -newermt "@$PATCH_EPOCH
 [ -n "$SO" ] || fail "UnrealCV module was not rebuilt"
 echo "UnrealCV rebuilt: $SO"; upload_logs
 echo "==== $(date -u +%H:%M:%S) joining the recording queue ===="
-nohup bash "$F/bundle/mp4_uploader.sh" > /dev/null 2>&1 &
+sudo systemd-run --unit=mp4up --collect --setenv=HOME=/home/ubuntu --uid=ubuntu --gid=ubuntu -p WorkingDirectory=/home/ubuntu /bin/bash "$F/bundle/mp4_uploader.sh"   # a nohup&-started copy died with the ssh session; a transient unit does not
 python3 -u "$F/bundle/record_loop.py" "$W" >> "$F/record_loop.log" 2>&1; rc=$?
 aws s3 cp "$F/record_loop.log" "$S3/record_loop.log" --only-show-errors || true; upload_logs
 echo "record_loop exited rc=$rc"; sudo shutdown -h +1 "recording queue drained"
