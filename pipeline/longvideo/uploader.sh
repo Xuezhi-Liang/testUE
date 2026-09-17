@@ -16,8 +16,8 @@ SHARD_ID=${SHARD_ID:?}
 SLUG=${SLUG:-$(echo "$SHARD_ID" | sed -E 's/__r?[0-9]*s[0-9]+$//')}
 LEDGER=$L/uploaded_${SHARD_ID}.txt
 PENDING=0
-DSTROOT=s3://pan-simworld/ue-revist-long-video/$SLUG
-STATUS=s3://pan-simworld/ue-revist-long-video/_status
+DSTROOT=${LV_DST:-s3://pan-simworld/ue-revist-long-video}/$SLUG   # LV_DST: per-job destination (17 Sep)
+STATUS=${LV_STATUS:-s3://pan-simworld/ue-revist-long-video/_status}
 LOG=$P/logs/lv_${SHARD_ID}_uploader.log
 touch "$LEDGER"
 while true; do

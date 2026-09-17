@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Cigar_room/Maps/Cigar_room",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 2198.0,
+   "y": 2123.0,
+   "z": 10.0
+  },
+  {
+   "name": "route_1",
+   "x": -2077.0,
+   "y": 2000.7401737759715,
+   "z": 10.0
+  },
+  {
+   "name": "route_2",
+   "x": -2077.0,
+   "y": -609.2849650055686,
+   "z": 10.0
+  },
+  {
+   "name": "route_3",
+   "x": 1665.7816370436794,
+   "y": -2127.0,
+   "z": 10.0
+  },
+  {
+   "name": "route_4",
+   "x": 2323.0,
+   "y": -31.174678123055845,
+   "z": 10.0
+  }
+ ],
+ "source": "poses of the 16/17 Sep validated route; z = camera z - 1.7 m + 10 cm"
+}

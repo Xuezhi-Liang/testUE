@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ModularCourtyard/Maps/SampleScene_overcast",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 2946.0,
+   "y": 8213.0,
+   "z": 40.0
+  },
+  {
+   "name": "route_1",
+   "x": 2601.5509865255653,
+   "y": 5012.999999999999,
+   "z": 40.0
+  },
+  {
+   "name": "route_2",
+   "x": 1646.0,
+   "y": 7898.804802688992,
+   "z": 40.0
+  },
+  {
+   "name": "route_3",
+   "x": 1903.254572906917,
+   "y": 6830.721220872226,
+   "z": 40.0
+  },
+  {
+   "name": "route_4",
+   "x": 3446.0,
+   "y": 6232.947404810831,
+   "z": 40.0
+  }
+ ],
+ "source": "poses of the 16/17 Sep validated route; z = camera z - 1.7 m + 10 cm"
+}
