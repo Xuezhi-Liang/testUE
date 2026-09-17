@@ -27,9 +27,13 @@ PREFLIGHT = Path("/home/ubuntu/WM-Unreal-data-collection/local_run/pipeline/long
 SHARDS = PIPE / "longvideo_shards.json"
 
 MIX_FACTOR = 4.0
-TARGET_PASSES = 8
-CAP_H = 20.0
-SHARD_H = 5.0
+# 17 Sep: two passes per map, one episode per map, no cap and no shard split (the user dropped the
+# "8 passes or 20 h, 5 h shards" rule). The per-map max_duration_s written below is a runaway guard
+# at 3x the two-pass estimate - passes alternate ~4x/~8x the tour on Tokyo - not a target.
+TARGET_PASSES = 2
+CAP_H = math.inf
+SHARD_H = math.inf
+RUNAWAY_FACTOR = 3.0
 MAP_IDS_EXTRA = {   # maps the preflight list does not carry
     "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene":
         "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
@@ -58,9 +62,9 @@ def plan_for(slug, survey, pre, seed0, passes_per_shard=None, rnd="", cap_h=None
             # silently truncates a pass at 64 minutes.
             per_h = cap_h
     else:
-        n = max(1, math.ceil(episode_h / SHARD_H))
+        n = 1 if not math.isfinite(SHARD_H) else max(1, math.ceil(episode_h / SHARD_H))
         passes = max(1, round(TARGET_PASSES / n))
-        per_h = episode_h / n
+        per_h = episode_h / n * RUNAWAY_FACTOR
     map_id = (pre.get(slug) or {}).get("map_id") or MAP_IDS_EXTRA.get(slug)
     if not map_id:
         raise SystemExit(f"no map_id for {slug}")

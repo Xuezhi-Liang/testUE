@@ -105,11 +105,11 @@
    }
   ],
   "one_pass_min": 170.4,
-  "episode_h": 20.0,
-  "shards": 4,
-  "machine_h": 50.0,
-  "gb": 31,
-  "tier": "大(封顶20h)"
+  "episode_h": 5.7,
+  "shards": 1,
+  "machine_h": 14.2,
+  "gb": 9,
+  "tier": "中"
  },
  {
   "fid": "Fab_003",
@@ -169,10 +169,10 @@
    }
   ],
   "one_pass_min": 139.1,
-  "episode_h": 18.5,
-  "shards": 4,
-  "machine_h": 46.4,
-  "gb": 29,
+  "episode_h": 4.6,
+  "shards": 1,
+  "machine_h": 11.6,
+  "gb": 7,
   "tier": "中",
   "note": "核心≈0，开阔地形/单间，内容价值低"
  },
@@ -256,11 +256,11 @@
    }
   ],
   "one_pass_min": 43.1,
-  "episode_h": 5.7,
-  "shards": 2,
-  "machine_h": 14.4,
-  "gb": 9,
-  "tier": "中"
+  "episode_h": 1.4,
+  "shards": 1,
+  "machine_h": 3.6,
+  "gb": 2,
+  "tier": "小"
  },
  {
   "fid": "Fab_005",
@@ -320,10 +320,10 @@
    }
   ],
   "one_pass_min": 21.7,
-  "episode_h": 2.9,
+  "episode_h": 0.7,
   "shards": 1,
-  "machine_h": 7.2,
-  "gb": 4,
+  "machine_h": 1.8,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -373,11 +373,11 @@
    }
   ],
   "one_pass_min": 328.7,
-  "episode_h": 20.0,
-  "shards": 4,
-  "machine_h": 50.0,
-  "gb": 31,
-  "tier": "大(封顶20h)"
+  "episode_h": 11.0,
+  "shards": 1,
+  "machine_h": 27.4,
+  "gb": 17,
+  "tier": "大"
  },
  {
   "fid": "Fab_007",
@@ -426,10 +426,10 @@
    }
   ],
   "one_pass_min": 15.8,
-  "episode_h": 2.1,
+  "episode_h": 0.5,
   "shards": 1,
-  "machine_h": 5.3,
-  "gb": 3,
+  "machine_h": 1.3,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -501,11 +501,11 @@
    }
   ],
   "one_pass_min": 218.3,
-  "episode_h": 20.0,
-  "shards": 4,
-  "machine_h": 50.0,
-  "gb": 31,
-  "tier": "大(封顶20h)"
+  "episode_h": 7.3,
+  "shards": 1,
+  "machine_h": 18.2,
+  "gb": 11,
+  "tier": "大"
  },
  {
   "fid": "Fab_009",
@@ -603,11 +603,11 @@
    }
   ],
   "one_pass_min": 40.5,
-  "episode_h": 5.4,
-  "shards": 2,
-  "machine_h": 13.5,
-  "gb": 8,
-  "tier": "中"
+  "episode_h": 1.4,
+  "shards": 1,
+  "machine_h": 3.4,
+  "gb": 2,
+  "tier": "小"
  },
  {
   "fid": "Fab_011",
@@ -658,10 +658,10 @@
    }
   ],
   "one_pass_min": 8.0,
-  "episode_h": 1.1,
+  "episode_h": 0.3,
   "shards": 1,
-  "machine_h": 2.7,
-  "gb": 2,
+  "machine_h": 0.7,
+  "gb": 0,
   "tier": "小",
   "note": "核心≈0，开阔地形/单间，内容价值低"
  },
@@ -747,10 +747,10 @@
    }
   ],
   "one_pass_min": 65.3,
-  "episode_h": 8.7,
-  "shards": 2,
-  "machine_h": 21.8,
-  "gb": 13,
+  "episode_h": 2.2,
+  "shards": 1,
+  "machine_h": 5.4,
+  "gb": 3,
   "tier": "中"
  },
  {
@@ -861,10 +861,10 @@
    }
   ],
   "one_pass_min": 101.1,
-  "episode_h": 13.5,
-  "shards": 3,
-  "machine_h": 33.7,
-  "gb": 21,
+  "episode_h": 3.4,
+  "shards": 1,
+  "machine_h": 8.4,
+  "gb": 5,
   "tier": "中"
  },
  {
@@ -903,10 +903,10 @@
    }
   ],
   "one_pass_min": 23.8,
-  "episode_h": 3.2,
+  "episode_h": 0.8,
   "shards": 1,
-  "machine_h": 7.9,
-  "gb": 5,
+  "machine_h": 2.0,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -1050,11 +1050,11 @@
    }
   ],
   "one_pass_min": 166.8,
-  "episode_h": 20.0,
-  "shards": 4,
-  "machine_h": 50.0,
-  "gb": 31,
-  "tier": "大(封顶20h)"
+  "episode_h": 5.6,
+  "shards": 1,
+  "machine_h": 13.9,
+  "gb": 9,
+  "tier": "中"
  },
  {
   "fid": "Fab_018",
@@ -1852,11 +1852,11 @@
    }
   ],
   "one_pass_min": 219.5,
-  "episode_h": 20.0,
-  "shards": 4,
-  "machine_h": 50.0,
-  "gb": 31,
-  "tier": "大(封顶20h)"
+  "episode_h": 7.3,
+  "shards": 1,
+  "machine_h": 18.3,
+  "gb": 11,
+  "tier": "大"
  },
  {
   "fid": "Fab_021",
@@ -1907,10 +1907,10 @@
    }
   ],
   "one_pass_min": 114.9,
-  "episode_h": 15.3,
-  "shards": 4,
-  "machine_h": 38.3,
-  "gb": 24,
+  "episode_h": 3.8,
+  "shards": 1,
+  "machine_h": 9.6,
+  "gb": 6,
   "tier": "中"
  },
  {
@@ -1960,10 +1960,10 @@
    }
   ],
   "one_pass_min": 26.0,
-  "episode_h": 3.5,
+  "episode_h": 0.9,
   "shards": 1,
-  "machine_h": 8.7,
-  "gb": 5,
+  "machine_h": 2.2,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -2075,10 +2075,10 @@
    }
   ],
   "one_pass_min": 6.2,
-  "episode_h": 0.8,
+  "episode_h": 0.2,
   "shards": 1,
-  "machine_h": 2.1,
-  "gb": 1,
+  "machine_h": 0.5,
+  "gb": 0,
   "tier": "小"
  },
  {
@@ -2128,10 +2128,10 @@
    }
   ],
   "one_pass_min": 147.1,
-  "episode_h": 19.6,
-  "shards": 4,
-  "machine_h": 49.0,
-  "gb": 30,
+  "episode_h": 4.9,
+  "shards": 1,
+  "machine_h": 12.3,
+  "gb": 8,
   "tier": "中"
  },
  {
@@ -2181,10 +2181,10 @@
    }
   ],
   "one_pass_min": 132.8,
-  "episode_h": 17.7,
-  "shards": 4,
-  "machine_h": 44.3,
-  "gb": 27,
+  "episode_h": 4.4,
+  "shards": 1,
+  "machine_h": 11.1,
+  "gb": 7,
   "tier": "中"
  },
  {
@@ -2297,10 +2297,10 @@
    }
   ],
   "one_pass_min": 10.6,
-  "episode_h": 1.4,
+  "episode_h": 0.4,
   "shards": 1,
-  "machine_h": 3.5,
-  "gb": 2,
+  "machine_h": 0.9,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -2505,11 +2505,11 @@
    }
   ],
   "one_pass_min": 194.0,
-  "episode_h": 20.0,
-  "shards": 4,
-  "machine_h": 50.0,
-  "gb": 31,
-  "tier": "大(封顶20h)"
+  "episode_h": 6.5,
+  "shards": 1,
+  "machine_h": 16.2,
+  "gb": 10,
+  "tier": "大"
  },
  {
   "fid": "Fab_032",
@@ -2591,10 +2591,10 @@
    }
   ],
   "one_pass_min": 60.4,
-  "episode_h": 8.1,
-  "shards": 2,
-  "machine_h": 20.1,
-  "gb": 12,
+  "episode_h": 2.0,
+  "shards": 1,
+  "machine_h": 5.0,
+  "gb": 3,
   "tier": "中"
  },
  {
@@ -2644,10 +2644,10 @@
    }
   ],
   "one_pass_min": 46.0,
-  "episode_h": 6.1,
-  "shards": 2,
-  "machine_h": 15.3,
-  "gb": 9,
+  "episode_h": 1.5,
+  "shards": 1,
+  "machine_h": 3.8,
+  "gb": 2,
   "tier": "中"
  },
  {
@@ -2910,10 +2910,10 @@
    }
   ],
   "one_pass_min": 49.5,
-  "episode_h": 6.6,
-  "shards": 2,
-  "machine_h": 16.5,
-  "gb": 10,
+  "episode_h": 1.6,
+  "shards": 1,
+  "machine_h": 4.1,
+  "gb": 3,
   "tier": "中",
   "note": "核心≈0，开阔地形/单间，内容价值低"
  },
@@ -2964,10 +2964,10 @@
    }
   ],
   "one_pass_min": 116.4,
-  "episode_h": 15.5,
-  "shards": 4,
-  "machine_h": 38.8,
-  "gb": 24,
+  "episode_h": 3.9,
+  "shards": 1,
+  "machine_h": 9.7,
+  "gb": 6,
   "tier": "中"
  },
  {
@@ -3153,10 +3153,10 @@
    }
   ],
   "one_pass_min": 3.4,
-  "episode_h": 0.5,
+  "episode_h": 0.1,
   "shards": 1,
-  "machine_h": 1.1,
-  "gb": 1,
+  "machine_h": 0.3,
+  "gb": 0,
   "tier": "小",
   "note": "核心≈0，开阔地形/单间，内容价值低"
  },
@@ -3674,11 +3674,11 @@
    }
   ],
   "one_pass_min": 157.1,
-  "episode_h": 20.0,
-  "shards": 4,
-  "machine_h": 50.0,
-  "gb": 31,
-  "tier": "大(封顶20h)"
+  "episode_h": 5.2,
+  "shards": 1,
+  "machine_h": 13.1,
+  "gb": 8,
+  "tier": "中"
  },
  {
   "fid": "Fab_040",
@@ -3728,10 +3728,10 @@
   ],
   "note": "已有录制，验证状态是旧的/待审",
   "one_pass_min": 46.1,
-  "episode_h": 6.1,
-  "shards": 2,
-  "machine_h": 15.4,
-  "gb": 9,
+  "episode_h": 1.5,
+  "shards": 1,
+  "machine_h": 3.8,
+  "gb": 2,
   "tier": "中"
  },
  {
@@ -4002,10 +4002,10 @@
    }
   ],
   "one_pass_min": 63.3,
-  "episode_h": 8.4,
-  "shards": 2,
-  "machine_h": 21.1,
-  "gb": 13,
+  "episode_h": 2.1,
+  "shards": 1,
+  "machine_h": 5.3,
+  "gb": 3,
   "tier": "中"
  },
  {
@@ -4115,10 +4115,10 @@
    }
   ],
   "one_pass_min": 14.2,
-  "episode_h": 1.9,
+  "episode_h": 0.5,
   "shards": 1,
-  "machine_h": 4.7,
-  "gb": 3,
+  "machine_h": 1.2,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -4201,10 +4201,10 @@
    }
   ],
   "one_pass_min": 20.3,
-  "episode_h": 2.7,
+  "episode_h": 0.7,
   "shards": 1,
-  "machine_h": 6.8,
-  "gb": 4,
+  "machine_h": 1.7,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -4265,10 +4265,10 @@
    }
   ],
   "one_pass_min": 85.8,
-  "episode_h": 11.4,
-  "shards": 3,
-  "machine_h": 28.6,
-  "gb": 18,
+  "episode_h": 2.9,
+  "shards": 1,
+  "machine_h": 7.1,
+  "gb": 4,
   "tier": "中"
  },
  {
@@ -4362,10 +4362,10 @@
    }
   ],
   "one_pass_min": 81.8,
-  "episode_h": 10.9,
-  "shards": 3,
-  "machine_h": 27.3,
-  "gb": 17,
+  "episode_h": 2.7,
+  "shards": 1,
+  "machine_h": 6.8,
+  "gb": 4,
   "tier": "中"
  },
  {
@@ -4476,11 +4476,11 @@
    }
   ],
   "one_pass_min": 153.8,
-  "episode_h": 20.0,
-  "shards": 4,
-  "machine_h": 50.0,
-  "gb": 31,
-  "tier": "大(封顶20h)"
+  "episode_h": 5.1,
+  "shards": 1,
+  "machine_h": 12.8,
+  "gb": 8,
+  "tier": "中"
  },
  {
   "fid": "Fab_052",
@@ -4531,10 +4531,10 @@
    }
   ],
   "one_pass_min": 67.9,
-  "episode_h": 9.1,
-  "shards": 2,
-  "machine_h": 22.6,
-  "gb": 14,
+  "episode_h": 2.3,
+  "shards": 1,
+  "machine_h": 5.7,
+  "gb": 3,
   "tier": "中"
  },
  {
@@ -4628,10 +4628,10 @@
    }
   ],
   "one_pass_min": 4.8,
-  "episode_h": 0.6,
+  "episode_h": 0.2,
   "shards": 1,
-  "machine_h": 1.6,
-  "gb": 1,
+  "machine_h": 0.4,
+  "gb": 0,
   "tier": "小",
   "note": "核心≈0，开阔地形/单间，内容价值低"
  },
@@ -4682,10 +4682,10 @@
    }
   ],
   "one_pass_min": 52.9,
-  "episode_h": 7.1,
-  "shards": 2,
-  "machine_h": 17.6,
-  "gb": 11,
+  "episode_h": 1.8,
+  "shards": 1,
+  "machine_h": 4.4,
+  "gb": 3,
   "tier": "中"
  },
  {
@@ -4770,10 +4770,10 @@
    }
   ],
   "one_pass_min": 108.7,
-  "episode_h": 14.5,
-  "shards": 3,
-  "machine_h": 36.2,
-  "gb": 22,
+  "episode_h": 3.6,
+  "shards": 1,
+  "machine_h": 9.1,
+  "gb": 6,
   "tier": "中"
  },
  {
@@ -5299,10 +5299,10 @@
    }
   ],
   "one_pass_min": 138.8,
-  "episode_h": 18.5,
-  "shards": 4,
-  "machine_h": 46.3,
-  "gb": 28,
+  "episode_h": 4.6,
+  "shards": 1,
+  "machine_h": 11.6,
+  "gb": 7,
   "tier": "中"
  },
  {
@@ -5363,10 +5363,10 @@
    }
   ],
   "one_pass_min": 58.4,
-  "episode_h": 7.8,
-  "shards": 2,
-  "machine_h": 19.5,
-  "gb": 12,
+  "episode_h": 1.9,
+  "shards": 1,
+  "machine_h": 4.9,
+  "gb": 3,
   "tier": "中"
  },
  {
@@ -5416,10 +5416,10 @@
    }
   ],
   "one_pass_min": 46.0,
-  "episode_h": 6.1,
-  "shards": 2,
-  "machine_h": 15.3,
-  "gb": 9,
+  "episode_h": 1.5,
+  "shards": 1,
+  "machine_h": 3.8,
+  "gb": 2,
   "tier": "中"
  },
  {
@@ -5540,10 +5540,10 @@
    }
   ],
   "one_pass_min": 17.2,
-  "episode_h": 2.3,
+  "episode_h": 0.6,
   "shards": 1,
-  "machine_h": 5.7,
-  "gb": 4,
+  "machine_h": 1.4,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -5653,10 +5653,10 @@
    }
   ],
   "one_pass_min": 22.3,
-  "episode_h": 3.0,
+  "episode_h": 0.7,
   "shards": 1,
-  "machine_h": 7.4,
-  "gb": 5,
+  "machine_h": 1.9,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -5706,9 +5706,9 @@
    }
   ],
   "one_pass_min": 1.8,
-  "episode_h": 0.2,
+  "episode_h": 0.1,
   "shards": 1,
-  "machine_h": 0.6,
+  "machine_h": 0.2,
   "gb": 0,
   "tier": "小"
  },
@@ -5759,10 +5759,10 @@
    }
   ],
   "one_pass_min": 35.7,
-  "episode_h": 4.8,
+  "episode_h": 1.2,
   "shards": 1,
-  "machine_h": 11.9,
-  "gb": 7,
+  "machine_h": 3.0,
+  "gb": 2,
   "tier": "小"
  },
  {
@@ -5836,10 +5836,10 @@
    }
   ],
   "one_pass_min": 102.6,
-  "episode_h": 13.7,
-  "shards": 3,
-  "machine_h": 34.2,
-  "gb": 21,
+  "episode_h": 3.4,
+  "shards": 1,
+  "machine_h": 8.6,
+  "gb": 5,
   "tier": "中"
  },
  {
@@ -5901,11 +5901,11 @@
   ],
   "note": "已有录制，验证状态是旧的/待审",
   "one_pass_min": null,
-  "episode_h": 20.0,
-  "shards": 4,
-  "machine_h": 50.0,
-  "gb": 31,
-  "tier": "大(估)"
+  "episode_h": 6.0,
+  "shards": 1,
+  "machine_h": 15.0,
+  "gb": 9,
+  "tier": "中(估)"
  },
  {
   "fid": "Fab_067",
@@ -5954,10 +5954,10 @@
    }
   ],
   "one_pass_min": 13.6,
-  "episode_h": 1.8,
+  "episode_h": 0.5,
   "shards": 1,
-  "machine_h": 4.5,
-  "gb": 3,
+  "machine_h": 1.1,
+  "gb": 1,
   "tier": "小"
  },
  {
@@ -6176,10 +6176,10 @@
    }
   ],
   "one_pass_min": 8.6,
-  "episode_h": 1.1,
+  "episode_h": 0.3,
   "shards": 1,
-  "machine_h": 2.9,
-  "gb": 2,
+  "machine_h": 0.7,
+  "gb": 0,
   "tier": "小"
  },
  {
@@ -6240,11 +6240,11 @@
    }
   ],
   "one_pass_min": 232.9,
-  "episode_h": 20.0,
-  "shards": 4,
-  "machine_h": 50.0,
-  "gb": 31,
-  "tier": "大(封顶20h)"
+  "episode_h": 7.8,
+  "shards": 1,
+  "machine_h": 19.4,
+  "gb": 12,
+  "tier": "大"
  },
  {
   "fid": "Fab_071",
@@ -6495,10 +6495,10 @@
    }
   ],
   "one_pass_min": 33.9,
-  "episode_h": 4.5,
+  "episode_h": 1.1,
   "shards": 1,
-  "machine_h": 11.3,
-  "gb": 7,
+  "machine_h": 2.8,
+  "gb": 2,
   "tier": "小"
  },
  {
@@ -6592,10 +6592,10 @@
    }
   ],
   "one_pass_min": 61.8,
-  "episode_h": 8.2,
-  "shards": 2,
-  "machine_h": 20.6,
-  "gb": 13,
+  "episode_h": 2.1,
+  "shards": 1,
+  "machine_h": 5.2,
+  "gb": 3,
   "tier": "中"
  },
  {
@@ -6645,10 +6645,10 @@
    }
   ],
   "one_pass_min": 8.3,
-  "episode_h": 1.1,
+  "episode_h": 0.3,
   "shards": 1,
-  "machine_h": 2.8,
-  "gb": 2,
+  "machine_h": 0.7,
+  "gb": 0,
   "tier": "小"
  },
  {
@@ -6720,10 +6720,10 @@
    }
   ],
   "one_pass_min": 68.0,
-  "episode_h": 9.1,
-  "shards": 2,
-  "machine_h": 22.7,
-  "gb": 14,
+  "episode_h": 2.3,
+  "shards": 1,
+  "machine_h": 5.7,
+  "gb": 3,
   "tier": "中"
  },
  {
@@ -6959,10 +6959,10 @@
    }
   ],
   "one_pass_min": 7.5,
-  "episode_h": 1.0,
+  "episode_h": 0.2,
   "shards": 1,
-  "machine_h": 2.5,
-  "gb": 2,
+  "machine_h": 0.6,
+  "gb": 0,
   "tier": "小"
  },
  {
@@ -7023,10 +7023,10 @@
    }
   ],
   "one_pass_min": 33.6,
-  "episode_h": 4.5,
+  "episode_h": 1.1,
   "shards": 1,
-  "machine_h": 11.2,
-  "gb": 7,
+  "machine_h": 2.8,
+  "gb": 2,
   "tier": "小"
  },
  {
@@ -7137,10 +7137,10 @@
    }
   ],
   "one_pass_min": 4.0,
-  "episode_h": 0.5,
+  "episode_h": 0.1,
   "shards": 1,
-  "machine_h": 1.3,
-  "gb": 1,
+  "machine_h": 0.3,
+  "gb": 0,
   "tier": "小"
  },
  {
@@ -7282,10 +7282,10 @@
    }
   ],
   "one_pass_min": 132.1,
-  "episode_h": 17.6,
-  "shards": 4,
-  "machine_h": 44.0,
-  "gb": 27,
+  "episode_h": 4.4,
+  "shards": 1,
+  "machine_h": 11.0,
+  "gb": 7,
   "tier": "中"
  },
  {
@@ -7335,10 +7335,10 @@
    }
   ],
   "one_pass_min": 141.9,
-  "episode_h": 18.9,
-  "shards": 4,
-  "machine_h": 47.3,
-  "gb": 29,
+  "episode_h": 4.7,
+  "shards": 1,
+  "machine_h": 11.8,
+  "gb": 7,
   "tier": "中"
  },
  {
@@ -7388,10 +7388,10 @@
    }
   ],
   "one_pass_min": 32.2,
-  "episode_h": 4.3,
+  "episode_h": 1.1,
   "shards": 1,
-  "machine_h": 10.7,
-  "gb": 7,
+  "machine_h": 2.7,
+  "gb": 2,
   "tier": "小"
  },
  {
@@ -7443,10 +7443,10 @@
    }
   ],
   "one_pass_min": 3.2,
-  "episode_h": 0.4,
+  "episode_h": 0.1,
   "shards": 1,
-  "machine_h": 1.1,
-  "gb": 1,
+  "machine_h": 0.3,
+  "gb": 0,
   "tier": "小",
   "note": "核心≈0，开阔地形/单间，内容价值低"
  },
