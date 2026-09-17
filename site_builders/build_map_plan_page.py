@@ -19,7 +19,6 @@ LV = json.load(open(S.parent / 'levels_plan.json'))
 LA = sorted([x for x in LV if x['cls'].startswith('A')], key=lambda x: (-(x.get('episode_h') or 0), -(x['core'] or 0)))
 ltot = dict(ep=sum(x['episode_h'] for x in LA), sh=sum(x['shards'] for x in LA), mh=sum(x['machine_h'] for x in LA), gb=sum(x['gb'] for x in LA))
 LORDER = ['A 可直接录', 'B 待审', 'C 重跑', 'D 修路线', 'E 未验证', 'G 放弃', 'H 未挑选', 'F 排除']
-LEXPL = dict(EXPL, **{'D 修路线': '路线失败，起点/导航/资产要逐图修。', 'H 未挑选': '总览图、素材陈列、灯光子层、套件零件，从未排进验证。'})
 json.dump(LV, open(RES / 'levels.json', 'w'), ensure_ascii=False, indent=1)
 SITE = Path('/home/ubuntu/WM-Unreal-data-collection/local_run/site/longvideo/map-plan'); SITE.mkdir(parents=True, exist_ok=True)
 REPO = Path('/home/ubuntu/UE5-Agent-Data/revisit_pipeline')
@@ -32,6 +31,7 @@ EXPL = {'A 可直接录': '至少一张关卡路线几何全过（冻结、碰�
         'E 未验证': '按名字误判为素材图，其实是真场景；已排进补测队列但没跑到。',
         'G 放弃': '路线跑过但地图太小或结构不合适，16 Sep 判定放弃；可用别的风格再试，不在本轮。',
         'F 排除': '不是普通环境包。'}
+LEXPL = dict(EXPL, **{'D 修路线': '路线失败，起点/导航/资产要逐图修。', 'H 未挑选': '总览图、素材陈列、灯光子层、套件零件，从未排进验证。'})
 def n(v, f='{:,.0f}'): return '—' if v is None else f.format(v)
 A = [p for p in P if p['cls'].startswith('A')]
 tot = dict(ep=sum(p.get('episode_h', 0) for p in A), mh=sum(p.get('machine_h', 0) for p in A), sh=sum(p.get('shards', 0) for p in A), gb=sum(p.get('gb', 0) for p in A))
