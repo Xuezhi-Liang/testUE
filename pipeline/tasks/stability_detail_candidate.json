@@ -1,4 +1,6 @@
 {
+  "spec_version": "v1-2026-09-17",
+  "spec_note": "Frozen recording spec v1 (RECORDING_SPEC_v1_2026-09-17.md). Every episode carries this in its task and capture_summary; change the spec, bump the version.",
   "note": "Long-video sharded random walk, on the profile the Tokyo coverage episode was recorded and accepted with: the road network is whatever region has the longest centreline, NOT the built-up core. Core confinement was tried and abandoned - on four maps measured end to end it needed a 60 cm body clearance, a 120 cm corridor and a reroute loop to pass its gates, and delivered a fraction of the footage. This profile is the one with a passing episode behind it.",
   "trajectory_family": "coverage_walk",
   "family_note": "coverage_walk IS the random walk. coverage.py:coverage_walk takes a random unwalked road at each junction rather than solving route inspection, and prepare_walks chains one pass into the next from where the last ended. A separate random_walk family would have been a second copy of the same traversal.",
