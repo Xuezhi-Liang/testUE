@@ -21,6 +21,7 @@ for slug in s3ls(S3 + '/'):
 cards = []
 # Episodes whose metadata + mp4 exist locally but whose S3 prefix is gone (17 Sep: four episodes
 # vanished from the bucket around 16:35 UTC; cause unknown). Shown with a warning, not hidden.
+(SITE / 'episodes').mkdir(parents=True, exist_ok=True)
 present = {ep.split('/', 1)[-1] for _, ep in eps}
 for d in sorted((SITE / 'episodes').iterdir()):
     if d.is_dir() and d.name not in present and (d / 'acceptance.json').exists():
@@ -33,9 +34,9 @@ for slug, ep in eps:
     if not lost:
         src = f'{S3}/{slug}/{ep}'; local = SITE / 'episodes' / ep.split('/', 1)[-1]; local.mkdir(parents=True, exist_ok=True)   # _rejected/<ep> and <ep> share one local dir
     if not lost and not ep.startswith('_rejected/') and (slug, f'_rejected/{ep}') in eps: continue   # the rejected entry carries the metadata; the plain one only the mp4
-    if not lost and ep.startswith('_rejected/'):
-        subprocess.run(['aws', 's3', 'sync', f'{S3}/{slug}/{ep.split("/", 1)[1]}', str(local), '--exclude', '*', '--include', '*.mp4', '--only-show-errors'])
-    if not lost: subprocess.run(['aws', 's3', 'sync', src, str(local), '--exclude', '*', '--include', '*.json', '--include', '*.png', '--include', '*.mp4', '--include', 'frames.csv', '--only-show-errors', '--exclude', 'rgb/*', '--exclude', 'depth/*'])
+    if False and ep.startswith('_rejected/'):
+        subprocess.run(['aws', 's3', 'sync', f'{S3}/{slug}/{ep.split("/", 1)[1]}', str(local), '--exclude', '*', '--exclude', '*.mp4', '--only-show-errors'])
+    if not lost: subprocess.run(['aws', 's3', 'sync', src, str(local), '--exclude', '*', '--include', '*.json', '--include', '*.png', '--exclude', '*.mp4', '--include', 'frames.csv', '--only-show-errors', '--exclude', 'rgb/*', '--exclude', 'depth/*'])
     def J(name):
         p = local / name
         try: return json.load(open(p))
@@ -45,7 +46,9 @@ for slug, ep in eps:
     failed = [g.get('gate') for g in gates if isinstance(g, dict) and g.get('result') not in ('pass', 'skipped', 'skip')] if isinstance(gates, list) else [k for k, v in gates.items() if isinstance(v, dict) and v.get('ok') is False]
     frames = cs.get('frames') or tj.get('frames') or acc.get('frames'); fps = cs.get('fps') or tj.get('fps') or 24
     mix = (tj.get('action_mix') or {}).get('fraction') or cs.get('action_mix') or {}
-    mp4 = next((n for n in ('rgb.mp4', 'review.mp4', 'preview.mp4', 'rgb_proxy.mp4') if (local / n).exists()), None)
+    pv = local / 'preview5.mp4'
+    if not pv.exists() and not lost: subprocess.run(['aws', 's3', 'cp', f's3://pan-simworld/ue-record/{RUN}/previews/{ep.split("/", 1)[-1]}.mp4', str(pv), '--only-show-errors'], capture_output=True)
+    mp4 = next((n for n in ('preview5.mp4', 'rgb.mp4', 'review.mp4', 'preview.mp4', 'rgb_proxy.mp4') if (local / n).exists()), None)
     rv0 = cs.get('review_video') or ''; rv = (rv0.get('path') or rv0.get('file') or '' if isinstance(rv0, dict) else str(rv0)).split('/')[-1]
     if not mp4 and rv and (local / rv).exists(): mp4 = rv
     pngs = sorted(p.name for p in local.glob('*.png'))
@@ -53,7 +56,7 @@ for slug, ep in eps:
                       passes=(lambda ps: f"{ps.get('complete_passes')}/{ps.get('passes_requested')} 遍完成，各遍帧数 {ps.get('frames_per_pass_measured', [])[:2]}" if ps else None)(tj.get('passes_summary')), mix={k: round(v, 3) for k, v in mix.items()} if mix else None, mp4=mp4, pngs=pngs, spec=(tj.get('task') or {}).get('spec_version') or cs.get('spec_version'), retrace=(tj.get('retrace') or {}).get('events'), gb=None))
 now = time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())
 css = "body{font-family:system-ui,sans-serif;margin:24px;max-width:1500px;color:#222}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(460px,1fr));gap:16px}.card{border:1px solid #e3e3e3;border-radius:8px;padding:12px;background:#fff}video{width:100%;border-radius:6px;background:#000}.mut{color:#777;font-size:12px}.ok{color:#1a7f37}.bad{color:#b42318}table{font-size:12px;border-collapse:collapse}td{padding:1px 6px}img{width:100%;border-radius:4px}"
-h = [f"<!doctype html><meta charset=utf-8><title>录制结果 · {RUN}</title><style>{css}</style><h1>录制结果 · {RUN} 批次（规格 v1）</h1><p class=mut>数据：<code>s3://pan-simworld/long-video-data-{RUN}/&lt;slug&gt;/&lt;episode&gt;/</code>（rgb/ 每帧 JPEG、depth/ 每帧 EXR、frames.csv、位姿、acceptance.json、capture_summary.json）。这里只拉了 mp4 预览和元数据。生成于 {now}。<a href='../spec/'>规格 v1</a> · <a href='../map-plan/'>规划页</a></p>", "<div class=grid>"]
+h = [f"<!doctype html><meta charset=utf-8><title>录制结果 · {RUN}</title><style>{css}</style><h1>录制结果 · {RUN} 批次（规格 v1）</h1><p class=mut>数据：<code>s3://pan-simworld/long-video-data-{RUN}/&lt;slug&gt;/&lt;episode&gt;/</code>（rgb/ 每帧 JPEG、depth/ 每帧 EXR、frames.csv、位姿、acceptance.json、capture_summary.json，不含 mp4）。这里的视频是每集前 5 分钟的预览片，存在队列的 ops 前缀下。生成于 {now}。<a href='../spec/'>规格 v1</a> · <a href='../map-plan/'>规划页</a></p>", "<div class=grid>"]
 for c in sorted(cards, key=lambda c: (c['accepted'] is not True, c['slug'])):
     v = f"<video controls preload='metadata' src='episodes/{c['local']}/{c['mp4']}'></video>" if c['mp4'] else "<div class=mut>（还没有 mp4：机器还在上传，或该集没生成预览）</div>"
     verdict = ('<span class=bad>S3 上的原始帧已不在（约 16:35 UTC 消失，原因待查）；这里的视频和元数据是本机留存</span><br>' if c.get('lost') else '') + ('<span class=ok>验收通过</span>' + (' <span class=mut>(按 v1 容差回判)</span>' if c.get('rejudged') else '')) if c['accepted'] else (f"<span class=bad>验收未过：{', '.join(c['failed']) or '见 acceptance.json'}</span>" if c['accepted'] is False else '<span class=mut>未判</span>')
