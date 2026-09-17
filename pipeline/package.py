@@ -667,6 +667,19 @@ def acceptance(ep, rows, traj, summary, rv):
     p95 = float(np.percentile(speeds, 95))
     gate("speed_within_tier", p95 <= hi * 1.25,
          f"p95 speed {p95:.2f} m/s against tier {traj['speed_tier']} {lo}-{hi} m/s")
+    # A task that pinned the pace (speed_m_s) is judged against the pin, from the MEASURED motion
+    # of the walking frames: the plan writes exactly speed/fps per frame, so a median off the pin
+    # means the engine did not move the camera where the plan said (a capsule pushed back, a
+    # dropped frame), not a planner choice. Segment-end remainder frames make up ~2% of walking
+    # frames by construction, so the median and the p95 are judged, not the minimum.
+    if traj.get("speed_pinned") and traj.get("speed_m_per_s"):
+        pin = float(traj["speed_m_per_s"])
+        walking = [float(r["speed_m_s"]) for r in rows
+                   if r.get("phase") in ("forward", "backward")] or speeds
+        med, w95 = float(np.median(walking)), float(np.percentile(walking, 95))
+        gate("speed_pinned_held", abs(med - pin) <= 0.02 * pin and w95 <= pin * 1.02,
+             f"walking-frame median {med:.3f} m/s, p95 {w95:.3f} m/s against the pinned "
+             f"{pin:.2f} m/s (2% tolerance, {len(walking)} frames)")
 
     pitches = [abs(float(r["actual_pitch_deg"])) for r in rows]
     rolls = [abs(float(r["actual_roll_deg"])) for r in rows]

@@ -80,6 +80,12 @@ TURN_ENVELOPE_PEAK_OVER_MEAN = 2.0
 # IS the rate, and a 90 degree turn at 45 deg/s is 2.0 s to the frame. Asked for so the
 # rotation speed is one known number across the dataset rather than a distribution.
 TURN_PROFILES = ("cosine", "constant")
+# How a walk is shaped in time. "trapezoid" is the plateau with RAMP_S ramps above: the camera
+# accelerates into and out of every chunk, so 8-16% of walking frames are below the nominal
+# speed. "constant" is a fixed step: every walking frame moves exactly speed/fps (the last frame
+# of a segment takes the remainder), so the speed is one known number across the dataset. Asked
+# for together with `speed_m_s`, the pinned pace, on 17 Sep.
+SPEED_PROFILES = ("trapezoid", "constant")
 
 Z_SLEW_CM_PER_S = 60.0
 GROUND_CLEARANCE_CM = 0.0     # the camera is placed directly; there is no capsule to lift
@@ -533,6 +539,14 @@ def scale_styles(knobs):
         c["speed"] = sp
         c["back_speed"] = tuple(float(np.clip(sp[i] * cfg["back_frac"][i], 0.15, hi))
                                 for i in (0, 1))
+        # A pinned pace (`knobs["_pin"]`, from the task's speed_m_s) overrides the tier, the
+        # style's position in it, the backward fraction and the tuner's speed knob alike: every
+        # walking primitive - forward, backward, retreat, the retrace legs - moves at that one
+        # speed. The tuner is told not to touch the speed knob when this is set.
+        if knobs.get("_pin") is not None:
+            v = float(knobs["_pin"])
+            c["speed"] = (v, v)
+            c["back_speed"] = (v, v)
         out[name] = c
     return out
 
@@ -594,13 +608,16 @@ class PoseWriter:
     """Expands motion primitives into one pose per frame, enforcing the pipeline's limits."""
 
     def __init__(self, fps, eye_cm, yaw_rate, pitch_limit, z_at, pitch_limit_up=None,
-                 turn_profile="cosine"):
+                 turn_profile="cosine", speed_profile="trapezoid"):
         self.fps = float(fps)
         self.eye = float(eye_cm)
         self.yaw_rate = float(yaw_rate)
         if turn_profile not in TURN_PROFILES:
             raise ValueError(f"turn_profile must be one of {TURN_PROFILES}, got {turn_profile!r}")
         self.turn_profile = turn_profile
+        if speed_profile not in SPEED_PROFILES:
+            raise ValueError(f"speed_profile must be one of {SPEED_PROFILES}, got {speed_profile!r}")
+        self.speed_profile = speed_profile
         self.retraces = []          # one entry per turn-round-and-walk-back event
         self.retrace_target = None  # seconds until the next one, redrawn after each
         # The fastest any single frame may rotate; the walking loop stops and turns rather than
@@ -682,16 +699,24 @@ class PoseWriter:
         # walk peaked at 1.74 m/s. The speed_within_tier gate still passed - its limit is 1.25x
         # the tier - which is exactly why this had to be caught by arithmetic rather than by the
         # gate. A trapezoid of n frames with ramps of r covers (n - r) * v/fps.
-        frames_at_v = dist * self.fps / v
-        ramp = min(int(self.fps * RAMP_S), max(1, int(frames_at_v) // 4))
-        n = max(1, int(round(frames_at_v + ramp)))
-        w = np.ones(n)
-        if ramp > 0 and n > 2 * ramp:
-            w[:ramp] = 0.5 - 0.5 * np.cos(np.linspace(0, np.pi, ramp))
-            w[-ramp:] = 0.5 + 0.5 * np.cos(np.linspace(0, np.pi, ramp))
-        # A final uniform correction so the segment lands exactly on `dist`. It is within 1/n of
-        # unity by construction, so it cannot restore the overshoot this replaced.
-        w = w / w.sum() * dist
+        if self.speed_profile == "constant":
+            # n-1 frames at exactly v/fps and ONE remainder frame (at most a full step), the same
+            # shape as the constant turn profile: the sum is exact and no frame exceeds the speed.
+            step_cm = v / self.fps
+            n = max(1, int(math.ceil(dist / step_cm - 1e-9)))
+            w = np.full(n, step_cm)
+            w[-1] = dist - step_cm * (n - 1)
+        else:
+            frames_at_v = dist * self.fps / v
+            ramp = min(int(self.fps * RAMP_S), max(1, int(frames_at_v) // 4))
+            n = max(1, int(round(frames_at_v + ramp)))
+            w = np.ones(n)
+            if ramp > 0 and n > 2 * ramp:
+                w[:ramp] = 0.5 - 0.5 * np.cos(np.linspace(0, np.pi, ramp))
+                w[-ramp:] = 0.5 + 0.5 * np.cos(np.linspace(0, np.pi, ramp))
+            # A final uniform correction so the segment lands exactly on `dist`. It is within
+            # 1/n of unity by construction, so it cannot restore the overshoot this replaced.
+            w = w / w.sum() * dist
         s = s_from
         label = "backward" if backward else "forward"
         # Per-frame yaw ceiling, the same one `frame_rotation_bounded` will apply.
@@ -1153,7 +1178,14 @@ def prepare_walks(G, seed, count):
             raise RuntimeError(f"walk left {left} of {G.number_of_edges()} roads unwalked")
         poly, _ = walk_polyline(G, steps)
         path, s_axis = resample(poly, step_cm=20.0)
-        path = smooth(path)
+        # Smooth on the evenly spaced points, then RE-MEASURE: the axis must be the arc length of
+        # the path that is actually walked. Keeping the pre-smoothing axis - what this did until
+        # 17 Sep - made a 4.17 cm advance along s land anywhere from 0.2 to 6 cm of real chord
+        # (chord/ds 0.04-1.43 on ModularCourtyard, the axis 9% longer than the path), so the
+        # camera's speed was never the commanded one and folded dead-end spurs nearly stood still.
+        # Found the day the pace was pinned, because a pinned pace is the first setting under
+        # which the per-frame step has one expected value.
+        path, s_axis = resample(smooth(path), step_cm=20.0)
         cover_m = sum(G[a][b][k]["weight"] for a, b, k, t in steps if t == "cover") / 100.0
         repos_m = sum(G[a][b][k]["weight"] for a, b, k, t in steps if t == "reposition") / 100.0
         walks.append({"seed": sd, "path": path, "s_axis": s_axis,
@@ -1166,7 +1198,7 @@ def prepare_walks(G, seed, count):
 
 def generate(G, rep, walks, styles, knobs, fps, budget, eye_cm, pitch_limit, yaw_rate, z_at,
              reserve_frac=0.97, fill_styles=("study", "inspect"), pitch_limit_up=None,
-             turn_profile="cosine", retrace=None):
+             turn_profile="cosine", retrace=None, speed_profile="trapezoid"):
     """One episode's worth of poses for a given knob setting.
 
     The covering pass is paced to finish within `reserve_frac` of the budget, and the action
@@ -1175,7 +1207,7 @@ def generate(G, rep, walks, styles, knobs, fps, budget, eye_cm, pitch_limit, yaw
     """
     scaled = scale_styles(knobs)
     W = PoseWriter(fps, eye_cm, yaw_rate, pitch_limit, z_at, pitch_limit_up=pitch_limit_up,
-                   turn_profile=turn_profile)
+                   turn_profile=turn_profile, speed_profile=speed_profile)
     passes = []
     for i, walk in enumerate(walks):
         if W.n >= budget:
@@ -1208,7 +1240,8 @@ def generate(G, rep, walks, styles, knobs, fps, budget, eye_cm, pitch_limit, yaw
 
 
 def measure_passes(G, rep, walks, styles, knobs, fps, eye_cm, pitch_limit, yaw_rate, z_at,
-                   fill_styles, pitch_limit_up=None, turn_profile="cosine", retrace=None):
+                   fill_styles, pitch_limit_up=None, turn_profile="cosine", retrace=None,
+                   speed_profile="trapezoid"):
     """Frames each covering pass actually needs at this pace and mix, measured not estimated.
 
     Run the scripting once against a budget large enough that it cannot bind and read off what
@@ -1222,7 +1255,8 @@ def measure_passes(G, rep, walks, styles, knobs, fps, eye_cm, pitch_limit, yaw_r
     huge = 40_000_000
     _, _, passes = generate(G, rep, walks, styles, knobs, fps, huge, eye_cm, pitch_limit,
                             yaw_rate, z_at, reserve_frac=1.0, fill_styles=fill_styles,
-                            pitch_limit_up=pitch_limit_up, turn_profile=turn_profile, retrace=retrace)
+                            pitch_limit_up=pitch_limit_up, turn_profile=turn_profile, retrace=retrace,
+                            speed_profile=speed_profile)
     if not passes or not passes[0]["complete_pass"]:
         raise RuntimeError("the covering pass did not finish even against an unbounded budget")
     return [int(pp["frames"]) for pp in passes if pp["complete_pass"]]
@@ -1333,6 +1367,16 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
         raise RuntimeError(f"task turn_profile must be one of {TURN_PROFILES}, got {turn_profile!r}")
     spd_lo, spd_hi = {"slow": (0.3, 0.6), "medium": (0.6, 1.0),
                       "fast": (1.0, 1.5)}[task["speed_tier"]]
+    # A task may pin the walking speed instead of letting each style draw one inside the tier,
+    # the same way yaw_deg_per_s pins the rotation rate. The tier stays declared: the
+    # speed_within_tier gate still judges the poses against it.
+    speed_pin = float(task["speed_m_s"]) if task.get("speed_m_s") is not None else None
+    if speed_pin is not None and not (spd_lo <= speed_pin <= spd_hi):
+        print(f"[coverage] note: speed_m_s {speed_pin:.2f} is outside the declared "
+              f"{task['speed_tier']} tier {spd_lo}-{spd_hi} m/s; the pinned value is used")
+    speed_profile = task.get("speed_profile", "trapezoid")
+    if speed_profile not in SPEED_PROFILES:
+        raise RuntimeError(f"task speed_profile must be one of {SPEED_PROFILES}, got {speed_profile!r}")
 
     # How many times over the map, and the wall-clock ceiling that overrides it. Whichever is
     # reached first ends the episode: a random covering walk re-walks roads it has already seen
@@ -1344,6 +1388,9 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
     walks = prepare_walks(G, int(rng.integers(1 << 30)), count=max(8, passes_wanted))
     base_knobs = {k: 1.0 for k in KNOBS}
     base_knobs["_tier"] = (spd_lo, spd_hi)
+    base_knobs["_pin"] = speed_pin
+    # The knobs the tuner may move. Pace is a lever only when it is not pinned.
+    tunable = tuple(k for k in KNOBS if not (k == "speed" and speed_pin is not None))
     length_bound = "duration_s" if budget else None
 
     # What each pass costs, measured once. Both sizing questions - how long is one pass, how
@@ -1353,7 +1400,8 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
     per_pass = None
     if (not budget) or budget > 200_000:
         per_pass = measure_passes(G, rep, walks, styles, base_knobs, fps, eye_cm, pitch_limit,
-                                  yaw_rate, z_at, fill_styles, pitch_limit_up=pitch_limit_up, turn_profile=turn_profile)
+                                  yaw_rate, z_at, fill_styles, pitch_limit_up=pitch_limit_up, turn_profile=turn_profile,
+                                  speed_profile=speed_profile)
     one_pass_frames = per_pass[0] if per_pass else (budget or 0)
 
     # duration_s falsy means "however long the requested number of passes takes at this pace"
@@ -1424,7 +1472,7 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
                                          eye_cm, pitch_limit, yaw_rate, z_at,
                                          fill_styles=fill_styles,
                                          pitch_limit_up=pitch_limit_up, turn_profile=turn_profile,
-                                         retrace=retrace)
+                                         retrace=retrace, speed_profile=speed_profile)
         if trim_passes:
             poses, labels, passes, _ = trim_to_pass(poses, labels, passes, trim_passes)
         mix = mix_report(labels)
@@ -1439,7 +1487,7 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
 
     knobs = dict(base_knobs)
     pen, worst, payload = evaluate(knobs)
-    trace = [{"iter": 0, "knobs": {k: v for k, v in knobs.items() if k != "_tier"},
+    trace = [{"iter": 0, "knobs": {k: v for k, v in knobs.items() if not k.startswith("_")},
               "penalty": round(pen, 6),
               "worst": worst[0], "off_by": round(worst[1], 4),
               "fraction": payload[3]["fraction"]}]
@@ -1451,7 +1499,7 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
         if pen <= 1e-9:
             break
         improved = False
-        for k in KNOBS:
+        for k in tunable:
             for factor in (1.3, 0.77):
                 cand = dict(knobs)
                 cand[k] = float(np.clip(knobs[k] * factor, 0.25, 4.0))
@@ -1468,7 +1516,7 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
             # towards that either overflows the budget (penalty +10) or pushes the action it took
             # the frames from out of its own band. Looking up and down sat at 3.4% against a 4%
             # floor for exactly this reason until scanning could come down in the same move.
-            for a, b in ((x, y) for i, x in enumerate(KNOBS) for y in KNOBS[i + 1:]):
+            for a, b in ((x, y) for i, x in enumerate(tunable) for y in tunable[i + 1:]):
                 for fa in (1.3, 0.77):
                     for fb in (1.3, 0.77):
                         cand = dict(knobs)
@@ -1481,14 +1529,14 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
                 if improved:
                     break
         trace.append({"iter": it,
-                      "knobs": {k: v for k, v in knobs.items() if k != "_tier"},
+                      "knobs": {k: v for k, v in knobs.items() if not k.startswith("_")},
                       "penalty": round(pen, 6),
                       "worst": worst[0], "off_by": round(worst[1], 4),
                       "fraction": payload[3]["fraction"]})
         if verbose:
             print(f"[coverage] mix tune {it}: penalty {pen:.5f}  worst {worst[0]} off by "
                   f"{worst[1]:.3f}  knobs " +
-                  " ".join(f"{a}={knobs[a]:.2f}" for a in KNOBS), flush=True)
+                  " ".join(f"{a}={knobs[a]:.2f}" for a in tunable), flush=True)
         if not improved:
             break
 
@@ -1502,7 +1550,7 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
             print(f"[coverage] full-length mix: penalty {pen:.5f}  worst {worst[0]} off by "
                   f"{worst[1]:.3f}", flush=True)
         trace.append({"iter": "full_length", "knobs": {k: v for k, v in knobs.items()
-                                                       if k != "_tier"},
+                                                       if not k.startswith("_")},
                       "penalty": round(pen, 6), "worst": worst[0],
                       "off_by": round(worst[1], 4), "fraction": payload[3]["fraction"]})
 
@@ -1513,7 +1561,7 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
         if pen > 1e-9:
             if verbose:
                 print(f"[coverage] refining at full length (single-knob moves only)", flush=True)
-            for k in KNOBS:
+            for k in tunable:
                 for factor in (1.15, 0.87):
                     cand = dict(knobs)
                     cand[k] = float(np.clip(knobs[k] * factor, 0.25, 4.0))
@@ -1530,7 +1578,7 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
                 if pen <= 1e-9:
                     break
             trace.append({"iter": "full_length_refined",
-                          "knobs": {k: v for k, v in knobs.items() if k != "_tier"},
+                          "knobs": {k: v for k, v in knobs.items() if not k.startswith("_")},
                           "penalty": round(pen, 6), "worst": worst[0],
                           "off_by": round(worst[1], 4), "fraction": payload[3]["fraction"]})
 
@@ -1573,9 +1621,14 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
         "network": rep,
         "passes": passes,
         "feasibility": feas,
-        "speed_m_per_s": float((spd_lo + spd_hi) / 2.0),
+        "speed_m_per_s": speed_pin if speed_pin is not None else float((spd_lo + spd_hi) / 2.0),
+        "speed_pinned": speed_pin is not None,
+        "speed_profile": speed_profile,
         "yaw_deg_per_s": yaw_rate,
         "yaw_rate_pinned": task.get("yaw_deg_per_s") is not None,
+        # Looking up and down uses the same rate and profile as turning: _pitch_to shares
+        # _rotation_profile with turn(). Reported so it is a stated fact, not an assumption.
+        "pitch_deg_per_s": yaw_rate,
         "turn_profile": turn_profile,
         "eye_height_cm": eye_cm,
         "pitch_limits_deg": {"up": pitch_limit_up, "down": pitch_limit},
@@ -1584,7 +1637,7 @@ def plan(nav, meta, task, seed, fps, duration_s, styles=("survey", "inspect", "p
         "action_mix_in_band": bool(mix_penalty(mix["fraction"], target)[0] <= 1e-9),
         "retrace": retrace_report(passes, len(poses), fps, retrace),
         "styles": {"covering": list(styles), "fill": list(fill_styles)},
-        "mix_tuning": {"knobs": {k: v for k, v in knobs.items() if k != "_tier"},
+        "mix_tuning": {"knobs": {k: v for k, v in knobs.items() if not k.startswith("_")},
                        "speed_tier_m_s": [spd_lo, spd_hi],
                        "iterations": len(trace) - 1, "trace": trace},
         "start_xy_cm": [poses[0]["x_cm"], poses[0]["y_cm"]],
