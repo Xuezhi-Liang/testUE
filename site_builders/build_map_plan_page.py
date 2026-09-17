@@ -51,7 +51,7 @@ md += ["", f"**A 类 {len(A)} 个项目的正式录制预算**：成片 {tot['ep
        "2. **阶段 1，验收片（10 台，半天）**：A 类每个项目录 2 分钟（同一冻结路线的开头），看曝光、闪动、穿模、天空空帧。今天改了抗锯齿和步速，没有一张图在新设置下录过，这一步不能省。",
        "3. **阶段 2，正式录制**：按分片表用拉取队列跑，大图先开、小图填缝（LPT）。每片一个种子一集，跑完自动关机。",
        "4. **阶段 3，追加**：阶段 0 通过的项目按同样流程补进来。",
-       "", "## A 类：可直接录（按成片时长降序）", "",
+       "", "## 对照：按资源包，A 类 61 个（每包一张代表关卡）", "",
        "| # | 项目 | 代表关卡 | 核心 m² | 间隙 | 一遍 min | 成片 h | 分片 | 机时 | 需同步的包 | 备注 |", "|---:|---|---|---:|---:|---:|---:|---:|---:|---|---|"]
 for i, p in enumerate(A, 1):
     b = p['best']
@@ -63,7 +63,7 @@ for c in ORDER[1:]:
     for p in rows:
         b = p['best']
         md.append(f"| {p['fid']} {p['title'][:40]} | `{b['level'].split('/')[-1]}` | {b['state'] or '未跑'} | {n(b['core'])} | {', '.join(p['packs_missing']) or '—'} | {p.get('note','')} |")
-md += ["", "## 两种统计口径", "",
+md += ["", "## 两种统计口径（录制口径 = 按关卡）", "",
        "| 口径 | 可直接录 | 成片 h | 分片 | 机时 | 10 台天数 | 存储 GB |", "|---|---:|---:|---:|---:|---:|---:|",
        f"| 按资源包（每包一张代表关卡） | {len(A)} | {tot['ep']:.0f} | {tot['sh']} | {tot['mh']:.0f} | {tot['mh']/240:.1f} | {tot['gb']:,} |",
        f"| 按关卡（每个通过的场景都录） | {len(LA)} | {ltot['ep']:.0f} | {ltot['sh']} | {ltot['mh']:.0f} | {ltot['mh']/240:.1f} | {ltot['gb']:,} |",
@@ -78,11 +78,17 @@ md += ["", "## 单独立项，不在上表", "",
        "- **Lyra（Fab_038）**：射击游戏示例，关卡全是测试图。",
        "- **AdditionalSamples 三个官方示例**：CitySample 82 GB、439 张关卡，是完整城市，值得单独评估但体量和插件都不同；GameAnimationSample、MetaHumanCrowdSample 不是环境。",
        "", "## 数据来源", "", "`results/map_plan_2026-09-17/projects.json`（本表的机器可读版）；验证结果来自 `~/ue_route_validation_20260916`、`~/ue_newmap_validation_20260916`、`~/ue_newroute_fleet_20260916`；核心面积来自 09-09 调查、09-16 离线补测、09-17 队列；已录列表来自 8500 的 `core/recorded_slugs.json`。页面：`/longvideo/map-plan/`。"]
+def _reorder(lines, a_key, l_key, end_key):
+    ia = next(i for i, x in enumerate(lines) if a_key in x); il = next(i for i, x in enumerate(lines) if l_key in x); ie = next(i for i, x in enumerate(lines) if end_key in x)
+    return lines[:ia] + lines[il:ie] + lines[ia:il] + lines[ie:]
+md = _reorder(md, "## A 类：可直接录", "## 两种统计口径（录制口径 = 按关卡）", "## 单独立项")
+md[0] = "# 全部交付地图的录制规划（按关卡）"
+md[2] = "2026-09-17。口径：**从录制的角度数，一张关卡就是一个地图，一集视频**；87 个资源包展开成 442 张关卡，逐张归类。资源包视图保留在后面作对照。"
 (REPO / 'MAP_PLAN_2026-09-17.md').write_text('\n'.join(md) + '\n')
 
 # ---------- html ----------
 css = ".H{background:#f7f7f7}.D{background:#ffd6d6}body{font-family:system-ui,sans-serif;margin:24px;max-width:1500px;color:#222}table{border-collapse:collapse;font-size:13px;width:100%}th,td{border:1px solid #ddd;padding:4px 7px;text-align:left;vertical-align:top}th{background:#f3f3f3;position:sticky;top:0}td.r{text-align:right}tr.big td{background:#fff6e5}tr.low td{color:#888}.tag{display:inline-block;padding:1px 6px;border-radius:4px;font-size:12px}.A{background:#d9f2d9}.B{background:#fff1b8}.C{background:#ffe0cc}.E{background:#e0e8ff}.G{background:#eee}.F{background:#eee}h2{margin-top:32px}.mut{color:#777;font-size:12px}"
-h = [f"<!doctype html><meta charset=utf-8><title>地图录制规划 · 按项目</title><style>{css}</style>",
+h = [f"<!doctype html><meta charset=utf-8><title>地图录制规划 · 按关卡</title><style>{css}</style>",
      f"<h1>全部交付地图的录制规划（按项目）</h1><p class=mut>2026-09-17 · 87 个资源包，每包一张代表关卡 · 生成于 {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())} · <a href='../inventory/'>资源总表</a> · <a href='../route-queue/'>补测队列</a></p>",
      "<p>参数按今天定的：TAA 2×、步速 1 m/s、转速 45°/s、离地间隙按图分 6 / 45 cm、折返 5 分钟一次。</p>",
      "<table><tr><th>分类</th><th>项目数</th><th>说明</th></tr>"]
@@ -90,7 +96,7 @@ for c in ORDER: h.append(f"<tr><td><span class='tag {c[0]}'>{c}</span></td><td c
 h.append("</table>")
 h.append(f"<p><b>A 类 {len(A)} 个项目的正式录制预算</b>：成片 {tot['ep']:.0f} h，{tot['sh']} 个 5 小时分片，实时 2.5 倍计 {tot['mh']:.0f} 机时；10 台约 {tot['mh']/10/24:.1f} 天，20 台约 {tot['mh']/20/24:.1f} 天；存储约 {tot['gb']:,} GB。每集 8 遍或 20 h 封顶。</p>")
 h.append("<h2>执行顺序</h2><ol><li><b>阶段 0，补验证（10 台，约 1 天）</b>：E 类 6 个、C 类 10 个重开补测队列，只跑代表关卡；B 类 2 个人工看俯视图。</li><li><b>阶段 1，验收片（10 台，半天）</b>：A 类每项目录 2 分钟看曝光、闪动、穿模、天空空帧。抗锯齿和步速今天刚改，没有一张图在新设置下录过。</li><li><b>阶段 2，正式录制</b>：拉取队列，大图先开小图填缝，每片一集一种子，跑完自动关机。</li><li><b>阶段 3，追加</b>：阶段 0 通过的按同样流程补进来。</li></ol>")
-h.append(f"<h2>A 类：可直接录（{len(A)}，按成片时长降序）</h2><table><tr><th>#</th><th>项目</th><th>代表关卡</th><th>核心 m²</th><th>间隙</th><th>一遍 min</th><th>成片 h</th><th>分片</th><th>机时</th><th>需同步的包</th><th>备注</th></tr>")
+h.append(f"<h2>对照：按资源包，A 类 {len(A)} 个（每包一张代表关卡）</h2><table><tr><th>#</th><th>项目</th><th>代表关卡</th><th>核心 m²</th><th>间隙</th><th>一遍 min</th><th>成片 h</th><th>分片</th><th>机时</th><th>需同步的包</th><th>备注</th></tr>")
 for i, p in enumerate(A, 1):
     b = p['best']; cls = 'big' if p.get('tier','').startswith('大') else 'low' if (b['core'] or 0) < 50 else ''
     h.append(f"<tr class='{cls}'><td class=r>{i}</td><td><b>{html.escape(p['title'])}</b><div class=mut>{p['fid']} · {html.escape(p['project'] or '')}</div></td><td><code>{html.escape(b['level'])}</code></td><td class=r>{n(b['core'])}</td><td class=r>{n(b.get('clr'))}</td><td class=r>{n(p.get('one_pass_min'),'{:.0f}')}</td><td class=r>{n(p.get('episode_h'),'{:.1f}')}</td><td class=r>{p.get('shards','—')}</td><td class=r>{n(p.get('machine_h'),'{:.0f}')}</td><td>{', '.join(p['packs_missing']) or '—'}</td><td>{html.escape(p.get('note',''))}{' <b>已录</b>' if p['recorded'] else ''}</td></tr>")
@@ -103,7 +109,7 @@ for c in ORDER[1:]:
         b = p['best']
         h.append(f"<tr><td><b>{html.escape(p['title'])}</b><div class=mut>{p['fid']}</div></td><td><code>{html.escape(b['level'])}</code></td><td>{b['state'] or '未跑'}</td><td class=r>{n(b['core'])}</td><td>{', '.join(p['packs_missing']) or '—'}</td><td>{html.escape(p.get('note',''))}</td></tr>")
     h.append("</table>")
-h.append(f"<h2>两种统计口径</h2><table><tr><th>口径</th><th>可直接录</th><th>成片 h</th><th>分片</th><th>机时</th><th>10 台天数</th><th>存储 GB</th></tr>"
+h.append(f"<h2>两种统计口径（录制口径 = 按关卡）</h2><table><tr><th>口径</th><th>可直接录</th><th>成片 h</th><th>分片</th><th>机时</th><th>10 台天数</th><th>存储 GB</th></tr>"
          f"<tr><td>按资源包（每包一张代表关卡）</td><td class=r>{len(A)}</td><td class=r>{tot['ep']:.0f}</td><td class=r>{tot['sh']}</td><td class=r>{tot['mh']:.0f}</td><td class=r>{tot['mh']/240:.1f}</td><td class=r>{tot['gb']:,}</td></tr>"
          f"<tr><td>按关卡（每个通过的场景都录）</td><td class=r>{len(LA)}</td><td class=r>{ltot['ep']:.0f}</td><td class=r>{ltot['sh']}</td><td class=r>{ltot['mh']:.0f}</td><td class=r>{ltot['mh']/240:.1f}</td><td class=r>{ltot['gb']:,}</td></tr></table>"
          f"<p>按关卡的 {len(LA)} 张分布在 {len({x['fid'] for x in LA})} 个资源包里；多出来的 {len(LA)-len(A)} 张是同一个包里的第二、第三个场景。</p>")
@@ -115,5 +121,7 @@ for i, x in enumerate(LA, 1):
 h.append("</table>")
 h.append("<h2>单独立项</h2><ul><li><b>Dubai Downtown</b>：64 GB，需 Cesium；悬浮模式录过 30 s 演示，地面无碰撞，要录先解决碰撞。</li><li><b>Lyra</b>：射击示例，非环境。</li><li><b>AdditionalSamples</b>：CitySample 82 GB / 439 张关卡是完整城市，值得单独评估；另两个不是环境。</li></ul>")
 h.append("<p class=mut>机器可读版：<code>revisit_pipeline/results/map_plan_2026-09-17/projects.json</code>；文档：<code>revisit_pipeline/MAP_PLAN_2026-09-17.md</code>。一遍耗时取自路线验证时的完整覆盖走法帧数（旧速度档），1 m/s 下会略短；存储按 1.5 GB/成片小时（166 GB / 108 h 实测）。</p>")
+h = _reorder(h, "A 类：可直接录（", "两种统计口径", "<h2>单独立项</h2>")
+h[1] = h[1].replace("全部交付地图的录制规划（按项目）", "全部交付地图的录制规划（按关卡）").replace("87 个资源包，每包一张代表关卡", "口径：一张关卡 = 一个地图 = 一集；442 张关卡逐张归类，资源包视图在后")
 (SITE / 'index.html').write_text('\n'.join(h))
 print('written', SITE / 'index.html', REPO / 'MAP_PLAN_2026-09-17.md', RES / 'projects.json')
