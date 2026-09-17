@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ModularSciFi/Levels/LandscapePreview",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -13671.0,
+   "y": 63929.0,
+   "z": -9688.218623481782
+  },
+  {
+   "name": "route_1",
+   "x": -19542.60403978613,
+   "y": 67254.967299564,
+   "z": -9234.105303371707
+  },
+  {
+   "name": "route_2",
+   "x": -16521.124835951985,
+   "y": 72144.77421416732,
+   "z": -8942.675702813358
+  },
+  {
+   "name": "route_3",
+   "x": -19752.58556607489,
+   "y": 69355.19112701828,
+   "z": -9245.79095011245
+  },
+  {
+   "name": "route_4",
+   "x": -18296.0,
+   "y": 65003.721481688815,
+   "z": -9304.96062638359
+  }
+ ],
+ "source": "validated route Game_ModularSciFi_Levels_LandscapePreview__coverage_walk__se"
+}

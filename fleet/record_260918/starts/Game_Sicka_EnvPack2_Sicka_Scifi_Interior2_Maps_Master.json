@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Sicka_EnvPack2/Sicka_Scifi_Interior2/Maps/Master",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 910.0,
+   "y": 440.0,
+   "z": 49.1128322478437
+  },
+  {
+   "name": "route_1",
+   "x": 177.35278683173968,
+   "y": 427.66222616318953,
+   "z": 47.201506632671794
+  },
+  {
+   "name": "route_2",
+   "x": 772.9033465821175,
+   "y": 415.1496372348239,
+   "z": 49.08891798366233
+  },
+  {
+   "name": "route_3",
+   "x": 10.0,
+   "y": 1301.585443742493,
+   "z": 52.33433402447821
+  },
+  {
+   "name": "route_4",
+   "x": -66.0473424398907,
+   "y": 1786.299413285422,
+   "z": 41.195600128968834
+  }
+ ],
+ "source": "validated route Game_Sicka_EnvPack2_Sicka_Scifi_Interior2_Maps_Master__cover"
+}

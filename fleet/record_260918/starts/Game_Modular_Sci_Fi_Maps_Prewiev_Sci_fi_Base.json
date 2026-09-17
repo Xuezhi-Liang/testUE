@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Modular_Sci_Fi/Maps/Prewiev_Sci_fi_Base",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 7977.0,
+   "y": 808.0,
+   "z": 285.12145748987854
+  },
+  {
+   "name": "route_1",
+   "x": 5600.434415085215,
+   "y": 1593.986404542734,
+   "z": 273.3333080753326
+  },
+  {
+   "name": "route_2",
+   "x": 1626.556062367261,
+   "y": -4003.3540618410916,
+   "z": 240.0
+  },
+  {
+   "name": "route_3",
+   "x": 3443.100433308384,
+   "y": -991.4258076080268,
+   "z": 227.66779526808568
+  },
+  {
+   "name": "route_4",
+   "x": -798.0,
+   "y": -5298.725258234728,
+   "z": 240.0
+  }
+ ],
+ "source": "validated route Game_Modular_Sci_Fi_Maps_Prewiev_Sci_fi_Base__coverage_walk_"
+}

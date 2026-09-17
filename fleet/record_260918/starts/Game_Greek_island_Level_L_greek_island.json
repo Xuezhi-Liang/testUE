@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Greek_island/Level/L_greek_island",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -1377.0,
+   "y": 45484.0,
+   "z": 8410.0
+  },
+  {
+   "name": "route_1",
+   "x": -2031.8555913380346,
+   "y": 45098.15910382382,
+   "z": 8410.0
+  },
+  {
+   "name": "route_2",
+   "x": -2623.4990677517603,
+   "y": 43154.82063622315,
+   "z": 8410.0
+  },
+  {
+   "name": "route_3",
+   "x": -2593.955953764171,
+   "y": 43228.34844631185,
+   "z": 8410.0
+  },
+  {
+   "name": "route_4",
+   "x": -2831.513722419878,
+   "y": 44723.21569855184,
+   "z": 8410.0
+  }
+ ],
+ "source": "validated route Game_Greek_island_Level_L_greek_island__coverage_walk__seed3"
+}

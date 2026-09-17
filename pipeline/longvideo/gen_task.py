@@ -50,6 +50,8 @@ def main(shard_id):
     # shards say `level` and keep the author's lighting untouched.
     if sh.get("lighting"):
         task.setdefault("render", {})["lighting"] = sh["lighting"]
+    if sh.get("nav_bounds"):
+        task["nav_bounds"] = sh["nav_bounds"]
     task["shard"] = {k: sh[k] for k in ("shard", "shards", "estimated_hours",
                                         "one_pass_min_estimate")}
     out = PIPE / "tasks" / f"lv_{shard_id}.json"

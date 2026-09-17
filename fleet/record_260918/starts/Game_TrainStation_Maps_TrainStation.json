@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/TrainStation/Maps/TrainStation",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -5159.0,
+   "y": 11008.0,
+   "z": -1010.0
+  },
+  {
+   "name": "route_1",
+   "x": 1428.8233804089336,
+   "y": 5183.0,
+   "z": -1010.0
+  },
+  {
+   "name": "route_2",
+   "x": 1240.9999999999998,
+   "y": 9498.132366273157,
+   "z": -1010.0
+  },
+  {
+   "name": "route_3",
+   "x": 1240.9999999999998,
+   "y": 9178.309373125841,
+   "z": -1010.0
+  },
+  {
+   "name": "route_4",
+   "x": -5783.999999999998,
+   "y": 8976.271648104244,
+   "z": -1010.0
+  }
+ ],
+ "source": "validated route Game_TrainStation_Maps_TrainStation__coverage_walk__seed3004"
+}

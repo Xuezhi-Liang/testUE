@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/City_of_Brass_Enviroment/Maps/Demo_Gardens",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 302.0,
+   "y": -1390.0,
+   "z": 26.721284340568218
+  },
+  {
+   "name": "route_1",
+   "x": -4454.093092017175,
+   "y": 2080.327874316419,
+   "z": 220.0
+  },
+  {
+   "name": "route_2",
+   "x": -1415.2063781700836,
+   "y": 1862.0612751055066,
+   "z": 220.0
+  },
+  {
+   "name": "route_3",
+   "x": -3498.0,
+   "y": 3877.578694546784,
+   "z": 39.57259715641334
+  },
+  {
+   "name": "route_4",
+   "x": -568.2076775841032,
+   "y": -1592.2987963325677,
+   "z": 23.627637723616232
+  }
+ ],
+ "source": "validated route Game_City_of_Brass_Enviroment_Maps_Demo_Gardens__coverage_wa"
+}

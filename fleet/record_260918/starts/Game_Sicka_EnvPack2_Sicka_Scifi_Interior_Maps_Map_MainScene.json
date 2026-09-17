@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Sicka_EnvPack2/Sicka_Scifi_Interior/Maps/Map_MainScene",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 100.0,
+   "y": 476.0,
+   "z": 30.0
+  },
+  {
+   "name": "route_1",
+   "x": -268.7741531474412,
+   "y": -221.25614817086387,
+   "z": 30.0
+  },
+  {
+   "name": "route_2",
+   "x": -281.50478294302377,
+   "y": 311.6830685452016,
+   "z": 30.0
+  },
+  {
+   "name": "route_3",
+   "x": 108.1471245628397,
+   "y": 541.2605723273382,
+   "z": 30.0
+  },
+  {
+   "name": "route_4",
+   "x": -195.88221175014846,
+   "y": 499.47095168345015,
+   "z": 30.0
+  }
+ ],
+ "source": "validated route Game_Sicka_EnvPack2_Sicka_Scifi_Interior_Maps_Map_MainScene_"
+}

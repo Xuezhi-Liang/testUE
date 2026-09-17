@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/City_of_Brass_Enviroment/Maps/Demo_Streets",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -1398.0,
+   "y": 2629.0,
+   "z": 220.0
+  },
+  {
+   "name": "route_1",
+   "x": -4620.54753697488,
+   "y": 3656.4524630251194,
+   "z": 20.0
+  },
+  {
+   "name": "route_2",
+   "x": -1499.2738483213257,
+   "y": 1934.1600340319935,
+   "z": 220.0
+  },
+  {
+   "name": "route_3",
+   "x": 885.3996759662987,
+   "y": 979.0000000000001,
+   "z": 20.0
+  },
+  {
+   "name": "route_4",
+   "x": -3845.4959552632326,
+   "y": -1400.7567608202273,
+   "z": 220.0
+  }
+ ],
+ "source": "validated route Game_City_of_Brass_Enviroment_Maps_Demo_Streets__coverage_wa"
+}

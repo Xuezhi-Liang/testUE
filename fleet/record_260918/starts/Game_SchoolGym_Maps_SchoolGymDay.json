@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/SchoolGym/Maps/SchoolGymDay",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -1226.0,
+   "y": 1044.0,
+   "z": 140.0
+  },
+  {
+   "name": "route_1",
+   "x": -1210.300464187403,
+   "y": -455.9999999999999,
+   "z": 150.0
+  },
+  {
+   "name": "route_2",
+   "x": -543.9689810249897,
+   "y": -132.68154038662195,
+   "z": 150.0
+  },
+  {
+   "name": "route_3",
+   "x": -920.8596274075497,
+   "y": 1349.1403725924501,
+   "z": 140.0
+  },
+  {
+   "name": "route_4",
+   "x": -1326.2186504669492,
+   "y": 1159.0889924792903,
+   "z": 140.0
+  }
+ ],
+ "source": "validated route Game_SchoolGym_Maps_SchoolGymDay__coverage_walk__seed160960_"
+}

@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/Old_Factory_01/Maps/Demoscene_02",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 37429.0,
+   "y": -11936.0,
+   "z": 1550.0
+  },
+  {
+   "name": "route_1",
+   "x": 36354.320116219686,
+   "y": -12361.0,
+   "z": 1550.0
+  },
+  {
+   "name": "route_2",
+   "x": 38561.723017370205,
+   "y": -12361.0,
+   "z": 1550.0
+  },
+  {
+   "name": "route_3",
+   "x": 45109.17437707178,
+   "y": -11061.0,
+   "z": 1550.0
+  },
+  {
+   "name": "route_4",
+   "x": 40278.99999999999,
+   "y": -14869.553895378871,
+   "z": 1550.0
+  }
+ ],
+ "source": "validated route Game_Old_Factory_01_Maps_Demoscene_02__coverage_walk__seed30"
+}

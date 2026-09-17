@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/MiddleEast/Maps/MiddleEast",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -2338.0,
+   "y": -3413.0,
+   "z": 150.0
+  },
+  {
+   "name": "route_1",
+   "x": 934.5001553192811,
+   "y": -2228.282484536233,
+   "z": 150.0
+  },
+  {
+   "name": "route_2",
+   "x": 1233.147816129632,
+   "y": -3359.147816129632,
+   "z": 150.0
+  },
+  {
+   "name": "route_3",
+   "x": 3005.067850082175,
+   "y": -4369.778566065447,
+   "z": 150.0
+  },
+  {
+   "name": "route_4",
+   "x": -3410.5051363667585,
+   "y": -5405.412847564463,
+   "z": 150.0
+  }
+ ],
+ "source": "validated route Game_MiddleEast_Maps_MiddleEast__coverage_walk__seed160937__"
+}

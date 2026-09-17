@@ -507,7 +507,10 @@ def freeze(task, ucv=None, out_dir=FROZEN, skip_probe=False):
             raise RuntimeError("UE never became reachable")
     req = ucv.client.request
 
-    content = {} if task.get("content_buffer_m") else None
+    # nav_bounds: "content" = synthesise the navmesh box round the level's content (17 Sep, tested on
+    # one map); "spawn" = the 60 m half-size box round the start that every validated route used.
+    # The 18 Sep batch runs "spawn" so its durations match the validation estimates.
+    content = {} if (task.get("content_buffer_m") and task.get("nav_bounds", "content") == "content") else None
     sp, gz, nav_boot = pick_spawn(req, map_id, content=content)
     print(f"[freeze-cov] spawn '{sp.get('name')}' at ({sp['x']:.0f}, {sp['y']:.0f}), "
           f"navmesh ground {gz:.1f} cm")

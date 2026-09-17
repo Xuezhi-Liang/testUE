@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/City_of_Brass_Enviroment/Maps/Example_Streets",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -1038.0,
+   "y": -1188.0,
+   "z": 40.0
+  },
+  {
+   "name": "route_1",
+   "x": 1987.3446500649197,
+   "y": -696.7263553987225,
+   "z": 40.0
+  },
+  {
+   "name": "route_2",
+   "x": 4324.849211161482,
+   "y": 2688.0962394657545,
+   "z": 40.0
+  },
+  {
+   "name": "route_3",
+   "x": -5437.467742176378,
+   "y": -6052.547810793651,
+   "z": 40.0
+  },
+  {
+   "name": "route_4",
+   "x": 1822.8647629025932,
+   "y": -5878.148762715675,
+   "z": 68.67340350024028
+  }
+ ],
+ "source": "validated route Game_City_of_Brass_Enviroment_Maps_Example_Streets__coverage"
+}

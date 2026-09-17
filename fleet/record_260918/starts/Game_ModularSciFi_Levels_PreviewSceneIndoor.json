@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ModularSciFi/Levels/PreviewSceneIndoor",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -49888.0,
+   "y": 91805.0,
+   "z": -7650.0
+  },
+  {
+   "name": "route_1",
+   "x": -47784.11954273494,
+   "y": 88636.81074561694,
+   "z": -7650.0
+  },
+  {
+   "name": "route_2",
+   "x": -48012.1101561006,
+   "y": 84630.0,
+   "z": -7650.0
+  },
+  {
+   "name": "route_3",
+   "x": -44517.7116881957,
+   "y": 90675.2883118043,
+   "z": -7650.0
+  },
+  {
+   "name": "route_4",
+   "x": -49541.59066597851,
+   "y": 89791.7717617687,
+   "z": -7650.0
+  }
+ ],
+ "source": "validated route Game_ModularSciFi_Levels_PreviewSceneIndoor__coverage_walk__"
+}

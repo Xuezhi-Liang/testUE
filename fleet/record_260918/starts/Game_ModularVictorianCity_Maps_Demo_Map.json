@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ModularVictorianCity/Maps/Demo_Map",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -15891.0,
+   "y": -13291.0,
+   "z": 3440.0
+  },
+  {
+   "name": "route_1",
+   "x": -21115.999999999996,
+   "y": -17315.03617394626,
+   "z": 3440.0
+  },
+  {
+   "name": "route_2",
+   "x": -15677.666153406237,
+   "y": -19215.098876563927,
+   "z": 3440.0
+  },
+  {
+   "name": "route_3",
+   "x": -10723.72749347565,
+   "y": -17148.329156765376,
+   "z": 3440.0
+  },
+  {
+   "name": "route_4",
+   "x": -14693.239673675584,
+   "y": -16132.40626480525,
+   "z": 3450.6249845445823
+  }
+ ],
+ "source": "validated route Game_ModularVictorianCity_Maps_Demo_Map__coverage_walk__seed"
+}

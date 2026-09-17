@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/City_of_Brass_Enviroment/Maps/Demo_Palace",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 677.0,
+   "y": -896.0,
+   "z": 20.0
+  },
+  {
+   "name": "route_1",
+   "x": -5198.498789359578,
+   "y": 2379.0,
+   "z": 220.0
+  },
+  {
+   "name": "route_2",
+   "x": -2656.2308013559505,
+   "y": 2020.0077318745405,
+   "z": 425.2040371451392
+  },
+  {
+   "name": "route_3",
+   "x": -2479.1882168359157,
+   "y": 2172.8117831640843,
+   "z": 407.0624743302096
+  },
+  {
+   "name": "route_4",
+   "x": -3142.537680679652,
+   "y": -1395.9999999999998,
+   "z": 220.0
+  }
+ ],
+ "source": "validated route Game_City_of_Brass_Enviroment_Maps_Demo_Palace__coverage_wal"
+}

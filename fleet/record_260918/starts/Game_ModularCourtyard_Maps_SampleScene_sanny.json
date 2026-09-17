@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ModularCourtyard/Maps/SampleScene_sanny",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": 1771.0,
+   "y": 6838.0,
+   "z": 40.0
+  },
+  {
+   "name": "route_1",
+   "x": 1646.0,
+   "y": 6415.155115860504,
+   "z": 40.0
+  },
+  {
+   "name": "route_2",
+   "x": 3171.0,
+   "y": 8084.129238743647,
+   "z": 40.0
+  },
+  {
+   "name": "route_3",
+   "x": 2446.0,
+   "y": 8534.85648485875,
+   "z": 40.0
+  },
+  {
+   "name": "route_4",
+   "x": 3148.7201188084414,
+   "y": 6623.18891517135,
+   "z": 40.0
+  }
+ ],
+ "source": "validated route route.json"
+}

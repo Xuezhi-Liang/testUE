@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_1",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -10721.0,
+   "y": 3474.0,
+   "z": -15386.229806290668
+  },
+  {
+   "name": "route_1",
+   "x": -13271.0,
+   "y": 5500.000730970111,
+   "z": -15400.0
+  },
+  {
+   "name": "route_2",
+   "x": -12576.228512042944,
+   "y": 2898.6094150668705,
+   "z": -15400.540765579157
+  },
+  {
+   "name": "route_3",
+   "x": -12745.977569579669,
+   "y": 6890.7697596776525,
+   "z": -15408.69675875538
+  },
+  {
+   "name": "route_4",
+   "x": -10930.62226656594,
+   "y": 572.0484988067697,
+   "z": -15380.0
+  }
+ ],
+ "source": "validated route Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_1__coverage_wal"
+}

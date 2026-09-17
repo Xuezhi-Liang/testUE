@@ -1,1351 +1,5 @@
 [
  {
-  "shard_id": "Game_AnchientRuins_Maps_AncientRuins__s00",
-  "slug": "Game_AnchientRuins_Maps_AncientRuins",
-  "map_id": "/Game/AnchientRuins/Maps/AncientRuins",
-  "shard": 0,
-  "shards": 4,
-  "seed": 3000,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 176,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_AnchientRuins_Maps_AncientRuins__s01",
-  "slug": "Game_AnchientRuins_Maps_AncientRuins",
-  "map_id": "/Game/AnchientRuins/Maps/AncientRuins",
-  "shard": 1,
-  "shards": 4,
-  "seed": 3001,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 176,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_AnchientRuins_Maps_AncientRuins__s02",
-  "slug": "Game_AnchientRuins_Maps_AncientRuins",
-  "map_id": "/Game/AnchientRuins/Maps/AncientRuins",
-  "shard": 2,
-  "shards": 4,
-  "seed": 3002,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 176,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_AnchientRuins_Maps_AncientRuins__s03",
-  "slug": "Game_AnchientRuins_Maps_AncientRuins",
-  "map_id": "/Game/AnchientRuins/Maps/AncientRuins",
-  "shard": 3,
-  "shards": 4,
-  "seed": 3003,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 176,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2__s00",
-  "slug": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2",
-  "map_id": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_2",
-  "shard": 0,
-  "shards": 4,
-  "seed": 3004,
-  "target_passes": 1,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 209,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2__s01",
-  "slug": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2",
-  "map_id": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_2",
-  "shard": 1,
-  "shards": 4,
-  "seed": 3005,
-  "target_passes": 1,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 209,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2__s02",
-  "slug": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2",
-  "map_id": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_2",
-  "shard": 2,
-  "shards": 4,
-  "seed": 3006,
-  "target_passes": 1,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 209,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2__s03",
-  "slug": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2",
-  "map_id": "/Game/ChemicalPlantEnv/Maps/Map_ChemicalPlant_2",
-  "shard": 3,
-  "shards": 4,
-  "seed": 3007,
-  "target_passes": 1,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 209,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_Pyramids_Levels_L_pyramids__s00",
-  "slug": "Game_Pyramids_Levels_L_pyramids",
-  "map_id": "/Game/Pyramids/Levels/L_pyramids",
-  "shard": 0,
-  "shards": 4,
-  "seed": 3008,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 159,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_Pyramids_Levels_L_pyramids__s01",
-  "slug": "Game_Pyramids_Levels_L_pyramids",
-  "map_id": "/Game/Pyramids/Levels/L_pyramids",
-  "shard": 1,
-  "shards": 4,
-  "seed": 3009,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 159,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_Pyramids_Levels_L_pyramids__s02",
-  "slug": "Game_Pyramids_Levels_L_pyramids",
-  "map_id": "/Game/Pyramids/Levels/L_pyramids",
-  "shard": 2,
-  "shards": 4,
-  "seed": 3010,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 159,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_Pyramids_Levels_L_pyramids__s03",
-  "slug": "Game_Pyramids_Levels_L_pyramids",
-  "map_id": "/Game/Pyramids/Levels/L_pyramids",
-  "shard": 3,
-  "shards": 4,
-  "seed": 3011,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 159,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_WinterTown_Maps_RussianWinterTownDemo01__s00",
-  "slug": "Game_WinterTown_Maps_RussianWinterTownDemo01",
-  "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
-  "shard": 0,
-  "shards": 4,
-  "seed": 3012,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 176,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_WinterTown_Maps_RussianWinterTownDemo01__s01",
-  "slug": "Game_WinterTown_Maps_RussianWinterTownDemo01",
-  "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
-  "shard": 1,
-  "shards": 4,
-  "seed": 3013,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 176,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_WinterTown_Maps_RussianWinterTownDemo01__s02",
-  "slug": "Game_WinterTown_Maps_RussianWinterTownDemo01",
-  "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
-  "shard": 2,
-  "shards": 4,
-  "seed": 3014,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 176,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_WinterTown_Maps_RussianWinterTownDemo01__s03",
-  "slug": "Game_WinterTown_Maps_RussianWinterTownDemo01",
-  "map_id": "/Game/WinterTown/Maps/RussianWinterTownDemo01",
-  "shard": 3,
-  "shards": 4,
-  "seed": 3015,
-  "target_passes": 2,
-  "max_duration_s": 18000.0,
-  "one_pass_min_estimate": 176,
-  "estimated_hours": 5.0
- },
- {
-  "shard_id": "Game_Downtown_West_Maps_Demo_Environment__s00",
-  "slug": "Game_Downtown_West_Maps_Demo_Environment",
-  "map_id": "/Game/Downtown_West/Maps/Demo_Environment",
-  "shard": 0,
-  "shards": 4,
-  "seed": 3016,
-  "target_passes": 2,
-  "max_duration_s": 16920.0,
-  "one_pass_min_estimate": 141,
-  "estimated_hours": 4.7
- },
- {
-  "shard_id": "Game_Downtown_West_Maps_Demo_Environment__s01",
-  "slug": "Game_Downtown_West_Maps_Demo_Environment",
-  "map_id": "/Game/Downtown_West/Maps/Demo_Environment",
-  "shard": 1,
-  "shards": 4,
-  "seed": 3017,
-  "target_passes": 2,
-  "max_duration_s": 16920.0,
-  "one_pass_min_estimate": 141,
-  "estimated_hours": 4.7
- },
- {
-  "shard_id": "Game_Downtown_West_Maps_Demo_Environment__s02",
-  "slug": "Game_Downtown_West_Maps_Demo_Environment",
-  "map_id": "/Game/Downtown_West/Maps/Demo_Environment",
-  "shard": 2,
-  "shards": 4,
-  "seed": 3018,
-  "target_passes": 2,
-  "max_duration_s": 16920.0,
-  "one_pass_min_estimate": 141,
-  "estimated_hours": 4.7
- },
- {
-  "shard_id": "Game_Downtown_West_Maps_Demo_Environment__s03",
-  "slug": "Game_Downtown_West_Maps_Demo_Environment",
-  "map_id": "/Game/Downtown_West/Maps/Demo_Environment",
-  "shard": 3,
-  "shards": 4,
-  "seed": 3019,
-  "target_passes": 2,
-  "max_duration_s": 16920.0,
-  "one_pass_min_estimate": 141,
-  "estimated_hours": 4.7
- },
- {
-  "shard_id": "Game_ForestGasStation_Maps_Demo__s00",
-  "slug": "Game_ForestGasStation_Maps_Demo",
-  "map_id": "/Game/ForestGasStation/Maps/Demo",
-  "shard": 0,
-  "shards": 3,
-  "seed": 3020,
-  "target_passes": 3,
-  "max_duration_s": 18840.0,
-  "one_pass_min_estimate": 117,
-  "estimated_hours": 5.23
- },
- {
-  "shard_id": "Game_ForestGasStation_Maps_Demo__s01",
-  "slug": "Game_ForestGasStation_Maps_Demo",
-  "map_id": "/Game/ForestGasStation/Maps/Demo",
-  "shard": 1,
-  "shards": 3,
-  "seed": 3021,
-  "target_passes": 3,
-  "max_duration_s": 18840.0,
-  "one_pass_min_estimate": 117,
-  "estimated_hours": 5.23
- },
- {
-  "shard_id": "Game_ForestGasStation_Maps_Demo__s02",
-  "slug": "Game_ForestGasStation_Maps_Demo",
-  "map_id": "/Game/ForestGasStation/Maps/Demo",
-  "shard": 2,
-  "shards": 3,
-  "seed": 3022,
-  "target_passes": 3,
-  "max_duration_s": 18840.0,
-  "one_pass_min_estimate": 117,
-  "estimated_hours": 5.23
- },
- {
-  "shard_id": "Game_Village_Maps_Village__s00",
-  "slug": "Game_Village_Maps_Village",
-  "map_id": "/Game/Village/Maps/Village",
-  "shard": 0,
-  "shards": 3,
-  "seed": 3023,
-  "target_passes": 3,
-  "max_duration_s": 18360.0,
-  "one_pass_min_estimate": 115,
-  "estimated_hours": 5.1
- },
- {
-  "shard_id": "Game_Village_Maps_Village__s01",
-  "slug": "Game_Village_Maps_Village",
-  "map_id": "/Game/Village/Maps/Village",
-  "shard": 1,
-  "shards": 3,
-  "seed": 3024,
-  "target_passes": 3,
-  "max_duration_s": 18360.0,
-  "one_pass_min_estimate": 115,
-  "estimated_hours": 5.1
- },
- {
-  "shard_id": "Game_Village_Maps_Village__s02",
-  "slug": "Game_Village_Maps_Village",
-  "map_id": "/Game/Village/Maps/Village",
-  "shard": 2,
-  "shards": 3,
-  "seed": 3025,
-  "target_passes": 3,
-  "max_duration_s": 18360.0,
-  "one_pass_min_estimate": 115,
-  "estimated_hours": 5.1
- },
- {
-  "shard_id": "Game_MiddleEast_Maps_MiddleEast__s00",
-  "slug": "Game_MiddleEast_Maps_MiddleEast",
-  "map_id": "/Game/MiddleEast/Maps/MiddleEast",
-  "shard": 0,
-  "shards": 3,
-  "seed": 3026,
-  "target_passes": 3,
-  "max_duration_s": 14400.0,
-  "one_pass_min_estimate": 90,
-  "estimated_hours": 4.0
- },
- {
-  "shard_id": "Game_MiddleEast_Maps_MiddleEast__s01",
-  "slug": "Game_MiddleEast_Maps_MiddleEast",
-  "map_id": "/Game/MiddleEast/Maps/MiddleEast",
-  "shard": 1,
-  "shards": 3,
-  "seed": 3027,
-  "target_passes": 3,
-  "max_duration_s": 14400.0,
-  "one_pass_min_estimate": 90,
-  "estimated_hours": 4.0
- },
- {
-  "shard_id": "Game_MiddleEast_Maps_MiddleEast__s02",
-  "slug": "Game_MiddleEast_Maps_MiddleEast",
-  "map_id": "/Game/MiddleEast/Maps/MiddleEast",
-  "shard": 2,
-  "shards": 3,
-  "seed": 3028,
-  "target_passes": 3,
-  "max_duration_s": 14400.0,
-  "one_pass_min_estimate": 90,
-  "estimated_hours": 4.0
- },
- {
-  "shard_id": "Game_TokyoStylizedEnvironment_Maps_Tokyo__s00",
-  "slug": "Game_TokyoStylizedEnvironment_Maps_Tokyo",
-  "map_id": "/Game/TokyoStylizedEnvironment/Maps/Tokyo",
-  "shard": 0,
-  "shards": 2,
-  "seed": 3029,
-  "target_passes": 4,
-  "max_duration_s": 14940.0,
-  "one_pass_min_estimate": 62,
-  "estimated_hours": 4.15
- },
- {
-  "shard_id": "Game_TokyoStylizedEnvironment_Maps_Tokyo__s01",
-  "slug": "Game_TokyoStylizedEnvironment_Maps_Tokyo",
-  "map_id": "/Game/TokyoStylizedEnvironment/Maps/Tokyo",
-  "shard": 1,
-  "shards": 2,
-  "seed": 3030,
-  "target_passes": 4,
-  "max_duration_s": 14940.0,
-  "one_pass_min_estimate": 62,
-  "estimated_hours": 4.15
- },
- {
-  "shard_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__s00",
-  "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen",
-  "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
-  "shard": 0,
-  "shards": 8,
-  "seed": 3100,
-  "target_passes": 1,
-  "max_duration_s": 4350.0,
-  "one_pass_min_estimate": 58,
-  "estimated_hours": 1.21
- },
- {
-  "shard_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__s01",
-  "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen",
-  "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
-  "shard": 1,
-  "shards": 8,
-  "seed": 3101,
-  "target_passes": 1,
-  "max_duration_s": 4350.0,
-  "one_pass_min_estimate": 58,
-  "estimated_hours": 1.21
- },
- {
-  "shard_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__s02",
-  "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen",
-  "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
-  "shard": 2,
-  "shards": 8,
-  "seed": 3102,
-  "target_passes": 1,
-  "max_duration_s": 4350.0,
-  "one_pass_min_estimate": 58,
-  "estimated_hours": 1.21
- },
- {
-  "shard_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__s03",
-  "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen",
-  "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
-  "shard": 3,
-  "shards": 8,
-  "seed": 3103,
-  "target_passes": 1,
-  "max_duration_s": 4350.0,
-  "one_pass_min_estimate": 58,
-  "estimated_hours": 1.21
- },
- {
-  "shard_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__s04",
-  "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen",
-  "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
-  "shard": 4,
-  "shards": 8,
-  "seed": 3104,
-  "target_passes": 1,
-  "max_duration_s": 4350.0,
-  "one_pass_min_estimate": 58,
-  "estimated_hours": 1.21
- },
- {
-  "shard_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__s05",
-  "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen",
-  "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
-  "shard": 5,
-  "shards": 8,
-  "seed": 3105,
-  "target_passes": 1,
-  "max_duration_s": 4350.0,
-  "one_pass_min_estimate": 58,
-  "estimated_hours": 1.21
- },
- {
-  "shard_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__s06",
-  "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen",
-  "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
-  "shard": 6,
-  "shards": 8,
-  "seed": 3106,
-  "target_passes": 1,
-  "max_duration_s": 4350.0,
-  "one_pass_min_estimate": 58,
-  "estimated_hours": 1.21
- },
- {
-  "shard_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__s07",
-  "slug": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen",
-  "map_id": "/Game/SuburbNeighborhoodHousePack/Maps/DemoMap_Day_Lumen",
-  "shard": 7,
-  "shards": 8,
-  "seed": 3107,
-  "target_passes": 1,
-  "max_duration_s": 4350.0,
-  "one_pass_min_estimate": 58,
-  "estimated_hours": 1.21
- },
- {
-  "shard_id": "Game_ContainerYard_Maps_Demonstration_Day__s00",
-  "slug": "Game_ContainerYard_Maps_Demonstration_Day",
-  "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
-  "shard": 0,
-  "shards": 8,
-  "seed": 3110,
-  "target_passes": 1,
-  "max_duration_s": 3525.0,
-  "one_pass_min_estimate": 47,
-  "estimated_hours": 0.98
- },
- {
-  "shard_id": "Game_ContainerYard_Maps_Demonstration_Day__s01",
-  "slug": "Game_ContainerYard_Maps_Demonstration_Day",
-  "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
-  "shard": 1,
-  "shards": 8,
-  "seed": 3111,
-  "target_passes": 1,
-  "max_duration_s": 3525.0,
-  "one_pass_min_estimate": 47,
-  "estimated_hours": 0.98
- },
- {
-  "shard_id": "Game_ContainerYard_Maps_Demonstration_Day__s02",
-  "slug": "Game_ContainerYard_Maps_Demonstration_Day",
-  "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
-  "shard": 2,
-  "shards": 8,
-  "seed": 3112,
-  "target_passes": 1,
-  "max_duration_s": 3525.0,
-  "one_pass_min_estimate": 47,
-  "estimated_hours": 0.98
- },
- {
-  "shard_id": "Game_ContainerYard_Maps_Demonstration_Day__s03",
-  "slug": "Game_ContainerYard_Maps_Demonstration_Day",
-  "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
-  "shard": 3,
-  "shards": 8,
-  "seed": 3113,
-  "target_passes": 1,
-  "max_duration_s": 3525.0,
-  "one_pass_min_estimate": 47,
-  "estimated_hours": 0.98
- },
- {
-  "shard_id": "Game_ContainerYard_Maps_Demonstration_Day__s04",
-  "slug": "Game_ContainerYard_Maps_Demonstration_Day",
-  "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
-  "shard": 4,
-  "shards": 8,
-  "seed": 3114,
-  "target_passes": 1,
-  "max_duration_s": 3525.0,
-  "one_pass_min_estimate": 47,
-  "estimated_hours": 0.98
- },
- {
-  "shard_id": "Game_ContainerYard_Maps_Demonstration_Day__s05",
-  "slug": "Game_ContainerYard_Maps_Demonstration_Day",
-  "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
-  "shard": 5,
-  "shards": 8,
-  "seed": 3115,
-  "target_passes": 1,
-  "max_duration_s": 3525.0,
-  "one_pass_min_estimate": 47,
-  "estimated_hours": 0.98
- },
- {
-  "shard_id": "Game_ContainerYard_Maps_Demonstration_Day__s06",
-  "slug": "Game_ContainerYard_Maps_Demonstration_Day",
-  "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
-  "shard": 6,
-  "shards": 8,
-  "seed": 3116,
-  "target_passes": 1,
-  "max_duration_s": 3525.0,
-  "one_pass_min_estimate": 47,
-  "estimated_hours": 0.98
- },
- {
-  "shard_id": "Game_ContainerYard_Maps_Demonstration_Day__s07",
-  "slug": "Game_ContainerYard_Maps_Demonstration_Day",
-  "map_id": "/Game/ContainerYard/Maps/Demonstration_Day",
-  "shard": 7,
-  "shards": 8,
-  "seed": 3117,
-  "target_passes": 1,
-  "max_duration_s": 3525.0,
-  "one_pass_min_estimate": 47,
-  "estimated_hours": 0.98
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__s00",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 0,
-  "shards": 8,
-  "seed": 3120,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__s01",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 1,
-  "shards": 8,
-  "seed": 3121,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__s02",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 2,
-  "shards": 8,
-  "seed": 3122,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__s03",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 3,
-  "shards": 8,
-  "seed": 3123,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__s04",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 4,
-  "shards": 8,
-  "seed": 3124,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__s05",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 5,
-  "shards": 8,
-  "seed": 3125,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__s06",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 6,
-  "shards": 8,
-  "seed": 3126,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__s07",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 7,
-  "shards": 8,
-  "seed": 3127,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__s00",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 0,
-  "shards": 8,
-  "seed": 3130,
-  "target_passes": 1,
-  "max_duration_s": 3825.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 1.06
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__s01",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 1,
-  "shards": 8,
-  "seed": 3131,
-  "target_passes": 1,
-  "max_duration_s": 3825.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 1.06
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__s02",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 2,
-  "shards": 8,
-  "seed": 3132,
-  "target_passes": 1,
-  "max_duration_s": 3825.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 1.06
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__s03",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 3,
-  "shards": 8,
-  "seed": 3133,
-  "target_passes": 1,
-  "max_duration_s": 3825.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 1.06
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__s04",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 4,
-  "shards": 8,
-  "seed": 3134,
-  "target_passes": 1,
-  "max_duration_s": 3825.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 1.06
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__s05",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 5,
-  "shards": 8,
-  "seed": 3135,
-  "target_passes": 1,
-  "max_duration_s": 3825.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 1.06
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__s06",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 6,
-  "shards": 8,
-  "seed": 3136,
-  "target_passes": 1,
-  "max_duration_s": 3825.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 1.06
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__s07",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 7,
-  "shards": 8,
-  "seed": 3137,
-  "target_passes": 1,
-  "max_duration_s": 3825.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 1.06
- },
- {
-  "shard_id": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__s00",
-  "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime",
-  "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Nighttime",
-  "shard": 0,
-  "shards": 8,
-  "seed": 3140,
-  "target_passes": 1,
-  "max_duration_s": 3750.0,
-  "one_pass_min_estimate": 50,
-  "estimated_hours": 1.04
- },
- {
-  "shard_id": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__s01",
-  "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime",
-  "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Nighttime",
-  "shard": 1,
-  "shards": 8,
-  "seed": 3141,
-  "target_passes": 1,
-  "max_duration_s": 3750.0,
-  "one_pass_min_estimate": 50,
-  "estimated_hours": 1.04
- },
- {
-  "shard_id": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__s02",
-  "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime",
-  "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Nighttime",
-  "shard": 2,
-  "shards": 8,
-  "seed": 3142,
-  "target_passes": 1,
-  "max_duration_s": 3750.0,
-  "one_pass_min_estimate": 50,
-  "estimated_hours": 1.04
- },
- {
-  "shard_id": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__s03",
-  "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime",
-  "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Nighttime",
-  "shard": 3,
-  "shards": 8,
-  "seed": 3143,
-  "target_passes": 1,
-  "max_duration_s": 3750.0,
-  "one_pass_min_estimate": 50,
-  "estimated_hours": 1.04
- },
- {
-  "shard_id": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__s04",
-  "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime",
-  "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Nighttime",
-  "shard": 4,
-  "shards": 8,
-  "seed": 3144,
-  "target_passes": 1,
-  "max_duration_s": 3750.0,
-  "one_pass_min_estimate": 50,
-  "estimated_hours": 1.04
- },
- {
-  "shard_id": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__s05",
-  "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime",
-  "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Nighttime",
-  "shard": 5,
-  "shards": 8,
-  "seed": 3145,
-  "target_passes": 1,
-  "max_duration_s": 3750.0,
-  "one_pass_min_estimate": 50,
-  "estimated_hours": 1.04
- },
- {
-  "shard_id": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__s06",
-  "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime",
-  "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Nighttime",
-  "shard": 6,
-  "shards": 8,
-  "seed": 3146,
-  "target_passes": 1,
-  "max_duration_s": 3750.0,
-  "one_pass_min_estimate": 50,
-  "estimated_hours": 1.04
- },
- {
-  "shard_id": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__s07",
-  "slug": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime",
-  "map_id": "/Game/Modular_MedievalTown_WI/Maps/Medieval_Nighttime",
-  "shard": 7,
-  "shards": 8,
-  "seed": 3147,
-  "target_passes": 1,
-  "max_duration_s": 3750.0,
-  "one_pass_min_estimate": 50,
-  "estimated_hours": 1.04
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__s00",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 0,
-  "shards": 8,
-  "seed": 3150,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__s01",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 1,
-  "shards": 8,
-  "seed": 3151,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__s02",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 2,
-  "shards": 8,
-  "seed": 3152,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__s03",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 3,
-  "shards": 8,
-  "seed": 3153,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__s04",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 4,
-  "shards": 8,
-  "seed": 3154,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__s05",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 5,
-  "shards": 8,
-  "seed": 3155,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__s06",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 6,
-  "shards": 8,
-  "seed": 3156,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__s07",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 7,
-  "shards": 8,
-  "seed": 3157,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__r2s00",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 0,
-  "shards": 8,
-  "seed": 3200,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__r2s01",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 1,
-  "shards": 8,
-  "seed": 3201,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__r2s02",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 2,
-  "shards": 8,
-  "seed": 3202,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__r2s03",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 3,
-  "shards": 8,
-  "seed": 3203,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__r2s04",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 4,
-  "shards": 8,
-  "seed": 3204,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__r2s05",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 5,
-  "shards": 8,
-  "seed": 3205,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__r2s06",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 6,
-  "shards": 8,
-  "seed": 3206,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_HwaseongHaenggung_Maps_Demo__r2s07",
-  "slug": "Game_HwaseongHaenggung_Maps_Demo",
-  "map_id": "/Game/HwaseongHaenggung/Maps/Demo",
-  "shard": 7,
-  "shards": 8,
-  "seed": 3207,
-  "target_passes": 1,
-  "max_duration_s": 4275.0,
-  "one_pass_min_estimate": 57,
-  "estimated_hours": 1.19,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__r2s00",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 0,
-  "shards": 8,
-  "seed": 3210,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__r2s01",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 1,
-  "shards": 8,
-  "seed": 3211,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__r2s02",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 2,
-  "shards": 8,
-  "seed": 3212,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__r2s03",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 3,
-  "shards": 8,
-  "seed": 3213,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__r2s04",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 4,
-  "shards": 8,
-  "seed": 3214,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__r2s05",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 5,
-  "shards": 8,
-  "seed": 3215,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__r2s06",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 6,
-  "shards": 8,
-  "seed": 3216,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__r2s07",
-  "slug": "Game_ModularTemplePlaza_Maps_ConceptMap",
-  "map_id": "/Game/ModularTemplePlaza/Maps/ConceptMap",
-  "shard": 7,
-  "shards": 8,
-  "seed": 3217,
-  "target_passes": 1,
-  "max_duration_s": 2775.0,
-  "one_pass_min_estimate": 37,
-  "estimated_hours": 0.77,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__r2s00",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 0,
-  "shards": 8,
-  "seed": 3300,
-  "target_passes": 1,
-  "max_duration_s": 7920.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 2.2,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__r2s01",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 1,
-  "shards": 8,
-  "seed": 3301,
-  "target_passes": 1,
-  "max_duration_s": 7920.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 2.2,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__r2s02",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 2,
-  "shards": 8,
-  "seed": 3302,
-  "target_passes": 1,
-  "max_duration_s": 7920.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 2.2,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__r2s03",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 3,
-  "shards": 8,
-  "seed": 3303,
-  "target_passes": 1,
-  "max_duration_s": 7920.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 2.2,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__r2s04",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 4,
-  "shards": 8,
-  "seed": 3304,
-  "target_passes": 1,
-  "max_duration_s": 7920.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 2.2,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__r2s05",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 5,
-  "shards": 8,
-  "seed": 3305,
-  "target_passes": 1,
-  "max_duration_s": 7920.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 2.2,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__r2s06",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 6,
-  "shards": 8,
-  "seed": 3306,
-  "target_passes": 1,
-  "max_duration_s": 7920.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 2.2,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__r2s07",
-  "slug": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene",
-  "map_id": "/Game/Medieval_Environment/Medieval_Castle_Vol1/Maps/CF_01_Demo_Scene",
-  "shard": 7,
-  "shards": 8,
-  "seed": 3307,
-  "target_passes": 1,
-  "max_duration_s": 7920.0,
-  "one_pass_min_estimate": 51,
-  "estimated_hours": 2.2,
-  "ground_clearance_cm": 45.0
- },
- {
-  "shard_id": "Game_ModularCourtyard_Maps_SampleScene_overcast__v1s00",
-  "slug": "Game_ModularCourtyard_Maps_SampleScene_overcast",
-  "map_id": "/Game/ModularCourtyard/Maps/SampleScene_overcast",
-  "shard": 0,
-  "shards": 1,
-  "seed": 5000,
-  "target_passes": 2,
-  "max_duration_s": 1800.0,
-  "one_pass_min_estimate": 9.5,
-  "estimated_hours": 0.47,
-  "ground_clearance_cm": 6.0,
-  "spec_version": "v1-2026-09-17"
- },
- {
-  "shard_id": "Game_Sicka_EnvPack2_Sicka_Scifi_Interior2_Maps_Master__v1s00",
-  "slug": "Game_Sicka_EnvPack2_Sicka_Scifi_Interior2_Maps_Master",
-  "map_id": "/Game/Sicka_EnvPack2/Sicka_Scifi_Interior2/Maps/Master",
-  "shard": 0,
-  "shards": 1,
-  "seed": 5001,
-  "target_passes": 2,
-  "max_duration_s": 1800.0,
-  "one_pass_min_estimate": 8.6,
-  "estimated_hours": 0.43,
-  "ground_clearance_cm": 45.0,
-  "spec_version": "v1-2026-09-17",
-  "lighting": "level"
- },
- {
-  "shard_id": "Game_StorageHouse_Maps_Demonstration__v1s00",
-  "slug": "Game_StorageHouse_Maps_Demonstration",
-  "map_id": "/Game/StorageHouse/Maps/Demonstration",
-  "shard": 0,
-  "shards": 1,
-  "seed": 5002,
-  "target_passes": 2,
-  "max_duration_s": 1800.0,
-  "one_pass_min_estimate": 8.3,
-  "estimated_hours": 0.42,
-  "ground_clearance_cm": 6.0,
-  "spec_version": "v1-2026-09-17"
- },
- {
-  "shard_id": "Game_Cigar_room_Maps_Cigar_room__v1s00",
-  "slug": "Game_Cigar_room_Maps_Cigar_room",
-  "map_id": "/Game/Cigar_room/Maps/Cigar_room",
-  "shard": 0,
-  "shards": 1,
-  "seed": 5003,
-  "target_passes": 2,
-  "max_duration_s": 1800.0,
-  "one_pass_min_estimate": 8.0,
-  "estimated_hours": 0.4,
-  "ground_clearance_cm": 45.0,
-  "spec_version": "v1-2026-09-17"
- },
- {
-  "shard_id": "Game_Bazaar_Meshingun_Map_LV_Bazaar__v1s00",
-  "slug": "Game_Bazaar_Meshingun_Map_LV_Bazaar",
-  "map_id": "/Game/Bazaar_Meshingun/Map/LV_Bazaar",
-  "shard": 0,
-  "shards": 1,
-  "seed": 5004,
-  "target_passes": 2,
-  "max_duration_s": 1800.0,
-  "one_pass_min_estimate": 7.5,
-  "estimated_hours": 0.38,
-  "ground_clearance_cm": 45.0,
-  "spec_version": "v1-2026-09-17"
- },
- {
-  "shard_id": "Game_Cave_Maps_Demonstration__v1s00",
-  "slug": "Game_Cave_Maps_Demonstration",
-  "map_id": "/Game/Cave/Maps/Demonstration",
-  "shard": 0,
-  "shards": 1,
-  "seed": 5005,
-  "target_passes": 2,
-  "max_duration_s": 1800.0,
-  "one_pass_min_estimate": 6.2,
-  "estimated_hours": 0.31,
-  "ground_clearance_cm": 6.0,
-  "spec_version": "v1-2026-09-17",
-  "lighting": "level"
- },
- {
   "shard_id": "Game_StonePineForest_Maps_Mountains_Map_LevelDesign__v1r2s00",
   "slug": "Game_StonePineForest_Maps_Mountains_Map_LevelDesign",
   "map_id": "/Game/StonePineForest/Maps/Mountains_Map_LevelDesign",
@@ -1357,9 +11,14 @@
   "one_pass_min_estimate": 370.5,
   "estimated_hours": 18.52,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Stone_Pine_Forest_5132fa",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 200070,
+  "core_m2": 455.6,
+  "centreline_m": 4456.0
  },
  {
   "shard_id": "Game_Brushify_Maps_Arctic_Arctic__v1r2s00",
@@ -1373,9 +32,14 @@
   "one_pass_min_estimate": 328.7,
   "estimated_hours": 16.43,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Brushify_Arctic_Pack_d38943",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 177497,
+  "core_m2": 1361.5,
+  "centreline_m": 3512.1
  },
  {
   "shard_id": "Game_Village_Maps_Village__v1r2s00",
@@ -1389,9 +53,14 @@
   "one_pass_min_estimate": 232.9,
   "estimated_hours": 11.65,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Slavic_Village_db0797",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 125766,
+  "core_m2": 1229.5,
+  "centreline_m": 2472.0
  },
  {
   "shard_id": "Game_Pyramids_Levels_L_pyramids__v1r2s00",
@@ -1405,9 +74,14 @@
   "one_pass_min_estimate": 219.5,
   "estimated_hours": 10.97,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Egyptian_Pyramid_Modular_kit_Nanite_a1e39b",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 118530,
+  "core_m2": 3162.8,
+  "centreline_m": 2219.0
  },
  {
   "shard_id": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_2__v1r2s00",
@@ -1421,9 +95,14 @@
   "one_pass_min_estimate": 218.3,
   "estimated_hours": 10.92,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Chemical_Plant_Refinery_Environment_Refinery_Factory_Factory_Building_e09ef3",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 117882,
+  "core_m2": 5779.1,
+  "centreline_m": 2825.0
  },
  {
   "shard_id": "Game_InfinityWeather_Demo_Maps_DesertMap__v1r2s00",
@@ -1437,9 +116,14 @@
   "one_pass_min_estimate": 198.1,
   "estimated_hours": 9.9,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Infinity_Weather_694f67",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 106974,
+  "core_m2": 299.7,
+  "centreline_m": 2180.7
  },
  {
   "shard_id": "Game_InfinityWeather_Demo_Maps_RainMap__v1r2s00",
@@ -1453,9 +137,14 @@
   "one_pass_min_estimate": 194.0,
   "estimated_hours": 9.7,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Infinity_Weather_694f67",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 104760,
+  "core_m2": 3045.4,
+  "centreline_m": 2061.3
  },
  {
   "shard_id": "Game_City_of_Brass_Enviroment_Maps_Example_Streets__v1r2s00",
@@ -1469,9 +158,16 @@
   "one_pass_min_estimate": 183.4,
   "estimated_hours": 9.17,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "City_of_Brass_Enviroment"
+  ],
+  "project_dir": "City_of_Brass_Environments_779e8a",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 99036,
+  "core_m2": 128.6,
+  "centreline_m": 2155.8
  },
  {
   "shard_id": "Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_01_Exterior_TemplesOfCambodia_01_01_Exterior__v1r2s00",
@@ -1485,9 +181,14 @@
   "one_pass_min_estimate": 170.4,
   "estimated_hours": 8.52,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "VP_Temples_of_Cambodia_Ruins_exterior_and_interior_c1bf4d",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 92016,
+  "core_m2": 750.1,
+  "centreline_m": 1821.1
  },
  {
   "shard_id": "Game_Downtown_West_Maps_Demo_Environment__v1r2s00",
@@ -1501,9 +202,14 @@
   "one_pass_min_estimate": 166.8,
   "estimated_hours": 8.34,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Downtown_West_Modular_Pack_de7c21",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 90072,
+  "core_m2": 2811.4,
+  "centreline_m": 1899.2
  },
  {
   "shard_id": "Game_Medieval_Env_Maps_Map_NorthenIsle_01__v1r2s00",
@@ -1517,9 +223,14 @@
   "one_pass_min_estimate": 165.9,
   "estimated_hours": 8.29,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Medieval_Environment_Medieval_Castle_Medieval_Houses_Medieval_Ch_36579e",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 89586,
+  "core_m2": 202.6,
+  "centreline_m": 1876.6
  },
  {
   "shard_id": "Game_Medieval_Environment_Medieval_Castle_Vol1_Maps_CF_01_Demo_Scene__v1r2s00",
@@ -1533,9 +244,14 @@
   "one_pass_min_estimate": 157.1,
   "estimated_hours": 7.85,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Medieval_Castle_Modular_Vol_1_5c5153",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 84834,
+  "core_m2": 978.4,
+  "centreline_m": 1579.8
  },
  {
   "shard_id": "Game_ModularSciFi_Levels_LandscapePreview__v1r2s00",
@@ -1549,9 +265,14 @@
   "one_pass_min_estimate": 153.8,
   "estimated_hours": 7.69,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Sci_Fi_Indoor_Outdoor_environment_pack_Rocky_Swampy_Planet_7f0ee0",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 83052,
+  "core_m2": 5169.5,
+  "centreline_m": 1736.7
  },
  {
   "shard_id": "Game_CastleRiver_Maps_Demonstration__v1r2s00",
@@ -1565,9 +286,14 @@
   "one_pass_min_estimate": 147.1,
   "estimated_hours": 7.35,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Fantasy_Medieval_Castle_Kit_7cbbe9",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 79434,
+  "core_m2": 2250.9,
+  "centreline_m": 1627.3
  },
  {
   "shard_id": "Game_Venice_fast_building_Maps_Overview__v1r2s00",
@@ -1581,9 +307,14 @@
   "one_pass_min_estimate": 141.9,
   "estimated_hours": 7.1,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Venice_fast_building_eff56d",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 76626,
+  "core_m2": 1881.6,
+  "centreline_m": 1846.3
  },
  {
   "shard_id": "Game_AnchientRuins_Maps_Grass_Hills__v1r2s00",
@@ -1597,9 +328,14 @@
   "one_pass_min_estimate": 139.1,
   "estimated_hours": 6.95,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Ancient_Ruins_Ruins_Ancient_Ruins_Modular_Ruins_Fantasy_Ruins_7ac4c1",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 75113,
+  "core_m2": 7.4,
+  "centreline_m": 1539.5
  },
  {
   "shard_id": "Game_ModularVictorianCity_Maps_Demo_Map__v1r2s00",
@@ -1613,9 +349,14 @@
   "one_pass_min_estimate": 138.8,
   "estimated_hours": 6.94,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Next_Gen_Modular_Victorian_Neoclassical_City_Bundle_Exterior_Interior_9fa0dc",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 74952,
+  "core_m2": 717.4,
+  "centreline_m": 1541.4
  },
  {
   "shard_id": "Game_ForestGasStation_Maps_Demo__v1r2s00",
@@ -1629,9 +370,14 @@
   "one_pass_min_estimate": 132.8,
   "estimated_hours": 6.64,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Forest_Gas_Station_c3387b",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 71712,
+  "core_m2": 395.8,
+  "centreline_m": 1476.2
  },
  {
   "shard_id": "Game_UrbanDistrict_Demo_Maps_Main_UADistrict_01_P__v1r2s00",
@@ -1645,9 +391,14 @@
   "one_pass_min_estimate": 132.1,
   "estimated_hours": 6.6,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Urban_Abandoned_District_Day_Night_Scene_a75b48",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 71334,
+  "core_m2": 3361.1,
+  "centreline_m": 1375.2
  },
  {
   "shard_id": "Game_Lighthouse_Island_Levels_Lighthouse_Demo_00__v1r2s00",
@@ -1661,9 +412,14 @@
   "one_pass_min_estimate": 116.4,
   "estimated_hours": 5.82,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Lighthouse_Island_High_Quality_Environment_5f7bf4",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 62856,
+  "core_m2": 1107.5,
+  "centreline_m": 1145.0
  },
  {
   "shard_id": "Game_EnglishCollege_Maps_SampleScene__v1r2s00",
@@ -1677,9 +433,16 @@
   "one_pass_min_estimate": 114.9,
   "estimated_hours": 5.75,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "EnglishCollege"
+  ],
+  "project_dir": "English_College_Level_4_Sample_ba33db",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 62046,
+  "core_m2": 220.4,
+  "centreline_m": 1350.1
  },
  {
   "shard_id": "Game_ChemicalPlantEnv_Maps_Map_ChemicalPlant_1__v1r2s00",
@@ -1693,9 +456,14 @@
   "one_pass_min_estimate": 114.0,
   "estimated_hours": 5.7,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Chemical_Plant_Refinery_Environment_Refinery_Factory_Factory_Building_e09ef3",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 61560,
+  "core_m2": 476.1,
+  "centreline_m": 1330.8
  },
  {
   "shard_id": "Game_JapaneseKit_Map_TokyoDay__v1r2s00",
@@ -1709,9 +477,14 @@
   "one_pass_min_estimate": 109.6,
   "estimated_hours": 5.48,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Japanese_Kit_MEGAPACK_3_8ced78",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 59184,
+  "core_m2": 1803.2,
+  "centreline_m": 1108.4
  },
  {
   "shard_id": "Game_TrainStation_Maps_TrainStation__v1r2s00",
@@ -1725,9 +498,14 @@
   "one_pass_min_estimate": 108.7,
   "estimated_hours": 5.44,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Urban_City_Asset_Megapack_b3eaf5",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 58698,
+  "core_m2": 1874.5,
+  "centreline_m": 1115.1
  },
  {
   "shard_id": "Game_JapaneseKit_Map_TokyoNight__v1r2s00",
@@ -1741,9 +519,14 @@
   "one_pass_min_estimate": 107.4,
   "estimated_hours": 5.37,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Japanese_Kit_MEGAPACK_3_8ced78",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 57996,
+  "core_m2": 1820.4,
+  "centreline_m": 1086.6
  },
  {
   "shard_id": "Game_ContainerYard_Maps_Demonstration_Day__v1r2s00",
@@ -1757,9 +540,14 @@
   "one_pass_min_estimate": 102.6,
   "estimated_hours": 5.13,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Container_Yard_Environment_Set_4e86e6",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 55403,
+  "core_m2": 1677.1,
+  "centreline_m": 1180.1
  },
  {
   "shard_id": "Game_ModularSciFi_Levels_PreviewSceneIndoor__v1r2s00",
@@ -1773,9 +561,14 @@
   "one_pass_min_estimate": 101.6,
   "estimated_hours": 5.08,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Sci_Fi_Indoor_Outdoor_environment_pack_Rocky_Swampy_Planet_7f0ee0",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 54863,
+  "core_m2": 814.8,
+  "centreline_m": 1113.5
  },
  {
   "shard_id": "Game_ContainerYard_Maps_Demonstration__v1r2s00",
@@ -1789,9 +582,14 @@
   "one_pass_min_estimate": 101.1,
   "estimated_hours": 5.05,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Container_Yard_Environment_Set_4e86e6",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 54593,
+  "core_m2": 2353.3,
+  "centreline_m": 1076.2
  },
  {
   "shard_id": "Game_Old_Factory_01_Maps_Demoscene_01__v1r2s00",
@@ -1805,9 +603,14 @@
   "one_pass_min_estimate": 96.9,
   "estimated_hours": 4.85,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Old_Factory_51bcb3",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 52326,
+  "core_m2": 4125.6,
+  "centreline_m": 1674.5
  },
  {
   "shard_id": "Game_Modular_MedievalTown_WI_Maps_Medieval_Daytime__v1r2s00",
@@ -1821,9 +624,14 @@
   "one_pass_min_estimate": 85.8,
   "estimated_hours": 4.29,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Medieval_Town_with_Interior_1334aa",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 46332,
+  "core_m2": 919.4,
+  "centreline_m": 1077.3
  },
  {
   "shard_id": "Game_ModularNeighborhood_Maps_Demo_Map__v1r2s00",
@@ -1837,9 +645,14 @@
   "one_pass_min_estimate": 81.8,
   "estimated_hours": 4.09,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Neighborhood_Pack_a80146",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 44172,
+  "core_m2": 85.2,
+  "centreline_m": 963.5
  },
  {
   "shard_id": "Game_InfinityWeather_Demo_Maps_SnowMap__v1r2s00",
@@ -1853,9 +666,14 @@
   "one_pass_min_estimate": 80.5,
   "estimated_hours": 4.03,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Infinity_Weather_694f67",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 43470,
+  "core_m2": 866.3,
+  "centreline_m": 1553.5
  },
  {
   "shard_id": "Game_City_of_Brass_Enviroment_Maps_Demo_Palace__v1r2s00",
@@ -1869,9 +687,16 @@
   "one_pass_min_estimate": 72.4,
   "estimated_hours": 3.62,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "City_of_Brass_Enviroment"
+  ],
+  "project_dir": "City_of_Brass_Environments_779e8a",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 39096,
+  "core_m2": 1570.4,
+  "centreline_m": 739.3
  },
  {
   "shard_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Night__v1r2s00",
@@ -1885,9 +710,14 @@
   "one_pass_min_estimate": 68.0,
   "estimated_hours": 3.4,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Suburb_Neighborhood_House_Pack_Modular_060d75",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 36720,
+  "core_m2": 1679.8,
+  "centreline_m": 812.6
  },
  {
   "shard_id": "Game_Modular_Sci_Fi_Maps_Prewiev_Sci_fi_Base__v1r2s00",
@@ -1901,9 +731,16 @@
   "one_pass_min_estimate": 67.9,
   "estimated_hours": 3.4,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "Modular_Sci_Fi"
+  ],
+  "project_dir": "Modular_Sci_Fi_village_809d2e",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 36666,
+  "core_m2": 1493.9,
+  "centreline_m": 856.2
  },
  {
   "shard_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day_Lumen__v1r2s00",
@@ -1917,9 +754,14 @@
   "one_pass_min_estimate": 67.6,
   "estimated_hours": 3.38,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Suburb_Neighborhood_House_Pack_Modular_060d75",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 36504,
+  "core_m2": 1635.6,
+  "centreline_m": 802.3
  },
  {
   "shard_id": "Game_City_of_Brass_Enviroment_Maps_Demo_Gardens__v1r2s00",
@@ -1933,9 +775,16 @@
   "one_pass_min_estimate": 65.3,
   "estimated_hours": 3.26,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "City_of_Brass_Enviroment"
+  ],
+  "project_dir": "City_of_Brass_Environments_779e8a",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 35261,
+  "core_m2": 1774.0,
+  "centreline_m": 721.9
  },
  {
   "shard_id": "Game_ModularGothicFantasyEnvironment_Maps_DemoMapDay__v1r2s00",
@@ -1949,9 +798,14 @@
   "one_pass_min_estimate": 63.3,
   "estimated_hours": 3.16,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Gothic_Fantasy_Environment_8804db",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 34181,
+  "core_m2": 1962.9,
+  "centreline_m": 727.4
  },
  {
   "shard_id": "Game_StonePineForest_Maps_GooseLand_Map__v1r2s00",
@@ -1965,9 +819,14 @@
   "one_pass_min_estimate": 61.8,
   "estimated_hours": 3.09,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Stone_Pine_Forest_5132fa",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 33371,
+  "core_m2": 876.8,
+  "centreline_m": 702.5
  },
  {
   "shard_id": "Game_JapaneseKit_Map_Yakohama__v1r2s00",
@@ -1981,9 +840,14 @@
   "one_pass_min_estimate": 60.4,
   "estimated_hours": 3.02,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Japanese_Kit_MEGAPACK_3_8ced78",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 32616,
+  "core_m2": 2128.2,
+  "centreline_m": 587.5
  },
  {
   "shard_id": "Game_ModularBuildingSet_Demo_Scene__v1r2s00",
@@ -1997,9 +861,14 @@
   "one_pass_min_estimate": 58.5,
   "estimated_hours": 2.92,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Building_Set_d0b0fa",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 31590,
+  "core_m2": 207.7,
+  "centreline_m": 1056.6
  },
  {
   "shard_id": "Game_Old_Factory_01_Maps_Demoscene_02__v1r2s00",
@@ -2013,9 +882,14 @@
   "one_pass_min_estimate": 58.4,
   "estimated_hours": 2.92,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Old_Factory_51bcb3",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 31536,
+  "core_m2": 1038.4,
+  "centreline_m": 744.3
  },
  {
   "shard_id": "Game_Modular_Sci_Fi_Maps_Preview__v1r2s00",
@@ -2029,9 +903,16 @@
   "one_pass_min_estimate": 53.1,
   "estimated_hours": 2.66,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "Modular_Sci_Fi"
+  ],
+  "project_dir": "Modular_Sci_Fi_village_809d2e",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 28674,
+  "core_m2": 1618.1,
+  "centreline_m": 996.6
  },
  {
   "shard_id": "Game_ModularTemplePlaza_Maps_ConceptMap__v1r2s00",
@@ -2045,9 +926,14 @@
   "one_pass_min_estimate": 52.9,
   "estimated_hours": 2.65,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Temple_Plaza_4k_PBR_29dda4",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 28566,
+  "core_m2": 790.2,
+  "centreline_m": 483.4
  },
  {
   "shard_id": "Game_LandscapePackOne_Maps_Mountain_01__v1r2s00",
@@ -2061,9 +947,18 @@
   "one_pass_min_estimate": 49.5,
   "estimated_hours": 2.48,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "LandscapePackOne",
+   "LandscapePackTwo",
+   "WaterPlane"
+  ],
+  "project_dir": "Landscapes_Pack_7dd38f",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 26730,
+  "core_m2": 0.0,
+  "centreline_m": 527.1
  },
  {
   "shard_id": "Game_MiddleEast_Maps_MiddleEast__v1r2s00",
@@ -2077,9 +972,14 @@
   "one_pass_min_estimate": 46.1,
   "estimated_hours": 2.31,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Middle_East_5ca0c4",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 24894,
+  "core_m2": 2620.1,
+  "centreline_m": 532.2
  },
  {
   "shard_id": "Game_UrbanDistrict_Demo_Maps_Gate_Gate_01_01_P__v1r2s00",
@@ -2093,9 +993,14 @@
   "one_pass_min_estimate": 46.1,
   "estimated_hours": 2.31,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Urban_Abandoned_District_Day_Night_Scene_a75b48",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 24894,
+  "core_m2": 329.8,
+  "centreline_m": 927.4
  },
  {
   "shard_id": "Game_HwaseongHaenggung_Maps_Demo__v1r2s00",
@@ -2109,9 +1014,14 @@
   "one_pass_min_estimate": 46.0,
   "estimated_hours": 2.3,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "KCISA_HWASEONG_HAENGGUNG_Korean_Traditional_Palace_7738df",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 24840,
+  "core_m2": 1613.4,
+  "centreline_m": 524.3
  },
  {
   "shard_id": "Game_OperaHouse_Maps_Demonstration__v1r2s00",
@@ -2125,9 +1035,14 @@
   "one_pass_min_estimate": 46.0,
   "estimated_hours": 2.3,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Opera_House_Kit_b696b8",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 24840,
+  "core_m2": 115.1,
+  "centreline_m": 501.0
  },
  {
   "shard_id": "Game_TemplesOfCambodia_Demo_Maps_TemplesOfCambodia_02_Interior_TemplesOfCambodia_02_01_Interior__v1r2s00",
@@ -2141,9 +1056,14 @@
   "one_pass_min_estimate": 45.3,
   "estimated_hours": 2.26,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "VP_Temples_of_Cambodia_Ruins_exterior_and_interior_c1bf4d",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 24461,
+  "core_m2": 736.4,
+  "centreline_m": 531.8
  },
  {
   "shard_id": "Game_AsianTemple_Map_LV_Temple_Day__v1r2s00",
@@ -2157,9 +1077,14 @@
   "one_pass_min_estimate": 43.1,
   "estimated_hours": 2.16,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Asian_Temple_Pack_4d0f9c",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 23274,
+  "core_m2": 257.1,
+  "centreline_m": 455.5
  },
  {
   "shard_id": "Game_ChineseWaterTown_Ver1_Map_DemoMap__v1r2s00",
@@ -2173,9 +1098,14 @@
   "one_pass_min_estimate": 40.5,
   "estimated_hours": 2.02,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "ChineseWaterTown_Ver_1_21493c",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 21870,
+  "core_m2": 672.3,
+  "centreline_m": 675.0
  },
  {
   "shard_id": "Game_City_of_Brass_Enviroment_Maps_Demo_Streets__v1r2s00",
@@ -2189,9 +1119,16 @@
   "one_pass_min_estimate": 40.4,
   "estimated_hours": 2.02,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "City_of_Brass_Enviroment"
+  ],
+  "project_dir": "City_of_Brass_Environments_779e8a",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 21816,
+  "core_m2": 940.6,
+  "centreline_m": 527.8
  },
  {
   "shard_id": "Game_RoofProps_Scenes_Demo_Roof__v1r2s00",
@@ -2205,9 +1142,14 @@
   "one_pass_min_estimate": 35.7,
   "estimated_hours": 1.79,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Roof_City_Pack_ed475f",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 19278,
+  "core_m2": 596.8,
+  "centreline_m": 372.0
  },
  {
   "shard_id": "Game_ModularOldTown_Maps_Old_Town__v1r2s00",
@@ -2221,9 +1163,16 @@
   "one_pass_min_estimate": 34.4,
   "estimated_hours": 1.72,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "ModularOldTown"
+  ],
+  "project_dir": "Modular_Old_Town_997066",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 18575,
+  "core_m2": 314.6,
+  "centreline_m": 580.2
  },
  {
   "shard_id": "Game_SoulCave_Maps_LV_Soul_Cave_Mobile__v1r2s00",
@@ -2237,9 +1186,14 @@
   "one_pass_min_estimate": 33.9,
   "estimated_hours": 1.69,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Soul_Cave_78c9c3",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 18305,
+  "core_m2": 974.3,
+  "centreline_m": 446.0
  },
  {
   "shard_id": "Game_TokyoStylizedEnvironment_Maps_Tokyo__v1r2s00",
@@ -2253,9 +1207,14 @@
   "one_pass_min_estimate": 33.6,
   "estimated_hours": 1.68,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Tokyo_Stylized_Environment_48c830",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 18144,
+  "core_m2": 1191.8,
+  "centreline_m": 389.3
  },
  {
   "shard_id": "Game_TrainStation_Maps_Demonstration__v1r2s00",
@@ -2269,9 +1228,14 @@
   "one_pass_min_estimate": 32.2,
   "estimated_hours": 1.61,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Victorian_Train_Station_and_Railroad_Modular_Set_10547a",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 17388,
+  "core_m2": 424.3,
+  "centreline_m": 359.2
  },
  {
   "shard_id": "Game_JapaneseKit_Map_CyberpunkVillage__v1r2s00",
@@ -2285,9 +1249,14 @@
   "one_pass_min_estimate": 29.5,
   "estimated_hours": 1.48,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Japanese_Kit_MEGAPACK_3_8ced78",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 15930,
+  "core_m2": 722.2,
+  "centreline_m": 417.4
  },
  {
   "shard_id": "Game_UNIVERSITY_CLASSROOM_Levels_Overview__v1r2s00",
@@ -2301,9 +1270,14 @@
   "one_pass_min_estimate": 28.5,
   "estimated_hours": 1.43,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "University_Classroom_Interior_Environment_School_Room_Universities_Class_700598",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 15390,
+  "core_m2": 105.6,
+  "centreline_m": 616.0
  },
  {
   "shard_id": "Game_SuburbNeighborhoodHousePack_Maps_DemoMap_Day__v1r2s00",
@@ -2317,9 +1291,14 @@
   "one_pass_min_estimate": 27.0,
   "estimated_hours": 1.35,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Suburb_Neighborhood_House_Pack_Modular_060d75",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 14580,
+  "core_m2": 1488.1,
+  "centreline_m": 374.8
  },
  {
   "shard_id": "Game_ErikStadium_Maps_Stadium__v1r2s00",
@@ -2333,9 +1312,14 @@
   "one_pass_min_estimate": 26.0,
   "estimated_hours": 1.3,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Euro_Champions_Football_Stadium_861251",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 14040,
+  "core_m2": 284.2,
+  "centreline_m": 322.9
  },
  {
   "shard_id": "Game_CyberpunkIndustries_Maps_Demo_Map__v1r2s00",
@@ -2349,9 +1333,14 @@
   "one_pass_min_estimate": 23.8,
   "estimated_hours": 1.19,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Cyberpunk_Industries_Vol_1_6d65f0",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 12852,
+  "core_m2": 655.2,
+  "centreline_m": 288.2
  },
  {
   "shard_id": "Game_QA_ModularParking_Maps_Map_demonstration__v1r2s00",
@@ -2365,9 +1354,14 @@
   "one_pass_min_estimate": 22.3,
   "estimated_hours": 1.11,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "QA_Modular_Parking_bc2b6c",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 12042,
+  "core_m2": 723.8,
+  "centreline_m": 296.9
  },
  {
   "shard_id": "Game_AnchientRuins_Maps_AncientRuins__v1r2s00",
@@ -2381,9 +1375,14 @@
   "one_pass_min_estimate": 22.0,
   "estimated_hours": 1.1,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Ancient_Ruins_Ruins_Ancient_Ruins_Modular_Ruins_Fantasy_Ruins_7ac4c1",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 11880,
+  "core_m2": 3509.6,
+  "centreline_m": 256.5
  },
  {
   "shard_id": "Game_ParkingGarage_Maps_UndergroundParking__v1r2s00",
@@ -2397,9 +1396,14 @@
   "one_pass_min_estimate": 21.7,
   "estimated_hours": 1.08,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Atmospheric_Modular_Underground_Car_Park_Hallways_1b18ce",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 11718,
+  "core_m2": 240.7,
+  "centreline_m": 195.9
  },
  {
   "shard_id": "Game_Medieval_Env_Maps_Map_MedievalEnv__v1r2s00",
@@ -2413,9 +1417,14 @@
   "one_pass_min_estimate": 20.3,
   "estimated_hours": 1.02,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Medieval_Environment_Medieval_Castle_Medieval_Houses_Medieval_Ch_36579e",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 10962,
+  "core_m2": 645.6,
+  "centreline_m": 231.0
  },
  {
   "shard_id": "Game_Modular_MedievalTown_WI_Maps_Medieval_Nighttime__v1r2s00",
@@ -2429,9 +1438,14 @@
   "one_pass_min_estimate": 20.0,
   "estimated_hours": 1.0,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Medieval_Town_with_Interior_1334aa",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 10800,
+  "core_m2": 745.6,
+  "centreline_m": null
  },
  {
   "shard_id": "Game_WinterTown_Maps_RussianWinterTownDemo01__v1r2s00",
@@ -2445,9 +1459,14 @@
   "one_pass_min_estimate": 20.0,
   "estimated_hours": 1.0,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Russian_Winter_Town_61471c",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 10800,
+  "core_m2": 3778.0,
+  "centreline_m": null
  },
  {
   "shard_id": "Game_SoulCave_Maps_LV_Soul_Cave__v1r2s00",
@@ -2461,9 +1480,14 @@
   "one_pass_min_estimate": 19.2,
   "estimated_hours": 0.96,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Soul_Cave_78c9c3",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 10367,
+  "core_m2": 971.4,
+  "centreline_m": 240.0
  },
  {
   "shard_id": "Game_ModularGothicFantasyEnvironment_Maps_DemoMapNight__v1r2s00",
@@ -2477,9 +1501,14 @@
   "one_pass_min_estimate": 18.6,
   "estimated_hours": 0.93,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Gothic_Fantasy_Environment_8804db",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 10044,
+  "core_m2": 567.2,
+  "centreline_m": 244.8
  },
  {
   "shard_id": "Game_ModularPlatformerIndustrialArea_Map_HANGAR__v1r2s00",
@@ -2493,9 +1522,14 @@
   "one_pass_min_estimate": 17.2,
   "estimated_hours": 0.86,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Platformer_Modular_factory_9f439c",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 9287,
+  "core_m2": 530.1,
+  "centreline_m": 215.6
  },
  {
   "shard_id": "Game_Bunker_Maps_demonstration_BUNKER__v1r2s00",
@@ -2509,9 +1543,14 @@
   "one_pass_min_estimate": 15.8,
   "estimated_hours": 0.79,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Bunker_0ae4b6",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 8532,
+  "core_m2": 435.8,
+  "centreline_m": 193.6
  },
  {
   "shard_id": "Game_IndustrialArea_Maps_IndustrialArea__v1r2s00",
@@ -2525,9 +1564,14 @@
   "one_pass_min_estimate": 14.2,
   "estimated_hours": 0.71,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Industrial_Area_420ee4",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 7667,
+  "core_m2": 819.2,
+  "centreline_m": 187.7
  },
  {
   "shard_id": "Game_ModularPlatformerIndustrialArea_Map_Factory__v1r2s00",
@@ -2541,9 +1585,14 @@
   "one_pass_min_estimate": 14.0,
   "estimated_hours": 0.7,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Platformer_Modular_factory_9f439c",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 7560,
+  "core_m2": 495.5,
+  "centreline_m": 252.7
  },
  {
   "shard_id": "Game_SchoolGym_Maps_SchoolGymDay__v1r2s00",
@@ -2557,9 +1606,14 @@
   "one_pass_min_estimate": 13.6,
   "estimated_hours": 0.68,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "School_gym_5e574e",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 7344,
+  "core_m2": 51.3,
+  "centreline_m": 140.9
  },
  {
   "shard_id": "Game_ModularCourtyard_Maps_SampleScene_sanny__v1r2s00",
@@ -2573,9 +1627,14 @@
   "one_pass_min_estimate": 10.9,
   "estimated_hours": 0.55,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Courtyard_1_0_76cbfc",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 5886,
+  "core_m2": 183.1,
+  "centreline_m": 172.6
  },
  {
   "shard_id": "Game_Greek_island_Level_L_greek_island__v1r2s00",
@@ -2589,9 +1648,16 @@
   "one_pass_min_estimate": 10.6,
   "estimated_hours": 0.53,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "Greek_island"
+  ],
+  "project_dir": "Greek_Island_019f2b",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 5723,
+  "core_m2": 448.8,
+  "centreline_m": 125.4
  },
  {
   "shard_id": "Game_ModularCourtyard_Maps_SampleScene_overcast__v1r2s00",
@@ -2605,9 +1671,14 @@
   "one_pass_min_estimate": 9.5,
   "estimated_hours": 0.47,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Courtyard_1_0_76cbfc",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 5130,
+  "core_m2": 183.4,
+  "centreline_m": 162.1
  },
  {
   "shard_id": "Game_Sicka_EnvPack2_Sicka_Scifi_Interior2_Maps_Master__v1r2s00",
@@ -2621,9 +1692,14 @@
   "one_pass_min_estimate": 8.6,
   "estimated_hours": 0.43,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "SICKA_Free_Environment_Pack_ca74a5",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 4643,
+  "core_m2": 305.5,
+  "centreline_m": 98.1
  },
  {
   "shard_id": "Game_StorageHouse_Maps_Demonstration__v1r2s00",
@@ -2637,9 +1713,14 @@
   "one_pass_min_estimate": 8.3,
   "estimated_hours": 0.42,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Storage_House_Set_297923",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 4482,
+  "core_m2": 104.0,
+  "centreline_m": 87.7
  },
  {
   "shard_id": "Game_Cigar_room_Maps_Cigar_room__v1r2s00",
@@ -2653,9 +1734,16 @@
   "one_pass_min_estimate": 8.0,
   "estimated_hours": 0.4,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "Cigar_room"
+  ],
+  "project_dir": "Cigar_Room_Environment_82414d",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 4320,
+  "core_m2": 0.0,
+  "centreline_m": 174.0
  },
  {
   "shard_id": "Game_Bazaar_Meshingun_Map_LV_Bazaar__v1r2s00",
@@ -2669,9 +1757,14 @@
   "one_pass_min_estimate": 7.5,
   "estimated_hours": 0.38,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "The_Bazaar_5b045a",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 4050,
+  "core_m2": 364.9,
+  "centreline_m": 88.9
  },
  {
   "shard_id": "Game_Cave_Maps_Demonstration__v1r2s00",
@@ -2685,9 +1778,14 @@
   "one_pass_min_estimate": 6.2,
   "estimated_hours": 0.31,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Fantasy_Cave_Environment_Set_e3c60b",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 3348,
+  "core_m2": 253.7,
+  "centreline_m": 74.0
  },
  {
   "shard_id": "Game_Sicka_EnvPack2_Sicka_Ancient_Kit_Maps_Map_scene2__v1r2s00",
@@ -2701,9 +1799,14 @@
   "one_pass_min_estimate": 5.7,
   "estimated_hours": 0.29,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "SICKA_Free_Environment_Pack_ca74a5",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 3078,
+  "core_m2": 751.8,
+  "centreline_m": 123.9
  },
  {
   "shard_id": "Game_SwimmingPool_Maps_Demonstration_AlternatePool__v1r2s00",
@@ -2717,9 +1820,14 @@
   "one_pass_min_estimate": 4.8,
   "estimated_hours": 0.24,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Modular_Swimming_Pool_Megapack_644492",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 2591,
+  "core_m2": 35.2,
+  "centreline_m": 67.2
  },
  {
   "shard_id": "Game_Sicka_EnvPack2_Sicka_Scifi_Interior_Maps_Map_MainScene__v1r2s00",
@@ -2733,9 +1841,14 @@
   "one_pass_min_estimate": 4.0,
   "estimated_hours": 0.2,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "SICKA_Free_Environment_Pack_ca74a5",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 2160,
+  "core_m2": 0.0,
+  "centreline_m": 42.9
  },
  {
   "shard_id": "Game_Valley_Maps_Valley__v1r2s00",
@@ -2749,9 +1862,16 @@
   "one_pass_min_estimate": 4.0,
   "estimated_hours": 0.2,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "Valley"
+  ],
+  "project_dir": "Ultimate_Realistic_Nature_Pack_Mountains_Forest_Wildflower_Lake_0d8c19",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 2160,
+  "core_m2": 496.1,
+  "centreline_m": 50.3
  },
  {
   "shard_id": "Game_LowPolyMedievalConstructions_Maps_Map_6_Top-Down__v1r2s00",
@@ -2765,9 +1885,14 @@
   "one_pass_min_estimate": 3.4,
   "estimated_hours": 0.17,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Low_Poly_Medieval_Interior_and_Constructions_0bbe07",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 1836,
+  "core_m2": 44.6,
+  "centreline_m": 32.7
  },
  {
   "shard_id": "Game_LowPolyMedievalConstructions_Maps_Map_1__v1r2s00",
@@ -2781,9 +1906,14 @@
   "one_pass_min_estimate": 3.2,
   "estimated_hours": 0.16,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Low_Poly_Medieval_Interior_and_Constructions_0bbe07",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 1728,
+  "core_m2": 38.5,
+  "centreline_m": 33.4
  },
  {
   "shard_id": "Game_Watermills_Levels_SampleScene__v1r2s00",
@@ -2797,9 +1927,16 @@
   "one_pass_min_estimate": 3.2,
   "estimated_hours": 0.16,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "Watermills"
+  ],
+  "project_dir": "Watermills_Nature_Environment_Watermills_Nature_Environment_Nature_Ruin_23a36c",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 1728,
+  "core_m2": 0.0,
+  "centreline_m": 35.7
  },
  {
   "shard_id": "Game_Sicka_EnvPack2_Sicka_Ancient_Kit_Maps_Map_Scene3__v1r2s00",
@@ -2813,9 +1950,14 @@
   "one_pass_min_estimate": 3.0,
   "estimated_hours": 0.15,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "SICKA_Free_Environment_Pack_ca74a5",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 1620,
+  "core_m2": 99.8,
+  "centreline_m": 58.1
  },
  {
   "shard_id": "Game_Hospital_map_demo__v1r2s00",
@@ -2829,9 +1971,16 @@
   "one_pass_min_estimate": 2.5,
   "estimated_hours": 0.12,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [
+   "Hospital"
+  ],
+  "project_dir": "hospital_inside_302504",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 1350,
+  "core_m2": 151.8,
+  "centreline_m": 67.7
  },
  {
   "shard_id": "Game_LowPolyMedievalConstructions_Maps_Map_8__v1r2s00",
@@ -2845,9 +1994,14 @@
   "one_pass_min_estimate": 2.5,
   "estimated_hours": 0.12,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Low_Poly_Medieval_Interior_and_Constructions_0bbe07",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 1350,
+  "core_m2": 21.6,
+  "centreline_m": 27.7
  },
  {
   "shard_id": "Game_LowPolyMedievalConstructions_Maps_Map_9__v1r2s00",
@@ -2861,9 +2015,14 @@
   "one_pass_min_estimate": 2.1,
   "estimated_hours": 0.11,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Low_Poly_Medieval_Interior_and_Constructions_0bbe07",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 1134,
+  "core_m2": 31.9,
+  "centreline_m": 20.6
  },
  {
   "shard_id": "Game_Nimikko_CommandCenter_Scenes_CommandCenter__v1r2s00",
@@ -2877,9 +2036,14 @@
   "one_pass_min_estimate": 1.8,
   "estimated_hours": 0.09,
   "ground_clearance_cm": 45.0,
+  "packs_to_sync": [],
+  "project_dir": "Rocket_Launch_Command_Center_b90bf5",
   "lighting": "level",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 972,
+  "core_m2": 69.0,
+  "centreline_m": 12.4
  },
  {
   "shard_id": "Game_LowPolyMedievalConstructions_Maps_Map_5_Top-Down__v1r2s00",
@@ -2893,8 +2057,13 @@
   "one_pass_min_estimate": 1.1,
   "estimated_hours": 0.06,
   "ground_clearance_cm": 6.0,
+  "packs_to_sync": [],
+  "project_dir": "Low_Poly_Medieval_Interior_and_Constructions_0bbe07",
   "lighting": "fill",
   "spec_version": "v1-2026-09-17",
-  "nav_bounds": "spawn"
+  "nav_bounds": "spawn",
+  "est_s": 594,
+  "core_m2": 12.2,
+  "centreline_m": 10.2
  }
 ]

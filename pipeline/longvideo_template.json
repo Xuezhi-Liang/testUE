@@ -1,0 +1,131 @@
+{
+  "spec_version": "v1-2026-09-17",
+  "spec_note": "Frozen recording spec v1 (RECORDING_SPEC_v1_2026-09-17.md). Every episode carries this in its task and capture_summary; change the spec, bump the version.",
+  "note": "Long-video sharded random walk, on the profile the Tokyo coverage episode was recorded and accepted with: the road network is whatever region has the longest centreline, NOT the built-up core. Core confinement was tried and abandoned - on four maps measured end to end it needed a 60 cm body clearance, a 120 cm corridor and a reroute loop to pass its gates, and delivered a fraction of the footage. This profile is the one with a passing episode behind it.",
+  "trajectory_family": "coverage_walk",
+  "family_note": "coverage_walk IS the random walk. coverage.py:coverage_walk takes a random unwalked road at each junction rather than solving route inspection, and prepare_walks chains one pass into the next from where the last ended. A separate random_walk family would have been a second copy of the same traversal.",
+  "spawn_id": "auto",
+  "split": "train",
+  "seed": 2000,
+  "fps": 24,
+  "duration_s": 0,
+  "target_passes": 2,
+  "max_duration_s": 0,
+  "size_headroom": 1.25,
+  "confine_to_core": false,
+  "content_buffer_m": 10.0,
+  "content_mode": "dense",
+  "nav_bounds": "content",
+  "speed_tier": "medium",
+  "yaw_tier": "medium",
+  "speed_m_s": 1.0,
+  "speed_profile": "constant",
+  "styles": [
+    "stroll",
+    "survey",
+    "inspect"
+  ],
+  "fill_styles": [
+    "study",
+    "stroll"
+  ],
+  "action_mix_target": {
+    "forward": [
+      0.26,
+      0.42
+    ],
+    "backward": [
+      0.1,
+      0.2
+    ],
+    "turn_left": [
+      0.06,
+      0.15
+    ],
+    "turn_right": [
+      0.06,
+      0.15
+    ],
+    "look_up": [
+      0.08,
+      0.18
+    ],
+    "look_down": [
+      0.07,
+      0.16
+    ],
+    "hold": [
+      0.04,
+      0.14
+    ]
+  },
+  "action_mix_note": "coverage_tokyo_stroll's bands verbatim. Achieved there: forward 31.9%, backward 16.5%, turn 14.4/13.6%, look 8.6/9.4%, hold 5.6%, in band. The floors sum to 0.67, so the bands are jointly satisfiable.",
+  "camera": {
+    "resolution": [
+      1280,
+      720
+    ],
+    "fov_deg": 90.0,
+    "eye_height_m": 1.7,
+    "pitch_limit_deg": 30.0,
+    "pitch_limit_up_deg": 15.0,
+    "roll_limit_deg": 5.0
+  },
+  "camera_note": "pitch_limit_up_deg caps looking UP at 15 deg while looking down keeps 30. Not taste: ASimWorldCaptureActor refuses to write a frame whose depth channel is entirely invalid and calls Finish, and pitching up on a street empties it - measured 35.5% of the frame valid at pitch 0, 3.6% at 20 deg, zero at 27.5, which ended a capture 97519 frames in. A single 20 h episode has no checkpoint, so this cap matters more here than it did there.",
+  "body": {
+    "collision_radius_cm": 40.0,
+    "collision_half_height_cm": 88.0,
+    "ground_clearance_cm": 6.0,
+    "corridor_clear_cm": 90.0
+  },
+  "body_note": "Tokyo's own values. 6 cm is a step offset - a capsule resting exactly on the floor reports a hit at distance 0 - and 90 cm is the corridor clearance that produced Tokyo's 1065 m network, 0 collisions and a depth probe whose nearest reading was 85.2 cm. On rolling terrain inside a CORE these are not enough (WinterTown: 989 collisions, 20% of the network kept), which is documented in FINDINGS.md - but this profile does not walk cores.",
+  "render": {
+    "exposure": "auto_instant",
+    "motion_blur": false,
+    "depth_of_field": false,
+    "lumen": "project_default",
+    "taa": "taa",
+    "hud": false,
+    "exposure_bias_ev": null,
+    "lighting": "fill",
+    "skylight_factor": "auto",
+    "history_mode": 4,
+    "local_exposure": {
+      "shadow_scale": 0.65,
+      "highlight_scale": 0.0,
+      "detail_strength": 1.0
+    },
+    "supersample": 2,
+    "cvars": [
+      "r.AntiAliasingMethod 2",
+      "r.TemporalAA.HistoryScreenPercentage 200",
+      "r.TemporalAA.Quality 2",
+      "r.TemporalAACurrentFrameWeight 0.04",
+      "r.TemporalAASamples 8",
+      "r.Lumen.ScreenProbeGather.DownsampleFactor 8",
+      "r.VolumetricFog.GridPixelSize 8",
+      "r.VolumetricFog.GridSizeZ 128",
+      "r.MaxAnisotropy 16",
+      "r.MipMapLODBias 0",
+      "r.Tonemapper.Sharpen 0"
+    ]
+  },
+  "reroute_note": "MAX_REROUTE_ATTEMPTS defaults to 4 and is left on: it costs nothing when a route is already clean, and it is what turns a blocked place into a different road rather than a refused map.",
+  "yaw_deg_per_s": 45.0,
+  "turn_profile": "constant",
+  "yaw_note": "yaw_deg_per_s pins the rotation rate (no per-episode draw from yaw_tier; the tier is kept for the 1.5x gate and metadata). turn_profile constant: every turning frame rotates exactly 45/24 deg, no ramp. The SAME rate and profile apply to looking up and down and to the return to level: _pitch_to shares _rotation_profile with turn(). Heading changes while walking a curved road are path-following and stay below the rate; where a corner would exceed it the walk stops and turns at the rate.",
+  "render_note": "17 Sep: TAA 2x is the global default by the user's decision (fewer motion flashes, ~23% lower sharpness proxy than TSR 2x; measurements in RENDER_QUALITY.md 2026-09-16 and 2026-09-17 sections). r.AntiAliasingMethod 2 selects TAA; the history resolution, quality, frame weight, jitter samples, denser Lumen probes, fog grid, anisotropy, mip bias and sharpen cvars are the former stability_detail_candidate set. history_mode 4 (unchanged since 16 Sep) explicitly enables the capture TemporalAA show flag, keeps its view state and renders 32 warmup frames at pose 0 - a cvar alone falls back to FXAA because SceneCapture defaults TemporalAA=false. RGB is rendered 2x (2560x1440 -> 1280x720); depth stays native, no temporal AA or filtering. The previous TSR 2x default is kept verbatim in tasks/tsr_2x_previous_default.json for per-map comparison; a fallback to it must be written into the batch manifest, never switched silently. The render.taa field is a label only: nothing reads it, the cvars decide. Rebuild the native module before using mode 4; capture_engine logs every cvar it applied and the actor logs the TemporalAA show flag and warmup count.",
+  "retrace": {
+    "median_interval_s": 300.0,
+    "interval_jitter": 0.25,
+    "max_interval_s": 420.0,
+    "min_duration_s": 10.0,
+    "max_duration_s": 25.0
+  },
+  "retrace_note": "转身折返：转 180 度、沿刚走过的路正向走一段、再转回来继续。与 backward 不同 —— backward 是脸朝原方向、身体倒着走，画面还是已经看过的那一面；折返是把同一段路用相反的视角再看一遍，这正是空间记忆数据要的『重访』。节奏按中位数给：每次事件结束后抽一个目标间隔（中位数 median_interval_s，上下浮动 interval_jitter），max_interval_s 是兜底上限。给下界会让每个间隔都贴着下界，所以这里不设下界。min_duration_s 是往回走那一段的最短时长，身后的路不够长时宁可推迟到下一段也不缩水。",
+  "speed_note": "17 Sep: speed_m_s pins the walking pace at 1.0 m/s for every walking primitive - forward, backward, retreat and both retrace legs - instead of each style drawing a pace inside speed_tier (which is kept for the speed_within_tier gate). speed_profile constant: every walking frame moves exactly 100/24 cm, the last frame of a segment takes the remainder, no acceleration ramps. The mix tuner loses its speed lever when the pace is pinned; it keeps the other five.",
+  "passes_note": "17 Sep: every map is walked TWICE and that is the episode - target_passes 2, no wall-clock cap (max_duration_s 0 = however long two passes take). The two passes differ on purpose: pass 1 is the COVERING pass - one randomised cover of every road, the `styles` list rotating every 45 m, paced to finish within 97% of its budget (optional look/scan/retreat actions yield when it falls behind). Pass 2 is the FILL pass - a fresh covering walk from where pass 1 ended, every road again in a different order, walked entirely in fill_styles[0] (`study`: 2.5-5 m chunks, 30% backward, 35% retreat, look 100%, scan 90%, long holds) with no pace constraint. Retrace, speed and turn rate are the same in both. Pass 2 costs about 2x pass 1 (same distance, twice the action density), so an episode is ~3x the one-pass estimate; Tokyo measured consecutive passes at ~4x and ~8x the pure tour. The former rule (8 passes or 20 h, 5 h shards) was dropped by the user. gen_shards.py writes a per-map max_duration_s only as a runaway guard (2x the three-pass-equivalent estimate), never as a target.",
+  "styles_note": "Pass 1 rotates these every 45 m of route. fill_styles: pass 2 uses fill_styles[0], pass 3 (if ever) fill_styles[1], and so on.",
+  "content_note": "17 Sep, user: 'only record where there is something'. content_buffer_m keeps only walkable ground within this distance of CONTENT before the centreline is thinned; the rest of a large empty level is dropped and the region is still chosen by (post-buffer) centreline length. content_mode 'dense' = survey_core's density core (>=6% obstacle within 12 m: a street between buildings, a grove, a yard of props) plus any footprint of 20 m2 or more; 'buildings' = footprints of 20 m2 or more only, so forests and rock fields count as empty. Measured at 10 m: ForestGasStation 1638 -> 585 m (dense) / 532 m (buildings); Mountains_Map 4619 -> 1282 / 317; Arctic 3617 -> 2892 / 1554; Tokyo 1144 -> 1003 / 979 (all streets, barely trimmed). Softer than confine_to_core, which kept only the built-up interior and needed 60/120 cm clearances to pass; this keeps the streets along the content on both sides. Set 0 to disable.",
+  "nav_bounds_note": "content = navmesh bounds round the level's tall content (17 Sep); spawn = 60 m half-size box round the start, what every validated route used. The shard plan may override per map."
+}

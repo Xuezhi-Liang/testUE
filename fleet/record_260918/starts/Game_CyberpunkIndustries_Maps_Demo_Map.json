@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/CyberpunkIndustries/Maps/Demo_Map",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -9287.0,
+   "y": 2427.0,
+   "z": 2840.0
+  },
+  {
+   "name": "route_1",
+   "x": -10141.40714592884,
+   "y": -973.0,
+   "z": 2840.0
+  },
+  {
+   "name": "route_2",
+   "x": -8120.3744717277,
+   "y": 3017.8585706536596,
+   "z": 2840.0
+  },
+  {
+   "name": "route_3",
+   "x": -6327.221552268445,
+   "y": 7955.515116575073,
+   "z": 2850.0
+  },
+  {
+   "name": "route_4",
+   "x": -6282.84604044527,
+   "y": 3749.324282966641,
+   "z": 2840.0
+  }
+ ],
+ "source": "validated route Game_CyberpunkIndustries_Maps_Demo_Map__coverage_walk__seed3"
+}

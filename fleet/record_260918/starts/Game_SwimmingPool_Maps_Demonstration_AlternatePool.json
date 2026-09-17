@@ -1,0 +1,36 @@
+{
+ "map_id": "/Game/SwimmingPool/Maps/Demonstration_AlternatePool",
+ "positions": [
+  {
+   "name": "route_0",
+   "x": -1474.0,
+   "y": -739.0,
+   "z": 30.0
+  },
+  {
+   "name": "route_1",
+   "x": 32.6743737170198,
+   "y": -864.0,
+   "z": 30.0
+  },
+  {
+   "name": "route_2",
+   "x": 1568.647156730612,
+   "y": -427.5376412799131,
+   "z": 30.0
+  },
+  {
+   "name": "route_3",
+   "x": 1552.3145429382198,
+   "y": -786.9369867611471,
+   "z": 21.080391970288076
+  },
+  {
+   "name": "route_4",
+   "x": -1530.5040916573405,
+   "y": -570.8633327465674,
+   "z": 30.0
+  }
+ ],
+ "source": "validated route Game_SwimmingPool_Maps_Demonstration_AlternatePool__coverage"
+}
