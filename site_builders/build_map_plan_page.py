@@ -27,6 +27,19 @@ tot = dict(ep=sum(x['episode_h'] for x in A), mh=sum(x['machine_h'] for x in A),
 rec = sum(1 for x in A if x['recorded']); big = sum(1 for x in A if x['tier'] == '大'); mid = sum(1 for x in A if x['tier'] == '中'); small = len(A) - big - mid
 lowcore = sum(1 for x in A if (x['core'] or 0) < 50)
 now = time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())
+# ---- network / route thumbnails: newest engine-checked plot available for each level ----
+import glob, shutil
+SL = Path('/home/ubuntu/WM-Unreal-data-collection/local_run/site/longvideo'); (SITE / 'plots').mkdir(exist_ok=True)
+def thumb(slug):
+    for pat, tag in [(f'{SL}/route-queue-20260917/plots/{slug}.png', '09-17 队列，引擎验证路线'), (f'{SL}/route-validation/plots/{slug}_*.png', '09-16 验证，引擎验证路线'),
+                     (f'{SL}/new-map-validation/plots/{slug}_*.png', '09-16 新地图验证，引擎验证路线'), (f'{SL}/route-audit/plots/{slug}.png', '09-16 审查草案（离线）'),
+                     (f'{SL}/route-audit/plots/{slug}_draft.png', '09-16 审查草案（离线）'), (f'{SL}/core/png/{slug}.png', '核心图（绿=核心，灰=可走）'), (f'{SL}/inventory/png/{slug}.png', '核心图')]:
+        g = sorted(glob.glob(pat))
+        if g:
+            dst = SITE / 'plots' / f'{slug}.png'
+            if not dst.exists() or Path(g[-1]).stat().st_mtime > dst.stat().st_mtime: shutil.copy2(g[-1], dst)
+            return f'plots/{slug}.png', tag
+    return None, None
 # ---- per resource pack (reference only; every headline number is per level) ----
 RANK = {c: i for i, c in enumerate(ORDER)}
 packs = {}
@@ -63,6 +76,10 @@ for c in ORDER[1:6]:
     if not rows: continue
     md += ["", f"## {c}（{len(rows)} 张）", "", EXPL[c], "", "| 资源包 | 关卡 | 最近状态 | 核心 m² | 路网 m | 保留率 |", "|---|---|---|---:|---:|---:|"]
     for x in rows: md.append(f"| {x['fid']} {x['title'][:34]} | `{x['level'].split('/')[-1]}` | {x['state'] or '未跑'} | {n(x['core'])} | {n(x.get('cl'))} | {n(x.get('kept'), '{:.0%}')} |")
+md += ["", "## 路网缩略图（A 类，按成片时长降序）", "", "每张是引擎验证过的路线叠在同一会话导出的导航网上：青线 = 路线，黄点 = 起点，灰面 = 可走导航网。图在页面 `/longvideo/map-plan/` 上看。", ""]
+for x in A:
+    u, tag = thumb(x['slug'])
+    md.append(f"- {x['title'][:30]} / `{x['level'].split('/')[-1]}`：" + (f"[{tag}]({u})" if u else "无图"))
 md += ["", "## 附录：按资源包的统计（仅供参考）", "", "主统计按关卡。这里把同一资源包的关卡合并，只用来对照采购单位；一个包的分类取其关卡里最好的一档。", "",
        "| 分类 | 资源包数 |", "|---|---:|"] + [f"| {c} | {pk_cnt[c]} |" for c in ORDER if pk_cnt[c]] + ["",
        f"有可录关卡的资源包 {len(pk_a)} 个，合计可录关卡 {sum(P['a'] for P in pk_a)} 张、成片 {sum(P['ep'] for P in pk_a):.0f} h、机时 {sum(P['mh'] for P in pk_a):.0f} h。若每包只录一张代表关卡，则为 {len(pk_a)} 集。", "",
@@ -97,6 +114,12 @@ for c in ORDER[1:6]:
     for x in rows: h.append(f"<tr><td>{html.escape(x['title'])}<div class=mut>{x['fid']}</div></td><td><code>{html.escape(x['level'])}</code></td><td>{x['state'] or '未跑'}</td><td class=r>{n(x['core'])}</td><td class=r>{n(x.get('cl'))}</td><td class=r>{n(x.get('kept'),'{:.0%}')}</td></tr>")
     h.append("</table>")
 h.append("<h2>单独立项</h2><ul><li><b>Dubai Downtown</b>：64 GB，需 Cesium；悬浮模式录过 30 s 演示，地面无碰撞，要录先解决碰撞。</li><li><b>Lyra</b>：射击示例，非环境。</li><li><b>Factory Environment Collection / Demonstration</b>：资产全在通用目录，合不进 gym_citynav，要单独立工程。</li><li><b>AdditionalSamples</b>：CitySample 82 GB / 439 张关卡是完整城市，值得单独评估；另两个不是环境。</li></ul>")
+h.append("<h2>路网缩略图（A 类，按成片时长降序）</h2><p>引擎验证过的路线叠在同一会话导出的导航网上：青线 = 路线，黄点 = 起点，灰面 = 可走导航网。点图看大图。</p><div style='display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px'>")
+for i, x in enumerate(A, 1):
+    u, tag = thumb(x['slug'])
+    cap = f"<div style='font-size:12px;margin-top:4px'><b>{i}. {html.escape(x['title'][:34])}</b> · <code>{html.escape(x['level'].split('/')[-1])}</code><br><span class=mut>核心 {n(x['core'])} m² · 路网 {n(x.get('cl'))} m · 保留 {n(x.get('kept'),'{:.0%}')} · 一遍 {n(x.get('one_pass_min'),'{:.0f}')} min · {tag or '无图'}</span></div>"
+    h.append(f"<div style='background:#fff;border:1px solid #e5e5e5;border-radius:6px;padding:6px'>" + (f"<a href='{u}'><img src='{u}' style='width:100%;border-radius:4px' loading='lazy'></a>" if u else "<div style='height:200px;background:#f3f3f3;display:flex;align-items:center;justify-content:center;color:#999'>无图</div>") + cap + "</div>")
+h.append("</div>")
 h.append("<h2>附录：按资源包的统计（仅供参考）</h2><p>主统计按关卡。这里把同一资源包的关卡合并，只用来对照采购单位；一个包的分类取其关卡里最好的一档。</p><table><tr><th>分类</th><th>资源包数</th></tr>" + ''.join(f"<tr><td><span class='tag {c[0]}'>{c}</span></td><td class=r>{pk_cnt[c]}</td></tr>" for c in ORDER if pk_cnt[c]) + "</table>"
          f"<p>有可录关卡的资源包 {len(pk_a)} 个，合计可录关卡 {sum(P['a'] for P in pk_a)} 张、成片 {sum(P['ep'] for P in pk_a):.0f} h、机时 {sum(P['mh'] for P in pk_a):.0f} h。若每包只录一张代表关卡，则为 {len(pk_a)} 集。</p>"
          "<table><tr><th>资源包</th><th>关卡数</th><th>可录关卡</th><th>成片 h</th><th>机时</th><th>分类</th></tr>" + ''.join(f"<tr><td>{html.escape(P['title'])}<div class=mut>{P['fid']}</div></td><td class=r>{P['levels']}</td><td class=r>{P['a']}</td><td class=r>{P['ep']:.1f}</td><td class=r>{P['mh']:.0f}</td><td><span class='tag {P['cls'][0]}'>{P['cls']}</span></td></tr>" for P in PK if P['cls'] != 'H 未挑选' or P['a']) + "</table>")
