@@ -45,6 +45,11 @@ def main(shard_id):
     # exposure without one, so a shard plan that lacks it will refuse at capture, not record black.
     if sh.get("exposure_bias_ev") is not None:
         task.setdefault("render", {})["exposure_bias_ev"] = float(sh["exposure_bias_ev"])
+    # Per-map lighting mode. `fill` (the template default) hung the editor on two INDOOR maps on
+    # 17 Sep (Cave, SICKA Interior2: the captured-scene sky light recapture never returned); those
+    # shards say `level` and keep the author's lighting untouched.
+    if sh.get("lighting"):
+        task.setdefault("render", {})["lighting"] = sh["lighting"]
     task["shard"] = {k: sh[k] for k in ("shard", "shards", "estimated_hours",
                                         "one_pass_min_estimate")}
     out = PIPE / "tasks" / f"lv_{shard_id}.json"

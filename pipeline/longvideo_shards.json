@@ -1267,7 +1267,7 @@
   "shards": 1,
   "seed": 5000,
   "target_passes": 2,
-  "max_duration_s": 3420.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 9.5,
   "estimated_hours": 0.47,
   "ground_clearance_cm": 6.0,
@@ -1281,11 +1281,12 @@
   "shards": 1,
   "seed": 5001,
   "target_passes": 2,
-  "max_duration_s": 3096.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 8.6,
   "estimated_hours": 0.43,
   "ground_clearance_cm": 45.0,
-  "spec_version": "v1-2026-09-17"
+  "spec_version": "v1-2026-09-17",
+  "lighting": "level"
  },
  {
   "shard_id": "Game_StorageHouse_Maps_Demonstration__v1s00",
@@ -1295,7 +1296,7 @@
   "shards": 1,
   "seed": 5002,
   "target_passes": 2,
-  "max_duration_s": 2988.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 8.3,
   "estimated_hours": 0.42,
   "ground_clearance_cm": 6.0,
@@ -1309,7 +1310,7 @@
   "shards": 1,
   "seed": 5003,
   "target_passes": 2,
-  "max_duration_s": 2880.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 8.0,
   "estimated_hours": 0.4,
   "ground_clearance_cm": 45.0,
@@ -1323,7 +1324,7 @@
   "shards": 1,
   "seed": 5004,
   "target_passes": 2,
-  "max_duration_s": 2700.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 7.5,
   "estimated_hours": 0.38,
   "ground_clearance_cm": 45.0,
@@ -1337,10 +1338,11 @@
   "shards": 1,
   "seed": 5005,
   "target_passes": 2,
-  "max_duration_s": 2232.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 6.2,
   "estimated_hours": 0.31,
   "ground_clearance_cm": 6.0,
-  "spec_version": "v1-2026-09-17"
+  "spec_version": "v1-2026-09-17",
+  "lighting": "level"
  }
 ]

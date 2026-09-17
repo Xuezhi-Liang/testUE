@@ -33,7 +33,9 @@
   "project_dir": "SICKA_Free_Environment_Pack_ca74a5",
   "spec_version": "v1-2026-09-17",
   "est_s": 3869,
-  "cap_note": "17 Sep: user capped this batch at 30 min per map"
+  "cap_note": "17 Sep: user capped this batch at 30 min per map",
+  "lighting": "level",
+  "lighting_note": "17 Sep: fill hung the editor on this indoor map; author lighting kept"
  },
  {
   "shard_id": "Game_StorageHouse_Maps_Demonstration__v1s00",
@@ -107,6 +109,8 @@
   "project_dir": "Fantasy_Cave_Environment_Set_e3c60b",
   "spec_version": "v1-2026-09-17",
   "est_s": 2790,
-  "cap_note": "17 Sep: user capped this batch at 30 min per map"
+  "cap_note": "17 Sep: user capped this batch at 30 min per map",
+  "lighting": "level",
+  "lighting_note": "17 Sep: fill hung the editor on this indoor map; author lighting kept"
  }
 ]
