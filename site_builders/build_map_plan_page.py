@@ -41,8 +41,8 @@ A.sort(key=lambda p: (p['_k'], -(p['best']['core'] or 0)))
 # ---------- markdown ----------
 md = [f"# 全部交付地图的录制规划（按项目）", "", f"2026-09-17。范围：`~/new_map/Projects` 的 87 个资源包，每个包选一张代表关卡录，不按关卡数计。",
       "参数按今天定的：TAA 2×、步速 1 m/s、转速 45°/s、离地间隙按图分 6 / 45 cm、折返 5 分钟一次。", "",
-      "## 总览", "", "| 分类 | 项目数 | 说明 |", "|---|---:|---|"]
-for c in ORDER: md.append(f"| {c} | {sum(1 for p in P if p['cls']==c)} | {EXPL[c]} |")
+      "## 总览：442 张关卡的去向", "", "| 分类 | 张数 | 说明 |", "|---|---:|---|"]
+for c in LORDER: md.append(f"| {c} | {sum(1 for x in LV if x['cls']==c)} | {LEXPL[c]} |")
 md += ["", f"**A 类 {len(A)} 个项目的正式录制预算**：成片 {tot['ep']:.0f} h，{tot['sh']} 个 5 小时分片，按实时 2.5 倍算 {tot['mh']:.0f} 机时；"
        f"10 台约 {tot['mh']/10/24:.1f} 天，20 台约 {tot['mh']/20/24:.1f} 天。存储按 1.5 GB/成片小时估 {tot['gb']:,} GB。",
        "每集规则不变：8 遍覆盖或 20 h 封顶，取小；一遍耗时取自路线验证时的完整覆盖走法帧数（旧速度档，1 m/s 下会略短）。", "",
@@ -68,8 +68,8 @@ md += ["", "## 两种统计口径（录制口径 = 按关卡）", "",
        f"| 按资源包（每包一张代表关卡） | {len(A)} | {tot['ep']:.0f} | {tot['sh']} | {tot['mh']:.0f} | {tot['mh']/240:.1f} | {tot['gb']:,} |",
        f"| 按关卡（每个通过的场景都录） | {len(LA)} | {ltot['ep']:.0f} | {ltot['sh']} | {ltot['mh']:.0f} | {ltot['mh']/240:.1f} | {ltot['gb']:,} |",
        "", f"按关卡的 {len(LA)} 张分布在 {len({x['fid'] for x in LA})} 个资源包里；多出来的 {len(LA)-len(A)} 张是同一个包里的第二、第三个场景（日景夜景、不同街区、室内室外）。", "",
-       "### 按关卡：442 张交付关卡的去向", "", "| 分类 | 张数 | 说明 |", "|---|---:|---|"]
-for c in LORDER: md.append(f"| {c} | {sum(1 for x in LV if x['cls']==c)} | {LEXPL[c]} |")
+       "### 对照：87 个资源包的去向", "", "| 分类 | 个数 | 说明 |", "|---|---:|---|"]
+for c in ORDER: md.append(f"| {c} | {sum(1 for p in P if p['cls']==c)} | {EXPL[c]} |")
 md += ["", f"### 按关卡：可直接录的 {len(LA)} 张（按成片时长降序）", "", "| # | 资源包 | 关卡 | 核心 m² | 一遍 min | 成片 h | 分片 | 机时 | 备注 |", "|---:|---|---|---:|---:|---:|---:|---:|---|"]
 for i, x in enumerate(LA, 1):
     md.append(f"| {i} | {x['fid']} {x['title'][:30]} | `{x['level'].split('/')[-1]}` | {n(x['core'])} | {n(x.get('one_pass_min'), '{:.0f}')} | {x['episode_h']:.1f} | {x['shards']} | {x['machine_h']:.0f} | {'已录' if x['recorded'] else ''} |")
@@ -91,8 +91,8 @@ css = ".H{background:#f7f7f7}.D{background:#ffd6d6}body{font-family:system-ui,sa
 h = [f"<!doctype html><meta charset=utf-8><title>地图录制规划 · 按关卡</title><style>{css}</style>",
      f"<h1>全部交付地图的录制规划（按项目）</h1><p class=mut>2026-09-17 · 87 个资源包，每包一张代表关卡 · 生成于 {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())} · <a href='../inventory/'>资源总表</a> · <a href='../route-queue/'>补测队列</a></p>",
      "<p>参数按今天定的：TAA 2×、步速 1 m/s、转速 45°/s、离地间隙按图分 6 / 45 cm、折返 5 分钟一次。</p>",
-     "<table><tr><th>分类</th><th>项目数</th><th>说明</th></tr>"]
-for c in ORDER: h.append(f"<tr><td><span class='tag {c[0]}'>{c}</span></td><td class=r>{sum(1 for p in P if p['cls']==c)}</td><td>{EXPL[c]}</td></tr>")
+     "<h2>总览：442 张关卡的去向</h2><table><tr><th>分类</th><th>张数</th><th>说明</th></tr>"]
+for c in LORDER: h.append(f"<tr><td><span class='tag {c[0]}'>{c}</span></td><td class=r>{sum(1 for x in LV if x['cls']==c)}</td><td>{LEXPL[c]}</td></tr>")
 h.append("</table>")
 h.append(f"<p><b>A 类 {len(A)} 个项目的正式录制预算</b>：成片 {tot['ep']:.0f} h，{tot['sh']} 个 5 小时分片，实时 2.5 倍计 {tot['mh']:.0f} 机时；10 台约 {tot['mh']/10/24:.1f} 天，20 台约 {tot['mh']/20/24:.1f} 天；存储约 {tot['gb']:,} GB。每集 8 遍或 20 h 封顶。</p>")
 h.append("<h2>执行顺序</h2><ol><li><b>阶段 0，补验证（10 台，约 1 天）</b>：E 类 6 个、C 类 10 个重开补测队列，只跑代表关卡；B 类 2 个人工看俯视图。</li><li><b>阶段 1，验收片（10 台，半天）</b>：A 类每项目录 2 分钟看曝光、闪动、穿模、天空空帧。抗锯齿和步速今天刚改，没有一张图在新设置下录过。</li><li><b>阶段 2，正式录制</b>：拉取队列，大图先开小图填缝，每片一集一种子，跑完自动关机。</li><li><b>阶段 3，追加</b>：阶段 0 通过的按同样流程补进来。</li></ol>")
@@ -113,8 +113,8 @@ h.append(f"<h2>两种统计口径（录制口径 = 按关卡）</h2><table><tr><
          f"<tr><td>按资源包（每包一张代表关卡）</td><td class=r>{len(A)}</td><td class=r>{tot['ep']:.0f}</td><td class=r>{tot['sh']}</td><td class=r>{tot['mh']:.0f}</td><td class=r>{tot['mh']/240:.1f}</td><td class=r>{tot['gb']:,}</td></tr>"
          f"<tr><td>按关卡（每个通过的场景都录）</td><td class=r>{len(LA)}</td><td class=r>{ltot['ep']:.0f}</td><td class=r>{ltot['sh']}</td><td class=r>{ltot['mh']:.0f}</td><td class=r>{ltot['mh']/240:.1f}</td><td class=r>{ltot['gb']:,}</td></tr></table>"
          f"<p>按关卡的 {len(LA)} 张分布在 {len({x['fid'] for x in LA})} 个资源包里；多出来的 {len(LA)-len(A)} 张是同一个包里的第二、第三个场景。</p>")
-h.append("<h3>按关卡：442 张交付关卡的去向</h3><table><tr><th>分类</th><th>张数</th><th>说明</th></tr>")
-for c in LORDER: h.append(f"<tr><td><span class='tag {c[0]}'>{c}</span></td><td class=r>{sum(1 for x in LV if x['cls']==c)}</td><td>{LEXPL[c]}</td></tr>")
+h.append("<h3>对照：87 个资源包的去向</h3><table><tr><th>分类</th><th>个数</th><th>说明</th></tr>")
+for c in ORDER: h.append(f"<tr><td><span class='tag {c[0]}'>{c}</span></td><td class=r>{sum(1 for p in P if p['cls']==c)}</td><td>{EXPL[c]}</td></tr>")
 h.append(f"</table><h3>按关卡：可直接录的 {len(LA)} 张（按成片时长降序）</h3><table><tr><th>#</th><th>资源包</th><th>关卡</th><th>核心 m²</th><th>一遍 min</th><th>成片 h</th><th>分片</th><th>机时</th><th>备注</th></tr>")
 for i, x in enumerate(LA, 1):
     h.append(f"<tr class='{'big' if x['tier']=='大' else 'low' if (x['core'] or 0) < 50 else ''}'><td class=r>{i}</td><td>{html.escape(x['title'])}<div class=mut>{x['fid']}</div></td><td><code>{html.escape(x['level'])}</code></td><td class=r>{n(x['core'])}</td><td class=r>{n(x.get('one_pass_min'),'{:.0f}')}</td><td class=r>{x['episode_h']:.1f}</td><td class=r>{x['shards']}</td><td class=r>{x['machine_h']:.0f}</td><td>{'<b>已录</b>' if x['recorded'] else ''}</td></tr>")
