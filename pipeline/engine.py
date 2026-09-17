@@ -167,6 +167,41 @@ for yaw, dist in L:
     return query(req, body)["legs"]
 
 
+def actor_footprints(req, z_lo, z_hi, max_extent_cm=20000.0, min_m2=2.0):
+    """XY bounding boxes of the level's placed actors whose bounds overlap [z_lo, z_hi].
+
+    This is the "where is there something" signal that does not depend on the navmesh: a house
+    whose roof is walkable or that never punched a hole in the navmesh is invisible to the
+    obstacle raster, but its actor bounds are right here. Landscape, foliage, sky, fog, volumes and
+    anything wider than `max_extent_cm` (sky domes, the landscape itself) are skipped; so are
+    footprints under `min_m2`. Returns [[xmin, ymin, xmax, ymax, area_m2, class, name, height_cm], ...] in cm.
+    """
+    body = f"""
+SKIP = ("Landscape", "InstancedFoliage", "Sky", "Atmosphere", "Fog", "Volume", "Brush", "Light",
+        "Camera", "PlayerStart", "NavMesh", "RecastNavMesh", "WorldSettings", "Cloud", "Water",
+        "PostProcess", "ReflectionCapture", "Decal", "Note", "TextRender", "Spline", "Trigger")
+out = []
+for a in unreal.GameplayStatics.get_all_actors_of_class(w, unreal.Actor):
+    cls = a.get_class().get_name()
+    if any(k in cls for k in SKIP):
+        continue
+    try:
+        o, ext = a.get_actor_bounds(False)
+    except Exception:
+        continue
+    if ext.x <= 0 or ext.y <= 0 or ext.x > {max_extent_cm} or ext.y > {max_extent_cm}:
+        continue
+    if o.z + ext.z < {z_lo} or o.z - ext.z > {z_hi}:
+        continue
+    area = (2 * ext.x) * (2 * ext.y) / 1e4
+    if area < {min_m2}:
+        continue
+    out.append([o.x - ext.x, o.y - ext.y, o.x + ext.x, o.y + ext.y, round(area, 1), cls, a.get_name(), round(2 * ext.z, 1)])
+RESULT["boxes"] = out
+"""
+    return query(req, body, timeout=600)["boxes"]
+
+
 def ground_z(req, pts, z_from):
     body = f"P = {json.dumps([[float(a), float(b)] for a, b in pts])}\n"
     body += f'RESULT["z"] = [ground(px, py, {z_from}) for px, py in P]\n'
@@ -478,7 +513,7 @@ def R(yaw, pitch=0.0, roll=0.0):
 
 
 def nav_ensure(req, centre_xy, floor_z, extent=6000.0, padding=200.0, timeout_s=240.0,
-               settle_polls=5, poll_s=2.0):
+               settle_polls=5, poll_s=2.0, extent_xy=None):
     """Build navigation data covering the region, synthesising a bounds volume if the level has none.
 
     Dispatches the build and then POLLS. The engine must tick for the build to progress, so waiting
@@ -490,14 +525,20 @@ def nav_ensure(req, centre_xy, floor_z, extent=6000.0, padding=200.0, timeout_s=
     to hold for several consecutive polls with a navmesh present.
     """
     import time as _t
+    # extent_xy: half-sizes (cm) of the bounds box, when the caller knows how big the CONTENT is.
+    # The 60 m default was every map's navmesh until 17 Sep: all 172 validated routes ran on a
+    # 120 m box round the spawn, whatever the level's real size.
+    ex, ey = (float(extent_xy[0]), float(extent_xy[1])) if extent_xy else (float(extent), float(extent))
     r = simworld(req, "ensure_nav_mesh",
                  f"{V(centre_xy[0], centre_xy[1], floor_z)}, "
-                 f"{V(extent, extent, 2000.0)}, {padding}, {timeout_s}", timeout=300)
+                 f"{V(ex, ey, 2000.0)}, {padding}, {timeout_s * 2 if extent_xy else timeout_s}", timeout=900)
+    if r.get("ok"):
+        r["extent_cm"] = [ex, ey]
     if not r.get("ok"):
         return r
     idle, t0 = 0, _t.time()
     last = {}
-    while _t.time() - t0 < timeout_s:
+    while _t.time() - t0 < (timeout_s * 3 if extent_xy else timeout_s):
         last = simworld(req, "nav_build_status", "", timeout=120)
         if not last.get("ok"):
             return last

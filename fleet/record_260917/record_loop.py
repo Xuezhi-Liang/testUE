@@ -29,7 +29,7 @@ class Pulse:
     def __init__(self, slug, claim): self.slug, self.claim, self.stop = slug, claim, threading.Event(); threading.Thread(target=self.run, daemon=True).start()
     def run(self):
         while not self.stop.wait(240):
-            try: put(f'claims/{self.slug}.json', dict(self.claim, heartbeat_epoch=time.time()))
+            try: put(f'claims/{self.slug}.json', dict(self.claim, heartbeat_epoch=time.time(), phase=self.claim.get('phase', 'running')))
             except Exception: pass
 def sync_packs(task):
     for pack in task.get('packs_to_sync') or []:
@@ -69,16 +69,16 @@ while True:
     log(f'START {sid} (est {claimed.get("estimated_hours")} h of footage, clearance {claimed.get("ground_clearance_cm")} cm)')
     result = dict(shard_id=sid, slug=slug, worker=W, started_epoch=t0)
     try:
-        put(f'claims/{sid}.json', dict(claim, phase='syncing content', heartbeat_epoch=time.time())); sync_packs(claimed)
+        claim['phase'] = 'syncing content'; put(f'claims/{sid}.json', dict(claim, heartbeat_epoch=time.time())); sync_packs(claimed)
         for stale in [L / f'stop_uploads_{sid}']: stale.unlink(missing_ok=True)
         env = dict(os.environ, CTR_PID=os.environ['CTR_PID'], SHARD_ID=sid, SLUG=slug, MAP_ID=claimed['map_id'], DEADLINE_EPOCH=str(int(time.time() + SHARD_WALL_S)),
                    LV_DST=DST, LV_STATUS=f'{DST}/_status', PORT='9208')
         upl_log = open(P / 'logs' / f'lv_{sid}_uploader_stdout.log', 'a')
         upl = subprocess.Popen(['bash', str(L / 'uploader.sh')], env=env, stdout=upl_log, stderr=subprocess.STDOUT)
-        put(f'claims/{sid}.json', dict(claim, phase='recording', heartbeat_epoch=time.time()))
+        claim['phase'] = 'recording'; put(f'claims/{sid}.json', dict(claim, heartbeat_epoch=time.time()))
         with open(P / 'logs' / f'lv_{sid}_driver.log', 'a') as dl:
             rc = subprocess.run(['bash', str(L / 'driver.sh')], env=env, stdout=dl, stderr=subprocess.STDOUT).returncode
-        put(f'claims/{sid}.json', dict(claim, phase='uploading', heartbeat_epoch=time.time()))
+        claim['phase'] = 'uploading'; put(f'claims/{sid}.json', dict(claim, heartbeat_epoch=time.time()))
         (L / f'stop_uploads_{sid}').touch()
         try: upl.wait(timeout=2 * 3600)
         except subprocess.TimeoutExpired: upl.kill(); log('uploader did not finish in 2 h; killed')

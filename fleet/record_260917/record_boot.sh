@@ -19,7 +19,7 @@ tar czf "$F/prior_pipeline_sources.tar.gz" -C "$P" --wildcards '*.py' cpp longvi
 cp -a "$F/bundle/pipeline/." "$P/" || fail "pipeline copy"
 cp "$F/bundle/launch_ue_fast.sh" /home/ubuntu/WM-Unreal-data-collection/local_run/launch_ue_fast.sh || fail "launcher copy"
 mkdir -p "$SP" "$P/logs" "$P/episodes" "$P/frozen"
-for f in "$F"/bundle/starts/*.json; do [ -f "$SP/$(basename "$f")" ] || cp "$f" "$SP/"; done
+cp "$F"/bundle/starts/*.json "$SP/"   # overwrite: the image ships empty placeholder stubs (name "", 0,0,0) for maps it never ran
 for i in $(seq 1 30); do nvidia-smi -L >/dev/null 2>&1 && break; sleep 10; done
 nvidia-smi -L || fail "no GPU"
 nohup bash /home/ubuntu/prj/SimWorld/launch_unreal_instance/start_enroot_container.sh "exec sleep 999999999" > "$F/container_boot.log" 2>&1 &
@@ -43,6 +43,7 @@ SO=$(find "$CTRROOT" -name 'libUnrealEditor-UnrealCV.so' -newermt "@$PATCH_EPOCH
 [ -n "$SO" ] || fail "UnrealCV module was not rebuilt"
 echo "UnrealCV rebuilt: $SO"; upload_logs
 echo "==== $(date -u +%H:%M:%S) joining the recording queue ===="
+nohup bash "$F/bundle/mp4_uploader.sh" > /dev/null 2>&1 &
 python3 -u "$F/bundle/record_loop.py" "$W" >> "$F/record_loop.log" 2>&1; rc=$?
 aws s3 cp "$F/record_loop.log" "$S3/record_loop.log" --only-show-errors || true; upload_logs
 echo "record_loop exited rc=$rc"; sudo shutdown -h +1 "recording queue drained"

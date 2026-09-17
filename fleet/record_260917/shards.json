@@ -7,14 +7,15 @@
   "shards": 1,
   "seed": 5000,
   "target_passes": 2,
-  "max_duration_s": 3420.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 9.5,
   "estimated_hours": 0.47,
   "ground_clearance_cm": 6.0,
   "packs_to_sync": [],
   "project_dir": "Modular_Courtyard_1_0_76cbfc",
   "spec_version": "v1-2026-09-17",
-  "est_s": 4275
+  "est_s": 4275,
+  "cap_note": "17 Sep: user capped this batch at 30 min per map"
  },
  {
   "shard_id": "Game_Sicka_EnvPack2_Sicka_Scifi_Interior2_Maps_Master__v1s00",
@@ -24,14 +25,15 @@
   "shards": 1,
   "seed": 5001,
   "target_passes": 2,
-  "max_duration_s": 3096.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 8.6,
   "estimated_hours": 0.43,
   "ground_clearance_cm": 45.0,
   "packs_to_sync": [],
   "project_dir": "SICKA_Free_Environment_Pack_ca74a5",
   "spec_version": "v1-2026-09-17",
-  "est_s": 3869
+  "est_s": 3869,
+  "cap_note": "17 Sep: user capped this batch at 30 min per map"
  },
  {
   "shard_id": "Game_StorageHouse_Maps_Demonstration__v1s00",
@@ -41,14 +43,15 @@
   "shards": 1,
   "seed": 5002,
   "target_passes": 2,
-  "max_duration_s": 2988.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 8.3,
   "estimated_hours": 0.42,
   "ground_clearance_cm": 6.0,
   "packs_to_sync": [],
   "project_dir": "Storage_House_Set_297923",
   "spec_version": "v1-2026-09-17",
-  "est_s": 3735
+  "est_s": 3735,
+  "cap_note": "17 Sep: user capped this batch at 30 min per map"
  },
  {
   "shard_id": "Game_Cigar_room_Maps_Cigar_room__v1s00",
@@ -58,7 +61,7 @@
   "shards": 1,
   "seed": 5003,
   "target_passes": 2,
-  "max_duration_s": 2880.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 8.0,
   "estimated_hours": 0.4,
   "ground_clearance_cm": 45.0,
@@ -67,7 +70,8 @@
   ],
   "project_dir": "Cigar_Room_Environment_82414d",
   "spec_version": "v1-2026-09-17",
-  "est_s": 3600
+  "est_s": 3600,
+  "cap_note": "17 Sep: user capped this batch at 30 min per map"
  },
  {
   "shard_id": "Game_Bazaar_Meshingun_Map_LV_Bazaar__v1s00",
@@ -77,14 +81,15 @@
   "shards": 1,
   "seed": 5004,
   "target_passes": 2,
-  "max_duration_s": 2700.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 7.5,
   "estimated_hours": 0.38,
   "ground_clearance_cm": 45.0,
   "packs_to_sync": [],
   "project_dir": "The_Bazaar_5b045a",
   "spec_version": "v1-2026-09-17",
-  "est_s": 3375
+  "est_s": 3375,
+  "cap_note": "17 Sep: user capped this batch at 30 min per map"
  },
  {
   "shard_id": "Game_Cave_Maps_Demonstration__v1s00",
@@ -94,13 +99,14 @@
   "shards": 1,
   "seed": 5005,
   "target_passes": 2,
-  "max_duration_s": 2232.0,
+  "max_duration_s": 1800.0,
   "one_pass_min_estimate": 6.2,
   "estimated_hours": 0.31,
   "ground_clearance_cm": 6.0,
   "packs_to_sync": [],
   "project_dir": "Fantasy_Cave_Environment_Set_e3c60b",
   "spec_version": "v1-2026-09-17",
-  "est_s": 2790
+  "est_s": 2790,
+  "cap_note": "17 Sep: user capped this batch at 30 min per map"
  }
 ]

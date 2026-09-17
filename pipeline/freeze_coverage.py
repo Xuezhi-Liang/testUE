@@ -72,8 +72,40 @@ def slug_for(map_id):
     return "Game_" + map_id.lstrip("/").removeprefix("Game/").replace("/", "_")
 
 
-def pick_spawn(req, map_id, verbose=True):
-    """A start point that projects onto the navmesh, from this map's start-positions file."""
+def content_bounds(req, z0, min_m2=20.0, min_height_cm=150.0, pad_cm=2000.0, lo_cm=6000.0, hi_cm=25000.0, verbose=True):
+    """(centre_xy, half_extent_xy, boxes): the level's placed content around floor z0, as a box.
+
+    The navmesh bounds are synthesised round the spawn, and until 17 Sep they were a fixed 60 m
+    half-size: every validated route lived in a 120 m square whatever the level's size
+    (ModularNeighborhood is 400 m across; its routes covered the corner the spawn was in). The
+    box now follows the CONTENT: every placed actor footprint of `min_m2` or more within 30 m of
+    the floor, padded, clamped to [lo, hi] per axis so a sky-sized outlier cannot ask for a
+    navmesh the size of a county. The boxes are returned so the road network can reuse them.
+    """
+    boxes = engine.actor_footprints(req, z0 - 3000.0, z0 + 3000.0)
+    # Tall AND wide: a road mesh is 400 m2 and 20 cm high, a house is 100 m2 and 6 m high. Roads,
+    # lawns and floors are where the camera walks, not what it walks TO.
+    big = [b for b in boxes if float(b[4]) >= min_m2 and (len(b) < 8 or float(b[7]) >= min_height_cm)]
+    if not big:
+        return None, None, boxes
+    xs0 = min(float(b[0]) for b in big); ys0 = min(float(b[1]) for b in big)
+    xs1 = max(float(b[2]) for b in big); ys1 = max(float(b[3]) for b in big)
+    cx, cy = (xs0 + xs1) / 2.0, (ys0 + ys1) / 2.0
+    hx = min(hi_cm, max(lo_cm, (xs1 - xs0) / 2.0 + pad_cm)); hy = min(hi_cm, max(lo_cm, (ys1 - ys0) / 2.0 + pad_cm))
+    if verbose:
+        print(f"[freeze-cov] content bounds: {len(big)} footprints >= {min_m2:.0f} m2 and >= {min_height_cm:.0f} cm tall, of {len(boxes)}; "
+              f"box {2*hx/100:.0f} x {2*hy/100:.0f} m centred ({cx/100:.0f}, {cy/100:.0f}) m"
+              + (" (clamped)" if (xs1 - xs0) / 2.0 + pad_cm > hi_cm or (ys1 - ys0) / 2.0 + pad_cm > hi_cm else ""), flush=True)
+    return (cx, cy), (hx, hy), boxes
+
+
+def pick_spawn(req, map_id, verbose=True, content=None):
+    """A start point that projects onto the navmesh, from this map's start-positions file.
+
+    `content`: a dict the caller owns; the content box is measured once (on the first candidate's
+    floor height) and written into it as centre / half_extent / boxes, so freeze can reuse the
+    footprints for the road network without a second engine round trip.
+    """
     slug = slug_for(map_id)
     sp_file = SP_DIR / f"{slug}.json"
     if not sp_file.exists():
@@ -87,7 +119,18 @@ def pick_spawn(req, map_id, verbose=True):
         cx, cy, cz = float(cand["x"]), float(cand["y"]), float(cand["z"])
         traced = engine.ground_z(req, [(cx, cy)], cz + 400.0)[0]
         z0 = traced if traced is not None else cz
-        boot = engine.nav_ensure(req, (cx, cy), z0)
+        if content is not None and "boxes" not in content:
+            c_xy, c_half, boxes = content_bounds(req, z0, verbose=verbose)
+            content.update(centre=c_xy, half_extent=c_half, boxes=boxes)
+        if content and content.get("half_extent"):
+            # Bounds round the content, grown to include this candidate so it still projects.
+            (ccx, ccy), (hx, hy) = content["centre"], content["half_extent"]
+            x0, x1 = min(ccx - hx, cx - 1000.0), max(ccx + hx, cx + 1000.0)
+            y0, y1 = min(ccy - hy, cy - 1000.0), max(ccy + hy, cy + 1000.0)
+            boot = engine.nav_ensure(req, ((x0 + x1) / 2.0, (y0 + y1) / 2.0), z0,
+                                     extent_xy=((x1 - x0) / 2.0, (y1 - y0) / 2.0))
+        else:
+            boot = engine.nav_ensure(req, (cx, cy), z0)
         if not boot.get("ok"):
             notes.append(f"{cand.get('name')}: nav_ensure failed ({boot.get('error')})")
             continue
@@ -464,7 +507,8 @@ def freeze(task, ucv=None, out_dir=FROZEN, skip_probe=False):
             raise RuntimeError("UE never became reachable")
     req = ucv.client.request
 
-    sp, gz, nav_boot = pick_spawn(req, map_id)
+    content = {} if task.get("content_buffer_m") else None
+    sp, gz, nav_boot = pick_spawn(req, map_id, content=content)
     print(f"[freeze-cov] spawn '{sp.get('name')}' at ({sp['x']:.0f}, {sp['y']:.0f}), "
           f"navmesh ground {gz:.1f} cm")
 
@@ -509,6 +553,7 @@ def freeze(task, ucv=None, out_dir=FROZEN, skip_probe=False):
     # counted and reported, the coverage fraction is still measured from the poses, and if the
     # attempts run out the pre-gates fail exactly as before.
     veto_xy, reroutes = [], []
+    content_boxes = None
     for attempt in range(1, MAX_REROUTE_ATTEMPTS + 2):
         if attempt > 1:
             print(f"[freeze-cov] reroute attempt {attempt}: {len(veto_xy)} places vetoed",
@@ -518,10 +563,16 @@ def freeze(task, ucv=None, out_dir=FROZEN, skip_probe=False):
         # `content_buffer_m` (17 Sep): keep only roads within this distance of built content.
         content_buffer_cm = (float(task.get("content_buffer_m")) * 100.0
                              if task.get("content_buffer_m") else None)
+        if content_buffer_cm and content_boxes is None:
+            # The footprints pick_spawn already fetched (30 m window round the floor), else fetch.
+            content_boxes = (content or {}).get("boxes") or engine.actor_footprints(req, gz - 1500.0, gz + 1500.0)
+            (out_dir / f"{slug}__content_boxes.json").write_text(json.dumps(content_boxes))
+            print(f"[freeze-cov] content: {len(content_boxes)} actor footprints within 15 m of the floor", flush=True)
         G0, rep0, region = C.build_network(nav, core_only=core_only, min_clear_cm=min_clear_cm,
                                            veto_xy=veto_xy, veto_radius_cm=VETO_RADIUS_CM,
                                            content_buffer_cm=content_buffer_cm,
-                                           content_mode=task.get("content_mode", "dense"))
+                                           content_mode=task.get("content_mode", "dense"),
+                                           content_boxes=content_boxes)
         print(f"[freeze-cov] road network{' (core only)' if core_only else ''}"
               f"{f' (within {content_buffer_cm/100:.0f} m of content)' if content_buffer_cm else ''}: {rep0['roads']} "
               f"roads, {rep0['centreline_m']:.0f} m of centreline over "
@@ -734,7 +785,9 @@ def freeze(task, ucv=None, out_dir=FROZEN, skip_probe=False):
         "action_mix_target": plan["action_mix_target"],
         "action_mix_in_band": plan["action_mix_in_band"],
         "mix_tuning": {k: v for k, v in plan["mix_tuning"].items() if k != "trace"},
-        "navmesh": {"ensure": nav_boot, "export": exp},
+        "navmesh": {"ensure": nav_boot, "export": exp,
+                    "content_box_m": ([round(2 * content["half_extent"][0] / 100), round(2 * content["half_extent"][1] / 100)]
+                                      if content and content.get("half_extent") else None)},
         "collision": collision,
         "depth_probe": probe,
         "pre_gates": pre,

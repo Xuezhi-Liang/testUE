@@ -137,7 +137,7 @@ def surface_z(nav, region, xy):
 def build_centrelines(nav, region, cell_cm=CELL_CM, min_clear_cm=MIN_CLEAR_CM,
                       core_mask=None, grid_origin=None, grid_shape=None,
                       veto_xy=None, veto_radius_cm=150.0, content_buffer_cm=None,
-                      content_mode="dense"):
+                      content_mode="dense", content_boxes=None):
     """Walkable region -> a graph of road centrelines in world centimetres.
 
     Nodes are junctions and dead ends; each edge carries the polyline of the corridor between
@@ -226,6 +226,24 @@ def build_centrelines(nav, region, cell_cm=CELL_CM, min_clear_cm=MIN_CLEAR_CM,
         if content_mode not in ("dense", "buildings"):
             raise RuntimeError(f"content_mode must be 'dense' or 'buildings', got {content_mode!r}")
         content = (dcore | big) if content_mode == "dense" else big
+        # Engine-side actor footprints (engine.actor_footprints), rasterised on this grid. They
+        # see what the navmesh raster cannot: a building that never cut a hole in the navmesh.
+        # "dense" takes every footprint of 2 m2 or more, "buildings" only 20 m2 or more.
+        boxes_m2 = 0.0
+        if content_boxes:
+            floor_m2 = 2.0 if content_mode == "dense" else 20.0
+            bm = np.zeros_like(content)
+            for bx in content_boxes:
+                x0, y0, x1, y1, area = float(bx[0]), float(bx[1]), float(bx[2]), float(bx[3]), float(bx[4])
+                # flat things (roads, lawns, floors) are walked on, not walked to: 150 cm of height
+                if area < floor_m2 or (len(bx) >= 8 and float(bx[7]) < 150.0):
+                    continue
+                c0 = max(0, int(np.floor((x0 - lo[0]) / cell_cm)) + 2); c1 = min(W, int(np.ceil((x1 - lo[0]) / cell_cm)) + 3)
+                r0 = max(0, int(np.floor((y0 - lo[1]) / cell_cm)) + 2); r1 = min(H, int(np.ceil((y1 - lo[1]) / cell_cm)) + 3)
+                if r1 > r0 and c1 > c0:
+                    bm[r0:r1, c0:c1] = True
+            boxes_m2 = round(float(bm.sum()) * cell_cm ** 2 / 1e4, 1)
+            content = content | bm
         content_m2 = round(float(content.sum()) * cell_cm ** 2 / 1e4, 1)
         safe_before_buffer_m2 = round(float(safe.sum()) * cell_cm ** 2 / 1e4, 1)
         if not content.any():
@@ -346,6 +364,8 @@ def build_centrelines(nav, region, cell_cm=CELL_CM, min_clear_cm=MIN_CLEAR_CM,
                                            kept.edges(data=True)), 1),
         "content_buffer_cm": content_buffer_cm,
         "content_mode": content_mode if content_buffer_cm else None,
+        "content_from_actor_boxes_m2": boxes_m2 if content_buffer_cm else None,
+        "content_boxes_n": len(content_boxes) if content_boxes else 0,
         "content_m2": content_m2,
         "corridor_before_content_buffer_m2": safe_before_buffer_m2,
     }
@@ -1133,7 +1153,8 @@ def mix_report(labels):
 # ------------------------------------------------------------------------------- planning
 
 def build_network(nav, core_only=False, min_clear_cm=None, veto_xy=None,
-                  veto_radius_cm=150.0, content_buffer_cm=None, content_mode="dense"):
+                  veto_radius_cm=150.0, content_buffer_cm=None, content_mode="dense",
+                  content_boxes=None):
     """Pick the region the agent can use and reduce it to a road graph. Done once - thinning is
     the expensive step and it does not depend on anything the action tuner moves.
 
@@ -1178,7 +1199,8 @@ def build_network(nav, core_only=False, min_clear_cm=None, veto_xy=None,
                                        min_clear_cm=(MIN_CLEAR_CM if min_clear_cm is None
                                                      else float(min_clear_cm)),
                                        veto_xy=veto_xy, veto_radius_cm=veto_radius_cm,
-                                       content_buffer_cm=content_buffer_cm, content_mode=content_mode)
+                                       content_buffer_cm=content_buffer_cm, content_mode=content_mode,
+                                       content_boxes=content_boxes)
         except Exception as e:
             # One unusable region must not decide the map. Only RuntimeError used to be skipped,
             # so a degenerate region raising anything else took the whole build down with it.
