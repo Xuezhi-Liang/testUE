@@ -13,7 +13,9 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 10656,
-  "order": 0
+  "order": 0,
+  "quiet_max_s": 2400,
+  "first_rpc_s": 2400
  },
  {
   "slug": "Game_GrassHillsLandscape_Maps_Overview_Overview",
@@ -29,7 +31,9 @@
   "why": "C 重跑 prev=timeout",
   "prev_state": "timeout",
   "est_s": 7200,
-  "order": 1
+  "order": 1,
+  "quiet_max_s": 2400,
+  "first_rpc_s": 2400
  },
  {
   "slug": "Game_JapaneseKit_Map_CyberpunkVillage",
@@ -202,7 +206,9 @@
   "why": "C 重跑 prev=timeout",
   "prev_state": "timeout",
   "est_s": 7200,
-  "order": 11
+  "order": 11,
+  "quiet_max_s": 2400,
+  "first_rpc_s": 2400
  },
  {
   "slug": "Game_UltimateFarming_Maps_TinyFields",
@@ -336,104 +342,6 @@
   "first_rpc_s": 2400
  },
  {
-  "slug": "Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo",
-  "map_id": "/Game/Medieval_Environment/Real_Landscape/Default/Maps/Default_Demo",
-  "seed": 160943,
-  "policy": "longest",
-  "ground_clearance_cm": 6,
-  "recover_start": false,
-  "packs_to_sync": [],
-  "project_dir": "Medieval_Castle_Modular_Vol_1_5c5153",
-  "title": "Medieval Castle Modular Vol 1",
-  "source": "old",
-  "why": "D 修路线 prev=route_failed",
-  "prev_state": "route_failed",
-  "est_s": 1646,
-  "order": 19
- },
- {
-  "slug": "Game_Modular_Sci_Fi_Maps_Preview",
-  "map_id": "/Game/Modular_Sci_Fi/Maps/Preview",
-  "seed": 302680,
-  "policy": "content_region",
-  "ground_clearance_cm": 45,
-  "recover_start": true,
-  "packs_to_sync": [
-   "Modular_Sci_Fi"
-  ],
-  "project_dir": "Modular_Sci_Fi_village_809d2e",
-  "title": "Modular Sci-Fi village",
-  "source": "new",
-  "why": "C 重跑 prev=failed",
-  "prev_state": "failed",
-  "est_s": 1145,
-  "order": 20
- },
- {
-  "slug": "Game_Village_Maps_Village_SummerNightExample",
-  "map_id": "/Game/Village/Maps/Village_SummerNightExample",
-  "seed": 162981,
-  "policy": "longest",
-  "ground_clearance_cm": 45,
-  "recover_start": true,
-  "packs_to_sync": [],
-  "project_dir": "Slavic_Village_db0797",
-  "title": "Slavic Village",
-  "source": "old",
-  "why": "C 重跑 prev=failed",
-  "prev_state": "failed",
-  "est_s": 1023,
-  "order": 21
- },
- {
-  "slug": "Game_desert_ruins_maps_Showcase",
-  "map_id": "/Game/desert_ruins/maps/Showcase",
-  "seed": 420148,
-  "policy": "content_region",
-  "ground_clearance_cm": 45,
-  "recover_start": true,
-  "packs_to_sync": [],
-  "project_dir": "Desert_Ruins_d4092a",
-  "title": "Desert Ruins",
-  "source": "new",
-  "why": "E 未验证 prev=None",
-  "prev_state": null,
-  "est_s": 900,
-  "order": 22
- },
- {
-  "slug": "Game_Sci_FI_Valley_Village_Level_L_showcase_level",
-  "map_id": "/Game/Sci_FI_Valley_Village/Level/L_showcase_level",
-  "seed": 420111,
-  "policy": "content_region",
-  "ground_clearance_cm": 45,
-  "recover_start": true,
-  "packs_to_sync": [],
-  "project_dir": "Science_Fiction_Valley_Town_593e7d",
-  "title": "Science Fiction Valley Town",
-  "source": "new",
-  "why": "E 未验证 prev=None",
-  "prev_state": null,
-  "est_s": 900,
-  "order": 23
- },
- {
-  "slug": "Game_UNIVERSITY_CLASSROOM_Levels_Overview",
-  "map_id": "/Game/UNIVERSITY_CLASSROOM/Levels/Overview",
-  "seed": 420185,
-  "policy": "content_region",
-  "ground_clearance_cm": 45,
-  "recover_start": true,
-  "packs_to_sync": [],
-  "project_dir": "University_Classroom_Interior_Environment_School_Room_Universities_Class_700598",
-  "title": "University Classroom Interior Environment / School Room ( Universities / Class )",
-  "source": "new",
-  "why": "E 未验证 prev=None",
-  "prev_state": null,
-  "est_s": 900,
-  "order": 24
- },
- {
   "slug": "Game_LookoutTower_Maps_Demo",
   "map_id": "/Game/LookoutTower/Maps/Demo",
   "seed": 162928,
@@ -446,26 +354,10 @@
   "source": "old",
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
-  "est_s": 614,
-  "order": 25
- },
- {
-  "slug": "Game_ModularOldTown_Maps_Old_Town",
-  "map_id": "/Game/ModularOldTown/Maps/Old_Town",
-  "seed": 302663,
-  "policy": "content_region",
-  "ground_clearance_cm": 45,
-  "recover_start": true,
-  "packs_to_sync": [
-   "ModularOldTown"
-  ],
-  "project_dir": "Modular_Old_Town_997066",
-  "title": "Modular Old Town",
-  "source": "new",
-  "why": "C 重跑 prev=failed",
-  "prev_state": "failed",
-  "est_s": 497,
-  "order": 26
+  "est_s": 5400,
+  "order": 19,
+  "quiet_max_s": 2400,
+  "first_rpc_s": 2400
  },
  {
   "slug": "Game_LandscapePackTwo_Maps_Mesa_01",
@@ -484,8 +376,211 @@
   "source": "new",
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
-  "est_s": 450,
+  "est_s": 5400,
+  "order": 20,
+  "quiet_max_s": 2400,
+  "first_rpc_s": 2400
+ },
+ {
+  "slug": "Game_LandscapePackTwo_Maps_Desert_01",
+  "map_id": "/Game/LandscapePackTwo/Maps/Desert_01",
+  "seed": 302901,
+  "policy": "content_region",
+  "ground_clearance_cm": 45,
+  "recover_start": true,
+  "packs_to_sync": [
+   "LandscapePackOne",
+   "LandscapePackTwo",
+   "WaterPlane"
+  ],
+  "project_dir": "Landscapes_Pack_7dd38f",
+  "title": "Landscapes Pack",
+  "source": "new",
+  "why": "C 重跑 prev=failed",
+  "prev_state": "failed",
+  "est_s": 5400,
+  "order": 21,
+  "quiet_max_s": 2400,
+  "first_rpc_s": 2400
+ },
+ {
+  "slug": "Game_GrassMaterialPremium_Map_Demonstration_Demonstration",
+  "map_id": "/Game/GrassMaterialPremium/Map/Demonstration/Demonstration",
+  "seed": 302595,
+  "policy": "content_region",
+  "ground_clearance_cm": 45,
+  "recover_start": true,
+  "packs_to_sync": [
+   "GrassMaterialPremium"
+  ],
+  "project_dir": "Grass_Hills_Landscape_bd913f",
+  "title": "Grass Hills Landscape",
+  "source": "new",
+  "why": "C 重跑 prev=failed",
+  "prev_state": "failed",
+  "est_s": 5400,
+  "order": 22,
+  "quiet_max_s": 2400,
+  "first_rpc_s": 2400
+ },
+ {
+  "slug": "Game_LandscapePackOne_Maps_SnowyMountain_01",
+  "map_id": "/Game/LandscapePackOne/Maps/SnowyMountain_01",
+  "seed": 302867,
+  "policy": "content_region",
+  "ground_clearance_cm": 45,
+  "recover_start": true,
+  "packs_to_sync": [
+   "LandscapePackOne",
+   "LandscapePackTwo",
+   "WaterPlane"
+  ],
+  "project_dir": "Landscapes_Pack_7dd38f",
+  "title": "Landscapes Pack",
+  "source": "new",
+  "why": "C 重跑 prev=failed",
+  "prev_state": "failed",
+  "est_s": 5400,
+  "order": 23,
+  "quiet_max_s": 2400,
+  "first_rpc_s": 2400
+ },
+ {
+  "slug": "Game_ModularBuildingSet_Demo_Scene",
+  "map_id": "/Game/ModularBuildingSet/Demo_Scene",
+  "seed": 302204,
+  "policy": "content_region",
+  "ground_clearance_cm": 45,
+  "recover_start": true,
+  "packs_to_sync": [
+   "ModularBuildingSet"
+  ],
+  "project_dir": "Modular_Building_Set_d0b0fa",
+  "force_sync": true,
+  "title": "Modular Building Set",
+  "source": "new",
+  "why": "C 重跑 prev=failed",
+  "prev_state": "failed",
+  "est_s": 5400,
+  "order": 24,
+  "quiet_max_s": 2400,
+  "first_rpc_s": 2400
+ },
+ {
+  "slug": "Game_Medieval_Environment_Real_Landscape_Default_Maps_Default_Demo",
+  "map_id": "/Game/Medieval_Environment/Real_Landscape/Default/Maps/Default_Demo",
+  "seed": 160943,
+  "policy": "longest",
+  "ground_clearance_cm": 6,
+  "recover_start": false,
+  "packs_to_sync": [],
+  "project_dir": "Medieval_Castle_Modular_Vol_1_5c5153",
+  "title": "Medieval Castle Modular Vol 1",
+  "source": "old",
+  "why": "D 修路线 prev=route_failed",
+  "prev_state": "route_failed",
+  "est_s": 1646,
+  "order": 25
+ },
+ {
+  "slug": "Game_Modular_Sci_Fi_Maps_Preview",
+  "map_id": "/Game/Modular_Sci_Fi/Maps/Preview",
+  "seed": 302680,
+  "policy": "content_region",
+  "ground_clearance_cm": 45,
+  "recover_start": true,
+  "packs_to_sync": [
+   "Modular_Sci_Fi"
+  ],
+  "project_dir": "Modular_Sci_Fi_village_809d2e",
+  "title": "Modular Sci-Fi village",
+  "source": "new",
+  "why": "C 重跑 prev=failed",
+  "prev_state": "failed",
+  "est_s": 1145,
+  "order": 26
+ },
+ {
+  "slug": "Game_Village_Maps_Village_SummerNightExample",
+  "map_id": "/Game/Village/Maps/Village_SummerNightExample",
+  "seed": 162981,
+  "policy": "longest",
+  "ground_clearance_cm": 45,
+  "recover_start": true,
+  "packs_to_sync": [],
+  "project_dir": "Slavic_Village_db0797",
+  "title": "Slavic Village",
+  "source": "old",
+  "why": "C 重跑 prev=failed",
+  "prev_state": "failed",
+  "est_s": 1023,
   "order": 27
+ },
+ {
+  "slug": "Game_desert_ruins_maps_Showcase",
+  "map_id": "/Game/desert_ruins/maps/Showcase",
+  "seed": 420148,
+  "policy": "content_region",
+  "ground_clearance_cm": 45,
+  "recover_start": true,
+  "packs_to_sync": [],
+  "project_dir": "Desert_Ruins_d4092a",
+  "title": "Desert Ruins",
+  "source": "new",
+  "why": "E 未验证 prev=None",
+  "prev_state": null,
+  "est_s": 900,
+  "order": 28
+ },
+ {
+  "slug": "Game_Sci_FI_Valley_Village_Level_L_showcase_level",
+  "map_id": "/Game/Sci_FI_Valley_Village/Level/L_showcase_level",
+  "seed": 420111,
+  "policy": "content_region",
+  "ground_clearance_cm": 45,
+  "recover_start": true,
+  "packs_to_sync": [],
+  "project_dir": "Science_Fiction_Valley_Town_593e7d",
+  "title": "Science Fiction Valley Town",
+  "source": "new",
+  "why": "E 未验证 prev=None",
+  "prev_state": null,
+  "est_s": 900,
+  "order": 29
+ },
+ {
+  "slug": "Game_UNIVERSITY_CLASSROOM_Levels_Overview",
+  "map_id": "/Game/UNIVERSITY_CLASSROOM/Levels/Overview",
+  "seed": 420185,
+  "policy": "content_region",
+  "ground_clearance_cm": 45,
+  "recover_start": true,
+  "packs_to_sync": [],
+  "project_dir": "University_Classroom_Interior_Environment_School_Room_Universities_Class_700598",
+  "title": "University Classroom Interior Environment / School Room ( Universities / Class )",
+  "source": "new",
+  "why": "E 未验证 prev=None",
+  "prev_state": null,
+  "est_s": 900,
+  "order": 30
+ },
+ {
+  "slug": "Game_ModularOldTown_Maps_Old_Town",
+  "map_id": "/Game/ModularOldTown/Maps/Old_Town",
+  "seed": 302663,
+  "policy": "content_region",
+  "ground_clearance_cm": 45,
+  "recover_start": true,
+  "packs_to_sync": [
+   "ModularOldTown"
+  ],
+  "project_dir": "Modular_Old_Town_997066",
+  "title": "Modular Old Town",
+  "source": "new",
+  "why": "C 重跑 prev=failed",
+  "prev_state": "failed",
+  "est_s": 497,
+  "order": 31
  },
  {
   "slug": "Game_ModularPlatformerIndustrialArea_Map_Factory",
@@ -501,7 +596,7 @@
   "why": "D 修路线 prev=route_failed",
   "prev_state": "route_failed",
   "est_s": 388,
-  "order": 28
+  "order": 32
  },
  {
   "slug": "Game_Old_Factory_01_Maps_Demoscene_01",
@@ -517,7 +612,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 329,
-  "order": 29
+  "order": 33
  },
  {
   "slug": "Game_Chinese_Landscape_Levels_Chinese_Landscape_Demo",
@@ -533,7 +628,7 @@
   "why": "D 修路线 prev=route_failed",
   "prev_state": "route_failed",
   "est_s": 234,
-  "order": 30
+  "order": 34
  },
  {
   "slug": "Game_InfinityWeather_Demo_Maps_SnowMap",
@@ -549,7 +644,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 209,
-  "order": 31
+  "order": 35
  },
  {
   "slug": "Game_ModularCourtyard_Maps_SampleScene_sanny",
@@ -565,7 +660,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 149,
-  "order": 32
+  "order": 36
  },
  {
   "slug": "Game_LandscapePackTwo_Maps_Grassland_01",
@@ -585,7 +680,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 134,
-  "order": 33
+  "order": 37
  },
  {
   "slug": "Game_StonePineForest_Maps_Traditional_Map",
@@ -601,27 +696,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 132,
-  "order": 34
- },
- {
-  "slug": "Game_LandscapePackTwo_Maps_Desert_01",
-  "map_id": "/Game/LandscapePackTwo/Maps/Desert_01",
-  "seed": 302901,
-  "policy": "content_region",
-  "ground_clearance_cm": 45,
-  "recover_start": true,
-  "packs_to_sync": [
-   "LandscapePackOne",
-   "LandscapePackTwo",
-   "WaterPlane"
-  ],
-  "project_dir": "Landscapes_Pack_7dd38f",
-  "title": "Landscapes Pack",
-  "source": "new",
-  "why": "C 重跑 prev=failed",
-  "prev_state": "failed",
-  "est_s": 125,
-  "order": 35
+  "order": 38
  },
  {
   "slug": "Game_Hospital_map_demo",
@@ -639,7 +714,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 102,
-  "order": 36
+  "order": 39
  },
  {
   "slug": "Game_Valley_Maps_PCG_Valley",
@@ -657,7 +732,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 98,
-  "order": 37
+  "order": 40
  },
  {
   "slug": "Game_SwimmingPool_Maps_ChangingRoom_Male",
@@ -673,7 +748,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 95,
-  "order": 38
+  "order": 41
  },
  {
   "slug": "Game_Dungeon_Levels_Dungeon_Demo_00",
@@ -690,7 +765,7 @@
   "why": "D 修路线 prev=route_failed",
   "prev_state": "route_failed",
   "est_s": 91,
-  "order": 39
+  "order": 42
  },
  {
   "slug": "Game_Sicka_EnvPack2_Sicka_Ancient_Kit_Maps_Map_Scene3",
@@ -706,25 +781,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 90,
-  "order": 40
- },
- {
-  "slug": "Game_GrassMaterialPremium_Map_Demonstration_Demonstration",
-  "map_id": "/Game/GrassMaterialPremium/Map/Demonstration/Demonstration",
-  "seed": 302595,
-  "policy": "content_region",
-  "ground_clearance_cm": 45,
-  "recover_start": true,
-  "packs_to_sync": [
-   "GrassMaterialPremium"
-  ],
-  "project_dir": "Grass_Hills_Landscape_bd913f",
-  "title": "Grass Hills Landscape",
-  "source": "new",
-  "why": "C 重跑 prev=failed",
-  "prev_state": "failed",
-  "est_s": 80,
-  "order": 41
+  "order": 43
  },
  {
   "slug": "Game_Sicka_EnvPack2_Sicka_Ancient_Kit_Maps_Map_scene1",
@@ -740,7 +797,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 71,
-  "order": 42
+  "order": 44
  },
  {
   "slug": "Game_Sicka_EnvPack2_Sicka_Ancient_Kit_Maps_Map_scene2",
@@ -756,7 +813,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 58,
-  "order": 43
+  "order": 45
  },
  {
   "slug": "Game_LowPolyMedievalConstructions_Maps_Map_4_Top-Down",
@@ -772,27 +829,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 54,
-  "order": 44
- },
- {
-  "slug": "Game_LandscapePackOne_Maps_SnowyMountain_01",
-  "map_id": "/Game/LandscapePackOne/Maps/SnowyMountain_01",
-  "seed": 302867,
-  "policy": "content_region",
-  "ground_clearance_cm": 45,
-  "recover_start": true,
-  "packs_to_sync": [
-   "LandscapePackOne",
-   "LandscapePackTwo",
-   "WaterPlane"
-  ],
-  "project_dir": "Landscapes_Pack_7dd38f",
-  "title": "Landscapes Pack",
-  "source": "new",
-  "why": "C 重跑 prev=failed",
-  "prev_state": "failed",
-  "est_s": 53,
-  "order": 45
+  "order": 46
  },
  {
   "slug": "Game_LowPolyMedievalConstructions_Maps_Map_7_Top-Down",
@@ -808,7 +845,7 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 44,
-  "order": 46
+  "order": 47
  },
  {
   "slug": "Game_Hangar_Maps_Hangar",
@@ -827,27 +864,8 @@
   "why": "C 重跑 prev=failed",
   "prev_state": "failed",
   "est_s": 32,
-  "order": 47,
+  "order": 48,
   "requeued": "level file absent from the image; packs_to_sync was empty in the first manifest"
- },
- {
-  "slug": "Game_ModularBuildingSet_Demo_Scene",
-  "map_id": "/Game/ModularBuildingSet/Demo_Scene",
-  "seed": 302204,
-  "policy": "content_region",
-  "ground_clearance_cm": 45,
-  "recover_start": true,
-  "packs_to_sync": [
-   "ModularBuildingSet"
-  ],
-  "project_dir": "Modular_Building_Set_d0b0fa",
-  "force_sync": true,
-  "title": "Modular Building Set",
-  "source": "new",
-  "why": "C 重跑 prev=failed",
-  "prev_state": "failed",
-  "est_s": 32,
-  "order": 48
  },
  {
   "slug": "Game_Hangar_Hangar",
@@ -882,5 +900,20 @@
   "prev_state": "failed",
   "est_s": 27,
   "order": 50
+ },
+ {
+  "slug": "Game_Maps_Demonstration",
+  "map_id": "/Game/Maps/Demonstration",
+  "seed": 1,
+  "policy": "longest",
+  "ground_clearance_cm": 45,
+  "recover_start": true,
+  "packs_to_sync": [],
+  "project_dir": "Factory_Environment_Collection_83fe93",
+  "est_s": 1,
+  "title": "sentinel",
+  "why": "sentinel: has a result already; forces a manifest reload",
+  "source": "old",
+  "order": 51
  }
 ]

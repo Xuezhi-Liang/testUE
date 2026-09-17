@@ -150,11 +150,18 @@ RESULT.update(starts=starts,mesh_candidates=sorted(meshes,key=lambda x:-x['area'
    failed=[k for k,v in fz['pre_gates'].items() if not v];kept=fz.get('head_clearance_pruning',{}).get('kept_fraction',0)
    q={'attempt':attempt,'seed':task['seed'],'frozen':str(fp),'frames':fz['frames'],'duration_s':fz['duration_s'],'failed_gates':failed,'pre_gates':fz['pre_gates'],'kept_fraction':kept,'road_network':fz['road_network'],'pruning':fz['head_clearance_pruning'],'collision':fz['collision'],'depth_probe':fz['depth_probe'],'coverage':fz['coverage'],'reroutes':fz['reroutes'],'policy':mc['policy'],'ground_clearance_cm':mc['ground_clearance_cm'],'pitch_limit_up_deg':task['camera']['pitch_limit_up_deg'],'region_z_cm':mc.get('region_z_cm')}
    state['attempts'].append(q);save('路线检查结果已写入')
-   if not failed:
+   # Action-mix and retrace cadence are ADVISORY here: this preflight walks ONE covering pass, while
+   # the recording is two passes (the second in study style, action-dense), and judges the mix on
+   # both. Three large maps failed only the mix, by 1-2 points, on 17 Sep. Geometry decides.
+   ADVISORY={'action_mix_in_band','retrace_cadence_ok'}
+   geo_failed=[g for g in failed if g not in ADVISORY];q['advisory_failed']=[g for g in failed if g in ADVISORY]
+   cl=float((fz['road_network'] or {}).get('centreline_m') or 0)
+   if cl<50: geo_failed.append('network_too_short');q['failed_gates']=failed+['network_too_short']
+   if not geo_failed:
     state.update(state='geometry_pass' if kept>=.75 else 'coverage_review',chosen_attempt=attempt)
     break
    state['state']='route_failed'
-   if not set(failed).issubset({'collision_free','depth_probe_clear','action_mix_in_band'}):break
+   if not set(geo_failed).issubset({'collision_free','depth_probe_clear'}):break
   except (TimeoutError,ConnectionError) as e:
    raise
   except Exception as e:

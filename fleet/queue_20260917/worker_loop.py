@@ -123,9 +123,9 @@ log(f'worker {W} up; {len(manifest)} tasks in the queue')
 
 while True:
     claimed = None
-    fresh = get('manifest.json')               # re-read: tasks can be appended while the fleet runs
-    if fresh and len(fresh) != len(manifest):
-        log(f'manifest grew to {len(fresh)} tasks'); manifest = fresh
+    fresh = get('manifest.json')               # re-read: tasks can be appended or edited while the fleet runs
+    if fresh and fresh != manifest:            # any change (17 Sep: a length-only test missed per-task budget edits)
+        log(f'manifest changed: {len(fresh)} tasks'); manifest = fresh
     for task in manifest:                      # longest estimate first
         slug = task['slug']
         if get(f'results/{slug}/result.json') is not None:
