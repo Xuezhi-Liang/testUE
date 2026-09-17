@@ -1,0 +1,182 @@
+# UE 地图录制配置说明
+
+更新日期：2026-09-17（UTC）。本文件记录当前生效模板与捕获代码的实际行为；发布本文件没有修改引擎、地图、正在执行的任务或历史录像。
+
+**09-17 的四项决定**：抗锯齿全局切到 TAA 2×；步速钉死 1 m/s 匀速；转速上下左右回正统一 45°/s（原本已是，现写成事实）；离地间隙按图分两档不统一。另外新增「转身折返」动作、验收第九道门槛 `speed_pinned_held`，并修掉一个平滑后弧长轴未重算的老 bug（详见 `FINDINGS.md` 09-17 各节）。
+
+## 1. 当前推荐方案与适用范围
+
+**TAA + 2× RGB 超采样 + 200% TAA 历史分辨率 + 连续渲染历史 + 32 帧实际预热，输出 1280×720 / 24fps。** 目标是保留建筑、街道和材质细节，同时减少摄像机移动时的闪动。
+
+- 生效模板：`UE5-Agent-Data/revisit_pipeline/tasks/longvideo_template.json`。**2026-09-17 起它就是这套 TAA 2× 配置**（用户拍板），所有任务生成入口都读它；旧 TSR 2× 保留在 `tasks/tsr_2x_previous_default.json`。17 Sep 10:00 UTC 之前录的历史录像是 TSR，判断某集用的是哪种以其 `capture_summary.json` 里的 cvars 为准。
+- 本页面下方保留的是早期闪烁修复实验，含 TSR 等方案；其原始视频和指标不因本文发布而改变。后续跨地图比较见[通用稳定性实验](../general-stability/)。
+- 当前 86 张地图的并行任务属于路线预检，不等于已经完成全部地图的正式 RGB、深度录制或画质验收。进度见[路线验证](../route-validation/)。
+- 已测方案仍有残余闪动，TAA 也可能让高频纹理变柔和；没有承诺所有地图零闪动或纹理完全无损。
+- **本次代码核对发现两项待统一行为：补光流程关闭自动曝光，但模板声明 `auto_instant`；景深关闭只有模板声明，未找到对应的强制关闭实现。详见第 4 节。**
+
+## 2. 引擎、输出与摄像机
+
+| 项目 | 配置 / 实际行为 |
+|---|---|
+| 引擎 | UE 5.8，Linux Vulkan，离屏渲染 |
+| 输出帧率 | 24 fps；这是轨迹采样和视频帧率，不代表已经验证整个世界使用固定物理时间步 |
+| RGB 输出分辨率 | 1280×720 |
+| RGB 内部渲染分辨率 | 2560×1440；宽、高各 2 倍，共 4 倍像素 |
+| 缩小方式 | 对 8-bit sRGB 像素作 2×2 方框平均 |
+| 视角 | 街道第一人称透视视角；此前第三人称演示使用另外的配置 |
+| FOV | 90° |
+| 眼睛高度 | 1.7 米 |
+| 抬头 / 低头上限 | 15° / 30° |
+| 滚转上限 | 5°；约束值不表示相机始终摇晃 |
+| 步速 | **1.0 m/s 钉死**（`speed_m_s`），`speed_profile=constant`：每个行走帧精确走 100/24 cm，段末一帧取余数，无加减速；前进、倒退、后退小段、折返两条腿一律。`speed_tier=medium` 仅供 `speed_within_tier` 门槛用 |
+| 转向 | constant，45°/秒；24fps 下每个转向帧精确 1.875°，最后一帧取余数。**抬头、低头和回正共用同一速率和轮廓**（`pitch_deg_per_s` = 45）。走弯路时的航向跟随在 45°/s 以下，拐角超过时停下来转 |
+| 运动模糊 | mode 4 捕获器明确关闭 ShowFlag，并把 MotionBlurAmount 设为 0 |
+| 景深 | 模板 `false`；实际强制关闭尚待确认，见第 4 节 |
+| HUD | 模板 `false`；使用场景捕获器输出 |
+
+## 3. 光照与天光补光
+
+当前采用 `lighting=fill`，不是固定迪拜灯光 rig。保留地图原有太阳、点光源、聚光灯、天空、雾与场景色调，按地图调整天光补光。没有跨地图统一指定太阳照度、太阳方向或色温。
+
+| 项目 | 实际行为 |
+|---|---|
+| 太阳与场景灯光 | 保留地图作者设置 |
+| 原有 SkyLight | 补光阶段隐藏其可见性 |
+| 替代 SkyLight | 新建 Movable、captured-scene 天光，`real_time_capture=false` |
+| 补光强度 | 第一个原有 SkyLight 的基准强度 × 所选倍率；多天光地图并非逐盏分别放大 |
+| 通用模板倍率 | `skylight_factor=auto` |
+| 候选倍率 | 1、1.5、2、3、4 倍 |
+| 录制期间 | 校准后固定倍率，不随摄像机位置动态调灯光强度 |
+| 资产保存 | 仅运行会话生效，不写回地图资产 |
+| 没有原有天光 | 当前补光实现报错拒绝继续，不会凭空选择一个基准强度 |
+
+初始化会先处理原有天光的动态捕获兼容性，随后 fill 流程用新天光替换；最终补光天光使用非实时场景捕获。每次补光尝试重新生成天光，避免复用旧捕获状态。
+
+自动校准抽取路线中 12 个位置，统计渲染图像直方图。选择满足全部指标的最小倍率：
+
+| 校准指标 | 目标 |
+|---|---|
+| 近黑像素比例 | ≤3% |
+| 过曝像素比例 | ≤1% |
+| 对比度 p99−p10 | ≥地图参考值的 80% |
+| 亮度中位数 p50 | 目标参考亮度的 0.6–1.6 倍；参考亮度取 max(地图参考 p50, 30)，按 0–255 尺度 |
+
+如果所有倍率均未达标但仍存在可用曝光候选，会选择综合偏差最小的候选并标记 `quality_bar_missed=true`；没有可用候选则拒绝录制。校准采用手动曝光扫描，其 EV 不会作为 `auto_instant` 的曝光补偿。因此这些校准阈值不能直接当作正式录像逐帧已经通过的验收指标。
+
+此前对比录像使用的固定倍率如下，仅用于说明历史实验，不是每张地图永远固定的通用常数：
+
+| 地图 | 天光倍率 |
+|---|---:|
+| ChemicalPlant 2 | 1.5× |
+| Downtown West | 3× |
+| Hwaseong | 4× |
+| Forest Gas Station | 1× |
+| Middle East | 3× |
+| Winter Town | 1× |
+| Container Yard | 1× |
+
+例如化工厂原始天光强度 1.5，乘以 1.5 后，新天光强度为 2.25；倍率不是绝对照度。
+
+## 4. 曝光、局部曝光与实现差异
+
+| 参数 | 模板值 / 代码解释 |
+|---|---|
+| exposure | `auto_instant`，意图沿用地图测光并加快适应 |
+| auto_exposure_speed | 未单独写入模板；捕获代码默认为 100 EV/s，上升和下降一致 |
+| auto_exposure_range | 默认 `[0,0]`，代码不覆盖地图范围，并非锁定到零 |
+| exposure_bias_ev | `null`，传入捕获器为 0；自动分支中 0 表示不覆盖地图原有曝光偏移 |
+| LocalExposureMethod | Bilateral |
+| shadow_scale | 0.65，明确覆盖局部曝光暗部对比度参数 |
+| highlight_scale | 0，代码保留原有高光参数，并非把高光强度设成零 |
+| detail_strength | 1.0，明确覆盖 |
+
+**曝光冲突：** `lighting_rig.apply_fill()` 执行以下两条命令：
+
+```ini
+r.DefaultFeature.AutoExposure 0
+r.EyeAdaptationQuality 0
+```
+
+后续 `auto_instant` 分支设置曝光速度、可选范围与偏移，但当前核对的执行链未发现重新启用上述开关的逻辑。因此不能仅根据 `capture_summary.json` 中的 `auto_instant` 标签，宣称实际已启用快速自动曝光。正式批量录制前需要统一这一行为，并检查运行时开关与图像亮度；本文没有修改它们。
+
+**景深差异：** 模板写有 `depth_of_field=false`，但捕获代码未发现读取这一配置并显式关闭景深的实现。不能保证所有地图原有后处理景深都被关闭，需要运行时核验或补充明确实现。
+
+## 5. 抗锯齿、雾、纹理与闪动控制
+
+模板中的控制台变量完整如下：
+
+```ini
+r.AntiAliasingMethod 2
+r.TemporalAA.HistoryScreenPercentage 200
+r.TemporalAA.Quality 2
+r.TemporalAACurrentFrameWeight 0.04
+r.TemporalAASamples 8
+r.Lumen.ScreenProbeGather.DownsampleFactor 8
+r.VolumetricFog.GridPixelSize 8
+r.VolumetricFog.GridSizeZ 128
+r.MaxAnisotropy 16
+r.MipMapLODBias 0
+r.Tonemapper.Sharpen 0
+```
+
+- `history_mode=4`：RGB 捕获器明确开启 AntiAliasing、TemporalAA，并保持 `bAlwaysPersistRenderingState=true`。
+- 正式写出第一帧前，在起始位姿实际渲染 32 帧预热，不只是等待 32 个 tick。
+- `bCaptureEveryFrame=false`、`bCaptureOnMovement=false`：由捕获流程按冻结轨迹主动触发，控制图像与位姿对应关系。
+- `lumen=project_default`：沿用项目开关；上述屏幕探针参数不意味着强制所有地图开启 Lumen。
+- 16× 各向异性过滤，Mip 偏移 0，额外锐化 0。保留模型和材质资产；没有在此模板中统一强制 LOD0、关闭纹理流送或统一覆盖所有阴影设置。
+- 切换配置时使用新编辑器会话，避免继承上一轮控制台变量。
+- 视频合成不额外做时间去闪烁或补帧。残余闪动与细纹理柔化仍需要在各地图实拍中检查。
+
+## 6. RGB、深度与视频编码
+
+| 输出 | 配置 |
+|---|---|
+| RGB 捕获 | FinalColorLDR，sRGB RGBA8，超采样缩小后输出 |
+| RGB 原始帧 | JPEG，质量 92 |
+| 深度分辨率 | 原生 1280×720，独立 SceneDepth 捕获 |
+| 深度内部 / 保存 | 内部 R32f；保存 EXR float16，R 通道线性距离，单位米 |
+| 深度无效值 / 最大距离 | −1 / 1000 米 |
+| 深度处理 | 关闭抗锯齿、运动模糊；不沿用 RGB 超采样缩小或时间平滑 |
+| 网页视频 | H.264 / libx264，preset medium，CRF 18，yuv420p，faststart，无音轨 |
+| 1–2 分钟测试片 | 完整 24fps |
+| 超长片预览 | 超过 120000 帧时生成抽帧 `rgb_proxy.mp4`；原始帧保留，预览不再是一帧对应一个原始帧 |
+
+## 7. 路线与身体约束
+
+| 项目 | 通用模板值 |
+|---|---|
+| trajectory_family | coverage_walk：路口优先随机选择未走道路，多轮遍历衔接 |
+| seed / spawn_id | 2000 / auto |
+| target_passes | 8；当前路线预检单独使用 1 遍，不是已录制 8 遍 |
+| duration_s / max_duration_s | 0 / 72000；20 小时是模板规划上限，不是每张地图实际录像时长 |
+| confine_to_core | false；预检可能有单图区域选择，需以该图冻结轨迹为准 |
+| size_headroom | 1.25 |
+| 行为风格 | stroll、survey、inspect；补充 study、stroll |
+| 胶囊半径 / 半高 | 40 / 88 厘米 |
+| ground_clearance_cm | **按图分两档（09-17 定）**：平坦街区模板默认 6 cm；有台阶、门槛的地图由分片表逐图给 45 cm。86 图与新地图的路线验证全部按 45 cm 跑 |
+| speed_m_s / speed_profile | 1.0 / constant（09-17 新增，见第 2 节） |
+| retrace | 中位数间隔 300 s，抖动 ±25%，上限 420 s，回走 10–25 s（09-17 新增，见下） |
+| corridor_clear_cm | 90 厘米 |
+
+动作比例是规划目标区间，不是保证每个短片都完全满足：前进 26–42%、后退 10–20%、左转 6–15%、右转 6–15%、抬头 8–18%、低头 7–16%、停留 4–14%。最终以冻结轨迹和该片验证报告为准。
+
+**转身折返（09-17 新增）**：转 180°、沿刚走过的路正向走一段、再转 180° 继续。两条腿都记作 `forward`（相机朝着运动方向），中间两次掉头记作转向。和 `backward` 不同：倒退看到的还是已看过的那一面，折返是把同一段路用相反视角再看一遍，这才是空间记忆数据要的「重访」。节奏按中位数 300 s 抽（每次事件后重抽目标间隔），身后路不够 10 s 时推迟到下一段而不缩水。实测 3 个种子 31 个间隔中位数 305.7 s，掉头每次 180°。
+
+**九道门槛，录前录后同一套**：单帧位移 < 50 cm；单帧转速 ≤ 67.5°/s；俯仰不超限；全程无碰撞无穿透；深度探针无异常；覆盖率 100%；动作配比在带内；折返节奏达标（`retrace_cadence_ok`）；步速确实钉住（`speed_pinned_held`：引擎实测行走帧速度中位数与 p95 在 1 m/s ±2% 内，09-17 新增，验收端）。
+
+## 8. 复现与来源
+
+可下载本文旁的[生效模板快照](stability_detail_candidate.json)（09-17 起与 `tasks/longvideo_template.json` 逐字节相同，含 `speed_m_s`、`speed_profile`、`retrace` 字段和 TAA 2× cvars）。旧 TSR 2× 在 `tasks/tsr_2x_previous_default.json`。模板不是自动修改项目设置的安装脚本，仍需通过当前捕获流程加载。
+
+本机代码来源：
+
+- `/home/ubuntu/UE5-Agent-Data/revisit_pipeline/tasks/longvideo_template.json`（生效模板；`stability_detail_candidate.json` 与之相同）
+- `/home/ubuntu/UE5-Agent-Data/revisit_pipeline/coverage.py`（步速、转速、折返的实现）
+- `/home/ubuntu/UE5-Agent-Data/revisit_pipeline/package.py`（验收门槛）
+- `/home/ubuntu/UE5-Agent-Data/revisit_pipeline/capture_engine.py`
+- `/home/ubuntu/UE5-Agent-Data/revisit_pipeline/lighting_rig.py`
+- `/home/ubuntu/UE5-Agent-Data/revisit_pipeline/lighting_calibrate.py`
+- `/home/ubuntu/UE5-Agent-Data/revisit_pipeline/cpp/SimWorldCaptureActor.cpp`
+- `/home/ubuntu/UE5-Agent-Data/revisit_pipeline/RENDER_QUALITY.md`
+
+复现实拍时还应保留该片的冻结任务、环境变量覆写、补光校准报告、`capture_summary.json` 和捕获状态；只凭通用模板不能推断每个历史视频的全部实际参数。本文为 2026-09-17 的静态快照，不自动跟随代码变化。全图规划见[按关卡的录制规划](../map-plan/)。
