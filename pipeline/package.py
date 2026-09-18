@@ -842,9 +842,15 @@ def acceptance(ep, rows, traj, summary, rv):
 
     failed = [g for g in gates if g["result"] == "FAIL"]
     skipped = [g for g in gates if g["result"] == "skip"]
+    # 18 Sep, user's decision: NOTHING recorded is rejected after the fact. Every gate is still
+    # measured and written here - the verdicts are the episode's quality record - but `accepted`
+    # is always true and the uploader files every episode under the normal prefix. The gates that
+    # still refuse are the ones BEFORE recording (collision, depth probe, disconnected network).
     return {
         "episode_id": summary["episode_id"],
-        "accepted": len(failed) == 0,
+        "accepted": True,
+        "verdict_mode": "advisory",
+        "gates_would_have_failed": [g["gate"] for g in failed],
         "accepted_seconds": (len(rows) / fps) if not failed else 0.0,
         "accepted_note": "Section 14 counts candidate, failed and incomplete data as 0 seconds. "
                          "This episode is accepted for the gates that can be evaluated on this "
